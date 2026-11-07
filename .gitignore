@@ -1,0 +1,15 @@
+# Scratch / QA working files
+.work/
+node_modules/
+assets/web-tmp/
+
+# Runtime data (form submissions contain personal information)
+data/*.jsonl
+data/*.log
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+
+# Note: public/assets/** and screenshots/ are intentional deliverables and are committed.
