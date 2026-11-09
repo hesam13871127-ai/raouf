@@ -1,0 +1,342 @@
+{
+  "stage": "F",
+  "generatedAt": "2026-11-09T12:19:38.493Z",
+  "base": "http://127.0.0.1:9411",
+  "zip": "/home/user/raouf/wordpress-conversion/dist/raouf-academy-wordpress-theme.zip",
+  "zip_sha256": "abe4a961a4049ecdc86b1866a0d9e2eb0949eee1590bd730745e41dc7b3a4907",
+  "zip_bytes": 5384052,
+  "steps": [
+    {
+      "name": "fresh WordPress has no Raouf theme before upload",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "admin login succeeds",
+      "result": "PASS",
+      "detail": "http://127.0.0.1:9411/wp-admin/"
+    },
+    {
+      "name": "Upload Theme form present",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ZIP uploads and installs via admin UI",
+      "result": "PASS",
+      "detail": "Skip to main content Skip to toolbar Dashboard Home Updates Posts All Posts Add Post Categories Tags Media Library Add Media File Pages All Pages Add Page Comments Appearance Themes Editor Plugins Installed Plugins Add Plugin Users All Users Add User Profile Tools Available Tools Import Export Site "
+    },
+    {
+      "name": "theme activates from Appearance → Themes",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "themes.php shows Raouf Academy as the active theme",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "route /",
+      "result": "PASS",
+      "detail": "http=200 h1=\"مسیر حرفه‌ای شدن از آموزش اصولی آغاز می‌\" main=45196 css=true"
+    },
+    {
+      "name": "route /courses/",
+      "result": "PASS",
+      "detail": "http=200 h1=\"دوره‌های تخصصی آموزشگاه رئوف\" main=18705 css=true"
+    },
+    {
+      "name": "route /courses/skin-facial/",
+      "result": "PASS",
+      "detail": "http=200 h1=\"دوره تخصصی آموزش پاکسازی و فیشیال پوست\" main=38705 css=true"
+    },
+    {
+      "name": "route /courses/medical-emergency/",
+      "result": "PASS",
+      "detail": "http=200 h1=\"دوره جامع فوریت‌های پزشکی، کمک‌های اولیه\" main=39049 css=true"
+    },
+    {
+      "name": "route /courses/pharmacy-technician/",
+      "result": "PASS",
+      "detail": "http=200 h1=\"دوره آموزشی تکنسین داروخانه (نسخه‌خوانی)\" main=36650 css=true"
+    },
+    {
+      "name": "route /courses/massage-relaxation/",
+      "result": "PASS",
+      "detail": "http=200 h1=\"دوره جامع تخصصی ماساژ و ریلکسیشن\" main=38950 css=true"
+    },
+    {
+      "name": "route /about/",
+      "result": "PASS",
+      "detail": "http=200 h1=\"آموزشگاه فنی و حرفه‌ای رئوف\" main=19275 css=true"
+    },
+    {
+      "name": "route /gallery/",
+      "result": "PASS",
+      "detail": "http=200 h1=\"نگاهی به فضای آموزشگاه رئوف\" main=38165 css=true"
+    },
+    {
+      "name": "route /contact/",
+      "result": "PASS",
+      "detail": "http=200 h1=\"با آموزشگاه رئوف در ارتباط باشید\" main=11848 css=true"
+    },
+    {
+      "name": "route /register/",
+      "result": "PASS",
+      "detail": "http=200 h1=\"اولین قدم را برای یادگیری بردارید\" main=13695 css=true"
+    },
+    {
+      "name": "route /404/",
+      "result": "PASS",
+      "detail": "http=404 h1=\"صفحه مورد نظر پیدا نشد\" main=1072 css=true"
+    },
+    {
+      "name": "installed style.css is byte-identical to the delivered version",
+      "result": "PASS",
+      "detail": "sha256=c519e0e4a6274f00867f4f09a73d4236de3698506d77edcf391b1c3ca43fae8b"
+    },
+    {
+      "name": "installed assets/js/app.js is byte-identical to the delivered version",
+      "result": "PASS",
+      "detail": "sha256=4cf90eee4d3ecf729bddc452ded767ff76a2ef503de9e862242c738d870a5616"
+    },
+    {
+      "name": "activation seeded the original pages (no core Sample Page)",
+      "result": "PASS",
+      "detail": "[\"Privacy Policy\",\"آموزشگاه فنی و حرفه‌ای رئوف\",\"اولین قدم را برای یادگیری بردارید\",\"با آموزشگاه رئوف در ارتباط باشید\",\"دوره‌های تخصصی آموزشگاه رئوف\",\"— دوره آموزشی تکنسین داروخانه (نسخه‌خوانی)\",\"— دوره تخصصی آموزش پاکسازی و فیشیال پوست\",\"— دوره جامع تخصصی ماساژ و ریلکسیشن\",\"— دوره جامع فوریت‌های پزشکی، کمک‌های اولیه، تزریقات و بخیه\",\"مسیر حرفه‌ای شدن از آموزش اصولی آغاز می‌شود\",\"نگاهی به فضای آموزشگاه رئوف\"]"
+    },
+    {
+      "name": "two real navigation menus exist and are assigned to locations",
+      "result": "PASS",
+      "detail": "[\"— Select a Menu —\",\"دوره‌های آموزشی رئوف\",\"منوی اصلی رئوف\",\"— Select a Menu —\",\"دوره‌های آموزشی رئوف\",\"منوی اصلی رئوف\"]"
+    },
+    {
+      "name": "front-end primary menu renders all 4 course links",
+      "result": "PASS",
+      "detail": "{\"dropdown\":4,\"footerCourseLinks\":13}"
+    },
+    {
+      "name": "no failed request belongs to the theme or the front end",
+      "result": "PASS",
+      "detail": "external_admin_avatar_requests=8 internal=0"
+    },
+    {
+      "name": "no 4xx/5xx for any delivered theme asset",
+      "result": "PASS",
+      "detail": "[]"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "/home/user/raouf/wordpress-conversion/qa/results/screenshots/01-wp-login.png",
+      "label": "ورود به پیشخوان وردپرس تازه"
+    },
+    {
+      "file": "/home/user/raouf/wordpress-conversion/qa/results/screenshots/02-upload-theme-form.png",
+      "label": "فرم بارگذاری پوسته در پیشخوان"
+    },
+    {
+      "file": "/home/user/raouf/wordpress-conversion/qa/results/screenshots/03-theme-install-success.png",
+      "label": "پیام نصب موفق پوسته"
+    },
+    {
+      "file": "/home/user/raouf/wordpress-conversion/qa/results/screenshots/04-theme-activated.png",
+      "label": "پوسته رئوف بهعنوان پوسته فعال در پیشخوان"
+    },
+    {
+      "file": "/home/user/raouf/wordpress-conversion/qa/results/screenshots/05-front-page-after-activation.png",
+      "label": "صفحه نخست پس از نصب و فعالسازی"
+    }
+  ],
+  "routes": [
+    {
+      "route": "/",
+      "http": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "title": "آموزشگاه فنی و حرفه‌ای رئوف | آموزش مهارت‌های تخصصی",
+      "themeCss": true,
+      "mainLength": 45196,
+      "h1": "مسیر حرفه‌ای شدن از آموزش اصولی آغاز می‌شود",
+      "images": 18,
+      "phpErrors": [],
+      "ok": true
+    },
+    {
+      "route": "/courses/",
+      "http": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "title": "دوره‌های آموزشی | آموزشگاه فنی و حرفه‌ای رئوف",
+      "themeCss": true,
+      "mainLength": 18705,
+      "h1": "دوره‌های تخصصی آموزشگاه رئوف",
+      "images": 7,
+      "phpErrors": [],
+      "ok": true
+    },
+    {
+      "route": "/courses/skin-facial/",
+      "http": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "title": "دوره تخصصی آموزش پاکسازی و فیشیال پوست | آموزشگاه رئوف",
+      "themeCss": true,
+      "mainLength": 38705,
+      "h1": "دوره تخصصی آموزش پاکسازی و فیشیال پوست",
+      "images": 14,
+      "phpErrors": [],
+      "ok": true
+    },
+    {
+      "route": "/courses/medical-emergency/",
+      "http": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "title": "دوره جامع فوریت‌های پزشکی، کمک‌های اولیه، تزریقات و بخیه | آموزشگاه رئوف",
+      "themeCss": true,
+      "mainLength": 39049,
+      "h1": "دوره جامع فوریت‌های پزشکی، کمک‌های اولیه، تزریقات و بخیه",
+      "images": 14,
+      "phpErrors": [],
+      "ok": true
+    },
+    {
+      "route": "/courses/pharmacy-technician/",
+      "http": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "title": "دوره آموزشی تکنسین داروخانه (نسخه‌خوانی) | آموزشگاه رئوف",
+      "themeCss": true,
+      "mainLength": 36650,
+      "h1": "دوره آموزشی تکنسین داروخانه (نسخه‌خوانی)",
+      "images": 13,
+      "phpErrors": [],
+      "ok": true
+    },
+    {
+      "route": "/courses/massage-relaxation/",
+      "http": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "title": "دوره جامع تخصصی ماساژ و ریلکسیشن | آموزشگاه رئوف",
+      "themeCss": true,
+      "mainLength": 38950,
+      "h1": "دوره جامع تخصصی ماساژ و ریلکسیشن",
+      "images": 14,
+      "phpErrors": [],
+      "ok": true
+    },
+    {
+      "route": "/about/",
+      "http": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "title": "درباره آموزشگاه | آموزشگاه فنی و حرفه‌ای رئوف",
+      "themeCss": true,
+      "mainLength": 19275,
+      "h1": "آموزشگاه فنی و حرفه‌ای رئوف",
+      "images": 9,
+      "phpErrors": [],
+      "ok": true
+    },
+    {
+      "route": "/gallery/",
+      "http": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "title": "گالری تصاویر | آموزشگاه فنی و حرفه‌ای رئوف",
+      "themeCss": true,
+      "mainLength": 38165,
+      "h1": "نگاهی به فضای آموزشگاه رئوف",
+      "images": 31,
+      "phpErrors": [],
+      "ok": true
+    },
+    {
+      "route": "/contact/",
+      "http": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "title": "تماس با ما | آموزشگاه فنی و حرفه‌ای رئوف",
+      "themeCss": true,
+      "mainLength": 11848,
+      "h1": "با آموزشگاه رئوف در ارتباط باشید",
+      "images": 2,
+      "phpErrors": [],
+      "ok": true
+    },
+    {
+      "route": "/register/",
+      "http": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "title": "مشاوره و ثبت‌نام | آموزشگاه فنی و حرفه‌ای رئوف",
+      "themeCss": true,
+      "mainLength": 13695,
+      "h1": "اولین قدم را برای یادگیری بردارید",
+      "images": 2,
+      "phpErrors": [],
+      "ok": true
+    },
+    {
+      "route": "/404/",
+      "http": 404,
+      "dir": "rtl",
+      "lang": "fa",
+      "title": "صفحه پیدا نشد | آموزشگاه فنی و حرفه‌ای رئوف",
+      "themeCss": true,
+      "mainLength": 1072,
+      "h1": "صفحه مورد نظر پیدا نشد",
+      "images": 2,
+      "phpErrors": [],
+      "ok": true
+    }
+  ],
+  "consoleErrors": [
+    "Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://secure.gravatar.com/avatar/8c9689fb60bd7c4c56112540c064fea2dea8e61c4e527dd53f7adfea094b490b?s=26&d=mm&r=g",
+    "Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://secure.gravatar.com/avatar/8e1606e6fba450a9362af43874c1b2dfad34c782e33d0a51e1b46c18a2a567dd?s=50&d=mm&r=g",
+    "Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://secure.gravatar.com/avatar/8c9689fb60bd7c4c56112540c064fea2dea8e61c4e527dd53f7adfea094b490b?s=26&d=mm&r=g",
+    "Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://secure.gravatar.com/avatar/8c9689fb60bd7c4c56112540c064fea2dea8e61c4e527dd53f7adfea094b490b?s=26&d=mm&r=g",
+    "Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://secure.gravatar.com/avatar/8c9689fb60bd7c4c56112540c064fea2dea8e61c4e527dd53f7adfea094b490b?s=26&d=mm&r=g",
+    "Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://secure.gravatar.com/avatar/8c9689fb60bd7c4c56112540c064fea2dea8e61c4e527dd53f7adfea094b490b?s=26&d=mm&r=g",
+    "Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:9411/404/",
+    "Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://secure.gravatar.com/avatar/8c9689fb60bd7c4c56112540c064fea2dea8e61c4e527dd53f7adfea094b490b?s=26&d=mm&r=g",
+    "Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://secure.gravatar.com/avatar/8c9689fb60bd7c4c56112540c064fea2dea8e61c4e527dd53f7adfea094b490b?s=26&d=mm&r=g"
+  ],
+  "failedRequests": [
+    "REQUEST FAILED https://secure.gravatar.com/avatar/8c9689fb60bd7c4c56112540c064fea2dea8e61c4e527dd53f7adfea094b490b?s=26&d=mm&r=g net::ERR_CONNECTION_CLOSED",
+    "REQUEST FAILED https://secure.gravatar.com/avatar/8e1606e6fba450a9362af43874c1b2dfad34c782e33d0a51e1b46c18a2a567dd?s=50&d=mm&r=g net::ERR_CONNECTION_CLOSED",
+    "REQUEST FAILED https://secure.gravatar.com/avatar/8c9689fb60bd7c4c56112540c064fea2dea8e61c4e527dd53f7adfea094b490b?s=26&d=mm&r=g net::ERR_CONNECTION_CLOSED",
+    "REQUEST FAILED https://secure.gravatar.com/avatar/8c9689fb60bd7c4c56112540c064fea2dea8e61c4e527dd53f7adfea094b490b?s=26&d=mm&r=g net::ERR_CONNECTION_CLOSED",
+    "REQUEST FAILED https://secure.gravatar.com/avatar/8c9689fb60bd7c4c56112540c064fea2dea8e61c4e527dd53f7adfea094b490b?s=26&d=mm&r=g net::ERR_CONNECTION_CLOSED",
+    "REQUEST FAILED https://secure.gravatar.com/avatar/8c9689fb60bd7c4c56112540c064fea2dea8e61c4e527dd53f7adfea094b490b?s=26&d=mm&r=g net::ERR_CONNECTION_CLOSED",
+    "REQUEST FAILED https://secure.gravatar.com/avatar/8c9689fb60bd7c4c56112540c064fea2dea8e61c4e527dd53f7adfea094b490b?s=26&d=mm&r=g net::ERR_CONNECTION_CLOSED",
+    "REQUEST FAILED https://secure.gravatar.com/avatar/8c9689fb60bd7c4c56112540c064fea2dea8e61c4e527dd53f7adfea094b490b?s=26&d=mm&r=g net::ERR_CONNECTION_CLOSED"
+  ],
+  "httpErrors": [
+    "HTTP 404 http://127.0.0.1:9411/404/"
+  ],
+  "network_classification": {
+    "external_admin_avatar_requests": 8,
+    "internal_failed_requests": [],
+    "theme_asset_http_errors": [],
+    "http_errors": [
+      "HTTP 404 http://127.0.0.1:9411/404/"
+    ],
+    "note": "secure.gravatar.com is an external WordPress-admin avatar host; outbound access is blocked in this sandbox. The /404/ route returns an intentional HTTP 404 and the WP admin may log a 404 for a missing dashboard asset. Neither originates from the delivered theme or a public page."
+  },
+  "summary": {
+    "steps": 24,
+    "PASS": 24,
+    "FAIL": 0,
+    "routes_checked": 11,
+    "routes_ok": 11,
+    "screenshots": 5,
+    "consoleErrors": 9,
+    "failedRequests": 8,
+    "httpErrors": 1,
+    "external_admin_avatar_requests": 8
+  }
+}

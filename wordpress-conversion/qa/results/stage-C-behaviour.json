@@ -1,0 +1,1473 @@
+{
+  "stage": "C",
+  "orig": "http://127.0.0.1:3000",
+  "wp": "http://127.0.0.1:9400",
+  "checks": [
+    {
+      "name": "lightbox + keyboard + Escape: /",
+      "ok": true,
+      "detail": "items=6/6 orig=[first-aid-01.webp -> treatment-room-01.webp -> esc false] wp=[first-aid-01.webp -> treatment-room-01.webp -> esc false]"
+    },
+    {
+      "name": "lightbox + keyboard + Escape: /courses/skin-facial/",
+      "ok": true,
+      "detail": "items=4/4 orig=[course-facial.webp -> treatment-room-01.webp -> esc false] wp=[course-facial.webp -> treatment-room-01.webp -> esc false]"
+    },
+    {
+      "name": "lightbox + keyboard + Escape: /courses/medical-emergency/",
+      "ok": true,
+      "detail": "items=4/4 orig=[first-aid-01.webp -> first-aid-02.webp -> esc false] wp=[first-aid-01.webp -> first-aid-02.webp -> esc false]"
+    },
+    {
+      "name": "lightbox + keyboard + Escape: /courses/pharmacy-technician/",
+      "ok": true,
+      "detail": "items=3/3 orig=[course-pharmacy.webp -> course-pharmacy-2.webp -> esc false] wp=[course-pharmacy.webp -> course-pharmacy-2.webp -> esc false]"
+    },
+    {
+      "name": "lightbox + keyboard + Escape: /courses/massage-relaxation/",
+      "ok": true,
+      "detail": "items=4/4 orig=[course-massage.webp -> course-massage-2.webp -> esc false] wp=[course-massage.webp -> course-massage-2.webp -> esc false]"
+    },
+    {
+      "name": "lightbox + keyboard + Escape: /gallery/",
+      "ok": true,
+      "detail": "items=27/27 orig=[reception-02.webp -> lounge-01.webp -> esc false] wp=[reception-02.webp -> lounge-01.webp -> esc false]"
+    },
+    {
+      "name": "all 6 gallery filters + count label + aria-pressed",
+      "ok": true,
+      "detail": "visible orig=27,11,3,5,5,3 wp=27,11,3,5,5,3"
+    },
+    {
+      "name": "FAQ accordion exclusive behaviour: /",
+      "ok": true,
+      "detail": "count=5/5 names=home-faq,home-faq,home-faq,home-faq,home-faq"
+    },
+    {
+      "name": "FAQ accordion exclusive behaviour: /courses/skin-facial/",
+      "ok": true,
+      "detail": "count=3/3 names=faq-skin-facial,faq-skin-facial,faq-skin-facial"
+    },
+    {
+      "name": "FAQ accordion exclusive behaviour: /courses/medical-emergency/",
+      "ok": true,
+      "detail": "count=3/3 names=faq-medical-emergency,faq-medical-emergency,faq-medical-emergency"
+    },
+    {
+      "name": "FAQ accordion exclusive behaviour: /courses/pharmacy-technician/",
+      "ok": true,
+      "detail": "count=3/3 names=faq-pharmacy-technician,faq-pharmacy-technician,faq-pharmacy-technician"
+    },
+    {
+      "name": "FAQ accordion exclusive behaviour: /courses/massage-relaxation/",
+      "ok": true,
+      "detail": "count=3/3 names=faq-massage-relaxation,faq-massage-relaxation,faq-massage-relaxation"
+    }
+  ],
+  "consoleErrors": [],
+  "sequences": [
+    {
+      "type": "lightbox",
+      "route": "/",
+      "original": {
+        "itemCount": 6,
+        "hasDialog": true,
+        "open": {
+          "open": true,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "arrowLeft": {
+          "open": true,
+          "image": "treatment-room-01.webp",
+          "alt": "اتاق درمانی با تخت ماساژ و میز محصولات مراقبتی",
+          "caption": "اتاق درمانی و ماساژ",
+          "state": "treatment-room-01.webp|اتاق درمانی با تخت ماساژ و میز محصولات مراقبتی|اتاق درمانی و ماساژ"
+        },
+        "arrowRight": {
+          "open": true,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "nextButton": {
+          "open": true,
+          "image": "treatment-room-01.webp",
+          "alt": "اتاق درمانی با تخت ماساژ و میز محصولات مراقبتی",
+          "caption": "اتاق درمانی و ماساژ",
+          "state": "treatment-room-01.webp|اتاق درمانی با تخت ماساژ و میز محصولات مراقبتی|اتاق درمانی و ماساژ"
+        },
+        "prevButton": {
+          "open": true,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "escape": {
+          "open": false,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "reopened": {
+          "open": true,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "closeButton": {
+          "open": false,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "valid": true
+      },
+      "wordpress": {
+        "itemCount": 6,
+        "hasDialog": true,
+        "open": {
+          "open": true,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "arrowLeft": {
+          "open": true,
+          "image": "treatment-room-01.webp",
+          "alt": "اتاق درمانی با تخت ماساژ و میز محصولات مراقبتی",
+          "caption": "اتاق درمانی و ماساژ",
+          "state": "treatment-room-01.webp|اتاق درمانی با تخت ماساژ و میز محصولات مراقبتی|اتاق درمانی و ماساژ"
+        },
+        "arrowRight": {
+          "open": true,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "nextButton": {
+          "open": true,
+          "image": "treatment-room-01.webp",
+          "alt": "اتاق درمانی با تخت ماساژ و میز محصولات مراقبتی",
+          "caption": "اتاق درمانی و ماساژ",
+          "state": "treatment-room-01.webp|اتاق درمانی با تخت ماساژ و میز محصولات مراقبتی|اتاق درمانی و ماساژ"
+        },
+        "prevButton": {
+          "open": true,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "escape": {
+          "open": false,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "reopened": {
+          "open": true,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "closeButton": {
+          "open": false,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "valid": true
+      },
+      "identical": true
+    },
+    {
+      "type": "lightbox",
+      "route": "/courses/skin-facial/",
+      "original": {
+        "itemCount": 4,
+        "hasDialog": true,
+        "open": {
+          "open": true,
+          "image": "course-facial.webp",
+          "alt": "تصویری از دوره پاکسازی و فیشیال پوست",
+          "caption": "زیبایی و مراقبت از پوست",
+          "state": "course-facial.webp|تصویری از دوره پاکسازی و فیشیال پوست|زیبایی و مراقبت از پوست"
+        },
+        "arrowLeft": {
+          "open": true,
+          "image": "treatment-room-01.webp",
+          "alt": "اتاق درمانی با تخت ماساژ و میز محصولات مراقبتی",
+          "caption": "اتاق درمانی و ماساژ",
+          "state": "treatment-room-01.webp|اتاق درمانی با تخت ماساژ و میز محصولات مراقبتی|اتاق درمانی و ماساژ"
+        },
+        "arrowRight": {
+          "open": true,
+          "image": "course-facial.webp",
+          "alt": "تصویری از دوره پاکسازی و فیشیال پوست",
+          "caption": "زیبایی و مراقبت از پوست",
+          "state": "course-facial.webp|تصویری از دوره پاکسازی و فیشیال پوست|زیبایی و مراقبت از پوست"
+        },
+        "nextButton": {
+          "open": true,
+          "image": "treatment-room-01.webp",
+          "alt": "اتاق درمانی با تخت ماساژ و میز محصولات مراقبتی",
+          "caption": "اتاق درمانی و ماساژ",
+          "state": "treatment-room-01.webp|اتاق درمانی با تخت ماساژ و میز محصولات مراقبتی|اتاق درمانی و ماساژ"
+        },
+        "prevButton": {
+          "open": true,
+          "image": "course-facial.webp",
+          "alt": "تصویری از دوره پاکسازی و فیشیال پوست",
+          "caption": "زیبایی و مراقبت از پوست",
+          "state": "course-facial.webp|تصویری از دوره پاکسازی و فیشیال پوست|زیبایی و مراقبت از پوست"
+        },
+        "escape": {
+          "open": false,
+          "image": "course-facial.webp",
+          "alt": "تصویری از دوره پاکسازی و فیشیال پوست",
+          "caption": "زیبایی و مراقبت از پوست",
+          "state": "course-facial.webp|تصویری از دوره پاکسازی و فیشیال پوست|زیبایی و مراقبت از پوست"
+        },
+        "reopened": {
+          "open": true,
+          "image": "course-facial.webp",
+          "alt": "تصویری از دوره پاکسازی و فیشیال پوست",
+          "caption": "زیبایی و مراقبت از پوست",
+          "state": "course-facial.webp|تصویری از دوره پاکسازی و فیشیال پوست|زیبایی و مراقبت از پوست"
+        },
+        "closeButton": {
+          "open": false,
+          "image": "course-facial.webp",
+          "alt": "تصویری از دوره پاکسازی و فیشیال پوست",
+          "caption": "زیبایی و مراقبت از پوست",
+          "state": "course-facial.webp|تصویری از دوره پاکسازی و فیشیال پوست|زیبایی و مراقبت از پوست"
+        },
+        "valid": true
+      },
+      "wordpress": {
+        "itemCount": 4,
+        "hasDialog": true,
+        "open": {
+          "open": true,
+          "image": "course-facial.webp",
+          "alt": "تصویری از دوره پاکسازی و فیشیال پوست",
+          "caption": "زیبایی و مراقبت از پوست",
+          "state": "course-facial.webp|تصویری از دوره پاکسازی و فیشیال پوست|زیبایی و مراقبت از پوست"
+        },
+        "arrowLeft": {
+          "open": true,
+          "image": "treatment-room-01.webp",
+          "alt": "اتاق درمانی با تخت ماساژ و میز محصولات مراقبتی",
+          "caption": "اتاق درمانی و ماساژ",
+          "state": "treatment-room-01.webp|اتاق درمانی با تخت ماساژ و میز محصولات مراقبتی|اتاق درمانی و ماساژ"
+        },
+        "arrowRight": {
+          "open": true,
+          "image": "course-facial.webp",
+          "alt": "تصویری از دوره پاکسازی و فیشیال پوست",
+          "caption": "زیبایی و مراقبت از پوست",
+          "state": "course-facial.webp|تصویری از دوره پاکسازی و فیشیال پوست|زیبایی و مراقبت از پوست"
+        },
+        "nextButton": {
+          "open": true,
+          "image": "treatment-room-01.webp",
+          "alt": "اتاق درمانی با تخت ماساژ و میز محصولات مراقبتی",
+          "caption": "اتاق درمانی و ماساژ",
+          "state": "treatment-room-01.webp|اتاق درمانی با تخت ماساژ و میز محصولات مراقبتی|اتاق درمانی و ماساژ"
+        },
+        "prevButton": {
+          "open": true,
+          "image": "course-facial.webp",
+          "alt": "تصویری از دوره پاکسازی و فیشیال پوست",
+          "caption": "زیبایی و مراقبت از پوست",
+          "state": "course-facial.webp|تصویری از دوره پاکسازی و فیشیال پوست|زیبایی و مراقبت از پوست"
+        },
+        "escape": {
+          "open": false,
+          "image": "course-facial.webp",
+          "alt": "تصویری از دوره پاکسازی و فیشیال پوست",
+          "caption": "زیبایی و مراقبت از پوست",
+          "state": "course-facial.webp|تصویری از دوره پاکسازی و فیشیال پوست|زیبایی و مراقبت از پوست"
+        },
+        "reopened": {
+          "open": true,
+          "image": "course-facial.webp",
+          "alt": "تصویری از دوره پاکسازی و فیشیال پوست",
+          "caption": "زیبایی و مراقبت از پوست",
+          "state": "course-facial.webp|تصویری از دوره پاکسازی و فیشیال پوست|زیبایی و مراقبت از پوست"
+        },
+        "closeButton": {
+          "open": false,
+          "image": "course-facial.webp",
+          "alt": "تصویری از دوره پاکسازی و فیشیال پوست",
+          "caption": "زیبایی و مراقبت از پوست",
+          "state": "course-facial.webp|تصویری از دوره پاکسازی و فیشیال پوست|زیبایی و مراقبت از پوست"
+        },
+        "valid": true
+      },
+      "identical": true
+    },
+    {
+      "type": "lightbox",
+      "route": "/courses/medical-emergency/",
+      "original": {
+        "itemCount": 4,
+        "hasDialog": true,
+        "open": {
+          "open": true,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "arrowLeft": {
+          "open": true,
+          "image": "first-aid-02.webp",
+          "alt": "کارگاه آموزش کمک‌های اولیه با مانکن و وایت‌برد",
+          "caption": "کارگاه کمک‌های اولیه",
+          "state": "first-aid-02.webp|کارگاه آموزش کمک‌های اولیه با مانکن و وایت‌برد|کارگاه کمک‌های اولیه"
+        },
+        "arrowRight": {
+          "open": true,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "nextButton": {
+          "open": true,
+          "image": "first-aid-02.webp",
+          "alt": "کارگاه آموزش کمک‌های اولیه با مانکن و وایت‌برد",
+          "caption": "کارگاه کمک‌های اولیه",
+          "state": "first-aid-02.webp|کارگاه آموزش کمک‌های اولیه با مانکن و وایت‌برد|کارگاه کمک‌های اولیه"
+        },
+        "prevButton": {
+          "open": true,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "escape": {
+          "open": false,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "reopened": {
+          "open": true,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "closeButton": {
+          "open": false,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "valid": true
+      },
+      "wordpress": {
+        "itemCount": 4,
+        "hasDialog": true,
+        "open": {
+          "open": true,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "arrowLeft": {
+          "open": true,
+          "image": "first-aid-02.webp",
+          "alt": "کارگاه آموزش کمک‌های اولیه با مانکن و وایت‌برد",
+          "caption": "کارگاه کمک‌های اولیه",
+          "state": "first-aid-02.webp|کارگاه آموزش کمک‌های اولیه با مانکن و وایت‌برد|کارگاه کمک‌های اولیه"
+        },
+        "arrowRight": {
+          "open": true,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "nextButton": {
+          "open": true,
+          "image": "first-aid-02.webp",
+          "alt": "کارگاه آموزش کمک‌های اولیه با مانکن و وایت‌برد",
+          "caption": "کارگاه کمک‌های اولیه",
+          "state": "first-aid-02.webp|کارگاه آموزش کمک‌های اولیه با مانکن و وایت‌برد|کارگاه کمک‌های اولیه"
+        },
+        "prevButton": {
+          "open": true,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "escape": {
+          "open": false,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "reopened": {
+          "open": true,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "closeButton": {
+          "open": false,
+          "image": "first-aid-01.webp",
+          "alt": "مربی در حال آموزش احیای قلبی ریوی روی مانکن",
+          "caption": "آموزش عملی کمک‌های اولیه",
+          "state": "first-aid-01.webp|مربی در حال آموزش احیای قلبی ریوی روی مانکن|آموزش عملی کمک‌های اولیه"
+        },
+        "valid": true
+      },
+      "identical": true
+    },
+    {
+      "type": "lightbox",
+      "route": "/courses/pharmacy-technician/",
+      "original": {
+        "itemCount": 3,
+        "hasDialog": true,
+        "open": {
+          "open": true,
+          "image": "course-pharmacy.webp",
+          "alt": "تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)",
+          "caption": "داروخانه و مهارت‌های دارویی",
+          "state": "course-pharmacy.webp|تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)|داروخانه و مهارت‌های دارویی"
+        },
+        "arrowLeft": {
+          "open": true,
+          "image": "course-pharmacy-2.webp",
+          "alt": "تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)",
+          "caption": "داروخانه و مهارت‌های دارویی",
+          "state": "course-pharmacy-2.webp|تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)|داروخانه و مهارت‌های دارویی"
+        },
+        "arrowRight": {
+          "open": true,
+          "image": "course-pharmacy.webp",
+          "alt": "تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)",
+          "caption": "داروخانه و مهارت‌های دارویی",
+          "state": "course-pharmacy.webp|تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)|داروخانه و مهارت‌های دارویی"
+        },
+        "nextButton": {
+          "open": true,
+          "image": "course-pharmacy-2.webp",
+          "alt": "تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)",
+          "caption": "داروخانه و مهارت‌های دارویی",
+          "state": "course-pharmacy-2.webp|تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)|داروخانه و مهارت‌های دارویی"
+        },
+        "prevButton": {
+          "open": true,
+          "image": "course-pharmacy.webp",
+          "alt": "تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)",
+          "caption": "داروخانه و مهارت‌های دارویی",
+          "state": "course-pharmacy.webp|تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)|داروخانه و مهارت‌های دارویی"
+        },
+        "escape": {
+          "open": false,
+          "image": "course-pharmacy.webp",
+          "alt": "تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)",
+          "caption": "داروخانه و مهارت‌های دارویی",
+          "state": "course-pharmacy.webp|تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)|داروخانه و مهارت‌های دارویی"
+        },
+        "reopened": {
+          "open": true,
+          "image": "course-pharmacy.webp",
+          "alt": "تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)",
+          "caption": "داروخانه و مهارت‌های دارویی",
+          "state": "course-pharmacy.webp|تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)|داروخانه و مهارت‌های دارویی"
+        },
+        "closeButton": {
+          "open": false,
+          "image": "course-pharmacy.webp",
+          "alt": "تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)",
+          "caption": "داروخانه و مهارت‌های دارویی",
+          "state": "course-pharmacy.webp|تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)|داروخانه و مهارت‌های دارویی"
+        },
+        "valid": true
+      },
+      "wordpress": {
+        "itemCount": 3,
+        "hasDialog": true,
+        "open": {
+          "open": true,
+          "image": "course-pharmacy.webp",
+          "alt": "تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)",
+          "caption": "داروخانه و مهارت‌های دارویی",
+          "state": "course-pharmacy.webp|تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)|داروخانه و مهارت‌های دارویی"
+        },
+        "arrowLeft": {
+          "open": true,
+          "image": "course-pharmacy-2.webp",
+          "alt": "تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)",
+          "caption": "داروخانه و مهارت‌های دارویی",
+          "state": "course-pharmacy-2.webp|تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)|داروخانه و مهارت‌های دارویی"
+        },
+        "arrowRight": {
+          "open": true,
+          "image": "course-pharmacy.webp",
+          "alt": "تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)",
+          "caption": "داروخانه و مهارت‌های دارویی",
+          "state": "course-pharmacy.webp|تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)|داروخانه و مهارت‌های دارویی"
+        },
+        "nextButton": {
+          "open": true,
+          "image": "course-pharmacy-2.webp",
+          "alt": "تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)",
+          "caption": "داروخانه و مهارت‌های دارویی",
+          "state": "course-pharmacy-2.webp|تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)|داروخانه و مهارت‌های دارویی"
+        },
+        "prevButton": {
+          "open": true,
+          "image": "course-pharmacy.webp",
+          "alt": "تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)",
+          "caption": "داروخانه و مهارت‌های دارویی",
+          "state": "course-pharmacy.webp|تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)|داروخانه و مهارت‌های دارویی"
+        },
+        "escape": {
+          "open": false,
+          "image": "course-pharmacy.webp",
+          "alt": "تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)",
+          "caption": "داروخانه و مهارت‌های دارویی",
+          "state": "course-pharmacy.webp|تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)|داروخانه و مهارت‌های دارویی"
+        },
+        "reopened": {
+          "open": true,
+          "image": "course-pharmacy.webp",
+          "alt": "تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)",
+          "caption": "داروخانه و مهارت‌های دارویی",
+          "state": "course-pharmacy.webp|تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)|داروخانه و مهارت‌های دارویی"
+        },
+        "closeButton": {
+          "open": false,
+          "image": "course-pharmacy.webp",
+          "alt": "تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)",
+          "caption": "داروخانه و مهارت‌های دارویی",
+          "state": "course-pharmacy.webp|تصویری از دوره تکنسین داروخانه (نسخه‌خوانی)|داروخانه و مهارت‌های دارویی"
+        },
+        "valid": true
+      },
+      "identical": true
+    },
+    {
+      "type": "lightbox",
+      "route": "/courses/massage-relaxation/",
+      "original": {
+        "itemCount": 4,
+        "hasDialog": true,
+        "open": {
+          "open": true,
+          "image": "course-massage.webp",
+          "alt": "تصویری از دوره ماساژ و ریلکسیشن",
+          "caption": "ماساژ و سلامت",
+          "state": "course-massage.webp|تصویری از دوره ماساژ و ریلکسیشن|ماساژ و سلامت"
+        },
+        "arrowLeft": {
+          "open": true,
+          "image": "course-massage-2.webp",
+          "alt": "تصویری از دوره ماساژ و ریلکسیشن",
+          "caption": "ماساژ و سلامت",
+          "state": "course-massage-2.webp|تصویری از دوره ماساژ و ریلکسیشن|ماساژ و سلامت"
+        },
+        "arrowRight": {
+          "open": true,
+          "image": "course-massage.webp",
+          "alt": "تصویری از دوره ماساژ و ریلکسیشن",
+          "caption": "ماساژ و سلامت",
+          "state": "course-massage.webp|تصویری از دوره ماساژ و ریلکسیشن|ماساژ و سلامت"
+        },
+        "nextButton": {
+          "open": true,
+          "image": "course-massage-2.webp",
+          "alt": "تصویری از دوره ماساژ و ریلکسیشن",
+          "caption": "ماساژ و سلامت",
+          "state": "course-massage-2.webp|تصویری از دوره ماساژ و ریلکسیشن|ماساژ و سلامت"
+        },
+        "prevButton": {
+          "open": true,
+          "image": "course-massage.webp",
+          "alt": "تصویری از دوره ماساژ و ریلکسیشن",
+          "caption": "ماساژ و سلامت",
+          "state": "course-massage.webp|تصویری از دوره ماساژ و ریلکسیشن|ماساژ و سلامت"
+        },
+        "escape": {
+          "open": false,
+          "image": "course-massage.webp",
+          "alt": "تصویری از دوره ماساژ و ریلکسیشن",
+          "caption": "ماساژ و سلامت",
+          "state": "course-massage.webp|تصویری از دوره ماساژ و ریلکسیشن|ماساژ و سلامت"
+        },
+        "reopened": {
+          "open": true,
+          "image": "course-massage.webp",
+          "alt": "تصویری از دوره ماساژ و ریلکسیشن",
+          "caption": "ماساژ و سلامت",
+          "state": "course-massage.webp|تصویری از دوره ماساژ و ریلکسیشن|ماساژ و سلامت"
+        },
+        "closeButton": {
+          "open": false,
+          "image": "course-massage.webp",
+          "alt": "تصویری از دوره ماساژ و ریلکسیشن",
+          "caption": "ماساژ و سلامت",
+          "state": "course-massage.webp|تصویری از دوره ماساژ و ریلکسیشن|ماساژ و سلامت"
+        },
+        "valid": true
+      },
+      "wordpress": {
+        "itemCount": 4,
+        "hasDialog": true,
+        "open": {
+          "open": true,
+          "image": "course-massage.webp",
+          "alt": "تصویری از دوره ماساژ و ریلکسیشن",
+          "caption": "ماساژ و سلامت",
+          "state": "course-massage.webp|تصویری از دوره ماساژ و ریلکسیشن|ماساژ و سلامت"
+        },
+        "arrowLeft": {
+          "open": true,
+          "image": "course-massage-2.webp",
+          "alt": "تصویری از دوره ماساژ و ریلکسیشن",
+          "caption": "ماساژ و سلامت",
+          "state": "course-massage-2.webp|تصویری از دوره ماساژ و ریلکسیشن|ماساژ و سلامت"
+        },
+        "arrowRight": {
+          "open": true,
+          "image": "course-massage.webp",
+          "alt": "تصویری از دوره ماساژ و ریلکسیشن",
+          "caption": "ماساژ و سلامت",
+          "state": "course-massage.webp|تصویری از دوره ماساژ و ریلکسیشن|ماساژ و سلامت"
+        },
+        "nextButton": {
+          "open": true,
+          "image": "course-massage-2.webp",
+          "alt": "تصویری از دوره ماساژ و ریلکسیشن",
+          "caption": "ماساژ و سلامت",
+          "state": "course-massage-2.webp|تصویری از دوره ماساژ و ریلکسیشن|ماساژ و سلامت"
+        },
+        "prevButton": {
+          "open": true,
+          "image": "course-massage.webp",
+          "alt": "تصویری از دوره ماساژ و ریلکسیشن",
+          "caption": "ماساژ و سلامت",
+          "state": "course-massage.webp|تصویری از دوره ماساژ و ریلکسیشن|ماساژ و سلامت"
+        },
+        "escape": {
+          "open": false,
+          "image": "course-massage.webp",
+          "alt": "تصویری از دوره ماساژ و ریلکسیشن",
+          "caption": "ماساژ و سلامت",
+          "state": "course-massage.webp|تصویری از دوره ماساژ و ریلکسیشن|ماساژ و سلامت"
+        },
+        "reopened": {
+          "open": true,
+          "image": "course-massage.webp",
+          "alt": "تصویری از دوره ماساژ و ریلکسیشن",
+          "caption": "ماساژ و سلامت",
+          "state": "course-massage.webp|تصویری از دوره ماساژ و ریلکسیشن|ماساژ و سلامت"
+        },
+        "closeButton": {
+          "open": false,
+          "image": "course-massage.webp",
+          "alt": "تصویری از دوره ماساژ و ریلکسیشن",
+          "caption": "ماساژ و سلامت",
+          "state": "course-massage.webp|تصویری از دوره ماساژ و ریلکسیشن|ماساژ و سلامت"
+        },
+        "valid": true
+      },
+      "identical": true
+    },
+    {
+      "type": "lightbox",
+      "route": "/gallery/",
+      "original": {
+        "itemCount": 27,
+        "hasDialog": true,
+        "open": {
+          "open": true,
+          "image": "reception-02.webp",
+          "alt": "میز پذیرش و فضای ورودی آموزشگاه رئوف",
+          "caption": "فضای پذیرش آموزشگاه",
+          "state": "reception-02.webp|میز پذیرش و فضای ورودی آموزشگاه رئوف|فضای پذیرش آموزشگاه"
+        },
+        "arrowLeft": {
+          "open": true,
+          "image": "lounge-01.webp",
+          "alt": "سالن انتظار آموزشگاه با مبلمان روشن و دیوار شیشه‌ای",
+          "caption": "سالن انتظار",
+          "state": "lounge-01.webp|سالن انتظار آموزشگاه با مبلمان روشن و دیوار شیشه‌ای|سالن انتظار"
+        },
+        "arrowRight": {
+          "open": true,
+          "image": "reception-02.webp",
+          "alt": "میز پذیرش و فضای ورودی آموزشگاه رئوف",
+          "caption": "فضای پذیرش آموزشگاه",
+          "state": "reception-02.webp|میز پذیرش و فضای ورودی آموزشگاه رئوف|فضای پذیرش آموزشگاه"
+        },
+        "nextButton": {
+          "open": true,
+          "image": "lounge-01.webp",
+          "alt": "سالن انتظار آموزشگاه با مبلمان روشن و دیوار شیشه‌ای",
+          "caption": "سالن انتظار",
+          "state": "lounge-01.webp|سالن انتظار آموزشگاه با مبلمان روشن و دیوار شیشه‌ای|سالن انتظار"
+        },
+        "prevButton": {
+          "open": true,
+          "image": "reception-02.webp",
+          "alt": "میز پذیرش و فضای ورودی آموزشگاه رئوف",
+          "caption": "فضای پذیرش آموزشگاه",
+          "state": "reception-02.webp|میز پذیرش و فضای ورودی آموزشگاه رئوف|فضای پذیرش آموزشگاه"
+        },
+        "escape": {
+          "open": false,
+          "image": "reception-02.webp",
+          "alt": "میز پذیرش و فضای ورودی آموزشگاه رئوف",
+          "caption": "فضای پذیرش آموزشگاه",
+          "state": "reception-02.webp|میز پذیرش و فضای ورودی آموزشگاه رئوف|فضای پذیرش آموزشگاه"
+        },
+        "reopened": {
+          "open": true,
+          "image": "reception-02.webp",
+          "alt": "میز پذیرش و فضای ورودی آموزشگاه رئوف",
+          "caption": "فضای پذیرش آموزشگاه",
+          "state": "reception-02.webp|میز پذیرش و فضای ورودی آموزشگاه رئوف|فضای پذیرش آموزشگاه"
+        },
+        "closeButton": {
+          "open": false,
+          "image": "reception-02.webp",
+          "alt": "میز پذیرش و فضای ورودی آموزشگاه رئوف",
+          "caption": "فضای پذیرش آموزشگاه",
+          "state": "reception-02.webp|میز پذیرش و فضای ورودی آموزشگاه رئوف|فضای پذیرش آموزشگاه"
+        },
+        "valid": true
+      },
+      "wordpress": {
+        "itemCount": 27,
+        "hasDialog": true,
+        "open": {
+          "open": true,
+          "image": "reception-02.webp",
+          "alt": "میز پذیرش و فضای ورودی آموزشگاه رئوف",
+          "caption": "فضای پذیرش آموزشگاه",
+          "state": "reception-02.webp|میز پذیرش و فضای ورودی آموزشگاه رئوف|فضای پذیرش آموزشگاه"
+        },
+        "arrowLeft": {
+          "open": true,
+          "image": "lounge-01.webp",
+          "alt": "سالن انتظار آموزشگاه با مبلمان روشن و دیوار شیشه‌ای",
+          "caption": "سالن انتظار",
+          "state": "lounge-01.webp|سالن انتظار آموزشگاه با مبلمان روشن و دیوار شیشه‌ای|سالن انتظار"
+        },
+        "arrowRight": {
+          "open": true,
+          "image": "reception-02.webp",
+          "alt": "میز پذیرش و فضای ورودی آموزشگاه رئوف",
+          "caption": "فضای پذیرش آموزشگاه",
+          "state": "reception-02.webp|میز پذیرش و فضای ورودی آموزشگاه رئوف|فضای پذیرش آموزشگاه"
+        },
+        "nextButton": {
+          "open": true,
+          "image": "lounge-01.webp",
+          "alt": "سالن انتظار آموزشگاه با مبلمان روشن و دیوار شیشه‌ای",
+          "caption": "سالن انتظار",
+          "state": "lounge-01.webp|سالن انتظار آموزشگاه با مبلمان روشن و دیوار شیشه‌ای|سالن انتظار"
+        },
+        "prevButton": {
+          "open": true,
+          "image": "reception-02.webp",
+          "alt": "میز پذیرش و فضای ورودی آموزشگاه رئوف",
+          "caption": "فضای پذیرش آموزشگاه",
+          "state": "reception-02.webp|میز پذیرش و فضای ورودی آموزشگاه رئوف|فضای پذیرش آموزشگاه"
+        },
+        "escape": {
+          "open": false,
+          "image": "reception-02.webp",
+          "alt": "میز پذیرش و فضای ورودی آموزشگاه رئوف",
+          "caption": "فضای پذیرش آموزشگاه",
+          "state": "reception-02.webp|میز پذیرش و فضای ورودی آموزشگاه رئوف|فضای پذیرش آموزشگاه"
+        },
+        "reopened": {
+          "open": true,
+          "image": "reception-02.webp",
+          "alt": "میز پذیرش و فضای ورودی آموزشگاه رئوف",
+          "caption": "فضای پذیرش آموزشگاه",
+          "state": "reception-02.webp|میز پذیرش و فضای ورودی آموزشگاه رئوف|فضای پذیرش آموزشگاه"
+        },
+        "closeButton": {
+          "open": false,
+          "image": "reception-02.webp",
+          "alt": "میز پذیرش و فضای ورودی آموزشگاه رئوف",
+          "caption": "فضای پذیرش آموزشگاه",
+          "state": "reception-02.webp|میز پذیرش و فضای ورودی آموزشگاه رئوف|فضای پذیرش آموزشگاه"
+        },
+        "valid": true
+      },
+      "identical": true
+    },
+    {
+      "type": "gallery-filters",
+      "route": "/gallery/",
+      "original": {
+        "buttons": [
+          "all",
+          "space",
+          "classroom",
+          "training",
+          "treatment",
+          "brand"
+        ],
+        "steps": [
+          {
+            "active": "all",
+            "pressed": "true,false,false,false,false,false",
+            "visible": 27,
+            "total": 27,
+            "countLabel": "27 تصویر",
+            "emptyHidden": true
+          },
+          {
+            "active": "space",
+            "pressed": "false,true,false,false,false,false",
+            "visible": 11,
+            "total": 27,
+            "countLabel": "11 تصویر",
+            "emptyHidden": true
+          },
+          {
+            "active": "classroom",
+            "pressed": "false,false,true,false,false,false",
+            "visible": 3,
+            "total": 27,
+            "countLabel": "3 تصویر",
+            "emptyHidden": true
+          },
+          {
+            "active": "training",
+            "pressed": "false,false,false,true,false,false",
+            "visible": 5,
+            "total": 27,
+            "countLabel": "5 تصویر",
+            "emptyHidden": true
+          },
+          {
+            "active": "treatment",
+            "pressed": "false,false,false,false,true,false",
+            "visible": 5,
+            "total": 27,
+            "countLabel": "5 تصویر",
+            "emptyHidden": true
+          },
+          {
+            "active": "brand",
+            "pressed": "false,false,false,false,false,true",
+            "visible": 3,
+            "total": 27,
+            "countLabel": "3 تصویر",
+            "emptyHidden": true
+          }
+        ],
+        "valid": true
+      },
+      "wordpress": {
+        "buttons": [
+          "all",
+          "space",
+          "classroom",
+          "training",
+          "treatment",
+          "brand"
+        ],
+        "steps": [
+          {
+            "active": "all",
+            "pressed": "true,false,false,false,false,false",
+            "visible": 27,
+            "total": 27,
+            "countLabel": "27 تصویر",
+            "emptyHidden": true
+          },
+          {
+            "active": "space",
+            "pressed": "false,true,false,false,false,false",
+            "visible": 11,
+            "total": 27,
+            "countLabel": "11 تصویر",
+            "emptyHidden": true
+          },
+          {
+            "active": "classroom",
+            "pressed": "false,false,true,false,false,false",
+            "visible": 3,
+            "total": 27,
+            "countLabel": "3 تصویر",
+            "emptyHidden": true
+          },
+          {
+            "active": "training",
+            "pressed": "false,false,false,true,false,false",
+            "visible": 5,
+            "total": 27,
+            "countLabel": "5 تصویر",
+            "emptyHidden": true
+          },
+          {
+            "active": "treatment",
+            "pressed": "false,false,false,false,true,false",
+            "visible": 5,
+            "total": 27,
+            "countLabel": "5 تصویر",
+            "emptyHidden": true
+          },
+          {
+            "active": "brand",
+            "pressed": "false,false,false,false,false,true",
+            "visible": 3,
+            "total": 27,
+            "countLabel": "3 تصویر",
+            "emptyHidden": true
+          }
+        ],
+        "valid": true
+      },
+      "identical": true
+    },
+    {
+      "type": "faq",
+      "route": "/",
+      "original": {
+        "details": [
+          {
+            "faq": true,
+            "name": "home-faq",
+            "open": true,
+            "summary": "01چگونه می‌توانم در دوره‌های آموزشگاه رئوف ثبت‌نام کنم؟"
+          },
+          {
+            "faq": true,
+            "name": "home-faq",
+            "open": false,
+            "summary": "02آیا دوره‌ها شامل آموزش عملی هستند؟"
+          },
+          {
+            "faq": true,
+            "name": "home-faq",
+            "open": false,
+            "summary": "03آیا امکان دریافت مشاوره قبل از ثبت‌نام وجود دارد؟"
+          },
+          {
+            "faq": true,
+            "name": "home-faq",
+            "open": false,
+            "summary": "04آیا پس از پایان دوره گواهی ارائه می‌شود؟"
+          },
+          {
+            "faq": true,
+            "name": "home-faq",
+            "open": false,
+            "summary": "05چگونه می‌توانم از شرایط و زمان برگزاری دوره‌ها مطلع شوم؟"
+          }
+        ],
+        "faqCount": 5,
+        "initialOpen": [
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "afterClickSecond": [
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "afterClickThird": [
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "afterClickThirdAgain": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "valid": true
+      },
+      "wordpress": {
+        "details": [
+          {
+            "faq": true,
+            "name": "home-faq",
+            "open": true,
+            "summary": "01چگونه می‌توانم در دوره‌های آموزشگاه رئوف ثبت‌نام کنم؟"
+          },
+          {
+            "faq": true,
+            "name": "home-faq",
+            "open": false,
+            "summary": "02آیا دوره‌ها شامل آموزش عملی هستند؟"
+          },
+          {
+            "faq": true,
+            "name": "home-faq",
+            "open": false,
+            "summary": "03آیا امکان دریافت مشاوره قبل از ثبت‌نام وجود دارد؟"
+          },
+          {
+            "faq": true,
+            "name": "home-faq",
+            "open": false,
+            "summary": "04آیا پس از پایان دوره گواهی ارائه می‌شود؟"
+          },
+          {
+            "faq": true,
+            "name": "home-faq",
+            "open": false,
+            "summary": "05چگونه می‌توانم از شرایط و زمان برگزاری دوره‌ها مطلع شوم؟"
+          }
+        ],
+        "faqCount": 5,
+        "initialOpen": [
+          true,
+          false,
+          false,
+          false,
+          false
+        ],
+        "afterClickSecond": [
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "afterClickThird": [
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "afterClickThirdAgain": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "valid": true
+      },
+      "identical": true
+    },
+    {
+      "type": "faq",
+      "route": "/courses/skin-facial/",
+      "original": {
+        "details": [
+          {
+            "faq": true,
+            "name": "faq-skin-facial",
+            "open": true,
+            "summary": "01آیا برای شرکت در این دوره نیاز به پیشینه کاری در حوزه زیبایی است؟"
+          },
+          {
+            "faq": true,
+            "name": "faq-skin-facial",
+            "open": false,
+            "summary": "02آیا آموزش این دوره عملی است؟"
+          },
+          {
+            "faq": true,
+            "name": "faq-skin-facial",
+            "open": false,
+            "summary": "03چگونه از زمان برگزاری و شرایط ثبت‌نام مطلع شوم؟"
+          }
+        ],
+        "faqCount": 3,
+        "initialOpen": [
+          true,
+          false,
+          false
+        ],
+        "afterClickSecond": [
+          false,
+          true,
+          false
+        ],
+        "afterClickThird": [
+          false,
+          false,
+          true
+        ],
+        "afterClickThirdAgain": [
+          false,
+          false,
+          false
+        ],
+        "valid": true
+      },
+      "wordpress": {
+        "details": [
+          {
+            "faq": true,
+            "name": "faq-skin-facial",
+            "open": true,
+            "summary": "01آیا برای شرکت در این دوره نیاز به پیشینه کاری در حوزه زیبایی است؟"
+          },
+          {
+            "faq": true,
+            "name": "faq-skin-facial",
+            "open": false,
+            "summary": "02آیا آموزش این دوره عملی است؟"
+          },
+          {
+            "faq": true,
+            "name": "faq-skin-facial",
+            "open": false,
+            "summary": "03چگونه از زمان برگزاری و شرایط ثبت‌نام مطلع شوم؟"
+          }
+        ],
+        "faqCount": 3,
+        "initialOpen": [
+          true,
+          false,
+          false
+        ],
+        "afterClickSecond": [
+          false,
+          true,
+          false
+        ],
+        "afterClickThird": [
+          false,
+          false,
+          true
+        ],
+        "afterClickThirdAgain": [
+          false,
+          false,
+          false
+        ],
+        "valid": true
+      },
+      "identical": true
+    },
+    {
+      "type": "faq",
+      "route": "/courses/medical-emergency/",
+      "original": {
+        "details": [
+          {
+            "faq": true,
+            "name": "faq-medical-emergency",
+            "open": true,
+            "summary": "01آیا تمرین‌های این دوره عملی هستند؟"
+          },
+          {
+            "faq": true,
+            "name": "faq-medical-emergency",
+            "open": false,
+            "summary": "02آیا با گذراندن دوره مجوز انجام اقدامات درمانی دریافت می‌کنم؟"
+          },
+          {
+            "faq": true,
+            "name": "faq-medical-emergency",
+            "open": false,
+            "summary": "03چه کسانی می‌توانند در دوره شرکت کنند؟"
+          }
+        ],
+        "faqCount": 3,
+        "initialOpen": [
+          true,
+          false,
+          false
+        ],
+        "afterClickSecond": [
+          false,
+          true,
+          false
+        ],
+        "afterClickThird": [
+          false,
+          false,
+          true
+        ],
+        "afterClickThirdAgain": [
+          false,
+          false,
+          false
+        ],
+        "valid": true
+      },
+      "wordpress": {
+        "details": [
+          {
+            "faq": true,
+            "name": "faq-medical-emergency",
+            "open": true,
+            "summary": "01آیا تمرین‌های این دوره عملی هستند؟"
+          },
+          {
+            "faq": true,
+            "name": "faq-medical-emergency",
+            "open": false,
+            "summary": "02آیا با گذراندن دوره مجوز انجام اقدامات درمانی دریافت می‌کنم؟"
+          },
+          {
+            "faq": true,
+            "name": "faq-medical-emergency",
+            "open": false,
+            "summary": "03چه کسانی می‌توانند در دوره شرکت کنند؟"
+          }
+        ],
+        "faqCount": 3,
+        "initialOpen": [
+          true,
+          false,
+          false
+        ],
+        "afterClickSecond": [
+          false,
+          true,
+          false
+        ],
+        "afterClickThird": [
+          false,
+          false,
+          true
+        ],
+        "afterClickThirdAgain": [
+          false,
+          false,
+          false
+        ],
+        "valid": true
+      },
+      "identical": true
+    },
+    {
+      "type": "faq",
+      "route": "/courses/pharmacy-technician/",
+      "original": {
+        "details": [
+          {
+            "faq": true,
+            "name": "faq-pharmacy-technician",
+            "open": true,
+            "summary": "01محتوای دوره بیشتر تئوری است یا کاربردی؟"
+          },
+          {
+            "faq": true,
+            "name": "faq-pharmacy-technician",
+            "open": false,
+            "summary": "02آیا نسخه‌خوانی هم آموزش داده می‌شود؟"
+          },
+          {
+            "faq": true,
+            "name": "faq-pharmacy-technician",
+            "open": false,
+            "summary": "03چگونه از شرایط و زمان برگزاری دوره مطلع شوم؟"
+          }
+        ],
+        "faqCount": 3,
+        "initialOpen": [
+          true,
+          false,
+          false
+        ],
+        "afterClickSecond": [
+          false,
+          true,
+          false
+        ],
+        "afterClickThird": [
+          false,
+          false,
+          true
+        ],
+        "afterClickThirdAgain": [
+          false,
+          false,
+          false
+        ],
+        "valid": true
+      },
+      "wordpress": {
+        "details": [
+          {
+            "faq": true,
+            "name": "faq-pharmacy-technician",
+            "open": true,
+            "summary": "01محتوای دوره بیشتر تئوری است یا کاربردی؟"
+          },
+          {
+            "faq": true,
+            "name": "faq-pharmacy-technician",
+            "open": false,
+            "summary": "02آیا نسخه‌خوانی هم آموزش داده می‌شود؟"
+          },
+          {
+            "faq": true,
+            "name": "faq-pharmacy-technician",
+            "open": false,
+            "summary": "03چگونه از شرایط و زمان برگزاری دوره مطلع شوم؟"
+          }
+        ],
+        "faqCount": 3,
+        "initialOpen": [
+          true,
+          false,
+          false
+        ],
+        "afterClickSecond": [
+          false,
+          true,
+          false
+        ],
+        "afterClickThird": [
+          false,
+          false,
+          true
+        ],
+        "afterClickThirdAgain": [
+          false,
+          false,
+          false
+        ],
+        "valid": true
+      },
+      "identical": true
+    },
+    {
+      "type": "faq",
+      "route": "/courses/massage-relaxation/",
+      "original": {
+        "details": [
+          {
+            "faq": true,
+            "name": "faq-massage-relaxation",
+            "open": true,
+            "summary": "01چه سبک‌هایی در این دوره آموزش داده می‌شود؟"
+          },
+          {
+            "faq": true,
+            "name": "faq-massage-relaxation",
+            "open": false,
+            "summary": "02آیا تمرین عملی وجود دارد؟"
+          },
+          {
+            "faq": true,
+            "name": "faq-massage-relaxation",
+            "open": false,
+            "summary": "03چگونه ثبت‌نام کنم؟"
+          }
+        ],
+        "faqCount": 3,
+        "initialOpen": [
+          true,
+          false,
+          false
+        ],
+        "afterClickSecond": [
+          false,
+          true,
+          false
+        ],
+        "afterClickThird": [
+          false,
+          false,
+          true
+        ],
+        "afterClickThirdAgain": [
+          false,
+          false,
+          false
+        ],
+        "valid": true
+      },
+      "wordpress": {
+        "details": [
+          {
+            "faq": true,
+            "name": "faq-massage-relaxation",
+            "open": true,
+            "summary": "01چه سبک‌هایی در این دوره آموزش داده می‌شود؟"
+          },
+          {
+            "faq": true,
+            "name": "faq-massage-relaxation",
+            "open": false,
+            "summary": "02آیا تمرین عملی وجود دارد؟"
+          },
+          {
+            "faq": true,
+            "name": "faq-massage-relaxation",
+            "open": false,
+            "summary": "03چگونه ثبت‌نام کنم؟"
+          }
+        ],
+        "faqCount": 3,
+        "initialOpen": [
+          true,
+          false,
+          false
+        ],
+        "afterClickSecond": [
+          false,
+          true,
+          false
+        ],
+        "afterClickThird": [
+          false,
+          false,
+          true
+        ],
+        "afterClickThirdAgain": [
+          false,
+          false,
+          false
+        ],
+        "valid": true
+      },
+      "identical": true
+    }
+  ],
+  "summary": {
+    "checks": 12,
+    "failures": 0,
+    "parity_sequences": 12,
+    "identical_sequences": 12,
+    "lightbox_routes": 6,
+    "faq_routes": 5,
+    "consoleErrors": 0
+  }
+}

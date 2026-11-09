@@ -1,0 +1,382 @@
+{
+  "stage": "F",
+  "alternate_origin": "http://raouf-academy.example",
+  "alternate_host": "raouf-academy.example",
+  "base": "http://127.0.0.1:9413",
+  "blueprint": "qa/stage-F-domain-blueprint.json",
+  "before": {
+    "phase": "localhost",
+    "home": "http://raouf-academy.example",
+    "siteurl": "http://raouf-academy.example",
+    "home_url": "http://raouf-academy.example/",
+    "blogname": "آموزشگاه فنی و حرفه‌ای رئوف",
+    "permalink_structure": "/%postname%/",
+    "show_on_front": "page",
+    "page_on_front": 4,
+    "pages": 10,
+    "token_count_in_pages": 500,
+    "hardcoded_hosts_in_pages": 0,
+    "raouf_options": [],
+    "raouf_media": [],
+    "seeded_submission_id": 27,
+    "seeded_submission_ref": "MIG-LOCALHOST-0001"
+  },
+  "after": {
+    "phase": "after-domain-change",
+    "home": "http://raouf-academy.example",
+    "siteurl": "http://raouf-academy.example",
+    "home_url": "http://raouf-academy.example/",
+    "site_url": "http://raouf-academy.example/",
+    "pages": 10,
+    "token_count_in_pages": 500,
+    "hardcoded_hosts_in_pages": 0,
+    "private_submission_ids": [
+      27
+    ],
+    "raouf_options": [],
+    "raouf_media": []
+  },
+  "routes": [
+    {
+      "route": "/",
+      "http": 200,
+      "internal_links": 35,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "banned_url_hits": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/courses/",
+      "http": 200,
+      "internal_links": 25,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "banned_url_hits": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/courses/skin-facial/",
+      "http": 200,
+      "internal_links": 30,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "banned_url_hits": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/courses/medical-emergency/",
+      "http": 200,
+      "internal_links": 30,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "banned_url_hits": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/courses/pharmacy-technician/",
+      "http": 200,
+      "internal_links": 28,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "banned_url_hits": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/courses/massage-relaxation/",
+      "http": 200,
+      "internal_links": 30,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "banned_url_hits": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/about/",
+      "http": 200,
+      "internal_links": 27,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "banned_url_hits": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/gallery/",
+      "http": 200,
+      "internal_links": 69,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "banned_url_hits": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/contact/",
+      "http": 200,
+      "internal_links": 15,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "banned_url_hits": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/register/",
+      "http": 200,
+      "internal_links": 15,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "banned_url_hits": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/404/",
+      "http": 404,
+      "internal_links": 15,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "banned_url_hits": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    }
+  ],
+  "assets": [
+    {
+      "asset": "/wp-content/themes/raouf-academy/style.css",
+      "status": 200
+    },
+    {
+      "asset": "/wp-content/themes/raouf-academy/assets/js/app.js",
+      "status": 200
+    },
+    {
+      "asset": "/wp-content/themes/raouf-academy/assets/fonts/vazirmatn-arabic-wght-normal.woff2",
+      "status": 200
+    },
+    {
+      "asset": "/wp-content/themes/raouf-academy/assets/fonts/vazirmatn-latin-wght-normal.woff2",
+      "status": 200
+    },
+    {
+      "asset": "/wp-content/themes/raouf-academy/assets/fonts/vazirmatn-latin-ext-wght-normal.woff2",
+      "status": 200
+    },
+    {
+      "asset": "/wp-content/themes/raouf-academy/assets/images/raouf-logo.jpg",
+      "status": 200
+    }
+  ],
+  "form_after_migration": {
+    "status": 201,
+    "body": {
+      "ok": true,
+      "id": "MSG-20261109-B11F65",
+      "message": "اطلاعات با موفقیت ثبت شد.",
+      "adminDelivery": "not-configured"
+    }
+  },
+  "origin_parity": [
+    {
+      "route": "/",
+      "identical_after_origin_normalisation": true,
+      "lengths": [
+        63513,
+        63513
+      ]
+    },
+    {
+      "route": "/courses/",
+      "identical_after_origin_normalisation": true,
+      "lengths": [
+        35955,
+        35955
+      ]
+    },
+    {
+      "route": "/courses/skin-facial/",
+      "identical_after_origin_normalisation": true,
+      "lengths": [
+        57812,
+        57812
+      ]
+    },
+    {
+      "route": "/courses/medical-emergency/",
+      "identical_after_origin_normalisation": true,
+      "lengths": [
+        57987,
+        57987
+      ]
+    },
+    {
+      "route": "/courses/pharmacy-technician/",
+      "identical_after_origin_normalisation": true,
+      "lengths": [
+        55528,
+        55528
+      ]
+    },
+    {
+      "route": "/courses/massage-relaxation/",
+      "identical_after_origin_normalisation": true,
+      "lengths": [
+        57718,
+        57718
+      ]
+    },
+    {
+      "route": "/about/",
+      "identical_after_origin_normalisation": true,
+      "lengths": [
+        36521,
+        36521
+      ]
+    },
+    {
+      "route": "/gallery/",
+      "identical_after_origin_normalisation": true,
+      "lengths": [
+        55793,
+        55793
+      ]
+    },
+    {
+      "route": "/contact/",
+      "identical_after_origin_normalisation": true,
+      "lengths": [
+        29701,
+        29701
+      ]
+    },
+    {
+      "route": "/register/",
+      "identical_after_origin_normalisation": true,
+      "lengths": [
+        31451,
+        31451
+      ]
+    },
+    {
+      "route": "/404/",
+      "identical_after_origin_normalisation": true,
+      "lengths": [
+        18706,
+        18706
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "check": "blueprint recorded the localhost phase and the post-change phase",
+      "result": "PASS",
+      "detail": "before_home=http://raouf-academy.example after_home=http://raouf-academy.example"
+    },
+    {
+      "check": "WordPress home/siteurl now resolve to the different domain",
+      "result": "PASS",
+      "detail": "home=http://raouf-academy.example home_url=http://raouf-academy.example/"
+    },
+    {
+      "check": "all 10 source pages survive the domain change with portable tokens and 0 baked hosts",
+      "result": "PASS",
+      "detail": "pages=10 tokens=500 hosts=0"
+    },
+    {
+      "check": "private form submission created on localhost survives the domain change",
+      "result": "PASS",
+      "detail": "seed=27 ids=[27]"
+    },
+    {
+      "check": "stored theme options contain no sample/test data",
+      "result": "PASS",
+      "detail": "raouf_options={}"
+    },
+    {
+      "check": "stored media overrides are empty (official source images are used)",
+      "result": "PASS",
+      "detail": "raouf_media=[]"
+    },
+    {
+      "check": "all 11 routes on the new domain: 0 broken links, 0 foreign hosts, 0 localhost/127.0.0.1 URLs, 0 leaked tokens, 0 PHP errors",
+      "result": "PASS",
+      "detail": "internal_checked=319 broken=0 foreign=0 banned_routes=[]"
+    },
+    {
+      "check": "CSS, JS, all 3 fonts and the logo load on the new domain",
+      "result": "PASS",
+      "detail": "[{\"asset\": \"/wp-content/themes/raouf-academy/style.css\", \"status\": 200}, {\"asset\": \"/wp-content/themes/raouf-academy/assets/js/app.js\", \"status\": 200}, {\"asset\": \"/wp-content/themes/raouf-academy/assets/fonts/vazirmatn-arabic-wght-normal.woff2\", \"status\": 200}, {\"asset\": \"/wp-content/themes/raouf-academy/assets/fonts/vazirmatn-latin-wght-normal.woff2\", \"status\": 200}, {\"asset\": \"/wp-content/themes"
+    },
+    {
+      "check": "contact form really saves a private submission on the new domain (201 + ref)",
+      "result": "PASS",
+      "detail": "status=201 body={\"ok\": true, \"id\": \"MSG-20261109-B11F65\", \"message\": \"اطلاعات با موفقیت ثبت شد.\", \"adminDelivery\": \"not-configured\"}"
+    },
+    {
+      "check": "origin-normalised HTML is identical on localhost and on the different domain (11 routes)",
+      "result": "PASS",
+      "detail": "identical=11/11"
+    }
+  ],
+  "summary": {
+    "checks": 10,
+    "PASS": 10,
+    "FAIL": 0,
+    "routes": 11,
+    "routes_ok": 11,
+    "internal_links_checked": 319,
+    "broken_links": 0,
+    "unknown_external": 0
+  }
+}

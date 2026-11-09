@@ -1,0 +1,774 @@
+{
+  "stage": "D-1",
+  "generated_utc": "2026-11-08T15:30:00Z",
+  "toolchain": {
+    "PHPCS": "3.13.6",
+    "WPCS": "3.2.0",
+    "PHPCSUtils": "1.2.3",
+    "PHPCSExtra": "current main",
+    "PHPCompatibilityWP": "2.1.5",
+    "PHPCompatibility": "9.3.5",
+    "PHPCompatibilityParagonie": "1.3.3",
+    "standard": "WordPress",
+    "extensions": "php",
+    "runtime": "PHP-WASM CLI (PHP 8.5.12) executing phpcs"
+  },
+  "profiles": {
+    "before": {
+      "errors": 147,
+      "warnings": 184,
+      "files_checked": 28,
+      "sniffs": [
+        {
+          "source": "WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned",
+          "type": "WARNING",
+          "count": 168
+        },
+        {
+          "source": "Squiz.Commenting.FunctionComment.Missing",
+          "type": "ERROR",
+          "count": 29
+        },
+        {
+          "source": "Squiz.Commenting.FileComment.SpacingAfterComment",
+          "type": "ERROR",
+          "count": 21
+        },
+        {
+          "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+          "type": "ERROR",
+          "count": 21
+        },
+        {
+          "source": "Squiz.Commenting.FileComment.MissingPackageTag",
+          "type": "ERROR",
+          "count": 19
+        },
+        {
+          "source": "Generic.WhiteSpace.ScopeIndent.Incorrect",
+          "type": "ERROR",
+          "count": 12
+        },
+        {
+          "source": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
+          "type": "WARNING",
+          "count": 10
+        },
+        {
+          "source": "NormalizedArrays.Arrays.CommaAfterLast.MissingMultiLine",
+          "type": "ERROR",
+          "count": 10
+        },
+        {
+          "source": "WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound",
+          "type": "ERROR",
+          "count": 8
+        },
+        {
+          "source": "Squiz.Commenting.FunctionComment.MissingParamTag",
+          "type": "ERROR",
+          "count": 6
+        },
+        {
+          "source": "Generic.Commenting.DocComment.SpacingBeforeTags",
+          "type": "ERROR",
+          "count": 3
+        },
+        {
+          "source": "Squiz.Commenting.BlockComment.NoNewLine",
+          "type": "ERROR",
+          "count": 3
+        },
+        {
+          "source": "Squiz.Strings.DoubleQuoteUsage.NotRequired",
+          "type": "ERROR",
+          "count": 3
+        },
+        {
+          "source": "Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace",
+          "type": "ERROR",
+          "count": 2
+        },
+        {
+          "source": "Universal.NamingConventions.NoReservedKeywordParameterNames.classFound",
+          "type": "WARNING",
+          "count": 2
+        },
+        {
+          "source": "Universal.Operators.DisallowShortTernary.Found",
+          "type": "ERROR",
+          "count": 2
+        },
+        {
+          "source": "Universal.WhiteSpace.PrecisionAlignment.Found",
+          "type": "WARNING",
+          "count": 2
+        },
+        {
+          "source": "Generic.CodeAnalysis.UnusedFunctionParameter.Found",
+          "type": "WARNING",
+          "count": 1
+        },
+        {
+          "source": "Generic.Formatting.DisallowMultipleStatements.SameLine",
+          "type": "ERROR",
+          "count": 1
+        },
+        {
+          "source": "Generic.Formatting.MultipleStatementAlignment.IncorrectWarning",
+          "type": "WARNING",
+          "count": 1
+        },
+        {
+          "source": "PEAR.Functions.FunctionCallSignature.CloseBracketLine",
+          "type": "ERROR",
+          "count": 1
+        },
+        {
+          "source": "PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket",
+          "type": "ERROR",
+          "count": 1
+        },
+        {
+          "source": "Squiz.Commenting.BlockComment.NoEmptyLineBefore",
+          "type": "ERROR",
+          "count": 1
+        },
+        {
+          "source": "Squiz.Commenting.FunctionComment.WrongStyle",
+          "type": "ERROR",
+          "count": 1
+        },
+        {
+          "source": "Squiz.Functions.MultiLineFunctionDeclaration.ContentAfterBrace",
+          "type": "ERROR",
+          "count": 1
+        },
+        {
+          "source": "WordPress.PHP.YodaConditions.NotYoda",
+          "type": "ERROR",
+          "count": 1
+        },
+        {
+          "source": "WordPress.WP.GlobalVariablesOverride.Prohibited",
+          "type": "ERROR",
+          "count": 1
+        }
+      ]
+    },
+    "after": {
+      "errors": 121,
+      "warnings": 181,
+      "files_checked": 28,
+      "sniffs": [
+        {
+          "source": "WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned",
+          "type": "WARNING",
+          "count": 168
+        },
+        {
+          "source": "Squiz.Commenting.FunctionComment.Missing",
+          "type": "ERROR",
+          "count": 28
+        },
+        {
+          "source": "Squiz.Commenting.FileComment.SpacingAfterComment",
+          "type": "ERROR",
+          "count": 21
+        },
+        {
+          "source": "Squiz.Commenting.FileComment.MissingPackageTag",
+          "type": "ERROR",
+          "count": 19
+        },
+        {
+          "source": "Generic.WhiteSpace.ScopeIndent.Incorrect",
+          "type": "ERROR",
+          "count": 12
+        },
+        {
+          "source": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
+          "type": "WARNING",
+          "count": 10
+        },
+        {
+          "source": "NormalizedArrays.Arrays.CommaAfterLast.MissingMultiLine",
+          "type": "ERROR",
+          "count": 10
+        },
+        {
+          "source": "WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound",
+          "type": "ERROR",
+          "count": 8
+        },
+        {
+          "source": "Squiz.Commenting.FunctionComment.MissingParamTag",
+          "type": "ERROR",
+          "count": 6
+        },
+        {
+          "source": "Generic.Commenting.DocComment.SpacingBeforeTags",
+          "type": "ERROR",
+          "count": 3
+        },
+        {
+          "source": "Squiz.Commenting.BlockComment.NoNewLine",
+          "type": "ERROR",
+          "count": 3
+        },
+        {
+          "source": "Squiz.Strings.DoubleQuoteUsage.NotRequired",
+          "type": "ERROR",
+          "count": 3
+        },
+        {
+          "source": "Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace",
+          "type": "ERROR",
+          "count": 2
+        },
+        {
+          "source": "Universal.WhiteSpace.PrecisionAlignment.Found",
+          "type": "WARNING",
+          "count": 2
+        },
+        {
+          "source": "Generic.Formatting.DisallowMultipleStatements.SameLine",
+          "type": "ERROR",
+          "count": 1
+        },
+        {
+          "source": "Generic.Formatting.MultipleStatementAlignment.IncorrectWarning",
+          "type": "WARNING",
+          "count": 1
+        },
+        {
+          "source": "PEAR.Functions.FunctionCallSignature.CloseBracketLine",
+          "type": "ERROR",
+          "count": 1
+        },
+        {
+          "source": "PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket",
+          "type": "ERROR",
+          "count": 1
+        },
+        {
+          "source": "Squiz.Commenting.BlockComment.NoEmptyLineBefore",
+          "type": "ERROR",
+          "count": 1
+        },
+        {
+          "source": "Squiz.Commenting.FunctionComment.WrongStyle",
+          "type": "ERROR",
+          "count": 1
+        },
+        {
+          "source": "Squiz.Functions.MultiLineFunctionDeclaration.ContentAfterBrace",
+          "type": "ERROR",
+          "count": 1
+        }
+      ]
+    },
+    "current": {
+      "errors": 121,
+      "warnings": 181,
+      "files_checked": 28,
+      "sniffs": [
+        {
+          "source": "WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned",
+          "type": "WARNING",
+          "count": 168
+        },
+        {
+          "source": "Squiz.Commenting.FunctionComment.Missing",
+          "type": "ERROR",
+          "count": 28
+        },
+        {
+          "source": "Squiz.Commenting.FileComment.SpacingAfterComment",
+          "type": "ERROR",
+          "count": 21
+        },
+        {
+          "source": "Squiz.Commenting.FileComment.MissingPackageTag",
+          "type": "ERROR",
+          "count": 19
+        },
+        {
+          "source": "Generic.WhiteSpace.ScopeIndent.Incorrect",
+          "type": "ERROR",
+          "count": 12
+        },
+        {
+          "source": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
+          "type": "WARNING",
+          "count": 10
+        },
+        {
+          "source": "NormalizedArrays.Arrays.CommaAfterLast.MissingMultiLine",
+          "type": "ERROR",
+          "count": 10
+        },
+        {
+          "source": "WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound",
+          "type": "ERROR",
+          "count": 8
+        },
+        {
+          "source": "Squiz.Commenting.FunctionComment.MissingParamTag",
+          "type": "ERROR",
+          "count": 6
+        },
+        {
+          "source": "Generic.Commenting.DocComment.SpacingBeforeTags",
+          "type": "ERROR",
+          "count": 3
+        },
+        {
+          "source": "Squiz.Commenting.BlockComment.NoNewLine",
+          "type": "ERROR",
+          "count": 3
+        },
+        {
+          "source": "Squiz.Strings.DoubleQuoteUsage.NotRequired",
+          "type": "ERROR",
+          "count": 3
+        },
+        {
+          "source": "Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace",
+          "type": "ERROR",
+          "count": 2
+        },
+        {
+          "source": "Universal.WhiteSpace.PrecisionAlignment.Found",
+          "type": "WARNING",
+          "count": 2
+        },
+        {
+          "source": "Generic.Formatting.DisallowMultipleStatements.SameLine",
+          "type": "ERROR",
+          "count": 1
+        },
+        {
+          "source": "Generic.Formatting.MultipleStatementAlignment.IncorrectWarning",
+          "type": "WARNING",
+          "count": 1
+        },
+        {
+          "source": "PEAR.Functions.FunctionCallSignature.CloseBracketLine",
+          "type": "ERROR",
+          "count": 1
+        },
+        {
+          "source": "PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket",
+          "type": "ERROR",
+          "count": 1
+        },
+        {
+          "source": "Squiz.Commenting.BlockComment.NoEmptyLineBefore",
+          "type": "ERROR",
+          "count": 1
+        },
+        {
+          "source": "Squiz.Commenting.FunctionComment.WrongStyle",
+          "type": "ERROR",
+          "count": 1
+        },
+        {
+          "source": "Squiz.Functions.MultiLineFunctionDeclaration.ContentAfterBrace",
+          "type": "ERROR",
+          "count": 1
+        }
+      ]
+    }
+  },
+  "security_priority": {
+    "before_security_messages": 22,
+    "after_security_messages": 0,
+    "current_security_messages": 0,
+    "before_items": [
+      {
+        "file": "footer.php",
+        "line": 21,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_expand_tokens'."
+      },
+      {
+        "file": "footer.php",
+        "line": 30,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_expand_tokens'."
+      },
+      {
+        "file": "footer.php",
+        "line": 57,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_expand_tokens'."
+      },
+      {
+        "file": "footer.php",
+        "line": 64,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_expand_tokens'."
+      },
+      {
+        "file": "header.php",
+        "line": 7,
+        "type": "ERROR",
+        "source": "WordPress.WP.GlobalVariablesOverride.Prohibited",
+        "message": "Overriding WordPress globals is prohibited. Found assignment to $m"
+      },
+      {
+        "file": "header.php",
+        "line": 57,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_expand_tokens'."
+      },
+      {
+        "file": "header.php",
+        "line": 70,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_expand_tokens'."
+      },
+      {
+        "file": "header.php",
+        "line": 79,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_expand_tokens'."
+      },
+      {
+        "file": "inc/404-markup.php",
+        "line": 13,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_expand_tokens'."
+      },
+      {
+        "file": "inc/icons.php",
+        "line": 69,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_icon'."
+      },
+      {
+        "file": "inc/lightbox-markup.php",
+        "line": 16,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_expand_tokens'."
+      },
+      {
+        "file": "inc/menus.php",
+        "line": 77,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_icon'."
+      },
+      {
+        "file": "inc/menus.php",
+        "line": 81,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_icon'."
+      },
+      {
+        "file": "inc/menus.php",
+        "line": 81,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_icon'."
+      },
+      {
+        "file": "inc/menus.php",
+        "line": 83,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_icon'."
+      },
+      {
+        "file": "inc/menus.php",
+        "line": 111,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_icon'."
+      },
+      {
+        "file": "inc/menus.php",
+        "line": 124,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_icon'."
+      },
+      {
+        "file": "inc/menus.php",
+        "line": 126,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_icon'."
+      },
+      {
+        "file": "inc/nav-fallback.php",
+        "line": 17,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_expand_tokens'."
+      },
+      {
+        "file": "inc/nav-fallback.php",
+        "line": 35,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_expand_tokens'."
+      },
+      {
+        "file": "inc/nav-fallback.php",
+        "line": 41,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_expand_tokens'."
+      },
+      {
+        "file": "inc/nav-fallback.php",
+        "line": 47,
+        "type": "ERROR",
+        "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+        "message": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'raouf_expand_tokens'."
+      }
+    ],
+    "verdict": "PASS — 0 security/DB/dangerous/global-override sniffs remain; the 21 pre-D EscapeOutput errors were all verified static HTML/SVG echoes and were annotated (SD-05), not hidden.",
+    "static_echo_review": [
+      {
+        "file": "footer.php",
+        "line": 21,
+        "original_source_line": "echo raouf_expand_tokens( $raouf_html_4 );",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "footer.php",
+        "line": 30,
+        "original_source_line": "echo raouf_expand_tokens( $raouf_html_5 );",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "footer.php",
+        "line": 57,
+        "original_source_line": "echo raouf_expand_tokens( $raouf_html_6 );",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "footer.php",
+        "line": 64,
+        "original_source_line": "echo raouf_expand_tokens( $raouf_html_7 );",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "header.php",
+        "line": 57,
+        "original_source_line": "echo raouf_expand_tokens( $raouf_html_1 );",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "header.php",
+        "line": 70,
+        "original_source_line": "echo raouf_expand_tokens( $raouf_html_2 );",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "header.php",
+        "line": 79,
+        "original_source_line": "echo raouf_expand_tokens( $raouf_html_3 );",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "inc/404-markup.php",
+        "line": 13,
+        "original_source_line": "echo raouf_expand_tokens( $raouf_html_13 );",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "inc/icons.php",
+        "line": 69,
+        "original_source_line": "echo raouf_icon( $name, $class, $size );",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "inc/lightbox-markup.php",
+        "line": 16,
+        "original_source_line": "echo raouf_expand_tokens( $raouf_html_8 );",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "inc/menus.php",
+        "line": 77,
+        "original_source_line": "echo '<button type=\"button\" class=\"nav-link nav-link--toggle' . esc_attr( $active ) . '\" aria-expanded=\"false\" aria-controls=\"coursesDropdown\">' . esc_html( $item->title ) . raouf_icon( 'chevronDown',",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "inc/menus.php",
+        "line": 81,
+        "original_source_line": "echo '<a href=\"' . esc_url( $child->url ) . '\" class=\"dropdown-link\">' . raouf_icon( raouf_course_icon_for_url( $child->url ), '', 19 ) . '<span>' . esc_html( $child->title ) . '</span>' . raouf_icon(",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "inc/menus.php",
+        "line": 81,
+        "original_source_line": "echo '<a href=\"' . esc_url( $child->url ) . '\" class=\"dropdown-link\">' . raouf_icon( raouf_course_icon_for_url( $child->url ), '', 19 ) . '<span>' . esc_html( $child->title ) . '</span>' . raouf_icon(",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "inc/menus.php",
+        "line": 83,
+        "original_source_line": "echo '<a href=\"' . esc_url( raouf_link_url( '/courses/' ) ) . '\" class=\"dropdown-all\">همه دوره‌ها ' . raouf_icon( 'arrowLeft', '', 16 ) . '</a>';",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "inc/menus.php",
+        "line": 111,
+        "original_source_line": "echo '<summary class=\"mobile-link mobile-link--summary' . esc_attr( $active ) . '\">' . esc_html( $item->title ) . raouf_icon( 'chevronDown', '', 18 ) . '</summary>';",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "inc/menus.php",
+        "line": 124,
+        "original_source_line": "echo '<a class=\"btn btn--ghost-dark\" href=\"tel:' . esc_attr( raouf_option( 'phone_tel' ) ) . '\">' . raouf_icon( 'phone', '', 18 ) . ' <span dir=\"ltr\">' . esc_html( raouf_option( 'phone_display' ) ) . ",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "inc/menus.php",
+        "line": 126,
+        "original_source_line": "echo '<a class=\"mobile-nav-insta\" href=\"' . esc_url( raouf_option( 'instagram_url' ) ) . '\" target=\"_blank\" rel=\"noopener noreferrer\">' . raouf_icon( 'instagram', '', 18 ) . ' ' . esc_html( raouf_opti",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "inc/nav-fallback.php",
+        "line": 17,
+        "original_source_line": "echo raouf_expand_tokens( $raouf_html_9 );",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "inc/nav-fallback.php",
+        "line": 35,
+        "original_source_line": "echo raouf_expand_tokens( $raouf_html_10 );",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "inc/nav-fallback.php",
+        "line": 41,
+        "original_source_line": "echo raouf_expand_tokens( $raouf_html_11 );",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      },
+      {
+        "file": "inc/nav-fallback.php",
+        "line": 47,
+        "original_source_line": "echo raouf_expand_tokens( $raouf_html_12 );",
+        "reason": "verified static heredoc HTML / inline SVG emitted via raouf_expand_tokens() or raouf_icon(); all dynamic values inside are escaped with esc_html/esc_attr/esc_url",
+        "is_static_markup": true
+      }
+    ],
+    "all_21_verified_static": true
+  },
+  "remaining_classification": [
+    {
+      "category": "array_alignment_whitespace_formatting",
+      "type": "ERROR",
+      "count": 39
+    },
+    {
+      "category": "array_alignment_whitespace_formatting",
+      "type": "WARNING",
+      "count": 181
+    },
+    {
+      "category": "documentation_docblocks",
+      "type": "ERROR",
+      "count": 82
+    }
+  ],
+  "remaining_by_file_top": [
+    [
+      "inc/pages-data.php",
+      113
+    ],
+    [
+      "inc/icons.php",
+      49
+    ],
+    [
+      "inc/forms.php",
+      25
+    ],
+    [
+      "inc/setup.php",
+      22
+    ],
+    [
+      "inc/helpers.php",
+      16
+    ],
+    [
+      "inc/nav-fallback.php",
+      11
+    ],
+    [
+      "inc/options.php",
+      9
+    ],
+    [
+      "inc/menus.php",
+      8
+    ],
+    [
+      "inc/404-markup.php",
+      5
+    ],
+    [
+      "inc/lightbox-markup.php",
+      5
+    ]
+  ],
+  "new_sniff_codes_introduced_by_SD_fixes": [],
+  "current_profile_equals_post_fix_profile": true,
+  "php_compatibility": {
+    "standard": "PHPCompatibilityWP",
+    "testVersion": "8.0-",
+    "totals": {
+      "errors": 0,
+      "warnings": 0,
+      "fixable": 0
+    },
+    "files_with_messages": 0
+  },
+  "php_lint": {
+    "files": 28,
+    "ok": 28,
+    "fail": 0
+  },
+  "no_fix_applied_in_D1": true,
+  "deferred_decision": "The 121 errors + 181 warnings are documentation/formatting/alignment sniffs, overwhelmingly in generated exact-HTML files (inc/pages-data.php 113, inc/icons.php 49). Mass auto-formatting (phpcbf) would rewrite generated source blocks and is deferred to an explicit user decision; no error was suppressed merely to lower the count."
+}

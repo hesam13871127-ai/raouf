@@ -1,0 +1,76 @@
+{
+  "stage": "F",
+  "wp": "http://127.0.0.1:9414",
+  "checks": [
+    {
+      "check": "no eval / base64_decode / shell_exec / system / raw SQL / remote file reads in theme PHP",
+      "result": "PASS",
+      "detail": "hits=[]"
+    },
+    {
+      "check": "direct access to all theme PHP includes leaks no source",
+      "result": "PASS",
+      "detail": "leaks=[]"
+    },
+    {
+      "check": "readme.txt, screenshot.png and the POT file ship and are served",
+      "result": "PASS",
+      "detail": "[{\"file\": \"readme.txt\", \"status\": 200}, {\"file\": \"screenshot.png\", \"status\": 200}, {\"file\": \"languages/raouf-academy.pot\", \"status\": 200}]"
+    },
+    {
+      "check": "no wp-config.php / credential file in the theme folder or the delivered ZIP",
+      "result": "PASS",
+      "detail": "folder=[] zip=[]"
+    },
+    {
+      "check": "admin login succeeds for the options-injection probe",
+      "result": "PASS",
+      "detail": "http://127.0.0.1:9414/wp-admin/"
+    },
+    {
+      "check": "options form exposes all editable fields and a valid nonce",
+      "result": "PASS",
+      "detail": "fields=20"
+    },
+    {
+      "check": "malicious option values are accepted by the settings endpoint and saved",
+      "result": "PASS",
+      "detail": "status=200 url=http://127.0.0.1:9414/wp-admin/themes.php?page=raouf-options&settings-updated=true"
+    },
+    {
+      "check": "no admin-supplied script/javascript: URL reaches any of the 11 public pages",
+      "result": "PASS",
+      "detail": "affected_routes=[]"
+    },
+    {
+      "check": "sanitizers strip tags from text options and reject a javascript: URL and a bad e-mail",
+      "result": "PASS",
+      "detail": "{\"raouf_options[site_name]\": \"\", \"raouf_options[instagram_url]\": \"\", \"raouf_options[admin_email]\": \"\"}"
+    },
+    {
+      "check": "restoring the official values returns every public page to the exact original data",
+      "result": "PASS",
+      "detail": "routes_not_restored=[]"
+    }
+  ],
+  "dangerous_construct_hits": [],
+  "optional_files": [
+    {
+      "file": "readme.txt",
+      "status": 200
+    },
+    {
+      "file": "screenshot.png",
+      "status": 200
+    },
+    {
+      "file": "languages/raouf-academy.pot",
+      "status": 200
+    }
+  ],
+  "summary": {
+    "checks": 10,
+    "PASS": 10,
+    "FAIL": 0
+  }
+}

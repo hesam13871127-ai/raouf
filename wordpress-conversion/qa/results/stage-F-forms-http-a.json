@@ -1,0 +1,74 @@
+[
+  {
+    "name": "GET /api/registrations -> 405",
+    "status": 405,
+    "body": {
+      "ok": false,
+      "message": "method not allowed"
+    }
+  },
+  {
+    "name": "registration missing CSRF -> 403",
+    "status": 403,
+    "body": {
+      "ok": false,
+      "message": "نشست فرم معتبر نیست. لطفاً صفحه را بازنشانی کنید."
+    }
+  },
+  {
+    "name": "registration forged CSRF -> 403",
+    "status": 403,
+    "body": {
+      "ok": false,
+      "message": "نشست فرم معتبر نیست. لطفاً صفحه را بازنشانی کنید."
+    }
+  },
+  {
+    "name": "registration honeypot -> 400",
+    "status": 400,
+    "body": {
+      "ok": false,
+      "message": "درخواست نامعتبر است."
+    }
+  },
+  {
+    "name": "registration invalid phone -> 400",
+    "status": 400,
+    "body": {
+      "ok": false,
+      "message": "اطلاعات واردشده معتبر نیست.",
+      "errors": {
+        "phone": "شماره تماس معتبر نیست."
+      }
+    }
+  },
+  {
+    "name": "registration invalid course -> 400",
+    "status": 400,
+    "body": {
+      "ok": false,
+      "message": "اطلاعات واردشده معتبر نیست.",
+      "errors": {
+        "course": "دوره انتخاب شده معتبر نیست."
+      }
+    }
+  },
+  {
+    "name": "registration valid -> 201",
+    "status": 201,
+    "body": {
+      "ok": true,
+      "id": "REG-20261109-D30392",
+      "message": "اطلاعات با موفقیت ثبت شد.",
+      "adminDelivery": "not-configured"
+    }
+  },
+  {
+    "name": "registration duplicate -> 409",
+    "status": 409,
+    "body": {
+      "ok": false,
+      "message": "این درخواست همین حالا ثبت شده است. لطفاً از ارسال مجدد خودداری کنید."
+    }
+  }
+]

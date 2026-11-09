@@ -1,0 +1,41 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "http://127.0.0.1:9401/wordpress.zip"
+  },
+  "features": {
+    "networking": true
+  },
+  "steps": [
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "آموزشگاه فنی و حرفه‌ای رئوف",
+        "permalink_structure": "/%postname%/",
+        "home": "http://127.0.0.1:9413",
+        "siteurl": "http://127.0.0.1:9413"
+      }
+    },
+    {
+      "step": "activateTheme",
+      "themeFolderName": "raouf-academy"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php\nrequire_once '/wordpress/wp-load.php';\n$id = wp_insert_post( array(\n    'post_type'    => 'raouf_submission',\n    'post_status'  => 'private',\n    'post_title'   => 'MIGRATION-LOCALHOST-SEED',\n    'post_content' => 'real data created while the site was on localhost',\n), true );\nif ( ! is_wp_error( $id ) && $id ) {\n    update_post_meta( $id, '_raouf_ref', 'MIG-LOCALHOST-0001' );\n    update_post_meta( $id, '_raouf_kind', 'contact' );\n    update_post_meta( $id, '_raouf_name', 'داده مهاجرت' );\n    update_post_meta( $id, '_raouf_phone', '09140000000' );\n}\n$pages = get_posts( array( 'post_type' => 'page', 'post_status' => 'publish', 'numberposts' => -1 ) );\n$tokens = 0; $hosts = 0;\nforeach ( $pages as $p ) {\n    $tokens += substr_count( $p->post_content, '{{' );\n    $hosts  += preg_match_all( '/https?:\\/\\//', $p->post_content );\n}\n$state = array(\n    'phase'                    => 'localhost',\n    'home'                     => get_option( 'home' ),\n    'siteurl'                  => get_option( 'siteurl' ),\n    'home_url'                 => home_url( '/' ),\n    'blogname'                 => get_option( 'blogname' ),\n    'permalink_structure'      => get_option( 'permalink_structure' ),\n    'show_on_front'            => get_option( 'show_on_front' ),\n    'page_on_front'            => (int) get_option( 'page_on_front' ),\n    'pages'                    => count( $pages ),\n    'token_count_in_pages'     => $tokens,\n    'hardcoded_hosts_in_pages' => $hosts,\n    'raouf_options'            => get_option( 'raouf_options', array() ),\n    'raouf_media'              => get_option( 'raouf_media', array() ),\n    'seeded_submission_id'     => is_wp_error( $id ) ? 0 : (int) $id,\n    'seeded_submission_ref'    => 'MIG-LOCALHOST-0001',\n);\nfile_put_contents( '/wordpress/wp-content/stage-F-domain-before.json',\n    wp_json_encode( $state, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT ) );\n"
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "home": "http://raouf-academy.example",
+        "siteurl": "http://raouf-academy.example"
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php\nrequire_once '/wordpress/wp-load.php';\n/* Playground pins WP_HOME/WP_SITEURL as PHP constants, so setSiteOptions cannot\n   change them. On a real host Settings > General writes exactly these options;\n   do the same here so the stored-settings migration is genuinely exercised. */\nupdate_option( 'home', 'http://raouf-academy.example' );\nupdate_option( 'siteurl', 'http://raouf-academy.example' );\nflush_rewrite_rules();\n$q = new WP_Query( array(\n    'post_type' => 'raouf_submission', 'post_status' => 'private',\n    'posts_per_page' => -1, 'fields' => 'ids',\n) );\n$ids = array();\nforeach ( $q->posts as $x ) { $ids[] = (int) $x; }\n$pages = get_posts( array( 'post_type' => 'page', 'post_status' => 'publish', 'numberposts' => -1 ) );\n$tokens = 0; $hosts = 0;\nforeach ( $pages as $p ) {\n    $tokens += substr_count( $p->post_content, '{{' );\n    $hosts  += preg_match_all( '/https?:\\/\\//', $p->post_content );\n}\n$state = array(\n    'phase'                    => 'after-domain-change',\n    'home'                     => get_option( 'home' ),\n    'siteurl'                  => get_option( 'siteurl' ),\n    'home_url'                 => home_url( '/' ),\n    'site_url'                 => site_url( '/' ),\n    'pages'                    => count( $pages ),\n    'token_count_in_pages'     => $tokens,\n    'hardcoded_hosts_in_pages' => $hosts,\n    'private_submission_ids'   => $ids,\n    'raouf_options'            => get_option( 'raouf_options', array() ),\n    'raouf_media'              => get_option( 'raouf_media', array() ),\n);\nfile_put_contents( '/wordpress/wp-content/stage-F-domain-after.json',\n    wp_json_encode( $state, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT ) );\n"
+    }
+  ]
+}

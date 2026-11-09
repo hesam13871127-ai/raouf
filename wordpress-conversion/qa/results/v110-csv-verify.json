@@ -1,0 +1,74 @@
+{
+  "stage": "v1.1.0-csv-verification",
+  "generatedAt": "2026-11-09T14:58:44.882823+00:00",
+  "base": "http://127.0.0.1:9422",
+  "note": "Real CSV re-verification after correcting a case-sensitive header-key false negative in the main harness.",
+  "result": "PASS",
+  "detail": {
+    "admin_login": true,
+    "export_link_found": true,
+    "posts": [
+      {
+        "label": "xss_sql",
+        "status": 201,
+        "ok": true,
+        "storage": "plugin",
+        "ref": "MSG-20261109-40578B"
+      },
+      {
+        "label": "formula",
+        "status": 201,
+        "ok": true,
+        "storage": "plugin",
+        "ref": "MSG-20261109-76B1CD"
+      }
+    ],
+    "status": 200,
+    "content_type": "text/csv; charset=UTF-8",
+    "content_disposition": "attachment; filename=\"raouf-requests-20261109-182844.csv\"",
+    "rows": 9,
+    "header": [
+      "شماره پیگیری",
+      "نوع درخواست",
+      "نام و نام خانوادگی",
+      "شماره تماس",
+      "نام دوره",
+      "رایانامه",
+      "موضوع",
+      "متن پیام / توضیحات",
+      "سایر فیلدها",
+      "تاریخ",
+      "زمان",
+      "منبع",
+      "IP درهمشده"
+    ],
+    "refs": [
+      "MSG-20261109-40578B",
+      "MSG-20261109-76B1CD"
+    ],
+    "checks": {
+      "status_200": true,
+      "content_type_text_csv": true,
+      "content_disposition_attachment": true,
+      "utf8_bom": true,
+      "persian_13_column_header": true,
+      "all_rows_13_columns": true,
+      "both_new_refs_exported": true,
+      "raw_xss_script_absent": true,
+      "csv_formula_guard_present": true,
+      "raw_formula_cell_absent": true,
+      "no_php_fatal_error": true
+    },
+    "header_keys_seen": [
+      "x-powered-by",
+      "expires",
+      "cache-control",
+      "content-type",
+      "x-content-type-options",
+      "content-disposition",
+      "Date",
+      "Connection",
+      "Transfer-Encoding"
+    ]
+  }
+}

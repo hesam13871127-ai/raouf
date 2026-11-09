@@ -1,0 +1,1336 @@
+{
+  "stage": "C",
+  "orig": "http://127.0.0.1:3000",
+  "wp": "http://127.0.0.1:9400",
+  "routes": [
+    {
+      "route": "/",
+      "source_file": "index.html",
+      "expected_template": "front-page.php",
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 1496,
+        "wordpress": 1496
+      },
+      "first_dom_diff": null,
+      "seo_identical": true,
+      "seo_diffs": {},
+      "seo": {
+        "canonical": [
+          "/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": [
+          "EducationalOrganization"
+        ]
+      },
+      "signatures": {
+        "original": {
+          "length": 41481,
+          "sha256": "8477b81bd0f52edc",
+          "sections": 9,
+          "details": 5,
+          "imgs": 15,
+          "svgs": 61,
+          "buttons": 6,
+          "forms": 0,
+          "ids": 8,
+          "classes": 281,
+          "h1": "مسیر حرفه‌ای شدن از آموزش اصولی آغاز می‌شود",
+          "images": [
+            "hero-academy.webp",
+            "raouf-logo.jpg",
+            "lounge-01.webp",
+            "reception-02.webp",
+            "course-facial.webp",
+            "first-aid-01.webp",
+            "course-pharmacy.webp",
+            "course-massage.webp",
+            "classroom-03.webp",
+            "first-aid-01.webp",
+            "treatment-room-01.webp",
+            "classroom-03.webp",
+            "products-02.webp",
+            "lounge-01.webp",
+            "reception-02.webp"
+          ],
+          "accent_classes": []
+        },
+        "wordpress": {
+          "length": 41481,
+          "sha256": "8477b81bd0f52edc",
+          "sections": 9,
+          "details": 5,
+          "imgs": 15,
+          "svgs": 61,
+          "buttons": 6,
+          "forms": 0,
+          "ids": 8,
+          "classes": 281,
+          "h1": "مسیر حرفه‌ای شدن از آموزش اصولی آغاز می‌شود",
+          "images": [
+            "hero-academy.webp",
+            "raouf-logo.jpg",
+            "lounge-01.webp",
+            "reception-02.webp",
+            "course-facial.webp",
+            "first-aid-01.webp",
+            "course-pharmacy.webp",
+            "course-massage.webp",
+            "classroom-03.webp",
+            "first-aid-01.webp",
+            "treatment-room-01.webp",
+            "classroom-03.webp",
+            "products-02.webp",
+            "lounge-01.webp",
+            "reception-02.webp"
+          ],
+          "accent_classes": []
+        },
+        "equal": true
+      },
+      "links": {
+        "count": 41,
+        "internal": 35,
+        "external": 2,
+        "non_http": 3,
+        "broken": [],
+        "foreign_install_urls": []
+      },
+      "php_errors_in_body": [],
+      "has_broken_tokens": false,
+      "rtl": true,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      }
+    },
+    {
+      "route": "/courses/",
+      "source_file": "courses/index.html",
+      "expected_template": "page-courses.php",
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 833,
+        "wordpress": 833
+      },
+      "first_dom_diff": null,
+      "seo_identical": true,
+      "seo_diffs": {},
+      "seo": {
+        "canonical": [
+          "/courses/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": []
+      },
+      "signatures": {
+        "original": {
+          "length": 17163,
+          "sha256": "34c0c2b60c18f0a7",
+          "sections": 4,
+          "details": 0,
+          "imgs": 5,
+          "svgs": 27,
+          "buttons": 0,
+          "forms": 0,
+          "ids": 6,
+          "classes": 115,
+          "h1": "دوره‌های تخصصی آموزشگاه رئوف",
+          "images": [
+            "classroom-01.webp",
+            "course-facial.webp",
+            "first-aid-01.webp",
+            "course-pharmacy.webp",
+            "course-massage.webp"
+          ],
+          "accent_classes": []
+        },
+        "wordpress": {
+          "length": 17163,
+          "sha256": "34c0c2b60c18f0a7",
+          "sections": 4,
+          "details": 0,
+          "imgs": 5,
+          "svgs": 27,
+          "buttons": 0,
+          "forms": 0,
+          "ids": 6,
+          "classes": 115,
+          "h1": "دوره‌های تخصصی آموزشگاه رئوف",
+          "images": [
+            "classroom-01.webp",
+            "course-facial.webp",
+            "first-aid-01.webp",
+            "course-pharmacy.webp",
+            "course-massage.webp"
+          ],
+          "accent_classes": []
+        },
+        "equal": true
+      },
+      "links": {
+        "count": 33,
+        "internal": 25,
+        "external": 2,
+        "non_http": 6,
+        "broken": [],
+        "foreign_install_urls": []
+      },
+      "php_errors_in_body": [],
+      "has_broken_tokens": false,
+      "rtl": true,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      }
+    },
+    {
+      "route": "/courses/skin-facial/",
+      "source_file": "courses/skin-facial/index.html",
+      "expected_template": "page-skin-facial.php",
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 1327,
+        "wordpress": 1327
+      },
+      "first_dom_diff": null,
+      "seo_identical": true,
+      "seo_diffs": {},
+      "seo": {
+        "canonical": [
+          "/courses/skin-facial/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": [
+          "Course"
+        ]
+      },
+      "signatures": {
+        "original": {
+          "length": 35740,
+          "sha256": "867d00fd02673772",
+          "sections": 11,
+          "details": 3,
+          "imgs": 11,
+          "svgs": 58,
+          "buttons": 4,
+          "forms": 0,
+          "ids": 6,
+          "classes": 244,
+          "h1": "دوره تخصصی آموزش پاکسازی و فیشیال پوست",
+          "images": [
+            "course-facial.webp",
+            "treatment-room-01.webp",
+            "products-02.webp",
+            "treatment-room-01.webp",
+            "course-facial.webp",
+            "treatment-room-01.webp",
+            "products-02.webp",
+            "treatment-room-02.webp",
+            "first-aid-01.webp",
+            "course-pharmacy.webp",
+            "course-massage.webp"
+          ],
+          "accent_classes": [
+            "course-hero--lilac"
+          ]
+        },
+        "wordpress": {
+          "length": 35740,
+          "sha256": "867d00fd02673772",
+          "sections": 11,
+          "details": 3,
+          "imgs": 11,
+          "svgs": 58,
+          "buttons": 4,
+          "forms": 0,
+          "ids": 6,
+          "classes": 244,
+          "h1": "دوره تخصصی آموزش پاکسازی و فیشیال پوست",
+          "images": [
+            "course-facial.webp",
+            "treatment-room-01.webp",
+            "products-02.webp",
+            "treatment-room-01.webp",
+            "course-facial.webp",
+            "treatment-room-01.webp",
+            "products-02.webp",
+            "treatment-room-02.webp",
+            "first-aid-01.webp",
+            "course-pharmacy.webp",
+            "course-massage.webp"
+          ],
+          "accent_classes": [
+            "course-hero--lilac"
+          ]
+        },
+        "equal": true
+      },
+      "links": {
+        "count": 36,
+        "internal": 30,
+        "external": 2,
+        "non_http": 3,
+        "broken": [],
+        "foreign_install_urls": []
+      },
+      "php_errors_in_body": [],
+      "has_broken_tokens": false,
+      "rtl": true,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      }
+    },
+    {
+      "route": "/courses/medical-emergency/",
+      "source_file": "courses/medical-emergency/index.html",
+      "expected_template": "page-medical-emergency.php",
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 1343,
+        "wordpress": 1343
+      },
+      "first_dom_diff": null,
+      "seo_identical": true,
+      "seo_diffs": {},
+      "seo": {
+        "canonical": [
+          "/courses/medical-emergency/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": [
+          "Course"
+        ]
+      },
+      "signatures": {
+        "original": {
+          "length": 36121,
+          "sha256": "52aef3e61910a69b",
+          "sections": 11,
+          "details": 3,
+          "imgs": 11,
+          "svgs": 60,
+          "buttons": 4,
+          "forms": 0,
+          "ids": 6,
+          "classes": 249,
+          "h1": "دوره جامع فوریت‌های پزشکی، کمک‌های اولیه، تزریقات و بخیه",
+          "images": [
+            "first-aid-01.webp",
+            "first-aid-02.webp",
+            "anatomy-01.webp",
+            "first-aid-02.webp",
+            "first-aid-01.webp",
+            "first-aid-02.webp",
+            "anatomy-01.webp",
+            "anatomy-03.webp",
+            "course-facial.webp",
+            "course-pharmacy.webp",
+            "course-massage.webp"
+          ],
+          "accent_classes": [
+            "course-hero--blue"
+          ]
+        },
+        "wordpress": {
+          "length": 36121,
+          "sha256": "52aef3e61910a69b",
+          "sections": 11,
+          "details": 3,
+          "imgs": 11,
+          "svgs": 60,
+          "buttons": 4,
+          "forms": 0,
+          "ids": 6,
+          "classes": 249,
+          "h1": "دوره جامع فوریت‌های پزشکی، کمک‌های اولیه، تزریقات و بخیه",
+          "images": [
+            "first-aid-01.webp",
+            "first-aid-02.webp",
+            "anatomy-01.webp",
+            "first-aid-02.webp",
+            "first-aid-01.webp",
+            "first-aid-02.webp",
+            "anatomy-01.webp",
+            "anatomy-03.webp",
+            "course-facial.webp",
+            "course-pharmacy.webp",
+            "course-massage.webp"
+          ],
+          "accent_classes": [
+            "course-hero--blue"
+          ]
+        },
+        "equal": true
+      },
+      "links": {
+        "count": 36,
+        "internal": 30,
+        "external": 2,
+        "non_http": 3,
+        "broken": [],
+        "foreign_install_urls": []
+      },
+      "php_errors_in_body": [],
+      "has_broken_tokens": false,
+      "rtl": true,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      }
+    },
+    {
+      "route": "/courses/pharmacy-technician/",
+      "source_file": "courses/pharmacy-technician/index.html",
+      "expected_template": "page-pharmacy-technician.php",
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 1300,
+        "wordpress": 1300
+      },
+      "first_dom_diff": null,
+      "seo_identical": true,
+      "seo_diffs": {},
+      "seo": {
+        "canonical": [
+          "/courses/pharmacy-technician/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": [
+          "Course"
+        ]
+      },
+      "signatures": {
+        "original": {
+          "length": 33931,
+          "sha256": "9cacdd4ed249bf7c",
+          "sections": 11,
+          "details": 3,
+          "imgs": 10,
+          "svgs": 56,
+          "buttons": 3,
+          "forms": 0,
+          "ids": 6,
+          "classes": 236,
+          "h1": "دوره آموزشی تکنسین داروخانه (نسخه‌خوانی)",
+          "images": [
+            "course-pharmacy.webp",
+            "course-pharmacy-2.webp",
+            "classroom-02.webp",
+            "course-pharmacy-2.webp",
+            "course-pharmacy.webp",
+            "course-pharmacy-2.webp",
+            "classroom-02.webp",
+            "course-facial.webp",
+            "first-aid-01.webp",
+            "course-massage.webp"
+          ],
+          "accent_classes": [
+            "course-hero--navy"
+          ]
+        },
+        "wordpress": {
+          "length": 33931,
+          "sha256": "9cacdd4ed249bf7c",
+          "sections": 11,
+          "details": 3,
+          "imgs": 10,
+          "svgs": 56,
+          "buttons": 3,
+          "forms": 0,
+          "ids": 6,
+          "classes": 236,
+          "h1": "دوره آموزشی تکنسین داروخانه (نسخه‌خوانی)",
+          "images": [
+            "course-pharmacy.webp",
+            "course-pharmacy-2.webp",
+            "classroom-02.webp",
+            "course-pharmacy-2.webp",
+            "course-pharmacy.webp",
+            "course-pharmacy-2.webp",
+            "classroom-02.webp",
+            "course-facial.webp",
+            "first-aid-01.webp",
+            "course-massage.webp"
+          ],
+          "accent_classes": [
+            "course-hero--navy"
+          ]
+        },
+        "equal": true
+      },
+      "links": {
+        "count": 34,
+        "internal": 28,
+        "external": 2,
+        "non_http": 3,
+        "broken": [],
+        "foreign_install_urls": []
+      },
+      "php_errors_in_body": [],
+      "has_broken_tokens": false,
+      "rtl": true,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      }
+    },
+    {
+      "route": "/courses/massage-relaxation/",
+      "source_file": "courses/massage-relaxation/index.html",
+      "expected_template": "page-massage-relaxation.php",
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 1359,
+        "wordpress": 1359
+      },
+      "first_dom_diff": null,
+      "seo_identical": true,
+      "seo_diffs": {},
+      "seo": {
+        "canonical": [
+          "/courses/massage-relaxation/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": [
+          "Course"
+        ]
+      },
+      "signatures": {
+        "original": {
+          "length": 35996,
+          "sha256": "ac03150316cc3ea4",
+          "sections": 11,
+          "details": 3,
+          "imgs": 11,
+          "svgs": 61,
+          "buttons": 4,
+          "forms": 0,
+          "ids": 6,
+          "classes": 253,
+          "h1": "دوره جامع تخصصی ماساژ و ریلکسیشن",
+          "images": [
+            "course-massage.webp",
+            "course-massage-2.webp",
+            "treatment-room-02.webp",
+            "treatment-room-02.webp",
+            "course-massage.webp",
+            "course-massage-2.webp",
+            "treatment-room-02.webp",
+            "products-01.webp",
+            "course-facial.webp",
+            "first-aid-01.webp",
+            "course-pharmacy.webp"
+          ],
+          "accent_classes": [
+            "course-hero--purple"
+          ]
+        },
+        "wordpress": {
+          "length": 35996,
+          "sha256": "ac03150316cc3ea4",
+          "sections": 11,
+          "details": 3,
+          "imgs": 11,
+          "svgs": 61,
+          "buttons": 4,
+          "forms": 0,
+          "ids": 6,
+          "classes": 253,
+          "h1": "دوره جامع تخصصی ماساژ و ریلکسیشن",
+          "images": [
+            "course-massage.webp",
+            "course-massage-2.webp",
+            "treatment-room-02.webp",
+            "treatment-room-02.webp",
+            "course-massage.webp",
+            "course-massage-2.webp",
+            "treatment-room-02.webp",
+            "products-01.webp",
+            "course-facial.webp",
+            "first-aid-01.webp",
+            "course-pharmacy.webp"
+          ],
+          "accent_classes": [
+            "course-hero--purple"
+          ]
+        },
+        "equal": true
+      },
+      "links": {
+        "count": 36,
+        "internal": 30,
+        "external": 2,
+        "non_http": 3,
+        "broken": [],
+        "foreign_install_urls": []
+      },
+      "php_errors_in_body": [],
+      "has_broken_tokens": false,
+      "rtl": true,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      }
+    },
+    {
+      "route": "/about/",
+      "source_file": "about/index.html",
+      "expected_template": "page-about.php",
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 906,
+        "wordpress": 906
+      },
+      "first_dom_diff": null,
+      "seo_identical": true,
+      "seo_diffs": {},
+      "seo": {
+        "canonical": [
+          "/about/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": []
+      },
+      "signatures": {
+        "original": {
+          "length": 17759,
+          "sha256": "063e43260b2b34b3",
+          "sections": 8,
+          "details": 0,
+          "imgs": 7,
+          "svgs": 24,
+          "buttons": 0,
+          "forms": 0,
+          "ids": 2,
+          "classes": 129,
+          "h1": "آموزشگاه فنی و حرفه‌ای رئوف",
+          "images": [
+            "reception-02.webp",
+            "lounge-01.webp",
+            "reception-01.webp",
+            "first-aid-02.webp",
+            "poster-courses.webp",
+            "sign-board.webp",
+            "raouf-logo.jpg"
+          ],
+          "accent_classes": []
+        },
+        "wordpress": {
+          "length": 17759,
+          "sha256": "063e43260b2b34b3",
+          "sections": 8,
+          "details": 0,
+          "imgs": 7,
+          "svgs": 24,
+          "buttons": 0,
+          "forms": 0,
+          "ids": 2,
+          "classes": 129,
+          "h1": "آموزشگاه فنی و حرفه‌ای رئوف",
+          "images": [
+            "reception-02.webp",
+            "lounge-01.webp",
+            "reception-01.webp",
+            "first-aid-02.webp",
+            "poster-courses.webp",
+            "sign-board.webp",
+            "raouf-logo.jpg"
+          ],
+          "accent_classes": []
+        },
+        "equal": true
+      },
+      "links": {
+        "count": 31,
+        "internal": 27,
+        "external": 2,
+        "non_http": 2,
+        "broken": [],
+        "foreign_install_urls": []
+      },
+      "php_errors_in_body": [],
+      "has_broken_tokens": false,
+      "rtl": true,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      }
+    },
+    {
+      "route": "/gallery/",
+      "source_file": "gallery/index.html",
+      "expected_template": "page-gallery.php",
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 908,
+        "wordpress": 908
+      },
+      "first_dom_diff": null,
+      "seo_identical": true,
+      "seo_diffs": {},
+      "seo": {
+        "canonical": [
+          "/gallery/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": []
+      },
+      "signatures": {
+        "original": {
+          "length": 32033,
+          "sha256": "9e7993f83cf06357",
+          "sections": 3,
+          "details": 0,
+          "imgs": 28,
+          "svgs": 31,
+          "buttons": 33,
+          "forms": 0,
+          "ids": 5,
+          "classes": 147,
+          "h1": "نگاهی به فضای آموزشگاه رئوف",
+          "images": [
+            "classroom-03.webp",
+            "reception-02.webp",
+            "lounge-01.webp",
+            "classroom-03.webp",
+            "classroom-02.webp",
+            "first-aid-01.webp",
+            "anatomy-01.webp",
+            "treatment-room-01.webp",
+            "products-02.webp",
+            "decor-01.webp",
+            "reception-08.webp",
+            "first-aid-02.webp",
+            "anatomy-03.webp",
+            "treatment-room-02.webp",
+            "products-01.webp",
+            "classroom-01.webp",
+            "reception-01.webp",
+            "sign-board.webp",
+            "poster-courses.webp",
+            "reception-03.webp",
+            "reception-04.webp",
+            "reception-05.webp",
+            "reception-06.webp",
+            "anatomy-02.webp",
+            "decor-02.webp",
+            "products-03.webp",
+            "reception-07.webp",
+            "poster-courses-alt.webp"
+          ],
+          "accent_classes": []
+        },
+        "wordpress": {
+          "length": 32033,
+          "sha256": "9e7993f83cf06357",
+          "sections": 3,
+          "details": 0,
+          "imgs": 28,
+          "svgs": 31,
+          "buttons": 33,
+          "forms": 0,
+          "ids": 5,
+          "classes": 147,
+          "h1": "نگاهی به فضای آموزشگاه رئوف",
+          "images": [
+            "classroom-03.webp",
+            "reception-02.webp",
+            "lounge-01.webp",
+            "classroom-03.webp",
+            "classroom-02.webp",
+            "first-aid-01.webp",
+            "anatomy-01.webp",
+            "treatment-room-01.webp",
+            "products-02.webp",
+            "decor-01.webp",
+            "reception-08.webp",
+            "first-aid-02.webp",
+            "anatomy-03.webp",
+            "treatment-room-02.webp",
+            "products-01.webp",
+            "classroom-01.webp",
+            "reception-01.webp",
+            "sign-board.webp",
+            "poster-courses.webp",
+            "reception-03.webp",
+            "reception-04.webp",
+            "reception-05.webp",
+            "reception-06.webp",
+            "anatomy-02.webp",
+            "decor-02.webp",
+            "products-03.webp",
+            "reception-07.webp",
+            "poster-courses-alt.webp"
+          ],
+          "accent_classes": []
+        },
+        "equal": true
+      },
+      "links": {
+        "count": 75,
+        "internal": 69,
+        "external": 2,
+        "non_http": 3,
+        "broken": [],
+        "foreign_install_urls": []
+      },
+      "php_errors_in_body": [],
+      "has_broken_tokens": false,
+      "rtl": true,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      }
+    },
+    {
+      "route": "/contact/",
+      "source_file": "contact/index.html",
+      "expected_template": "page-contact.php",
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 730,
+        "wordpress": 730
+      },
+      "first_dom_diff": null,
+      "seo_identical": true,
+      "seo_diffs": {},
+      "seo": {
+        "canonical": [
+          "/contact/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": []
+      },
+      "signatures": {
+        "original": {
+          "length": 11593,
+          "sha256": "9552daf9e8693104",
+          "sections": 4,
+          "details": 0,
+          "imgs": 0,
+          "svgs": 14,
+          "buttons": 1,
+          "forms": 1,
+          "ids": 9,
+          "classes": 78,
+          "h1": "با آموزشگاه رئوف در ارتباط باشید",
+          "images": [],
+          "accent_classes": []
+        },
+        "wordpress": {
+          "length": 11593,
+          "sha256": "9552daf9e8693104",
+          "sections": 4,
+          "details": 0,
+          "imgs": 0,
+          "svgs": 14,
+          "buttons": 1,
+          "forms": 1,
+          "ids": 9,
+          "classes": 78,
+          "h1": "با آموزشگاه رئوف در ارتباط باشید",
+          "images": [],
+          "accent_classes": []
+        },
+        "equal": true
+      },
+      "links": {
+        "count": 19,
+        "internal": 15,
+        "external": 2,
+        "non_http": 2,
+        "broken": [],
+        "foreign_install_urls": []
+      },
+      "php_errors_in_body": [],
+      "has_broken_tokens": false,
+      "rtl": true,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      }
+    },
+    {
+      "route": "/register/",
+      "source_file": "register/index.html",
+      "expected_template": "page-register.php",
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 829,
+        "wordpress": 829
+      },
+      "first_dom_diff": null,
+      "seo_identical": true,
+      "seo_diffs": {},
+      "seo": {
+        "canonical": [
+          "/register/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": []
+      },
+      "signatures": {
+        "original": {
+          "length": 13448,
+          "sha256": "d038ba93e4aac6ce",
+          "sections": 4,
+          "details": 4,
+          "imgs": 0,
+          "svgs": 18,
+          "buttons": 1,
+          "forms": 1,
+          "ids": 8,
+          "classes": 97,
+          "h1": "اولین قدم را برای یادگیری بردارید",
+          "images": [],
+          "accent_classes": []
+        },
+        "wordpress": {
+          "length": 13448,
+          "sha256": "d038ba93e4aac6ce",
+          "sections": 4,
+          "details": 4,
+          "imgs": 0,
+          "svgs": 18,
+          "buttons": 1,
+          "forms": 1,
+          "ids": 8,
+          "classes": 97,
+          "h1": "اولین قدم را برای یادگیری بردارید",
+          "images": [],
+          "accent_classes": []
+        },
+        "equal": true
+      },
+      "links": {
+        "count": 19,
+        "internal": 15,
+        "external": 2,
+        "non_http": 2,
+        "broken": [],
+        "foreign_install_urls": []
+      },
+      "php_errors_in_body": [],
+      "has_broken_tokens": false,
+      "rtl": true,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      }
+    },
+    {
+      "route": "/404/",
+      "source_file": "404/index.html",
+      "expected_template": "404.php",
+      "http": {
+        "original": 200,
+        "wordpress": 404
+      },
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 450,
+        "wordpress": 450
+      },
+      "first_dom_diff": null,
+      "seo_identical": true,
+      "seo_diffs": {},
+      "seo": {
+        "canonical": [
+          "/404/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": []
+      },
+      "signatures": {
+        "original": {
+          "length": 1016,
+          "sha256": "9c6a0e04b154c417",
+          "sections": 1,
+          "details": 0,
+          "imgs": 0,
+          "svgs": 2,
+          "buttons": 0,
+          "forms": 0,
+          "ids": 1,
+          "classes": 8,
+          "h1": "صفحه مورد نظر پیدا نشد",
+          "images": [],
+          "accent_classes": []
+        },
+        "wordpress": {
+          "length": 1016,
+          "sha256": "9c6a0e04b154c417",
+          "sections": 1,
+          "details": 0,
+          "imgs": 0,
+          "svgs": 2,
+          "buttons": 0,
+          "forms": 0,
+          "ids": 1,
+          "classes": 8,
+          "h1": "صفحه مورد نظر پیدا نشد",
+          "images": [],
+          "accent_classes": []
+        },
+        "equal": true
+      },
+      "links": {
+        "count": 20,
+        "internal": 16,
+        "external": 2,
+        "non_http": 2,
+        "broken": [],
+        "foreign_install_urls": []
+      },
+      "php_errors_in_body": [],
+      "has_broken_tokens": false,
+      "rtl": true,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      }
+    }
+  ],
+  "summary": {
+    "routes_checked": 11,
+    "full_dom_identical": 11,
+    "main_identical": 11,
+    "seo_identical": 11,
+    "routes_with_broken_links": 0,
+    "total_internal_links": 320,
+    "routes_with_php_errors": 0,
+    "routes_with_leaked_tokens": 0,
+    "routes_rtl": 11,
+    "shared_chrome_all_routes": true,
+    "asset_sha256_mismatches": 0,
+    "unexpected_theme_assets": 0
+  },
+  "issues": [],
+  "assets": {
+    "original_assets": 70,
+    "theme_assets": 70,
+    "asset_sha256_mismatches": [],
+    "unexpected_theme_assets": [],
+    "js_byte_identical": true,
+    "reference_css_byte_identical": true,
+    "theme_css_differs_from_original": true,
+    "theme_css_note": "Only the WP header + 3 @font-face path rewrites (see docs/DECISIONS.md D13).",
+    "css_js_http": {
+      "style.css": 200,
+      "app.js": 200
+    }
+  },
+  "wp_pages": [
+    {
+      "id": 13,
+      "slug": "massage-relaxation",
+      "parent": 5,
+      "template": "page-massage-relaxation.php",
+      "link": "http://127.0.0.1:9400/courses/massage-relaxation/",
+      "tokens": {
+        "ASSET": 37,
+        "LINK": 16
+      },
+      "hardcoded_hosts": 0
+    },
+    {
+      "id": 12,
+      "slug": "pharmacy-technician",
+      "parent": 5,
+      "template": "page-pharmacy-technician.php",
+      "link": "http://127.0.0.1:9400/courses/pharmacy-technician/",
+      "tokens": {
+        "ASSET": 33,
+        "LINK": 16
+      },
+      "hardcoded_hosts": 0
+    },
+    {
+      "id": 11,
+      "slug": "medical-emergency",
+      "parent": 5,
+      "template": "page-medical-emergency.php",
+      "link": "http://127.0.0.1:9400/courses/medical-emergency/",
+      "tokens": {
+        "ASSET": 37,
+        "LINK": 16
+      },
+      "hardcoded_hosts": 0
+    },
+    {
+      "id": 10,
+      "slug": "skin-facial",
+      "parent": 5,
+      "template": "page-skin-facial.php",
+      "link": "http://127.0.0.1:9400/courses/skin-facial/",
+      "tokens": {
+        "ASSET": 37,
+        "LINK": 16
+      },
+      "hardcoded_hosts": 0
+    },
+    {
+      "id": 9,
+      "slug": "register",
+      "parent": 0,
+      "template": "page-register.php",
+      "link": "http://127.0.0.1:9400/register/",
+      "tokens": {
+        "ASSET": 0,
+        "LINK": 4
+      },
+      "hardcoded_hosts": 0
+    },
+    {
+      "id": 8,
+      "slug": "contact",
+      "parent": 0,
+      "template": "page-contact.php",
+      "link": "http://127.0.0.1:9400/contact/",
+      "tokens": {
+        "ASSET": 0,
+        "LINK": 4
+      },
+      "hardcoded_hosts": 0
+    },
+    {
+      "id": 7,
+      "slug": "gallery",
+      "parent": 0,
+      "template": "page-gallery.php",
+      "link": "http://127.0.0.1:9400/gallery/",
+      "tokens": {
+        "ASSET": 111,
+        "LINK": 3
+      },
+      "hardcoded_hosts": 0
+    },
+    {
+      "id": 6,
+      "slug": "about",
+      "parent": 0,
+      "template": "page-about.php",
+      "link": "http://127.0.0.1:9400/about/",
+      "tokens": {
+        "ASSET": 19,
+        "LINK": 8
+      },
+      "hardcoded_hosts": 0
+    },
+    {
+      "id": 5,
+      "slug": "courses",
+      "parent": 0,
+      "template": "page-courses.php",
+      "link": "http://127.0.0.1:9400/courses/",
+      "tokens": {
+        "ASSET": 15,
+        "LINK": 18
+      },
+      "hardcoded_hosts": 0
+    },
+    {
+      "id": 4,
+      "slug": "home",
+      "parent": 0,
+      "template": "front-page.php",
+      "link": "http://127.0.0.1:9400/",
+      "tokens": {
+        "ASSET": 49,
+        "LINK": 20
+      },
+      "hardcoded_hosts": 0
+    }
+  ],
+  "notfound": {
+    "explicit_route_status": 404,
+    "missing_route_status": 404,
+    "explicit_uses_404_markup": true,
+    "missing_uses_404_markup": true,
+    "wp_error404_body_class": true,
+    "original_static_soft404": true,
+    "note": "Original static server returned the 404 page with HTTP 200 (soft 404); WordPress correctly returns HTTP 404 from 404.php."
+  },
+  "token_storage": {
+    "pages": 10,
+    "all_pages_tokenised": true,
+    "hardcoded_hosts": 0,
+    "total_asset_tokens": 338,
+    "total_link_tokens": 121
+  },
+  "forms": {
+    "/api/registrations": {
+      "GET_status": 405,
+      "not_static_html": true,
+      "body_sample": "{\"ok\":false,\"message\":\"method not allowed\"}"
+    },
+    "/api/contact": {
+      "GET_status": 405,
+      "not_static_html": true,
+      "body_sample": "{\"ok\":false,\"message\":\"method not allowed\"}"
+    },
+    "/register/": {
+      "form_elements": 1,
+      "data_form_hooks": 3,
+      "app_js_loaded": true
+    },
+    "/contact/": {
+      "form_elements": 1,
+      "data_form_hooks": 3,
+      "app_js_loaded": true
+    }
+  },
+  "course_individuality": {
+    "count": 4,
+    "distinct_main_hashes": 4,
+    "distinct_h1": 4,
+    "distinct_accent_classes": [
+      [
+        "course-hero--lilac"
+      ],
+      [
+        "course-hero--blue"
+      ],
+      [
+        "course-hero--navy"
+      ],
+      [
+        "course-hero--purple"
+      ]
+    ],
+    "distinct_image_sets": 4,
+    "each_uses_own_template": true,
+    "image_counts": {
+      "/courses/skin-facial/": 11,
+      "/courses/medical-emergency/": 11,
+      "/courses/pharmacy-technician/": 10,
+      "/courses/massage-relaxation/": 11
+    },
+    "faq_counts": {
+      "/courses/skin-facial/": 3,
+      "/courses/medical-emergency/": 3,
+      "/courses/pharmacy-technician/": 3,
+      "/courses/massage-relaxation/": 3
+    }
+  }
+}

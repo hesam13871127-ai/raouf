@@ -1,0 +1,217 @@
+{
+  "stage": "B",
+  "name": "Corrected WordPress Architecture and Critical Defect Fixes",
+  "date_utc": "2026-11-08",
+  "branch": "arena/dfee8ce0-raouf",
+  "authoritative_commit": "abc23ef6ddbd4a74111f6c0347504a35eb746002",
+  "scope": "Stage B only; full Stage F QA NOT started",
+  "original_source_modified": false,
+  "defects": [
+    {
+      "id": "D01",
+      "title": "post_content domain-dependent (69 baked URLs)",
+      "status": "FIXED",
+      "evidence": "setup.php stores wp_slash(raw tokens); 338 ASSET + 121 LINK tokens across 10 pages; 0 hardcoded hosts; 3 installs render own URLs"
+    },
+    {
+      "id": "D02",
+      "title": "duplicate canonical",
+      "status": "FIXED",
+      "evidence": "remove_action(wp_head, rel_canonical, 10); 1 canonical on 11/11 routes; head byte-identical to source 11/11"
+    },
+    {
+      "id": "D03",
+      "title": "duplicate robots directive",
+      "status": "FIXED",
+      "evidence": "remove_action(wp_head, wp_robots, 1); 1 robots on 11/11 routes; index, follow identical to source"
+    },
+    {
+      "id": "D04",
+      "title": "stale/incomplete source-code.zip",
+      "status": "FIXED",
+      "evidence": "build_zip.py rewritten+executed; all theme sources, 3 tools, 8 QA scripts, QA results incl. Stage A+B, 5 docs, reference CSS; no caches/dev artifacts/duplicate names"
+    },
+    {
+      "id": "D05",
+      "title": "admin submissions omit message/email and single-record view",
+      "status": "FIXED",
+      "evidence": "options.php: 8-column list + nonce-protected detail view, manage_options, private CPT checks, escaped full fields, date, ref, hashed IP; 9/9 fields verified; 4 existing records preserved across resync"
+    },
+    {
+      "id": "D06",
+      "title": "inc/icons.php missing ABSPATH guard",
+      "status": "FIXED",
+      "evidence": "guard added; direct request returns empty, no error; 28/28 PHP files guarded"
+    },
+    {
+      "id": "D07",
+      "title": "unintended Chinese text in docs and PDF generator",
+      "status": "FIXED",
+      "evidence": "全部/所有 replaced; 0 CJK in docs/readme/SOURCE-README/make-pdfs.mjs; 4 regenerated PDFs 0 CJK; stage-A-audit.json intentionally quotes 4 CJK chars as defect evidence"
+    },
+    {
+      "id": "D08",
+      "title": "Persian spelling / ZWNJ in readme.txt",
+      "status": "FIXED",
+      "evidence": "readme.txt rewritten 1551 bytes with 14 ZWNJ, no unjoined forms; same pass applied to 5 other docs/scripts"
+    },
+    {
+      "id": "D09",
+      "title": "POT out of sync (28 strings vs 33 calls)",
+      "status": "FIXED",
+      "evidence": "make_pot.py written+executed; 42 unique msgids from 28 PHP files; 50 translation calls scanned; missing []"
+    },
+    {
+      "id": "D10",
+      "title": "obsolete comments/docs",
+      "status": "FIXED",
+      "evidence": "helpers.php/front-page.php cleaned; setup.php token rationale + no duplicate menus + sample-page cleanup; options.php direct edit.php/tools.php redirect; conversion-report.md Stage B note; SOURCE-README.md rewritten; DECISIONS.md added"
+    },
+    {
+      "id": "D11",
+      "title": "only 6/67 images replaceable via Media Library",
+      "status": "FIXED",
+      "evidence": "reviewed and documented as deliberate \"where practical\" decision in docs/DECISIONS.md"
+    },
+    {
+      "id": "D12",
+      "title": "absolute internal hrefs vs relative source",
+      "status": "FIXED",
+      "evidence": "reviewed and documented as required WP-API adaptation in docs/DECISIONS.md; zero visual impact"
+    },
+    {
+      "id": "D13",
+      "title": "3 @font-face rewrites + style.css WP header",
+      "status": "FIXED",
+      "evidence": "reviewed and documented in docs/DECISIONS.md; exact source CSS kept as assets/css/style.css.source.css in source ZIP"
+    }
+  ],
+  "defect_counts": {
+    "FIXED": 13,
+    "NOT_FIXED": 0,
+    "NOT_TESTED": 0
+  },
+  "verifications": [
+    {
+      "check": 1,
+      "title": "saved WP content domain-independent",
+      "status": "PASS",
+      "evidence": "REST wp/v2/pages on :9405 = 10 pages, 338 {{ASSET:}}, 121 {{LINK:}}, 0 http(s) URLs; on :9404 production domain 0 hardcoded hosts"
+    },
+    {
+      "check": 2,
+      "title": "URLs resolve on a different installation URL",
+      "status": "PASS",
+      "evidence": ":9403 (127.0.0.1:9403), :9404 (http://raouf-academy.example), :9405 fresh: 11/11 routes use that install URL, 0 old-install refs, 0 leaked tokens"
+    },
+    {
+      "check": 3,
+      "title": "exactly one canonical",
+      "status": "PASS",
+      "evidence": "11/11 routes on :9400/:9404/:9405 canonical=1; full head compare vs original 11/11 IDENTICAL"
+    },
+    {
+      "check": 4,
+      "title": "exactly one robots directive",
+      "status": "PASS",
+      "evidence": "11/11 routes robots=1, identical to original index, follow"
+    },
+    {
+      "check": 5,
+      "title": "administrator can open/view full registration + contact submissions",
+      "status": "PASS",
+      "evidence": "2 fresh POSTs 201; list shows name/phone/email; detail view 9/9 fields, real message/date, escaped output; admin nonce link works"
+    },
+    {
+      "check": 6,
+      "title": "no unauthorized user can access private submissions",
+      "status": "PASS",
+      "evidence": "subscriber + anonymous: 403 / login redirect / REST 404 / no data in CPT query; forged admin nonce denied; 0 private-data leaks"
+    },
+    {
+      "check": 7,
+      "title": "source ZIP contains all required files",
+      "status": "PASS",
+      "evidence": "rebuilt; testzip OK, no duplicate names, no caches/dev artifacts; 3 tools, 8 QA scripts, QA results incl. Stage A + B, 5 docs, full theme incl. reference CSS"
+    },
+    {
+      "check": 8,
+      "title": "PHP lint passes",
+      "status": "PASS",
+      "evidence": "@php-wasm/cli PHP 8.5.12: 28/28 PHP files, 0 syntax errors"
+    },
+    {
+      "check": 9,
+      "title": "existing visual comparison remains unchanged",
+      "status": "PASS",
+      "evidence": "4 independent full-page pairs (home/gallery x 1366x768, 390x844) AE=0 RMSE=0; head 11/11 identical; full 60-pair suite NOT run (Stage F)"
+    }
+  ],
+  "not_tested": [
+    "Full 60-pair visual suite, 28 browser interactions, 11/11 DOM compare, 8+9 form tests, Upload Theme from final ZIP (Stage F)",
+    "Real LAMP/LEMP + MySQL/MariaDB, real SMTP, multisite, WP 6.4-6.7 / >6.8.3, PHP 7.4, Theme Check / PHPCS-WPCS",
+    "Physical devices, legacy browsers, third-party plugins/builders, PageSpeed/CDN/load tests",
+    "External PDF viewer (pdfjs-dist render + text scan only)",
+    "Stages C, D, E, F, G and final acceptance"
+  ],
+  "transparency_notes": [
+    "A test subscriber account and two test submissions exist only in the disposable Playground :9400 database, not in any deliverable ZIP.",
+    "Playground renders wp_die nonce-failure as an admin page with HTTP 200; the detail view is not rendered and no private data is present (content verified, not just status code).",
+    "qa/results/stage-A-audit.json intentionally quotes the 4 CJK characters it identified as defect D07; it is evidence, not unintended Chinese text.",
+    "Visual check #9 is a representative 4-pair sample; the complete 60-pair suite is explicitly NOT TESTED in Stage B."
+  ],
+  "artifacts": {
+    "theme_zip": {
+      "path": "dist/raouf-academy-wordpress-theme.zip",
+      "entries": 103,
+      "integrity": "OK",
+      "duplicate_names": 0,
+      "top_level": [
+        "raouf-academy"
+      ],
+      "php_files": 28,
+      "fonts": 3,
+      "image_files": 68,
+      "reference_css_excluded": true
+    },
+    "source_zip": {
+      "path": "dist/source-code.zip",
+      "entries": 128,
+      "integrity": "OK",
+      "duplicate_names": 0,
+      "top_level": [
+        "raouf-academy-wordpress-source"
+      ],
+      "tools": 3,
+      "qa_scripts": 8,
+      "qa_results": 7,
+      "docs": 5,
+      "forbidden_artifacts": []
+    },
+    "pdfs": {
+      "installation_guide_pages": 4,
+      "conversion_report_pages": 6,
+      "cjk_characters": 0,
+      "regenerated": true
+    },
+    "php_lint": {
+      "files": 28,
+      "failed": 0,
+      "engine": "@php-wasm/cli PHP 8.5.12"
+    },
+    "head_compare": {
+      "routes": 11,
+      "identical": 11
+    },
+    "visual_sample": {
+      "pairs": 4,
+      "identical": 4,
+      "AE": 0,
+      "RMSE": 0
+    },
+    "theme_zip_content_checks": {
+      "checked": 9,
+      "passed": 9
+    }
+  }
+}

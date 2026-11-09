@@ -1,0 +1,1162 @@
+{
+  "stage": "C",
+  "method": "Chromium full-page screenshots + ImageMagick compare -metric AE / RMSE",
+  "orig": "http://127.0.0.1:3000",
+  "wp": "http://127.0.0.1:9400",
+  "viewports": [
+    "1366x768",
+    "390x844"
+  ],
+  "pairs": [
+    {
+      "route": "/",
+      "page": "home",
+      "viewport": "1366x768",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 18,
+        "wordpress": 18
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "none",
+        "backToTop": true,
+        "lightbox": true
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/courses/",
+      "page": "courses",
+      "viewport": "1366x768",
+      "AE": "612",
+      "RMSE": "3.88815 (5.93294e-05)",
+      "pixel_identical": false,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 7,
+        "wordpress": 7
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "none",
+        "backToTop": true,
+        "lightbox": false
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/courses/skin-facial/",
+      "page": "course-skin-facial",
+      "viewport": "1366x768",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 14,
+        "wordpress": 14
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "none",
+        "backToTop": true,
+        "lightbox": true
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/courses/medical-emergency/",
+      "page": "course-medical-emergency",
+      "viewport": "1366x768",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 14,
+        "wordpress": 14
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "none",
+        "backToTop": true,
+        "lightbox": true
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/courses/pharmacy-technician/",
+      "page": "course-pharmacy-technician",
+      "viewport": "1366x768",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 13,
+        "wordpress": 13
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "none",
+        "backToTop": true,
+        "lightbox": true
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/courses/massage-relaxation/",
+      "page": "course-massage-relaxation",
+      "viewport": "1366x768",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 14,
+        "wordpress": 14
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "none",
+        "backToTop": true,
+        "lightbox": true
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/about/",
+      "page": "about",
+      "viewport": "1366x768",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 9,
+        "wordpress": 9
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "none",
+        "backToTop": true,
+        "lightbox": false
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/gallery/",
+      "page": "gallery",
+      "viewport": "1366x768",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 31,
+        "wordpress": 31
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "none",
+        "backToTop": true,
+        "lightbox": true
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/contact/",
+      "page": "contact",
+      "viewport": "1366x768",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 2,
+        "wordpress": 2
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "none",
+        "backToTop": true,
+        "lightbox": false
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/register/",
+      "page": "register",
+      "viewport": "1366x768",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 2,
+        "wordpress": 2
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "none",
+        "backToTop": true,
+        "lightbox": false
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/404/",
+      "page": "404",
+      "viewport": "1366x768",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 404
+      },
+      "images": {
+        "original": 2,
+        "wordpress": 2
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "none",
+        "backToTop": true,
+        "lightbox": false
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/",
+      "page": "home",
+      "viewport": "390x844",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 18,
+        "wordpress": 18
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "grid",
+        "backToTop": true,
+        "lightbox": true
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/courses/",
+      "page": "courses",
+      "viewport": "390x844",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 7,
+        "wordpress": 7
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "grid",
+        "backToTop": true,
+        "lightbox": false
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/courses/skin-facial/",
+      "page": "course-skin-facial",
+      "viewport": "390x844",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 14,
+        "wordpress": 14
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "grid",
+        "backToTop": true,
+        "lightbox": true
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/courses/medical-emergency/",
+      "page": "course-medical-emergency",
+      "viewport": "390x844",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 14,
+        "wordpress": 14
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "grid",
+        "backToTop": true,
+        "lightbox": true
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/courses/pharmacy-technician/",
+      "page": "course-pharmacy-technician",
+      "viewport": "390x844",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 13,
+        "wordpress": 13
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "grid",
+        "backToTop": true,
+        "lightbox": true
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/courses/massage-relaxation/",
+      "page": "course-massage-relaxation",
+      "viewport": "390x844",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 14,
+        "wordpress": 14
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "grid",
+        "backToTop": true,
+        "lightbox": true
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/about/",
+      "page": "about",
+      "viewport": "390x844",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 9,
+        "wordpress": 9
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "grid",
+        "backToTop": true,
+        "lightbox": false
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/gallery/",
+      "page": "gallery",
+      "viewport": "390x844",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 31,
+        "wordpress": 31
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "grid",
+        "backToTop": true,
+        "lightbox": true
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/contact/",
+      "page": "contact",
+      "viewport": "390x844",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 2,
+        "wordpress": 2
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "grid",
+        "backToTop": true,
+        "lightbox": false
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/register/",
+      "page": "register",
+      "viewport": "390x844",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 200
+      },
+      "images": {
+        "original": 2,
+        "wordpress": 2
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "grid",
+        "backToTop": true,
+        "lightbox": false
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    },
+    {
+      "route": "/404/",
+      "page": "404",
+      "viewport": "390x844",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "pixel_identical": true,
+      "http": {
+        "original": 200,
+        "wordpress": 404
+      },
+      "images": {
+        "original": 2,
+        "wordpress": 2
+      },
+      "broken_images": {
+        "original": [],
+        "wordpress": []
+      },
+      "overflow_x": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "hidden_reveals": {
+        "original": 0,
+        "wordpress": 0
+      },
+      "rtl": {
+        "original": "rtl",
+        "wordpress": "rtl",
+        "computed": "rtl"
+      },
+      "font": {
+        "family": "\"Vazirmatn Variable\", Tahoma, sans-serif",
+        "vazirmatn_loaded": true
+      },
+      "shared_chrome_wordpress": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "callBarDisplay": "grid",
+        "backToTop": true,
+        "lightbox": false
+      },
+      "php_error_strings": {
+        "original": [],
+        "wordpress": []
+      }
+    }
+  ],
+  "pairs_total": 22,
+  "pairs_identical": 21,
+  "routes_covered": 11,
+  "all_identical": false,
+  "lossless_png_confirmations": [
+    {
+      "route": "/courses/",
+      "viewport": "1366x768",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "identical": true,
+      "orig": "/home/user/raouf/.work/wp-qa/stage-c-screens/orig-png-1366x768-courses.png",
+      "wp": "/home/user/raouf/.work/wp-qa/stage-c-screens/wp-png-1366x768-courses.png",
+      "reason": "Lossless confirmation of the only strict-JPEG pair with AE>0"
+    }
+  ],
+  "pairs_identical_after_lossless_confirmation": 22,
+  "all_routes_visually_identical": true,
+  "strict_jpeg_note": "21/22 JPEG pairs AE=0; /courses/ desktop showed 612 pixels at max delta 8/255 from JPEG quantisation and is AE=0 in lossless PNG.",
+  "consoleErrors": [
+    "wp:1366x768:404: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "wp:390x844:404: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "failedRequests": [
+    "wp:1366x768:404: HTTP 404 http://127.0.0.1:9400/404/",
+    "wp:390x844:404: HTTP 404 http://127.0.0.1:9400/404/"
+  ],
+  "note": "Stage C covers all 11 routes at 2 viewports. The complete 6-viewport / 60-pair suite is Stage F and was NOT run here."
+}

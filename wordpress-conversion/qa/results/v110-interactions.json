@@ -1,0 +1,147 @@
+{
+  "base": "http://127.0.0.1:9422",
+  "generatedAt": "2026-11-09T14:33:26.851Z",
+  "checks": [
+    {
+      "name": "homepage HTTP 200",
+      "ok": true,
+      "detail": "200"
+    },
+    {
+      "name": "RTL + Persian lang",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "desktop courses dropdown opens",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "dropdown has 4 course links",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "FAQ exclusive accordion",
+      "ok": true,
+      "detail": "{\"second\":true,\"first\":false}"
+    },
+    {
+      "name": "lightbox opens with an image",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "lightbox keyboard navigation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "lightbox closes with Escape",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "back-to-top appears",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no empty links",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "tel + instagram links present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "no horizontal overflow",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "gallery filter works",
+      "ok": true,
+      "detail": "{\"visible\":5,\"total\":27}"
+    },
+    {
+      "name": "mobile menu opens",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile menu has 5 course/overview links",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile call bar visible with tel link",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "course preselected from URL",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "invalid registration blocked client-side",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "registration really saved + success panel",
+      "ok": true,
+      "detail": "REG-20261109-2B31AB"
+    },
+    {
+      "name": "contact really saved + success panel",
+      "ok": true,
+      "detail": "MSG-20261109-261C54"
+    },
+    {
+      "name": "/courses/ loads, no broken images/empty links",
+      "ok": true,
+      "detail": "{\"broken\":0,\"empty\":0}"
+    },
+    {
+      "name": "/courses/skin-facial/ loads, no broken images/empty links",
+      "ok": true,
+      "detail": "{\"broken\":0,\"empty\":0}"
+    },
+    {
+      "name": "/courses/medical-emergency/ loads, no broken images/empty links",
+      "ok": true,
+      "detail": "{\"broken\":0,\"empty\":0}"
+    },
+    {
+      "name": "/courses/pharmacy-technician/ loads, no broken images/empty links",
+      "ok": true,
+      "detail": "{\"broken\":0,\"empty\":0}"
+    },
+    {
+      "name": "/courses/massage-relaxation/ loads, no broken images/empty links",
+      "ok": true,
+      "detail": "{\"broken\":0,\"empty\":0}"
+    },
+    {
+      "name": "/about/ loads, no broken images/empty links",
+      "ok": true,
+      "detail": "{\"broken\":0,\"empty\":0}"
+    },
+    {
+      "name": "/contact/ loads, no broken images/empty links",
+      "ok": true,
+      "detail": "{\"broken\":0,\"empty\":0}"
+    },
+    {
+      "name": "/register/ loads, no broken images/empty links",
+      "ok": true,
+      "detail": "{\"broken\":0,\"empty\":0}"
+    }
+  ],
+  "consoleErrors": []
+}

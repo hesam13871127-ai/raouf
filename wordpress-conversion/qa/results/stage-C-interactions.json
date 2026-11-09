@@ -1,0 +1,1169 @@
+{
+  "stage": "C",
+  "orig": "http://127.0.0.1:3000",
+  "wp": "http://127.0.0.1:9400",
+  "routes": [
+    {
+      "route": "/",
+      "viewport": "1366x768",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 6493,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "none",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 1,
+      "activeMobile": 1,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 1,
+        "mobile": 1
+      },
+      "dropdown": {
+        "expanded": "true",
+        "visibility": "visible",
+        "courseLinks": 4
+      },
+      "mobileMenu": null,
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/",
+      "viewport": "390x844",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 11736,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "grid",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 1,
+      "activeMobile": 1,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 1,
+        "mobile": 1
+      },
+      "dropdown": null,
+      "mobileMenu": {
+        "hidden": false,
+        "expanded": "true",
+        "subLinks": 5
+      },
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/courses/",
+      "viewport": "1366x768",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 2908,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "none",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 1,
+      "activeMobile": 1,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 1,
+        "mobile": 1
+      },
+      "dropdown": {
+        "expanded": "true",
+        "visibility": "visible",
+        "courseLinks": 4
+      },
+      "mobileMenu": null,
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/courses/",
+      "viewport": "390x844",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 5375,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "grid",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 1,
+      "activeMobile": 1,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 1,
+        "mobile": 1
+      },
+      "dropdown": null,
+      "mobileMenu": {
+        "hidden": false,
+        "expanded": "true",
+        "subLinks": 5
+      },
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/courses/skin-facial/",
+      "viewport": "1366x768",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 6832,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "none",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 0,
+      "activeMobile": 0,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "dropdown": {
+        "expanded": "true",
+        "visibility": "visible",
+        "courseLinks": 4
+      },
+      "mobileMenu": null,
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/courses/skin-facial/",
+      "viewport": "390x844",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 11887,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "grid",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 0,
+      "activeMobile": 0,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "dropdown": null,
+      "mobileMenu": {
+        "hidden": false,
+        "expanded": "true",
+        "subLinks": 5
+      },
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/courses/medical-emergency/",
+      "viewport": "1366x768",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 7293,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "none",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 0,
+      "activeMobile": 0,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "dropdown": {
+        "expanded": "true",
+        "visibility": "visible",
+        "courseLinks": 4
+      },
+      "mobileMenu": null,
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/courses/medical-emergency/",
+      "viewport": "390x844",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 11835,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "grid",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 0,
+      "activeMobile": 0,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "dropdown": null,
+      "mobileMenu": {
+        "hidden": false,
+        "expanded": "true",
+        "subLinks": 5
+      },
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/courses/pharmacy-technician/",
+      "viewport": "1366x768",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 6845,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "none",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 0,
+      "activeMobile": 0,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "dropdown": {
+        "expanded": "true",
+        "visibility": "visible",
+        "courseLinks": 4
+      },
+      "mobileMenu": null,
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/courses/pharmacy-technician/",
+      "viewport": "390x844",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 11112,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "grid",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 0,
+      "activeMobile": 0,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "dropdown": null,
+      "mobileMenu": {
+        "hidden": false,
+        "expanded": "true",
+        "subLinks": 5
+      },
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/courses/massage-relaxation/",
+      "viewport": "1366x768",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 7175,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "none",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 0,
+      "activeMobile": 0,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "dropdown": {
+        "expanded": "true",
+        "visibility": "visible",
+        "courseLinks": 4
+      },
+      "mobileMenu": null,
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/courses/massage-relaxation/",
+      "viewport": "390x844",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 11579,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "grid",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 0,
+      "activeMobile": 0,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "dropdown": null,
+      "mobileMenu": {
+        "hidden": false,
+        "expanded": "true",
+        "subLinks": 5
+      },
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/about/",
+      "viewport": "1366x768",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 4643,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "none",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 1,
+      "activeMobile": 1,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 1,
+        "mobile": 1
+      },
+      "dropdown": {
+        "expanded": "true",
+        "visibility": "visible",
+        "courseLinks": 4
+      },
+      "mobileMenu": null,
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/about/",
+      "viewport": "390x844",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 8452,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "grid",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 1,
+      "activeMobile": 1,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 1,
+        "mobile": 1
+      },
+      "dropdown": null,
+      "mobileMenu": {
+        "hidden": false,
+        "expanded": "true",
+        "subLinks": 5
+      },
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/gallery/",
+      "viewport": "1366x768",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 4254,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "none",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 1,
+      "activeMobile": 1,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 1,
+        "mobile": 1
+      },
+      "dropdown": {
+        "expanded": "true",
+        "visibility": "visible",
+        "courseLinks": 4
+      },
+      "mobileMenu": null,
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/gallery/",
+      "viewport": "390x844",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 11211,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "grid",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 1,
+      "activeMobile": 1,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 1,
+        "mobile": 1
+      },
+      "dropdown": null,
+      "mobileMenu": {
+        "hidden": false,
+        "expanded": "true",
+        "subLinks": 5
+      },
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/contact/",
+      "viewport": "1366x768",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 1632,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "none",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 1,
+      "activeMobile": 1,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 1,
+        "mobile": 1
+      },
+      "dropdown": {
+        "expanded": "true",
+        "visibility": "visible",
+        "courseLinks": 4
+      },
+      "mobileMenu": null,
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/contact/",
+      "viewport": "390x844",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 3716,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "grid",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 1,
+      "activeMobile": 1,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 1,
+        "mobile": 1
+      },
+      "dropdown": null,
+      "mobileMenu": {
+        "hidden": false,
+        "expanded": "true",
+        "subLinks": 5
+      },
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/register/",
+      "viewport": "1366x768",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 2172,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "none",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 0,
+      "activeMobile": 0,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "dropdown": {
+        "expanded": "true",
+        "visibility": "visible",
+        "courseLinks": 4
+      },
+      "mobileMenu": null,
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/register/",
+      "viewport": "390x844",
+      "status": 200,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 3816,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "grid",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 0,
+      "activeMobile": 0,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "dropdown": null,
+      "mobileMenu": {
+        "hidden": false,
+        "expanded": "true",
+        "subLinks": 5
+      },
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    },
+    {
+      "route": "/404/",
+      "viewport": "1366x768",
+      "status": 404,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 436,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "none",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 0,
+      "activeMobile": 0,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "dropdown": {
+        "expanded": "true",
+        "visibility": "visible",
+        "courseLinks": 4
+      },
+      "mobileMenu": null,
+      "expectedBackToTop": false,
+      "backToTopAfterScroll": false
+    },
+    {
+      "route": "/404/",
+      "viewport": "390x844",
+      "status": 404,
+      "dir": "rtl",
+      "lang": "fa",
+      "computedDirection": "rtl",
+      "overflowX": 0,
+      "maxScroll": 1100,
+      "brokenImages": 0,
+      "emptyLinks": 0,
+      "chrome": {
+        "header": true,
+        "topbar": true,
+        "footer": true,
+        "mobileNav": true,
+        "callBar": true,
+        "backToTop": true
+      },
+      "callBarDisplay": "grid",
+      "callBarTel": true,
+      "desktopNavLinks": 5,
+      "mobileNavLinks": 5,
+      "activeDesktop": 0,
+      "activeMobile": 0,
+      "backToTopShown": false,
+      "expectedActive": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "dropdown": null,
+      "mobileMenu": {
+        "hidden": false,
+        "expanded": "true",
+        "subLinks": 5
+      },
+      "expectedBackToTop": true,
+      "backToTopAfterScroll": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "/ @1366x768 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[1,1],\"expected\":{\"desktop\":1,\"mobile\":1},\"callBar\":\"none\",\"dropdown\":{\"expanded\":\"true\",\"visibility\":\"visible\",\"courseLinks\":4},\"mobileMenu\":null,\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/ @390x844 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[1,1],\"expected\":{\"desktop\":1,\"mobile\":1},\"callBar\":\"grid\",\"dropdown\":null,\"mobileMenu\":{\"hidden\":false,\"expanded\":\"true\",\"subLinks\":5},\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/courses/ @1366x768 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[1,1],\"expected\":{\"desktop\":1,\"mobile\":1},\"callBar\":\"none\",\"dropdown\":{\"expanded\":\"true\",\"visibility\":\"visible\",\"courseLinks\":4},\"mobileMenu\":null,\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/courses/ @390x844 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[1,1],\"expected\":{\"desktop\":1,\"mobile\":1},\"callBar\":\"grid\",\"dropdown\":null,\"mobileMenu\":{\"hidden\":false,\"expanded\":\"true\",\"subLinks\":5},\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/courses/skin-facial/ @1366x768 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[0,0],\"expected\":{\"desktop\":0,\"mobile\":0},\"callBar\":\"none\",\"dropdown\":{\"expanded\":\"true\",\"visibility\":\"visible\",\"courseLinks\":4},\"mobileMenu\":null,\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/courses/skin-facial/ @390x844 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[0,0],\"expected\":{\"desktop\":0,\"mobile\":0},\"callBar\":\"grid\",\"dropdown\":null,\"mobileMenu\":{\"hidden\":false,\"expanded\":\"true\",\"subLinks\":5},\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/courses/medical-emergency/ @1366x768 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[0,0],\"expected\":{\"desktop\":0,\"mobile\":0},\"callBar\":\"none\",\"dropdown\":{\"expanded\":\"true\",\"visibility\":\"visible\",\"courseLinks\":4},\"mobileMenu\":null,\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/courses/medical-emergency/ @390x844 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[0,0],\"expected\":{\"desktop\":0,\"mobile\":0},\"callBar\":\"grid\",\"dropdown\":null,\"mobileMenu\":{\"hidden\":false,\"expanded\":\"true\",\"subLinks\":5},\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/courses/pharmacy-technician/ @1366x768 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[0,0],\"expected\":{\"desktop\":0,\"mobile\":0},\"callBar\":\"none\",\"dropdown\":{\"expanded\":\"true\",\"visibility\":\"visible\",\"courseLinks\":4},\"mobileMenu\":null,\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/courses/pharmacy-technician/ @390x844 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[0,0],\"expected\":{\"desktop\":0,\"mobile\":0},\"callBar\":\"grid\",\"dropdown\":null,\"mobileMenu\":{\"hidden\":false,\"expanded\":\"true\",\"subLinks\":5},\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/courses/massage-relaxation/ @1366x768 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[0,0],\"expected\":{\"desktop\":0,\"mobile\":0},\"callBar\":\"none\",\"dropdown\":{\"expanded\":\"true\",\"visibility\":\"visible\",\"courseLinks\":4},\"mobileMenu\":null,\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/courses/massage-relaxation/ @390x844 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[0,0],\"expected\":{\"desktop\":0,\"mobile\":0},\"callBar\":\"grid\",\"dropdown\":null,\"mobileMenu\":{\"hidden\":false,\"expanded\":\"true\",\"subLinks\":5},\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/about/ @1366x768 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[1,1],\"expected\":{\"desktop\":1,\"mobile\":1},\"callBar\":\"none\",\"dropdown\":{\"expanded\":\"true\",\"visibility\":\"visible\",\"courseLinks\":4},\"mobileMenu\":null,\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/about/ @390x844 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[1,1],\"expected\":{\"desktop\":1,\"mobile\":1},\"callBar\":\"grid\",\"dropdown\":null,\"mobileMenu\":{\"hidden\":false,\"expanded\":\"true\",\"subLinks\":5},\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/gallery/ @1366x768 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[1,1],\"expected\":{\"desktop\":1,\"mobile\":1},\"callBar\":\"none\",\"dropdown\":{\"expanded\":\"true\",\"visibility\":\"visible\",\"courseLinks\":4},\"mobileMenu\":null,\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/gallery/ @390x844 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[1,1],\"expected\":{\"desktop\":1,\"mobile\":1},\"callBar\":\"grid\",\"dropdown\":null,\"mobileMenu\":{\"hidden\":false,\"expanded\":\"true\",\"subLinks\":5},\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/contact/ @1366x768 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[1,1],\"expected\":{\"desktop\":1,\"mobile\":1},\"callBar\":\"none\",\"dropdown\":{\"expanded\":\"true\",\"visibility\":\"visible\",\"courseLinks\":4},\"mobileMenu\":null,\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/contact/ @390x844 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[1,1],\"expected\":{\"desktop\":1,\"mobile\":1},\"callBar\":\"grid\",\"dropdown\":null,\"mobileMenu\":{\"hidden\":false,\"expanded\":\"true\",\"subLinks\":5},\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/register/ @1366x768 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[0,0],\"expected\":{\"desktop\":0,\"mobile\":0},\"callBar\":\"none\",\"dropdown\":{\"expanded\":\"true\",\"visibility\":\"visible\",\"courseLinks\":4},\"mobileMenu\":null,\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/register/ @390x844 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":200,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[0,0],\"expected\":{\"desktop\":0,\"mobile\":0},\"callBar\":\"grid\",\"dropdown\":null,\"mobileMenu\":{\"hidden\":false,\"expanded\":\"true\",\"subLinks\":5},\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "/404/ @1366x768 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":404,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[0,0],\"expected\":{\"desktop\":0,\"mobile\":0},\"callBar\":\"none\",\"dropdown\":{\"expanded\":\"true\",\"visibility\":\"visible\",\"courseLinks\":4},\"mobileMenu\":null,\"backToTop\":false,\"expectedBackToTop\":false}"
+    },
+    {
+      "name": "/404/ @390x844 chrome/RTL/nav/responsive",
+      "ok": true,
+      "detail": "{\"status\":404,\"chrome\":{\"header\":true,\"topbar\":true,\"footer\":true,\"mobileNav\":true,\"callBar\":true,\"backToTop\":true},\"active\":[0,0],\"expected\":{\"desktop\":0,\"mobile\":0},\"callBar\":\"grid\",\"dropdown\":null,\"mobileMenu\":{\"hidden\":false,\"expanded\":\"true\",\"subLinks\":5},\"backToTop\":true,\"expectedBackToTop\":true}"
+    },
+    {
+      "name": "4 course pages have 4 distinct h1 / accent classes / image sets",
+      "ok": true,
+      "detail": "[[\"course-hero--lilac\",\"rgb(48, 61, 98)\",11,3],[\"course-hero--blue\",\"rgb(48, 61, 98)\",11,3],[\"course-hero--navy\",\"rgb(48, 61, 98)\",10,3],[\"course-hero--purple\",\"rgb(48, 61, 98)\",11,3]]"
+    },
+    {
+      "name": "hover and focus CSS active on both sites (identical states)",
+      "ok": true,
+      "detail": "{\"orig\":{\"before\":{\"bg\":\"rgb(7, 159, 229)\",\"transform\":\"none\"},\"after\":{\"bg\":\"rgb(2, 137, 198)\",\"transform\":\"matrix(1, 0, 0, 1, 0, -2.9988)\"},\"focus\":{\"outlineWidth\":\"3px\",\"outlineStyle\":\"solid\"},\"cssHasHover\":true,\"normTransform\":{\"before\":\"none\",\"after\":\"matrix(1, 0, 0, 1, 0, -3.00)\"}},\"wp\":{\"before\":{\"bg\":\"rgb(7, 159, 229)\",\"transform\":\"none\"},\"after\":{\"bg\":\"rgb(2, 137, 198)\",\"transform\":\"matrix(1, 0, 0, 1, 0, -2.99881)\"},\"focus\":{\"outlineWidth\":\"3px\",\"outlineStyle\":\"solid\"},\"cssHasHover\":true,\"normTransform\":{\"before\":\"none\",\"after\":\"matrix(1, 0, 0, 1, 0, -3.00)\"}}}"
+    },
+    {
+      "name": "course preselected from query string",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "client-side validation blocks empty registration",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "registration really persists (success + reference)",
+      "ok": true,
+      "detail": "REG-20261108-EC42CE"
+    },
+    {
+      "name": "contact really persists (success + reference)",
+      "ok": true,
+      "detail": "MSG-20261108-1635DE"
+    }
+  ],
+  "consoleErrors": [
+    "wp:1366x768:/404/: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "wp:390x844:/404/: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "failedRequests": [],
+  "courses": [
+    {
+      "route": "/courses/skin-facial/",
+      "h1": "دوره تخصصی آموزش پاکسازی و فیشیال پوست",
+      "accentClass": "course-hero--lilac",
+      "heroBackground": "rgb(48, 61, 98)",
+      "heroGradient": "none",
+      "shapeA": "radial-gradient(circle, rgba(135, 11, 145, 0.45), rgba(0, 0, 0, 0) 70%)",
+      "shapeB": "radial-gradient(circle, rgba(135, 11, 145, 0.35), rgba(0, 0, 0, 0) 70%)",
+      "sections": 11,
+      "faqDetails": 3,
+      "faqNames": [
+        "faq-skin-facial",
+        "faq-skin-facial",
+        "faq-skin-facial"
+      ],
+      "images": [
+        "course-facial.webp",
+        "treatment-room-01.webp",
+        "products-02.webp",
+        "treatment-room-01.webp",
+        "course-facial.webp",
+        "treatment-room-01.webp",
+        "products-02.webp",
+        "treatment-room-02.webp",
+        "first-aid-01.webp",
+        "course-pharmacy.webp",
+        "course-massage.webp"
+      ],
+      "inlineSvgs": 58,
+      "jsonldType": "Course",
+      "originalAccentGradients": {
+        "shapeA": "radial-gradient(circle, rgba(135, 11, 145, 0.45), rgba(0, 0, 0, 0) 70%)",
+        "shapeB": "radial-gradient(circle, rgba(135, 11, 145, 0.35), rgba(0, 0, 0, 0) 70%)"
+      },
+      "accentGradientsMatchOriginal": true
+    },
+    {
+      "route": "/courses/medical-emergency/",
+      "h1": "دوره جامع فوریت‌های پزشکی، کمک‌های اولیه، تزریقات و بخیه",
+      "accentClass": "course-hero--blue",
+      "heroBackground": "rgb(48, 61, 98)",
+      "heroGradient": "none",
+      "shapeA": "radial-gradient(circle, rgba(7, 159, 229, 0.38), rgba(0, 0, 0, 0) 70%)",
+      "shapeB": "radial-gradient(circle, rgba(135, 11, 145, 0.35), rgba(0, 0, 0, 0) 70%)",
+      "sections": 11,
+      "faqDetails": 3,
+      "faqNames": [
+        "faq-medical-emergency",
+        "faq-medical-emergency",
+        "faq-medical-emergency"
+      ],
+      "images": [
+        "first-aid-01.webp",
+        "first-aid-02.webp",
+        "anatomy-01.webp",
+        "first-aid-02.webp",
+        "first-aid-01.webp",
+        "first-aid-02.webp",
+        "anatomy-01.webp",
+        "anatomy-03.webp",
+        "course-facial.webp",
+        "course-pharmacy.webp",
+        "course-massage.webp"
+      ],
+      "inlineSvgs": 60,
+      "jsonldType": "Course",
+      "originalAccentGradients": {
+        "shapeA": "radial-gradient(circle, rgba(7, 159, 229, 0.38), rgba(0, 0, 0, 0) 70%)",
+        "shapeB": "radial-gradient(circle, rgba(135, 11, 145, 0.35), rgba(0, 0, 0, 0) 70%)"
+      },
+      "accentGradientsMatchOriginal": true
+    },
+    {
+      "route": "/courses/pharmacy-technician/",
+      "h1": "دوره آموزشی تکنسین داروخانه (نسخه‌خوانی)",
+      "accentClass": "course-hero--navy",
+      "heroBackground": "rgb(48, 61, 98)",
+      "heroGradient": "none",
+      "shapeA": "radial-gradient(circle, rgba(7, 159, 229, 0.38), rgba(0, 0, 0, 0) 70%)",
+      "shapeB": "radial-gradient(circle, rgba(7, 159, 229, 0.35), rgba(0, 0, 0, 0) 70%)",
+      "sections": 11,
+      "faqDetails": 3,
+      "faqNames": [
+        "faq-pharmacy-technician",
+        "faq-pharmacy-technician",
+        "faq-pharmacy-technician"
+      ],
+      "images": [
+        "course-pharmacy.webp",
+        "course-pharmacy-2.webp",
+        "classroom-02.webp",
+        "course-pharmacy-2.webp",
+        "course-pharmacy.webp",
+        "course-pharmacy-2.webp",
+        "classroom-02.webp",
+        "course-facial.webp",
+        "first-aid-01.webp",
+        "course-massage.webp"
+      ],
+      "inlineSvgs": 56,
+      "jsonldType": "Course",
+      "originalAccentGradients": {
+        "shapeA": "radial-gradient(circle, rgba(7, 159, 229, 0.38), rgba(0, 0, 0, 0) 70%)",
+        "shapeB": "radial-gradient(circle, rgba(7, 159, 229, 0.35), rgba(0, 0, 0, 0) 70%)"
+      },
+      "accentGradientsMatchOriginal": true
+    },
+    {
+      "route": "/courses/massage-relaxation/",
+      "h1": "دوره جامع تخصصی ماساژ و ریلکسیشن",
+      "accentClass": "course-hero--purple",
+      "heroBackground": "rgb(48, 61, 98)",
+      "heroGradient": "none",
+      "shapeA": "radial-gradient(circle, rgba(135, 11, 145, 0.45), rgba(0, 0, 0, 0) 70%)",
+      "shapeB": "radial-gradient(circle, rgba(135, 11, 145, 0.35), rgba(0, 0, 0, 0) 70%)",
+      "sections": 11,
+      "faqDetails": 3,
+      "faqNames": [
+        "faq-massage-relaxation",
+        "faq-massage-relaxation",
+        "faq-massage-relaxation"
+      ],
+      "images": [
+        "course-massage.webp",
+        "course-massage-2.webp",
+        "treatment-room-02.webp",
+        "treatment-room-02.webp",
+        "course-massage.webp",
+        "course-massage-2.webp",
+        "treatment-room-02.webp",
+        "products-01.webp",
+        "course-facial.webp",
+        "first-aid-01.webp",
+        "course-pharmacy.webp"
+      ],
+      "inlineSvgs": 61,
+      "jsonldType": "Course",
+      "originalAccentGradients": {
+        "shapeA": "radial-gradient(circle, rgba(135, 11, 145, 0.45), rgba(0, 0, 0, 0) 70%)",
+        "shapeB": "radial-gradient(circle, rgba(135, 11, 145, 0.35), rgba(0, 0, 0, 0) 70%)"
+      },
+      "accentGradientsMatchOriginal": true
+    }
+  ],
+  "formReferences": [
+    "REG-20261108-EC42CE",
+    "MSG-20261108-1635DE"
+  ],
+  "summary": {
+    "route_viewport_checks": 22,
+    "routes_covered": 11,
+    "checks": 28,
+    "failures": 0,
+    "consoleErrors": 2,
+    "failedRequests": 0
+  }
+}

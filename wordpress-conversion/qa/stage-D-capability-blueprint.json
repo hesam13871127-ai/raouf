@@ -1,0 +1,28 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "http://127.0.0.1:9401/wordpress.zip"
+  },
+  "features": {
+    "networking": true
+  },
+  "steps": [
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "Stage D capability probe",
+        "permalink_structure": "/%postname%/"
+      }
+    },
+    {
+      "step": "activateTheme",
+      "themeFolderName": "raouf-academy"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php\nrequire_once '/wordpress/wp-load.php';\n$probe_email = 'stage-d-probe@example.test';\n$editor_id = wp_insert_user( array(\n    'user_login' => 'stage_d_probe_editor',\n    'user_pass'  => 'Probe-Editor-2026!x',\n    'user_email' => $probe_email,\n    'role'       => 'editor',\n) );\n$submission_id = wp_insert_post( array(\n    'post_type'    => 'raouf_submission',\n    'post_status'  => 'private',\n    'post_title'   => 'Stage D capability probe',\n    'post_content' => 'PROBE-PII-DO-NOT-SHIP',\n) );\nupdate_post_meta( $submission_id, '_raouf_name',  'پروب ممیزی D' );\nupdate_post_meta( $submission_id, '_raouf_phone', '09123456789' );\n$pto  = get_post_type_object( 'raouf_submission' );\n$caps = (array) $pto->cap;\nwp_set_current_user( $editor_id );\n$editor_can_read_post  = current_user_can( 'read_post', $submission_id );\n$editor_can_edit_post  = current_user_can( 'edit_post', $submission_id );\n$editor_can_read_priv  = current_user_can( $caps['read_private_posts'] );\n$q = new WP_Query( array(\n    'post_type'      => 'raouf_submission',\n    'post_status'    => 'private',\n    'posts_per_page' => -1,\n    'fields'         => 'ids',\n    'perm'           => 'readable',\n) );\n$probe = array(\n    'wp_version'                       => get_bloginfo( 'version' ),\n    'php_version'                      => PHP_VERSION,\n    'editor_id'                        => (int) $editor_id,\n    'submission_id'                    => (int) $submission_id,\n    'cap_read_post'                    => $caps['read_post'],\n    'cap_edit_post'                    => $caps['edit_post'],\n    'cap_read_private_posts'           => $caps['read_private_posts'],\n    'map_meta_cap'                     => $pto->map_meta_cap,\n    'editor_can_read_post'             => $editor_can_read_post,\n    'editor_can_edit_post'             => $editor_can_edit_post,\n    'editor_can_read_private_cap'      => $editor_can_read_priv,\n    'editor_private_submission_ids'    => array_map( 'intval', $q->posts ),\n    'editor_private_submission_count'  => (int) $q->post_count,\n);\nfile_put_contents( '/wordpress/wp-content/stage-d-capability-probe.json', wp_json_encode( $probe, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT ) );\n"
+    }
+  ]
+}

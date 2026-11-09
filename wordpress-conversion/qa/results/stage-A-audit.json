@@ -1,0 +1,141 @@
+{
+  "stage": "A",
+  "commit": "abc23ef6ddbd4a74111f6c0347504a35eb746002",
+  "readOnly": true,
+  "defects": [
+    {
+      "id": "D01",
+      "severity": "high",
+      "area": "portability",
+      "title": "post_content contains 69 hardcoded installation URLs",
+      "evidence": "/wp-json/wp/v2/pages/4 on 9400 returns content with http://127.0.0.1:9400/wp-content/themes/...; no {{}} tokens remain. setup.php:raouf_upsert_page() expands tokens BEFORE wp_insert_post. Moving the site to another domain breaks images/links.",
+      "fix": "Store tokenised markup in post_content and expand tokens at render time (templates already call raouf_expand_tokens())."
+    },
+    {
+      "id": "D02",
+      "severity": "high",
+      "area": "head/SEO",
+      "title": "Duplicate canonical tag on 10 of 11 routes",
+      "evidence": "theme header.php emits <link rel=\"canonical\" href=\"/courses/\">; WordPress core rel_canonical emits a second absolute one. Verified on 3000 vs 9400.",
+      "fix": "remove_action( 'wp_head', 'rel_canonical' );"
+    },
+    {
+      "id": "D03",
+      "severity": "medium",
+      "area": "head/SEO",
+      "title": "Duplicate robots meta tag on 10 of 11 routes",
+      "evidence": "original <meta name=\"robots\" content=\"index, follow\"> plus WP core wp_robots <meta name='robots' content='max-image-preview:large' />.",
+      "fix": "remove_action( 'wp_head', 'wp_robots' );"
+    },
+    {
+      "id": "D04",
+      "severity": "medium",
+      "area": "packaging",
+      "title": "source-code.zip is stale",
+      "evidence": "111 entries, no docs/ files, missing make-pdfs.mjs, dom-compare.py, upload-test.mjs; PDFs are newer than this ZIP.",
+      "fix": "Rebuild after documentation and QA scripts are final."
+    },
+    {
+      "id": "D05",
+      "severity": "medium",
+      "area": "admin/forms",
+      "title": "Submission message body not visible to administrator",
+      "evidence": "options.php:raouf_submissions_page() lists ref/kind/name/phone/course/date only; post_content (the actual message) and email are not shown; CPT has show_ui=false so no detail screen.",
+      "fix": "Add a detail column/view for message + email in the submissions admin page."
+    },
+    {
+      "id": "D06",
+      "severity": "low",
+      "area": "security hardening",
+      "title": "inc/icons.php lacks direct-access guard",
+      "evidence": "27 of 28 PHP files contain defined( 'ABSPATH' ) || exit; inc/icons.php does not.",
+      "fix": "Add guard."
+    },
+    {
+      "id": "D07",
+      "severity": "low",
+      "area": "documentation",
+      "title": "CJK typo in generated report/PDF generator",
+      "evidence": "qa/make-pdfs.mjs: «لینت مجدد全部 فایلها»; docs/conversion-report.md: «تکمیل所有 تصاویر»; PDF embeds the first one.",
+      "fix": "Replace with «همهٔ», regenerate PDFs."
+    },
+    {
+      "id": "D08",
+      "severity": "low",
+      "area": "documentation",
+      "title": "readme.txt Persian typos",
+      "evidence": "«وبسایت», «فنی و حرفهای» (missing ZWNJ).",
+      "fix": "Correct to «وبسایت/حرفهای» forms with U+200C."
+    },
+    {
+      "id": "D09",
+      "severity": "low",
+      "area": "i18n",
+      "title": "POT incomplete",
+      "evidence": "33 translatable calls in PHP, only 28 msgids in languages/raouf-academy.pot.",
+      "fix": "Regenerate POT from all PHP files."
+    },
+    {
+      "id": "D10",
+      "severity": "low",
+      "area": "documentation",
+      "title": "Stale code comments / converter artifacts",
+      "evidence": "helpers.php references non-existent inc/media.php; front-page.php docblock «Template for //».",
+      "fix": "Clean comments."
+    },
+    {
+      "id": "D11",
+      "severity": "info",
+      "area": "scope",
+      "title": "Only 6 of 67 images are Media-Library replaceable",
+      "evidence": "options.php:raouf_replaceable_images() lists 6 paths. Requirement allowed 'where practical'; document as limitation.",
+      "fix": "Document, or extend if requested."
+    },
+    {
+      "id": "D12",
+      "severity": "info",
+      "area": "fidelity",
+      "title": "Internal hrefs are absolute WP URLs instead of original relative paths",
+      "evidence": "All prior DOM comparisons normalised this away; visually identical, but attribute values differ from source (home_url() output).",
+      "fix": "Intentional WP API adaptation; document as an accepted deviation (no visual change)."
+    },
+    {
+      "id": "D13",
+      "severity": "info",
+      "area": "fidelity",
+      "title": "style.css font URLs rewritten from absolute to relative",
+      "evidence": "Only 4 diff ops vs original CSS: WP header, leading newline, and 3 /assets/fonts/ → assets/fonts/ rewrites; needed because the stylesheet moved to theme root.",
+      "fix": "Keep, document."
+    }
+  ],
+  "verified": [
+    {
+      "check": "git source integrity",
+      "result": "HEAD abc23ef6ddbd4a74111f6c0347504a35eb746002; git status shows only ?? wordpress-conversion/; original ZIP SHA-256 e583cec6… unchanged"
+    },
+    {
+      "check": "PHP lint",
+      "result": "28/28 files clean under PHP 8.5.12 (php-wasm CLI)"
+    },
+    {
+      "check": "asset hash parity",
+      "result": "71/71 files (67 images + 3 fonts + app.js) byte-identical to public/assets"
+    },
+    {
+      "check": "theme ZIP parity",
+      "result": "103 entries, unzip -t OK, 1 intentional omission (assets/css/style.css.source.css dev reference)"
+    },
+    {
+      "check": "head metadata comparison",
+      "result": "11 routes; 10 have duplicate canonical + duplicate robots; /404/ exact"
+    },
+    {
+      "check": "independent visual sample",
+      "result": "4 fresh Chromium pairs (home + gallery × 1366x768 + 390x844) all AE=0, equal dimensions, identical JPEG byte sizes"
+    },
+    {
+      "check": "live servers",
+      "result": "3000 (original), 9400 (WP QA), 9401 (WP core zip), 9402 (fresh WP install) all HTTP 200"
+    }
+  ]
+}

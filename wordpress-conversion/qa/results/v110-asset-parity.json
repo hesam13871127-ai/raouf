@@ -1,0 +1,68 @@
+{
+  "stage": "v1.1.0-asset-parity",
+  "summary": {
+    "checks": 9,
+    "PASS": 9,
+    "FAIL": 0,
+    "runtime_files": 104,
+    "changed_files": [
+      "assets/js/app.js",
+      "footer.php",
+      "functions.php",
+      "inc/forms.php",
+      "inc/helpers.php",
+      "inc/options.php",
+      "inc/pages-data.php",
+      "readme.txt",
+      "style.css"
+    ],
+    "unchanged_assets": 71
+  },
+  "checks": [
+    {
+      "name": "same runtime file set",
+      "result": "PASS",
+      "detail": "{'old': 104, 'new': 104, 'only_old': [], 'only_new': []}"
+    },
+    {
+      "name": "only the 9 intended functional/version files changed",
+      "result": "PASS",
+      "detail": "{'changed': ['assets/js/app.js', 'footer.php', 'functions.php', 'inc/forms.php', 'inc/helpers.php', 'inc/options.php', 'inc/pages-data.php', 'readme.txt', 'style.css'], 'expected': ['assets/js/app.js', 'footer.php', 'functions.php', 'inc/forms.php', 'inc/helpers.php', 'inc/options.php', 'inc/pages-data.php', 'readme.txt', 'style.css']}"
+    },
+    {
+      "name": "all images, fonts and SVG assets are byte-identical",
+      "result": "PASS",
+      "detail": "{'assets': 71, 'changed': []}"
+    },
+    {
+      "name": "reference CSS source is byte-identical",
+      "result": "PASS",
+      "detail": "assets/css/style.css.source.css"
+    },
+    {
+      "name": "style.css design rules are byte-identical; only header Version changed",
+      "result": "PASS",
+      "detail": "{'old_rules_sha': 'c519e0e4a6274f00867f4f09a73d4236de3698506d77edcf391b1c3ca43fae8b', 'new_rules_equal': True}"
+    },
+    {
+      "name": "app.js edits are confined to the form/AJAX section (lines 180–350)",
+      "result": "PASS",
+      "detail": "[(290, 289), (295, 295), (297, 296), (299, 299), (312, 312), (324, 323)]"
+    },
+    {
+      "name": "inc/pages-data.php differs only by the official map destination",
+      "result": "PASS",
+      "detail": "{'balad_occurrences': 1}"
+    },
+    {
+      "name": "footer.php differs only by the official map destination",
+      "result": "PASS",
+      "detail": "{'balad_occurrences': 1}"
+    },
+    {
+      "name": "no public OpenStreetMap destination remains in theme PHP",
+      "result": "PASS",
+      "detail": "{'files_with_legacy_detection_string': ['inc/helpers.php']}"
+    }
+  ]
+}

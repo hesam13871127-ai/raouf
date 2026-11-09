@@ -1,0 +1,238 @@
+{
+  "orig": "http://127.0.0.1:3000",
+  "wp": "http://127.0.0.1:9400",
+  "rows": [
+    {
+      "route": "/",
+      "header": true,
+      "main": true,
+      "footer": true,
+      "identical": true,
+      "lengths": [
+        [
+          9646,
+          9646
+        ],
+        [
+          38858,
+          38858
+        ],
+        [
+          6952,
+          6952
+        ]
+      ]
+    },
+    {
+      "route": "/courses/",
+      "header": true,
+      "main": true,
+      "footer": true,
+      "identical": true,
+      "lengths": [
+        [
+          9650,
+          9650
+        ],
+        [
+          16119,
+          16119
+        ],
+        [
+          5678,
+          5678
+        ]
+      ]
+    },
+    {
+      "route": "/courses/skin-facial/",
+      "header": true,
+      "main": true,
+      "footer": true,
+      "identical": true,
+      "lengths": [
+        [
+          9630,
+          9630
+        ],
+        [
+          34151,
+          34151
+        ],
+        [
+          6952,
+          6952
+        ]
+      ]
+    },
+    {
+      "route": "/courses/medical-emergency/",
+      "header": true,
+      "main": true,
+      "footer": true,
+      "identical": true,
+      "lengths": [
+        [
+          9630,
+          9630
+        ],
+        [
+          34532,
+          34532
+        ],
+        [
+          6952,
+          6952
+        ]
+      ]
+    },
+    {
+      "route": "/courses/pharmacy-technician/",
+      "header": true,
+      "main": true,
+      "footer": true,
+      "identical": true,
+      "lengths": [
+        [
+          9630,
+          9630
+        ],
+        [
+          32375,
+          32375
+        ],
+        [
+          6952,
+          6952
+        ]
+      ]
+    },
+    {
+      "route": "/courses/massage-relaxation/",
+      "header": true,
+      "main": true,
+      "footer": true,
+      "identical": true,
+      "lengths": [
+        [
+          9630,
+          9630
+        ],
+        [
+          34407,
+          34407
+        ],
+        [
+          6952,
+          6952
+        ]
+      ]
+    },
+    {
+      "route": "/about/",
+      "header": true,
+      "main": true,
+      "footer": true,
+      "identical": true,
+      "lengths": [
+        [
+          9646,
+          9646
+        ],
+        [
+          16596,
+          16596
+        ],
+        [
+          5678,
+          5678
+        ]
+      ]
+    },
+    {
+      "route": "/gallery/",
+      "header": true,
+      "main": true,
+      "footer": true,
+      "identical": true,
+      "lengths": [
+        [
+          9646,
+          9646
+        ],
+        [
+          30834,
+          30834
+        ],
+        [
+          6952,
+          6952
+        ]
+      ]
+    },
+    {
+      "route": "/contact/",
+      "header": true,
+      "main": true,
+      "footer": true,
+      "identical": true,
+      "lengths": [
+        [
+          9646,
+          9646
+        ],
+        [
+          10767,
+          10767
+        ],
+        [
+          5678,
+          5678
+        ]
+      ]
+    },
+    {
+      "route": "/register/",
+      "header": true,
+      "main": true,
+      "footer": true,
+      "identical": true,
+      "lengths": [
+        [
+          9626,
+          9626
+        ],
+        [
+          12488,
+          12488
+        ],
+        [
+          5678,
+          5678
+        ]
+      ]
+    },
+    {
+      "route": "/404/",
+      "header": true,
+      "main": true,
+      "footer": true,
+      "identical": true,
+      "lengths": [
+        [
+          9626,
+          9626
+        ],
+        [
+          977,
+          977
+        ],
+        [
+          5678,
+          5678
+        ]
+      ]
+    }
+  ],
+  "allIdentical": true
+}

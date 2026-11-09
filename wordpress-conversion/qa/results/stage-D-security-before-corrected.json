@@ -1,0 +1,179 @@
+{
+  "label": "before-corrected",
+  "base": "http://127.0.0.1:9408",
+  "generated_utc": "2026-11-08T15:20:34Z",
+  "runtime": "WordPress 6.8.3 / PHP 8.3 (Playground)",
+  "checks": [
+    {
+      "group": "sessions",
+      "check": "admin/subscriber/editor logins",
+      "result": "PASS",
+      "detail": "subscriber=True editor=True"
+    },
+    {
+      "group": "security",
+      "check": "all 28 PHP files are ABSPATH-guarded (no source/PII on direct access)",
+      "result": "PASS",
+      "detail": "violations=[]"
+    },
+    {
+      "group": "security",
+      "check": "submission CPT is not exposed through REST",
+      "result": "PASS",
+      "detail": "types_status=200 cpt_status=404"
+    },
+    {
+      "group": "security",
+      "check": "REST search returns no private submission",
+      "result": "PASS",
+      "detail": "status=200"
+    },
+    {
+      "group": "security",
+      "check": "GET /api/registrations is rejected (405 JSON)",
+      "result": "PASS",
+      "detail": "status=405"
+    },
+    {
+      "group": "security",
+      "check": "POST without double-submit CSRF token is denied (403)",
+      "result": "PASS",
+      "detail": "status=403"
+    },
+    {
+      "group": "security",
+      "check": "valid CSRF POST creates a real private submission (201 + ref)",
+      "result": "PASS",
+      "detail": "status=201 body={\"ok\":true,\"id\":\"REG-20261108-72222C\",\"message\":\"\\u0627\\u0637\\u0644\\u0627\\u0639\\u0627\\u062a \\u0628\\u0627 \\u0645\\u0648\\u0641\\u0642\\u06cc\\u062"
+    },
+    {
+      "group": "security",
+      "check": "HTML/JS/SQL payload accepted only after sanitisation (201)",
+      "result": "PASS",
+      "detail": "status=201 body={\"ok\":true,\"id\":\"MSG-20261108-F3F559\",\"message\":\"\\u0627\\u0637\\u0644\\u0627\\u0639\\u0627\\u062a \\u0628\\u0627 \\u0645\\u0648\\u0641\\u0642\\u06cc\\u062"
+    },
+    {
+      "group": "security",
+      "check": "duplicate payload is rejected (409)",
+      "result": "PASS",
+      "detail": "status=409"
+    },
+    {
+      "group": "security",
+      "check": "honeypot field rejects bots (400)",
+      "result": "PASS",
+      "detail": "status=400"
+    },
+    {
+      "group": "security",
+      "check": "invalid/scripted name rejected by validation (400)",
+      "result": "PASS",
+      "detail": "status=400"
+    },
+    {
+      "group": "security",
+      "check": "no submitted phone/e-mail appears on any public route",
+      "result": "PASS",
+      "detail": "leaks=[]"
+    },
+    {
+      "group": "security",
+      "check": "admin-only screen \"submissions list\" denies anonymous/subscriber/editor",
+      "result": "PASS",
+      "detail": "anon=200 sub=403 editor=403 admin=200"
+    },
+    {
+      "group": "security",
+      "check": "admin-only screen \"options page\" denies anonymous/subscriber/editor",
+      "result": "PASS",
+      "detail": "anon=200 sub=403 editor=403 admin=200"
+    },
+    {
+      "group": "security",
+      "check": "submission detail requires a valid per-record nonce + manage_options",
+      "result": "PASS",
+      "detail": "valid=200 forged=200 (error_text=True, pii=False) editor=403 (pii=False)"
+    },
+    {
+      "group": "security",
+      "check": "stored XSS payload is escaped in the admin detail view",
+      "result": "PASS",
+      "detail": "raw_script_tags_in_detail=False"
+    },
+    {
+      "group": "security",
+      "check": "private CPT has no public REST route or UI",
+      "result": "PASS",
+      "detail": "types_exposed=False"
+    },
+    {
+      "group": "SD-03",
+      "check": "resync success notice is capability-gated (only administrators)",
+      "result": "FAIL",
+      "detail": "{\"anonymous\": {\"status\": 200, \"notice_visible\": false}, \"subscriber\": {\"status\": 200, \"notice_visible\": true}, \"editor\": {\"status\": 200, \"notice_visible\": true}, \"administrator\": {\"status\": 200, \"notice_visible\": true}}"
+    },
+    {
+      "group": "security",
+      "check": "resync endpoint denies a subscriber POST",
+      "result": "PASS",
+      "detail": "status=403"
+    },
+    {
+      "group": "security",
+      "check": "resync endpoint denies a nonce-less admin POST",
+      "result": "PASS",
+      "detail": "status=403"
+    },
+    {
+      "group": "SD-04",
+      "check": "options.php still saves both array settings for an administrator",
+      "result": "PASS",
+      "detail": "status=200 url=http://127.0.0.1:9408/wp-admin/themes.php?page=raouf-options&settings-updated=true"
+    },
+    {
+      "group": "security",
+      "check": "options.php denies a subscriber",
+      "result": "PASS",
+      "detail": "status=403"
+    },
+    {
+      "group": "runtime",
+      "check": "no PHP warning/notice/fatal text on any of the 11 routes",
+      "result": "PASS",
+      "detail": "routes_with_php_errors=[]"
+    },
+    {
+      "group": "migration",
+      "check": "no localhost/foreign-host dependency in rendered HTML",
+      "result": "PASS",
+      "detail": "foreign_hits=[]"
+    }
+  ],
+  "notes": {
+    "php_files_tested": 28,
+    "submission_ref": "REG-20261108-72222C",
+    "notice_probe": {
+      "anonymous": {
+        "status": 200,
+        "notice_visible": false
+      },
+      "subscriber": {
+        "status": 200,
+        "notice_visible": true
+      },
+      "editor": {
+        "status": 200,
+        "notice_visible": true
+      },
+      "administrator": {
+        "status": 200,
+        "notice_visible": true
+      }
+    }
+  },
+  "summary": {
+    "total": 24,
+    "PASS": 23,
+    "FAIL": 1
+  }
+}

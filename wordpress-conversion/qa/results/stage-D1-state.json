@@ -1,0 +1,103 @@
+{
+  "method": {
+    "blueprint": "qa/stage-D1-state-blueprint.json",
+    "runtime": "WordPress 6.8.3 / PHP 8.3 Playground, two fresh installs",
+    "before": "pre-D theme extracted from immutable Stage B/C theme ZIP (:9409)",
+    "after": "current theme with SD-01..SD-06 applied (:9410)",
+    "checks": [
+      "current_user_can read/edit/delete_post for Editor and Administrator",
+      "WP_Query(post_status=private, perm=readable) as Editor",
+      "get_post_type_object(raouf_submission)->cap",
+      "$post_type_meta_caps manage_options alias",
+      "$wp_registered_settings for raouf_options / raouf_media"
+    ]
+  },
+  "before": {
+    "wp_version": "6.8.3",
+    "php_version": "8.3.36",
+    "submission_id": 27,
+    "capability_type": "post",
+    "map_meta_cap": true,
+    "cap_read_post": "read_post",
+    "cap_edit_post": "edit_post",
+    "cap_read_private_posts": "read_private_posts",
+    "cap_edit_posts": "edit_posts",
+    "cap_create_posts": "edit_posts",
+    "manage_options_is_meta_cap": false,
+    "editor": {
+      "read_post": true,
+      "edit_post": true,
+      "delete_post": true,
+      "read_private_cap": true,
+      "private_posts_visible": 1
+    },
+    "administrator": {
+      "read_post": true,
+      "edit_post": true,
+      "delete_post": true,
+      "read_private_cap": true
+    },
+    "registered_settings": {
+      "raouf_options": {
+        "type": "string",
+        "group": "raouf_options_group",
+        "show_in_rest": false,
+        "has_default": false,
+        "default": null,
+        "sanitize_callback": "raouf_sanitize_options"
+      },
+      "raouf_media": {
+        "type": "string",
+        "group": "raouf_options_group",
+        "show_in_rest": false,
+        "has_default": false,
+        "default": null,
+        "sanitize_callback": "raouf_sanitize_media"
+      }
+    }
+  },
+  "after": {
+    "wp_version": "6.8.3",
+    "php_version": "8.3.36",
+    "submission_id": 27,
+    "capability_type": "raouf_submission",
+    "map_meta_cap": true,
+    "cap_read_post": "read_raouf_submission",
+    "cap_edit_post": "edit_raouf_submission",
+    "cap_read_private_posts": "manage_options",
+    "cap_edit_posts": "manage_options",
+    "cap_create_posts": "manage_options",
+    "manage_options_is_meta_cap": false,
+    "editor": {
+      "read_post": false,
+      "edit_post": false,
+      "delete_post": false,
+      "read_private_cap": false,
+      "private_posts_visible": 0
+    },
+    "administrator": {
+      "read_post": true,
+      "edit_post": true,
+      "delete_post": true,
+      "read_private_cap": true
+    },
+    "registered_settings": {
+      "raouf_options": {
+        "type": "array",
+        "group": "raouf_options_group",
+        "show_in_rest": false,
+        "has_default": true,
+        "default": [],
+        "sanitize_callback": "raouf_sanitize_options"
+      },
+      "raouf_media": {
+        "type": "array",
+        "group": "raouf_options_group",
+        "show_in_rest": false,
+        "has_default": true,
+        "default": [],
+        "sanitize_callback": "raouf_sanitize_media"
+      }
+    }
+  }
+}

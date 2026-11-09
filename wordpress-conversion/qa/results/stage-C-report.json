@@ -1,0 +1,967 @@
+{
+  "stage": "C",
+  "name": "Complete WordPress Page Conversion and Integration",
+  "date_utc": "2026-11-08",
+  "branch": "arena/dfee8ce0-raouf",
+  "authoritative_commit": "abc23ef6ddbd4a74111f6c0347504a35eb746002",
+  "scope": "Stage C only. Stage D and Stage F NOT started.",
+  "authoritative_source_modified": false,
+  "stage_A_and_B_reports_preserved": true,
+  "theme_source_changes_in_stage_C": 0,
+  "routes": [
+    {
+      "route": "/",
+      "source_file": "index.html",
+      "wordpress_template": "front-page.php",
+      "http_original": 200,
+      "http_wordpress": 200,
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 1496,
+        "wordpress": 1496
+      },
+      "dom_fragments_identical": {
+        "header": true,
+        "main": true,
+        "footer": true
+      },
+      "structural_main_lengths": [
+        41465,
+        41465
+      ],
+      "seo_identical": true,
+      "seo": {
+        "canonical": [
+          "/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": [
+          "EducationalOrganization"
+        ]
+      },
+      "visual_desktop": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true,
+        "lossless_confirmation": false
+      },
+      "visual_mobile": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true
+      },
+      "responsive_overflow_x": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "broken_images": {
+        "desktop": [],
+        "mobile": []
+      },
+      "internal_links": 35,
+      "broken_internal_links": 0,
+      "alternate_domain_links_ok": true,
+      "rtl": true,
+      "rtl_computed": "rtl",
+      "php_errors": [],
+      "console_errors": 0,
+      "console_errors_expected": false,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      },
+      "tokens_leaked": false,
+      "status": "COMPLETE"
+    },
+    {
+      "route": "/courses/",
+      "source_file": "courses/index.html",
+      "wordpress_template": "page-courses.php",
+      "http_original": 200,
+      "http_wordpress": 200,
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 833,
+        "wordpress": 833
+      },
+      "dom_fragments_identical": {
+        "header": true,
+        "main": true,
+        "footer": true
+      },
+      "structural_main_lengths": [
+        17147,
+        17147
+      ],
+      "seo_identical": true,
+      "seo": {
+        "canonical": [
+          "/courses/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": []
+      },
+      "visual_desktop": {
+        "AE": "612",
+        "RMSE": "3.88815 (5.93294e-05)",
+        "identical": true,
+        "lossless_confirmation": true
+      },
+      "visual_mobile": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true
+      },
+      "responsive_overflow_x": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "broken_images": {
+        "desktop": [],
+        "mobile": []
+      },
+      "internal_links": 25,
+      "broken_internal_links": 0,
+      "alternate_domain_links_ok": true,
+      "rtl": true,
+      "rtl_computed": "rtl",
+      "php_errors": [],
+      "console_errors": 0,
+      "console_errors_expected": false,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      },
+      "tokens_leaked": false,
+      "status": "COMPLETE"
+    },
+    {
+      "route": "/courses/skin-facial/",
+      "source_file": "courses/skin-facial/index.html",
+      "wordpress_template": "page-skin-facial.php",
+      "http_original": 200,
+      "http_wordpress": 200,
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 1327,
+        "wordpress": 1327
+      },
+      "dom_fragments_identical": {
+        "header": true,
+        "main": true,
+        "footer": true
+      },
+      "structural_main_lengths": [
+        35724,
+        35724
+      ],
+      "seo_identical": true,
+      "seo": {
+        "canonical": [
+          "/courses/skin-facial/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": [
+          "Course"
+        ]
+      },
+      "visual_desktop": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true,
+        "lossless_confirmation": false
+      },
+      "visual_mobile": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true
+      },
+      "responsive_overflow_x": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "broken_images": {
+        "desktop": [],
+        "mobile": []
+      },
+      "internal_links": 30,
+      "broken_internal_links": 0,
+      "alternate_domain_links_ok": true,
+      "rtl": true,
+      "rtl_computed": "rtl",
+      "php_errors": [],
+      "console_errors": 0,
+      "console_errors_expected": false,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      },
+      "tokens_leaked": false,
+      "status": "COMPLETE"
+    },
+    {
+      "route": "/courses/medical-emergency/",
+      "source_file": "courses/medical-emergency/index.html",
+      "wordpress_template": "page-medical-emergency.php",
+      "http_original": 200,
+      "http_wordpress": 200,
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 1343,
+        "wordpress": 1343
+      },
+      "dom_fragments_identical": {
+        "header": true,
+        "main": true,
+        "footer": true
+      },
+      "structural_main_lengths": [
+        36105,
+        36105
+      ],
+      "seo_identical": true,
+      "seo": {
+        "canonical": [
+          "/courses/medical-emergency/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": [
+          "Course"
+        ]
+      },
+      "visual_desktop": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true,
+        "lossless_confirmation": false
+      },
+      "visual_mobile": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true
+      },
+      "responsive_overflow_x": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "broken_images": {
+        "desktop": [],
+        "mobile": []
+      },
+      "internal_links": 30,
+      "broken_internal_links": 0,
+      "alternate_domain_links_ok": true,
+      "rtl": true,
+      "rtl_computed": "rtl",
+      "php_errors": [],
+      "console_errors": 0,
+      "console_errors_expected": false,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      },
+      "tokens_leaked": false,
+      "status": "COMPLETE"
+    },
+    {
+      "route": "/courses/pharmacy-technician/",
+      "source_file": "courses/pharmacy-technician/index.html",
+      "wordpress_template": "page-pharmacy-technician.php",
+      "http_original": 200,
+      "http_wordpress": 200,
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 1300,
+        "wordpress": 1300
+      },
+      "dom_fragments_identical": {
+        "header": true,
+        "main": true,
+        "footer": true
+      },
+      "structural_main_lengths": [
+        33915,
+        33915
+      ],
+      "seo_identical": true,
+      "seo": {
+        "canonical": [
+          "/courses/pharmacy-technician/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": [
+          "Course"
+        ]
+      },
+      "visual_desktop": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true,
+        "lossless_confirmation": false
+      },
+      "visual_mobile": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true
+      },
+      "responsive_overflow_x": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "broken_images": {
+        "desktop": [],
+        "mobile": []
+      },
+      "internal_links": 28,
+      "broken_internal_links": 0,
+      "alternate_domain_links_ok": true,
+      "rtl": true,
+      "rtl_computed": "rtl",
+      "php_errors": [],
+      "console_errors": 0,
+      "console_errors_expected": false,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      },
+      "tokens_leaked": false,
+      "status": "COMPLETE"
+    },
+    {
+      "route": "/courses/massage-relaxation/",
+      "source_file": "courses/massage-relaxation/index.html",
+      "wordpress_template": "page-massage-relaxation.php",
+      "http_original": 200,
+      "http_wordpress": 200,
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 1359,
+        "wordpress": 1359
+      },
+      "dom_fragments_identical": {
+        "header": true,
+        "main": true,
+        "footer": true
+      },
+      "structural_main_lengths": [
+        35980,
+        35980
+      ],
+      "seo_identical": true,
+      "seo": {
+        "canonical": [
+          "/courses/massage-relaxation/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": [
+          "Course"
+        ]
+      },
+      "visual_desktop": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true,
+        "lossless_confirmation": false
+      },
+      "visual_mobile": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true
+      },
+      "responsive_overflow_x": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "broken_images": {
+        "desktop": [],
+        "mobile": []
+      },
+      "internal_links": 30,
+      "broken_internal_links": 0,
+      "alternate_domain_links_ok": true,
+      "rtl": true,
+      "rtl_computed": "rtl",
+      "php_errors": [],
+      "console_errors": 0,
+      "console_errors_expected": false,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      },
+      "tokens_leaked": false,
+      "status": "COMPLETE"
+    },
+    {
+      "route": "/about/",
+      "source_file": "about/index.html",
+      "wordpress_template": "page-about.php",
+      "http_original": 200,
+      "http_wordpress": 200,
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 906,
+        "wordpress": 906
+      },
+      "dom_fragments_identical": {
+        "header": true,
+        "main": true,
+        "footer": true
+      },
+      "structural_main_lengths": [
+        17743,
+        17743
+      ],
+      "seo_identical": true,
+      "seo": {
+        "canonical": [
+          "/about/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": []
+      },
+      "visual_desktop": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true,
+        "lossless_confirmation": false
+      },
+      "visual_mobile": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true
+      },
+      "responsive_overflow_x": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "broken_images": {
+        "desktop": [],
+        "mobile": []
+      },
+      "internal_links": 27,
+      "broken_internal_links": 0,
+      "alternate_domain_links_ok": true,
+      "rtl": true,
+      "rtl_computed": "rtl",
+      "php_errors": [],
+      "console_errors": 0,
+      "console_errors_expected": false,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      },
+      "tokens_leaked": false,
+      "status": "COMPLETE"
+    },
+    {
+      "route": "/gallery/",
+      "source_file": "gallery/index.html",
+      "wordpress_template": "page-gallery.php",
+      "http_original": 200,
+      "http_wordpress": 200,
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 908,
+        "wordpress": 908
+      },
+      "dom_fragments_identical": {
+        "header": true,
+        "main": true,
+        "footer": true
+      },
+      "structural_main_lengths": [
+        32017,
+        32017
+      ],
+      "seo_identical": true,
+      "seo": {
+        "canonical": [
+          "/gallery/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": []
+      },
+      "visual_desktop": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true,
+        "lossless_confirmation": false
+      },
+      "visual_mobile": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true
+      },
+      "responsive_overflow_x": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "broken_images": {
+        "desktop": [],
+        "mobile": []
+      },
+      "internal_links": 69,
+      "broken_internal_links": 0,
+      "alternate_domain_links_ok": true,
+      "rtl": true,
+      "rtl_computed": "rtl",
+      "php_errors": [],
+      "console_errors": 0,
+      "console_errors_expected": false,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      },
+      "tokens_leaked": false,
+      "status": "COMPLETE"
+    },
+    {
+      "route": "/contact/",
+      "source_file": "contact/index.html",
+      "wordpress_template": "page-contact.php",
+      "http_original": 200,
+      "http_wordpress": 200,
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 730,
+        "wordpress": 730
+      },
+      "dom_fragments_identical": {
+        "header": true,
+        "main": true,
+        "footer": true
+      },
+      "structural_main_lengths": [
+        11577,
+        11577
+      ],
+      "seo_identical": true,
+      "seo": {
+        "canonical": [
+          "/contact/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": []
+      },
+      "visual_desktop": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true,
+        "lossless_confirmation": false
+      },
+      "visual_mobile": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true
+      },
+      "responsive_overflow_x": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "broken_images": {
+        "desktop": [],
+        "mobile": []
+      },
+      "internal_links": 15,
+      "broken_internal_links": 0,
+      "alternate_domain_links_ok": true,
+      "rtl": true,
+      "rtl_computed": "rtl",
+      "php_errors": [],
+      "console_errors": 0,
+      "console_errors_expected": false,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      },
+      "tokens_leaked": false,
+      "status": "COMPLETE"
+    },
+    {
+      "route": "/register/",
+      "source_file": "register/index.html",
+      "wordpress_template": "page-register.php",
+      "http_original": 200,
+      "http_wordpress": 200,
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 829,
+        "wordpress": 829
+      },
+      "dom_fragments_identical": {
+        "header": true,
+        "main": true,
+        "footer": true
+      },
+      "structural_main_lengths": [
+        13432,
+        13432
+      ],
+      "seo_identical": true,
+      "seo": {
+        "canonical": [
+          "/register/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": []
+      },
+      "visual_desktop": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true,
+        "lossless_confirmation": false
+      },
+      "visual_mobile": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true
+      },
+      "responsive_overflow_x": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "broken_images": {
+        "desktop": [],
+        "mobile": []
+      },
+      "internal_links": 15,
+      "broken_internal_links": 0,
+      "alternate_domain_links_ok": true,
+      "rtl": true,
+      "rtl_computed": "rtl",
+      "php_errors": [],
+      "console_errors": 0,
+      "console_errors_expected": false,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      },
+      "tokens_leaked": false,
+      "status": "COMPLETE"
+    },
+    {
+      "route": "/404/",
+      "source_file": "404/index.html",
+      "wordpress_template": "404.php",
+      "http_original": 200,
+      "http_wordpress": 404,
+      "main_identical": true,
+      "full_dom_identical": true,
+      "dom_tokens": {
+        "original": 450,
+        "wordpress": 450
+      },
+      "dom_fragments_identical": {
+        "header": true,
+        "main": true,
+        "footer": true
+      },
+      "structural_main_lengths": [
+        1000,
+        1000
+      ],
+      "seo_identical": true,
+      "seo": {
+        "canonical": [
+          "/404/"
+        ],
+        "robots_count": 1,
+        "og_tags": 5,
+        "twitter_tags": 1,
+        "jsonld_types": []
+      },
+      "visual_desktop": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true,
+        "lossless_confirmation": false
+      },
+      "visual_mobile": {
+        "AE": "0",
+        "RMSE": "0 (0)",
+        "identical": true
+      },
+      "responsive_overflow_x": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "broken_images": {
+        "desktop": [],
+        "mobile": []
+      },
+      "internal_links": 16,
+      "broken_internal_links": 0,
+      "alternate_domain_links_ok": true,
+      "rtl": true,
+      "rtl_computed": "rtl",
+      "php_errors": [],
+      "console_errors": 2,
+      "console_errors_expected": true,
+      "shared_chrome": {
+        "class=\"header-topbar\"": true,
+        "class=\"site-header\"": true,
+        "id=\"mobileNav\"": true,
+        "class=\"site-footer\"": true,
+        "class=\"mobile-call-bar\"": true,
+        "class=\"back-to-top\"": true
+      },
+      "tokens_leaked": false,
+      "status": "COMPLETE"
+    }
+  ],
+  "requirements": [
+    {
+      "id": 1,
+      "title": "All 11 original routes implemented",
+      "status": "PASS",
+      "evidence": "11/11 routes present, each mapped to its own template; 404.php handles the real 404."
+    },
+    {
+      "id": 2,
+      "title": "Every page checked against original HTML source",
+      "status": "PASS",
+      "evidence": "Full normalised DOM token stream identical on 11/11; `<main>` byte-identical 11/11; header/main/footer identical 11/11."
+    },
+    {
+      "id": 3,
+      "title": "HTML/CSS/classes/IDs/text/images/SVG/fonts/backgrounds/spacing/responsive/animation/hover/focus/JS preserved",
+      "status": "PASS",
+      "evidence": "70/70 asset SHA-256 matches, JS byte-identical, CSS differs only by documented D13, 22/22 route-viewport visual comparisons identical, hover/focus states identical, all JS interactions parity-tested."
+    },
+    {
+      "id": 4,
+      "title": "Shared header, footer, navigation, mobile menu, fixed contact bar on every applicable page",
+      "status": "PASS",
+      "evidence": "22/22 route-viewport checks: all six chrome elements present, active-nav markers equal to source, desktop dropdown + mobile drawer + back-to-top functional, call bar hidden on desktop / grid on mobile."
+    },
+    {
+      "id": 5,
+      "title": "All course pages individually verified (no generic template)",
+      "status": "PASS",
+      "evidence": "4 distinct templates, 4 distinct `<main>` hashes, 4 distinct H1s, 4 distinct accent classes, 4 distinct image sets, original course-specific gradients preserved, 3 FAQ items each, Course JSON-LD each."
+    },
+    {
+      "id": 6,
+      "title": "Gallery filters, lightbox, keyboard navigation, Escape",
+      "status": "PASS",
+      "evidence": "6/6 filters parity (27/11/3/5/5/3 visible), lightbox parity on 6 routes including ArrowLeft/ArrowRight, next/prev buttons, Escape and close button."
+    },
+    {
+      "id": 7,
+      "title": "All FAQ accordions and original behaviour",
+      "status": "PASS",
+      "evidence": "5 routes with FAQ (home 5 + 4 course pages 3 each): native `name`-grouped exclusive accordion parity identical to the original."
+    },
+    {
+      "id": 8,
+      "title": "SEO metadata / canonical / robots / OG / Twitter / structured data preserved",
+      "status": "PASS",
+      "evidence": "11/11 SEO objects byte-identical after origin normalisation; exactly 1 canonical + 1 robots per route; 5 OG tags + 1 Twitter tag per route; EducationalOrganization + 4 Course JSON-LD valid."
+    },
+    {
+      "id": 9,
+      "title": "Domain-independent token system preserved",
+      "status": "PASS",
+      "evidence": "10 saved pages all tokenised (338 ASSET + 121 LINK), 0 hardcoded hosts, 0 leaked tokens in rendered HTML; 319 internal links resolve on alternate domain `http://stage-c.example`."
+    },
+    {
+      "id": 10,
+      "title": "Contact and registration forms remain real",
+      "status": "PASS",
+      "evidence": "Both endpoints GET 405 JSON (not static HTML), both form markups + data-form hooks + app.js present, browser submissions persisted with REG-/MSG- references, client validation active."
+    },
+    {
+      "id": 11,
+      "title": "404 page is a real WordPress 404 template",
+      "status": "PASS",
+      "evidence": "`/404/` and `/nonexistent-route/` both return HTTP 404 with the exact original 404 markup and WP `error404` body class; original static site returned 200 (soft 404)."
+    },
+    {
+      "id": 12,
+      "title": "Internal links work under the installation URL, including after a domain change",
+      "status": "PASS",
+      "evidence": "320 internal links checked on :9400 (0 broken); 319 checked on the alternate production-like domain (0 broken, 0 foreign install URLs); canonical/robots 1 each on both."
+    }
+  ],
+  "issues": [
+    {
+      "id": "C01",
+      "title": "`/courses/` desktop JPEG pair AE=612",
+      "finding": "One of 22 screenshot pairs showed 612 differing pixels (RMSE 5.93e-05). All were inside a 608x32 photographic band, maximum channel delta 8/255.",
+      "diagnosis": "JPEG encoder quantisation noise, not a content/design difference. A lossless PNG re-capture of the same pair is byte-size-identical and AE=0 / RMSE=0.",
+      "resolution": "Documented; lossless confirmation added to qa/stage-C-visual-compare.py and stage-C-visual.json. No theme change.",
+      "classification": "Not a defect (measurement artefact)",
+      "theme_change_required": false
+    },
+    {
+      "id": "C02",
+      "title": "`/404/` HTTP status differs (original 200, WordPress 404)",
+      "finding": "The static server served the 404 page with HTTP 200 (soft 404); WordPress returns HTTP 404 from 404.php.",
+      "diagnosis": "Required by the Stage C mandate \"404 page works as a real WordPress 404 template\". HTML is byte-identical.",
+      "resolution": "Documented as an intentional, correct improvement; canonical remains `/404/`. No theme change.",
+      "classification": "Intentional correct difference",
+      "theme_change_required": false
+    },
+    {
+      "id": "C03",
+      "title": "Two browser console errors / two failed requests",
+      "finding": "Both occur only on the two `/404/` captures and read \"Failed to load resource: 404\" / \"HTTP 404 .../404/\".",
+      "diagnosis": "These are the expected HTTP status of the 404 page itself, not a broken asset or JS error. All other 20 captures are clean.",
+      "resolution": "Classified as expected in the report; no theme change.",
+      "classification": "Expected behaviour",
+      "theme_change_required": false
+    },
+    {
+      "id": "C04",
+      "title": "Raw `qa/compare.py` header/footer flags reported False",
+      "finding": "The raw structural script compares header/footer fragments including WP body classes and enqueued tags, so it reports False on all 11 routes.",
+      "diagnosis": "QA-script artefact. The normalised `dom-compare.py` and the new full-DOM token audit both report 11/11 identical.",
+      "resolution": "`qa/compare.py` extended with STRUCTURAL_REPORT env so Stage A/B evidence is preserved; Stage C results saved separately. No theme change.",
+      "classification": "QA tooling fix",
+      "theme_change_required": false
+    },
+    {
+      "id": "C05",
+      "title": "Back-to-top button absent on desktop `/404/`",
+      "finding": "The 404 page is shorter than the viewport, so `window.scrollY > 480` (original JS threshold) never becomes true.",
+      "diagnosis": "Identical to the original static site behaviour; no JS/CSS change.",
+      "resolution": "QA assertion corrected to derive the expected state from maxScroll > 480. No theme change.",
+      "classification": "QA assertion fix",
+      "theme_change_required": false
+    },
+    {
+      "id": "C06",
+      "title": "1e-5 floating-point difference in hover transform",
+      "finding": "Computed hover transform was -2.9988 on the original and -2.99881 on WordPress.",
+      "diagnosis": "Floating-point rounding in Chromium; background colour and focus outline are identical.",
+      "resolution": "QA comparison now rounds transform values to 2 decimals. No theme change.",
+      "classification": "QA tolerance fix",
+      "theme_change_required": false
+    },
+    {
+      "id": "C07",
+      "title": "Root-relative source URLs become absolute in WordPress",
+      "finding": "Original `href=\"/courses/\"` / `og:image=\"/assets/...\"`; WordPress emits `home_url()` / `get_template_directory_uri()`.",
+      "diagnosis": "Documented Stage B deviation D12, required for a domain-independent, subdirectory-safe install. Verified on a production-like alternate domain with 319 links and zero foreign URLs.",
+      "resolution": "No new deviation; re-verified in Stage C. No theme change.",
+      "classification": "Previously documented accepted deviation",
+      "theme_change_required": false
+    }
+  ],
+  "untested": [
+    "Full Stage F QA: 6-viewport / 60-pair visual suite, 28 browser interactions, full form/rate-limit suite, final ZIP upload/activation from wp-admin.",
+    "Stage D, E, G and final acceptance; no completion claim is made.",
+    "Real LAMP/LEMP with MySQL/MariaDB, real SMTP, multisite, WP 6.4-6.7 / >6.8.3, PHP 7.4, Theme Check / PHPCS-WPCS.",
+    "Physical devices, legacy browsers, third-party plugins/builders, WooCommerce, LMS, PageSpeed/CDN/load tests.",
+    "PDF rendering in an external viewer, and users with assistive technology / screen readers.",
+    "Visual comparison at 1920x1080, 1024x768, 768x1024 and 360x800 (covered historically by Stage F 60/60, not re-run in Stage C)."
+  ],
+  "evidence_files": [
+    "stage-C-audit.json",
+    "stage-C-structural.json",
+    "stage-C-dom.json",
+    "stage-C-visual.json",
+    "stage-C-interactions.json",
+    "stage-C-behaviour.json",
+    "stage-C-domain.json",
+    "stage-C-report.md",
+    "stage-C-report.json"
+  ],
+  "summary": {
+    "routes_total": 11,
+    "routes_complete": 11,
+    "full_dom_identical": 11,
+    "seo_identical": 11,
+    "route_viewport_checks": 22,
+    "visual_pairs": 22,
+    "visual_pairs_strict_identical": 21,
+    "visual_pairs_identical_after_lossless_confirmation": 22,
+    "all_routes_visually_identical": true,
+    "interaction_checks": 28,
+    "interaction_failures": 0,
+    "behaviour_parity_checks": 12,
+    "behaviour_parity_identical": 12,
+    "internal_links_main_install": 320,
+    "internal_links_alternate_domain": 319,
+    "broken_links": 0,
+    "php_errors": 0,
+    "asset_sha256_mismatches": 0,
+    "unexpected_theme_assets": 0,
+    "console_errors_expected_404": 2,
+    "console_errors_unexpected": 0,
+    "issues_found": 7,
+    "theme_changes_required": 0,
+    "stage_D_started": false,
+    "stage_F_started": false
+  }
+}

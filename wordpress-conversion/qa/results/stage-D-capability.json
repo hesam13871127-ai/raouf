@@ -1,0 +1,47 @@
+{
+  "before": {
+    "wp_version": "6.8.3",
+    "php_version": "8.3.36",
+    "editor_id": 2,
+    "submission_id": 27,
+    "cap_read_post": "read_post",
+    "cap_edit_post": "edit_post",
+    "cap_read_private_posts": "read_private_posts",
+    "map_meta_cap": true,
+    "editor_can_read_post": true,
+    "editor_can_edit_post": true,
+    "editor_can_read_private_cap": true,
+    "editor_private_submission_ids": [
+      27
+    ],
+    "editor_private_submission_count": 1
+  },
+  "after": {
+    "wp_version": "6.8.3",
+    "php_version": "8.3.36",
+    "editor_id": 2,
+    "submission_id": 27,
+    "cap_read_post": "read_raouf_submission",
+    "cap_edit_post": "edit_raouf_submission",
+    "cap_read_private_posts": "manage_options",
+    "map_meta_cap": true,
+    "editor_can_read_post": false,
+    "editor_can_edit_post": false,
+    "editor_can_read_private_cap": false,
+    "editor_private_submission_ids": [],
+    "editor_private_submission_count": 0
+  },
+  "method": {
+    "blueprint": "qa/stage-D-capability-blueprint.json",
+    "runtime": "WordPress 6.8.3 / PHP 8.3.36 (Playground, fresh install, auto-mounted theme)",
+    "before": "same blueprint executed before the SD-01 change (:9406 first start)",
+    "after": "same blueprint executed after the SD-01 change (:9406 second start, fresh database)",
+    "checks": [
+      "current_user_can(\"read_post\", submission_id)",
+      "current_user_can(\"edit_post\", submission_id)",
+      "current_user_can(post_type->cap->read_private_posts)",
+      "WP_Query(post_type=raouf_submission, post_status=private, perm=readable)"
+    ]
+  },
+  "verdict": "FIXED: editor_can_read_post true->false, editor_can_edit_post true->false, editor_private_submission_count 1->0, cap_read_private_posts read_private_posts->manage_options"
+}

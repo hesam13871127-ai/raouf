@@ -1,0 +1,238 @@
+{
+  "stage": "F",
+  "wp": "http://127.0.0.1:9415",
+  "note": "wp_mail() delivery is optional (admin_email is empty by default); SMTP is NOT TESTED. Storage and secure admin display are fully tested.",
+  "checks": [
+    {
+      "check": "GET on both form endpoints is rejected (405 JSON)",
+      "result": "PASS",
+      "detail": "status=405 body={\"ok\":false,\"message\":\"method not allowed\"}"
+    },
+    {
+      "check": "GET /api/contact is rejected (405 JSON)",
+      "result": "PASS",
+      "detail": "status=405"
+    },
+    {
+      "check": "POST without CSRF token -> 403",
+      "result": "PASS",
+      "detail": "status=403 expected=403 body={\"ok\": false, \"message\": \"نشست فرم معتبر نیست. لطفاً صفحه را بازنشانی کنید.\"}"
+    },
+    {
+      "check": "POST with forged CSRF token -> 403",
+      "result": "PASS",
+      "detail": "status=403 expected=403 body={\"ok\": false, \"message\": \"نشست فرم معتبر نیست. لطفاً صفحه را بازنشانی کنید.\"}"
+    },
+    {
+      "check": "honeypot field -> 400",
+      "result": "PASS",
+      "detail": "status=400 expected=400 body={\"ok\": false, \"message\": \"درخواست نامعتبر است.\"}"
+    },
+    {
+      "check": "invalid name + invalid phone + invalid course -> 400 with field errors",
+      "result": "PASS",
+      "detail": "status=400 expected=400 body={\"ok\": false, \"message\": \"اطلاعات واردشده معتبر نیست.\", \"errors\": {\"name\": \"نام و نام خانوادگی معتبر نیست.\", \"phone\": \"شماره تماس معتبر نیست.\", \"course\": \"دوره "
+    },
+    {
+      "check": "invalid email + short message -> 400 with field errors",
+      "result": "PASS",
+      "detail": "status=400 expected=400 body={\"ok\": false, \"message\": \"اطلاعات واردشده معتبر نیست.\", \"errors\": {\"email\": \"رایانامه معتبر نیست.\", \"message\": \"متن پیام باید حداقل ۱۰ نویسه باشد.\"}}"
+    },
+    {
+      "check": "valid registration (Persian digits) -> 201 + real ref",
+      "result": "PASS",
+      "detail": "status=201 expected=201 body={\"ok\": true, \"id\": \"REG-20261109-D60A44\", \"message\": \"اطلاعات با موفقیت ثبت شد.\", \"adminDelivery\": \"not-configured\"}"
+    },
+    {
+      "check": "duplicate submission -> 409",
+      "result": "PASS",
+      "detail": "status=409 expected=409 body={\"ok\": false, \"message\": \"این درخواست همین حالا ثبت شده است. لطفاً از ارسال مجدد خودداری کنید.\"}"
+    },
+    {
+      "check": "valid contact with HTML/JS/SQL payload -> 201 + real ref",
+      "result": "PASS",
+      "detail": "status=201 expected=201 body={\"ok\": true, \"id\": \"MSG-20261109-D1E7A7\", \"message\": \"اطلاعات با موفقیت ثبت شد.\", \"adminDelivery\": \"not-configured\"}"
+    },
+    {
+      "check": "9th POST within 15 min -> 429 (rate limiter works)",
+      "result": "PASS",
+      "detail": "status=429 expected=429 body={\"ok\": false, \"message\": \"تعداد درخواست‌ها بیش از حد مجاز است. لطفاً کمی بعد دوباره تلاش کنید.\"}"
+    },
+    {
+      "check": "both successful responses contain real tracking references",
+      "result": "PASS",
+      "detail": "refs=['REG-20261109-D60A44', 'MSG-20261109-D1E7A7']"
+    },
+    {
+      "check": "administrator login succeeds",
+      "result": "PASS",
+      "detail": "http://127.0.0.1:9415/wp-admin/"
+    },
+    {
+      "check": "admin submissions list is reachable (200)",
+      "result": "PASS",
+      "detail": "status=200"
+    },
+    {
+      "check": "both browser-equivalent submissions appear in the real admin list",
+      "result": "PASS",
+      "detail": "refs=['REG-20261109-D60A44', 'MSG-20261109-D1E7A7']"
+    },
+    {
+      "check": "list provides per-record nonce links",
+      "result": "PASS",
+      "detail": "links=2"
+    },
+    {
+      "check": "admin detail view shows stored PII for an administrator",
+      "result": "PASS",
+      "detail": "ok=True"
+    },
+    {
+      "check": "stored XSS payload is escaped in the admin detail view",
+      "result": "PASS",
+      "detail": "ok=True"
+    },
+    {
+      "check": "forged per-record nonce discloses no PII",
+      "result": "PASS",
+      "detail": "ok=True"
+    },
+    {
+      "check": "anonymous visitor cannot read the submissions admin screen",
+      "result": "PASS",
+      "detail": "status=200"
+    },
+    {
+      "check": "no submitted phone/e-mail/tracking data appears on any of the 11 public routes",
+      "result": "PASS",
+      "detail": "leaked_routes=[]"
+    },
+    {
+      "check": "private submission CPT is not exposed through REST types",
+      "result": "PASS",
+      "detail": "status=200"
+    },
+    {
+      "check": "direct access to inc/forms.php leaks no PHP source",
+      "result": "PASS",
+      "detail": "status=200 len=0"
+    }
+  ],
+  "steps": [
+    {
+      "label": "POST without CSRF token -> 403",
+      "endpoint": "/api/registrations",
+      "http": 403,
+      "expected": 403,
+      "body": {
+        "ok": false,
+        "message": "نشست فرم معتبر نیست. لطفاً صفحه را بازنشانی کنید."
+      }
+    },
+    {
+      "label": "POST with forged CSRF token -> 403",
+      "endpoint": "/api/registrations",
+      "http": 403,
+      "expected": 403,
+      "body": {
+        "ok": false,
+        "message": "نشست فرم معتبر نیست. لطفاً صفحه را بازنشانی کنید."
+      }
+    },
+    {
+      "label": "honeypot field -> 400",
+      "endpoint": "/api/registrations",
+      "http": 400,
+      "expected": 400,
+      "body": {
+        "ok": false,
+        "message": "درخواست نامعتبر است."
+      }
+    },
+    {
+      "label": "invalid name + invalid phone + invalid course -> 400 with field errors",
+      "endpoint": "/api/registrations",
+      "http": 400,
+      "expected": 400,
+      "body": {
+        "ok": false,
+        "message": "اطلاعات واردشده معتبر نیست.",
+        "errors": {
+          "name": "نام و نام خانوادگی معتبر نیست.",
+          "phone": "شماره تماس معتبر نیست.",
+          "course": "دوره انتخاب شده معتبر نیست."
+        }
+      }
+    },
+    {
+      "label": "invalid email + short message -> 400 with field errors",
+      "endpoint": "/api/contact",
+      "http": 400,
+      "expected": 400,
+      "body": {
+        "ok": false,
+        "message": "اطلاعات واردشده معتبر نیست.",
+        "errors": {
+          "email": "رایانامه معتبر نیست.",
+          "message": "متن پیام باید حداقل ۱۰ نویسه باشد."
+        }
+      }
+    },
+    {
+      "label": "valid registration (Persian digits) -> 201 + real ref",
+      "endpoint": "/api/registrations",
+      "http": 201,
+      "expected": 201,
+      "body": {
+        "ok": true,
+        "id": "REG-20261109-D60A44",
+        "message": "اطلاعات با موفقیت ثبت شد.",
+        "adminDelivery": "not-configured"
+      }
+    },
+    {
+      "label": "duplicate submission -> 409",
+      "endpoint": "/api/registrations",
+      "http": 409,
+      "expected": 409,
+      "body": {
+        "ok": false,
+        "message": "این درخواست همین حالا ثبت شده است. لطفاً از ارسال مجدد خودداری کنید."
+      }
+    },
+    {
+      "label": "valid contact with HTML/JS/SQL payload -> 201 + real ref",
+      "endpoint": "/api/contact",
+      "http": 201,
+      "expected": 201,
+      "body": {
+        "ok": true,
+        "id": "MSG-20261109-D1E7A7",
+        "message": "اطلاعات با موفقیت ثبت شد.",
+        "adminDelivery": "not-configured"
+      }
+    },
+    {
+      "label": "9th POST within 15 min -> 429 (rate limiter works)",
+      "endpoint": "/api/registrations",
+      "http": 429,
+      "expected": 429,
+      "body": {
+        "ok": false,
+        "message": "تعداد درخواست‌ها بیش از حد مجاز است. لطفاً کمی بعد دوباره تلاش کنید."
+      }
+    }
+  ],
+  "references": {
+    "registration": "REG-20261109-D60A44",
+    "contact": "MSG-20261109-D1E7A7"
+  },
+  "summary": {
+    "checks": 23,
+    "PASS": 23,
+    "FAIL": 0,
+    "http_steps": 9,
+    "steps_as_expected": 9
+  }
+}

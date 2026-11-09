@@ -1,0 +1,28 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "http://127.0.0.1:9401/wordpress.zip"
+  },
+  "features": {
+    "networking": true
+  },
+  "steps": [
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "Stage D1 state probe",
+        "permalink_structure": "/%postname%/"
+      }
+    },
+    {
+      "step": "activateTheme",
+      "themeFolderName": "raouf-academy"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php\nrequire_once '/wordpress/wp-load.php';\nglobal $wp_registered_settings, $post_type_meta_caps;\n$editor_id = wp_insert_user( array(\n    'user_login' => 'stage_d1_probe_editor',\n    'user_pass'  => 'Probe-Editor-2026!x',\n    'user_email' => 'stage-d1-probe@example.test',\n    'role'       => 'editor',\n) );\n$submission_id = wp_insert_post( array(\n    'post_type'    => 'raouf_submission',\n    'post_status'  => 'private',\n    'post_title'   => 'Stage D1 state probe',\n    'post_content' => 'PROBE-PII-DO-NOT-SHIP',\n) );\nupdate_post_meta( $submission_id, '_raouf_name',  'پروب D1' );\nupdate_post_meta( $submission_id, '_raouf_phone', '09141112233' );\n$pto  = get_post_type_object( 'raouf_submission' );\n$caps = (array) $pto->cap;\nfunction raouf_d1_caps( $sid, $caps ) {\n    return array(\n        'read_post'         => current_user_can( 'read_post', $sid ),\n        'edit_post'         => current_user_can( 'edit_post', $sid ),\n        'delete_post'       => current_user_can( 'delete_post', $sid ),\n        'read_private_cap'  => current_user_can( $caps['read_private_posts'] ),\n    );\n}\nwp_set_current_user( $editor_id );\n$editor = raouf_d1_caps( $submission_id, $caps );\n$q = new WP_Query( array(\n    'post_type' => 'raouf_submission', 'post_status' => 'private',\n    'posts_per_page' => -1, 'fields' => 'ids', 'perm' => 'readable',\n) );\n$editor['private_posts_visible'] = (int) $q->post_count;\nwp_set_current_user( 1 );\n$administrator = raouf_d1_caps( $submission_id, $caps );\n// register_setting() runs on admin_init; invoke it so the settings registry is populated.\nif ( ! isset( $wp_registered_settings['raouf_options'] ) ) { do_action( 'admin_init' ); }\n$settings = array();\nforeach ( array( 'raouf_options', 'raouf_media' ) as $name ) {\n    $a = isset( $wp_registered_settings[ $name ] ) ? $wp_registered_settings[ $name ] : null;\n    $settings[ $name ] = $a ? array(\n        'type'              => isset( $a['type'] ) ? $a['type'] : null,\n        'group'             => isset( $a['group'] ) ? $a['group'] : null,\n        'show_in_rest'      => isset( $a['show_in_rest'] ) ? $a['show_in_rest'] : null,\n        'has_default'       => array_key_exists( 'default', $a ),\n        'default'           => array_key_exists( 'default', $a ) ? $a['default'] : null,\n        'sanitize_callback' => isset( $a['sanitize_callback'] ) ? $a['sanitize_callback'] : null,\n    ) : null;\n}\n$state = array(\n    'wp_version'                  => get_bloginfo( 'version' ),\n    'php_version'                 => PHP_VERSION,\n    'submission_id'               => (int) $submission_id,\n    'capability_type'             => $pto->capability_type,\n    'map_meta_cap'                => $pto->map_meta_cap,\n    'cap_read_post'               => $caps['read_post'],\n    'cap_edit_post'               => $caps['edit_post'],\n    'cap_read_private_posts'      => $caps['read_private_posts'],\n    'cap_edit_posts'              => $caps['edit_posts'],\n    'cap_create_posts'            => isset( $caps['create_posts'] ) ? $caps['create_posts'] : null,\n    'manage_options_is_meta_cap'  => isset( $post_type_meta_caps['manage_options'] ),\n    'editor'                      => $editor,\n    'administrator'               => $administrator,\n    'registered_settings'         => $settings,\n);\nfile_put_contents( '/wordpress/wp-content/stage-d1-state-probe.json',\n    wp_json_encode( $state, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT ) );\n"
+    }
+  ]
+}

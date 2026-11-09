@@ -1,0 +1,1847 @@
+{
+  "stage": "F",
+  "wp": "http://127.0.0.1:9411",
+  "tool": "axe-core 4.10.3",
+  "tags": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21a",
+    "wcag21aa"
+  ],
+  "rows": [
+    {
+      "route": "/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".brand-text > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 8.6pt (11.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".btn--sm"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".btn--primary.btn[href$=\"courses/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 11.3pt (15px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".hero-logo-card > span > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 7.9pt (10.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".hero-float--top > span:nth-child(2) > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".quick-stat:nth-child(2) > div > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 9.4pt (12.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 8
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".header-phone > span[dir=\"ltr\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".practical-copy > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "nodeCount": 2
+        }
+      ],
+      "passes": 22
+    },
+    {
+      "route": "/courses/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 8.6pt (11.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".nav-link--toggle"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #079fe5, background color: #eaf7ff, font size: 10.9pt (14.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".btn--sm"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 3
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".header-phone > span[dir=\"ltr\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "nodeCount": 1
+        }
+      ],
+      "passes": 21
+    },
+    {
+      "route": "/courses/skin-facial/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".brand-text > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 8.6pt (11.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".header-cta"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-meta-inner > div:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 10.1pt (13.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-meta-inner > div:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 10.1pt (13.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-meta-inner > .btn--sm.btn--primary.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-intro-actions > .btn--primary.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 11.3pt (15px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 7
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".header-phone > span[dir=\"ltr\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".inner-hero-copy > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            },
+            {
+              "target": [
+                ".audience-card > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".btn--cream.btn[href$=\"contact/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".practical-list > div:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".practical-copy > .btn--cream.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "nodeCount": 6
+        }
+      ],
+      "passes": 22
+    },
+    {
+      "route": "/courses/medical-emergency/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".brand-text > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 8.6pt (11.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".header-cta"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-meta-inner > div:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 10.1pt (13.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-meta-inner > div:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 10.1pt (13.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-meta-inner > .btn--sm.btn--primary.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-intro-actions > .btn--primary.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 11.3pt (15px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 7
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".header-phone > span[dir=\"ltr\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".audience-card > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".btn--cream.btn[href$=\"contact/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".practical-list > div:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".practical-copy > .btn--cream.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "nodeCount": 5
+        }
+      ],
+      "passes": 22
+    },
+    {
+      "route": "/courses/pharmacy-technician/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".brand-text > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 8.6pt (11.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".header-cta"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-meta-inner > div:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 10.1pt (13.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-meta-inner > div:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 10.1pt (13.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-meta-inner > .btn--sm.btn--primary.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-intro-actions > .btn--primary.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 11.3pt (15px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 7
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".header-phone > span[dir=\"ltr\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".inner-hero-copy > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            },
+            {
+              "target": [
+                ".audience-card > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".btn--cream.btn[href$=\"contact/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".practical-list > div:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".practical-copy > .btn--cream.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "nodeCount": 6
+        }
+      ],
+      "passes": 22
+    },
+    {
+      "route": "/courses/massage-relaxation/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".brand-text > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 8.6pt (11.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".header-cta"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-meta-inner > div:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 10.1pt (13.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-meta-inner > div:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 10.1pt (13.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-meta-inner > .btn--sm.btn--primary.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-intro-actions > .btn--primary.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 11.3pt (15px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 7
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".header-phone > span[dir=\"ltr\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".audience-card > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".btn--cream.btn[href$=\"contact/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".practical-list > div:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".practical-copy > .btn--cream.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "nodeCount": 5
+        }
+      ],
+      "passes": 22
+    },
+    {
+      "route": "/about/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".brand-text > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 8.6pt (11.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".is-active.nav-link[href$=\"about/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #079fe5, background color: #eaf7ff, font size: 10.9pt (14.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".btn--sm"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".about-intro-copy > p:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 11.6pt (15.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".about-intro-copy > p:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 11.6pt (15.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".brand-copy > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.9 (foreground color: #777b89, background color: #faf6e9, font size: 11.6pt (15.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 6
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".header-phone > span[dir=\"ltr\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".practical-copy > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".btn--cream.btn[href$=\"gallery/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "nodeCount": 3
+        }
+      ],
+      "passes": 21
+    },
+    {
+      "route": "/gallery/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 8.6pt (11.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".btn--sm"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-filter=\"space\"] > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #777b89, background color: #eaf7ff, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#galleryCount"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 10.1pt (13.5px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 4
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".header-phone > span[dir=\"ltr\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "button[data-filter=\"classroom\"] > span"
+              ],
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                "button[data-filter=\"training\"] > span"
+              ],
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                "button[data-filter=\"treatment\"] > span"
+              ],
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                "button[data-filter=\"brand\"] > span"
+              ],
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            }
+          ],
+          "nodeCount": 5
+        }
+      ],
+      "passes": 24
+    },
+    {
+      "route": "/contact/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 8.6pt (11.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".btn--sm"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article:nth-child(1) > a[dir=\"ltr\"][href=\"tel:+989141803287\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #079fe5, background color: #ffffff, font size: 14.3pt (19px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".text-link"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #079fe5, background color: #ffffff, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "article:nth-child(3) > a[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #079fe5, background color: #ffffff, font size: 14.3pt (19px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".contact-side-box > ul > li:nth-child(1) > a[dir=\"ltr\"][href=\"tel:+989141803287\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #079fe5, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 7
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".header-phone > span[dir=\"ltr\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".inner-hero-emblem > span"
+              ],
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                ".footer-contact > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ],
+          "nodeCount": 3
+        }
+      ],
+      "passes": 25
+    },
+    {
+      "route": "/register/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".brand-text > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 8.6pt (11.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".btn--sm"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".section-head.is-visible.reveal > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 12.4pt (16.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "li:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #079fe5, background color: #eaf7ff, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "li:nth-child(2) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "li:nth-child(3) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #079fe5, background color: #eaf7ff, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 10
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".header-phone > span[dir=\"ltr\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".inner-hero-copy > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            },
+            {
+              "target": [
+                ".inner-hero-emblem > span"
+              ],
+              "summary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                "#course"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+            },
+            {
+              "target": [
+                "#message"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                ".footer-contact > h3"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ],
+          "nodeCount": 7
+        }
+      ],
+      "passes": 26
+    },
+    {
+      "route": "/404/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 8.6pt (11.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".btn--sm"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".error-code"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.09 (foreground color: #eaf7ff, background color: #ffffff, font size: 112.5pt (150px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".error-inner > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 4
+        }
+      ],
+      "incomplete": [],
+      "passes": 21
+    },
+    {
+      "route": "/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".btn--primary.btn[href$=\"courses/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 11.3pt (15px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".hero-logo-card > span > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 7.9pt (10.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".hero-float--top > span:nth-child(2) > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".quick-stat:nth-child(2) > div > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 9.4pt (12.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".quick-stat:nth-child(4) > div > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 9.4pt (12.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".intro-lead"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 7
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": [
+            {
+              "target": [
+                ".mobile-call-bar"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+            }
+          ],
+          "nodeCount": 1
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".brand-text > strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".hero-float--bottom > span:nth-child(2) > strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".practical-copy > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "nodeCount": 3
+        }
+      ],
+      "passes": 22
+    },
+    {
+      "route": "/courses/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".mobile-call-bar-register"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.1pt (13.5px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 1
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": [
+            {
+              "target": [
+                ".mobile-call-bar"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+            }
+          ],
+          "nodeCount": 1
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".inner-hero-copy > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ],
+          "nodeCount": 2
+        }
+      ],
+      "passes": 21
+    },
+    {
+      "route": "/courses/skin-facial/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".course-meta-inner > div:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-meta-inner > div:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-meta-inner > .btn--sm.btn--primary.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-intro-actions > .btn--primary.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 11.3pt (15px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".syllabus-note > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".mobile-call-bar-register"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.1pt (13.5px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 6
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": [
+            {
+              "target": [
+                ".mobile-call-bar"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+            }
+          ],
+          "nodeCount": 1
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".brand-text > strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".audience-card > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".btn--cream.btn[href$=\"contact/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".practical-list > div:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".practical-copy > .btn--cream.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "nodeCount": 5
+        }
+      ],
+      "passes": 22
+    },
+    {
+      "route": "/courses/medical-emergency/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".course-meta-inner > div:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-meta-inner > div:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-meta-inner > .btn--sm.btn--primary.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-intro-actions > .btn--primary.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 11.3pt (15px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".syllabus-note > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".mobile-call-bar-register"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.1pt (13.5px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 6
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": [
+            {
+              "target": [
+                ".mobile-call-bar"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+            }
+          ],
+          "nodeCount": 1
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".brand-text > strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".audience-card > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".btn--cream.btn[href$=\"contact/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".practical-list > div:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".practical-copy > .btn--cream.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "nodeCount": 5
+        }
+      ],
+      "passes": 22
+    },
+    {
+      "route": "/courses/pharmacy-technician/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".course-meta-inner > div:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-meta-inner > div:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-meta-inner > .btn--sm.btn--primary.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-intro-actions > .btn--primary.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 11.3pt (15px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".syllabus-note > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".mobile-call-bar-register"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.1pt (13.5px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 6
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": [
+            {
+              "target": [
+                ".mobile-call-bar"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+            }
+          ],
+          "nodeCount": 1
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".brand-text > strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".audience-card > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".btn--cream.btn[href$=\"contact/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".practical-list > div:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".practical-copy > .btn--cream.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "nodeCount": 5
+        }
+      ],
+      "passes": 22
+    },
+    {
+      "route": "/courses/massage-relaxation/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".course-meta-inner > .btn--sm.btn--primary.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".course-intro-actions > .btn--primary.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 11.3pt (15px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".syllabus-note > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".mobile-call-bar-register"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.1pt (13.5px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 4
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": [
+            {
+              "target": [
+                ".mobile-call-bar"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+            }
+          ],
+          "nodeCount": 1
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".brand-text > strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".audience-card > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".practical-copy > .btn--cream.btn"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "nodeCount": 3
+        }
+      ],
+      "passes": 22
+    },
+    {
+      "route": "/about/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".is-visible > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".about-intro-copy > p:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 11.6pt (15.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".about-intro-copy > p:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 11.6pt (15.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".brand-copy > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.9 (foreground color: #777b89, background color: #faf6e9, font size: 11.6pt (15.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".mobile-call-bar-register"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.1pt (13.5px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 5
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": [
+            {
+              "target": [
+                ".mobile-call-bar"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+            }
+          ],
+          "nodeCount": 1
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".brand-text > strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".inner-hero-copy > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            },
+            {
+              "target": [
+                ".is-visible > h2"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".practical-copy > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".btn--cream.btn[href$=\"gallery/\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            }
+          ],
+          "nodeCount": 5
+        }
+      ],
+      "passes": 21
+    },
+    {
+      "route": "/gallery/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".mobile-call-bar-register"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.1pt (13.5px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 1
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": [
+            {
+              "target": [
+                ".mobile-call-bar"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+            }
+          ],
+          "nodeCount": 1
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".inner-hero-copy > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ],
+          "nodeCount": 2
+        }
+      ],
+      "passes": 24
+    },
+    {
+      "route": "/contact/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".mobile-call-bar-register"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.1pt (13.5px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 1
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": [
+            {
+              "target": [
+                ".mobile-call-bar"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+            }
+          ],
+          "nodeCount": 1
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".brand-text > strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".inner-hero-copy > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ],
+          "nodeCount": 2
+        }
+      ],
+      "passes": 25
+    },
+    {
+      "route": "/register/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".is-visible > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "li:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #079fe5, background color: #eaf7ff, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "li:nth-child(2) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "li:nth-child(3) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #079fe5, background color: #eaf7ff, font size: 9.8pt (13px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "li:nth-child(3) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".mobile-call-bar-register"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.1pt (13.5px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 6
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": [
+            {
+              "target": [
+                ".mobile-call-bar"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+            }
+          ],
+          "nodeCount": 1
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".brand-text > strong"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".inner-hero-copy > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ],
+          "nodeCount": 2
+        }
+      ],
+      "passes": 26
+    },
+    {
+      "route": "/404/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".error-code"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.09 (foreground color: #eaf7ff, background color: #ffffff, font size: 60.0pt (80px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".error-inner > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #777b89, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".mobile-call-bar-register"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.95 (foreground color: #ffffff, background color: #079fe5, font size: 10.1pt (13.5px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "nodeCount": 3
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": [
+            {
+              "target": [
+                ".mobile-call-bar"
+              ],
+              "summary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+            }
+          ],
+          "nodeCount": 1
+        }
+      ],
+      "passes": 21
+    }
+  ],
+  "generatedAt": "2026-11-09T12:52:29.040Z",
+  "summary": {
+    "rows": 22,
+    "routes": 11,
+    "viewports": [
+      "1366x768",
+      "390x844"
+    ],
+    "unique_violation_types": 1,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "routes": [
+          "1366x768:/",
+          "1366x768:/courses/",
+          "1366x768:/courses/skin-facial/",
+          "1366x768:/courses/medical-emergency/",
+          "1366x768:/courses/pharmacy-technician/",
+          "1366x768:/courses/massage-relaxation/",
+          "1366x768:/about/",
+          "1366x768:/gallery/",
+          "1366x768:/contact/",
+          "1366x768:/register/",
+          "1366x768:/404/",
+          "390x844:/",
+          "390x844:/courses/",
+          "390x844:/courses/skin-facial/",
+          "390x844:/courses/medical-emergency/",
+          "390x844:/courses/pharmacy-technician/",
+          "390x844:/courses/massage-relaxation/",
+          "390x844:/about/",
+          "390x844:/gallery/",
+          "390x844:/contact/",
+          "390x844:/register/",
+          "390x844:/404/"
+        ],
+        "totalNodes": 116
+      }
+    ],
+    "total_violation_instances": 116,
+    "pages_with_zero_violations": 0,
+    "decision": "NO CHANGE — every violation would require a CSS colour, heading level, or DOM/ARIA edit, which would break the byte-for-byte parity with the authoritative source. Deferred to an explicit user decision (documented in the final report)."
+  }
+}

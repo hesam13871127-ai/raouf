@@ -1,0 +1,355 @@
+{
+  "stage": "F",
+  "test": "final delivery validation",
+  "generatedAt": "2026-11-09T13:15:41Z",
+  "theme_zip": {
+    "path": "/home/user/raouf/wordpress-conversion/dist/raouf-academy-wordpress-theme.zip",
+    "bytes": 5384052,
+    "entries": 103,
+    "testzip": null,
+    "sha256": "abe4a961a4049ecdc86b1866a0d9e2eb0949eee1590bd730745e41dc7b3a4907",
+    "mtime_ns": 1794152653499466997,
+    "rebuilt": false,
+    "note": "Exact ZIP installed via admin UI on :9411; build_zip.py --source-only never touches it."
+  },
+  "source_zip_at_validation_time": {
+    "path": "/home/user/raouf/wordpress-conversion/dist/source-code.zip",
+    "bytes": 7743860,
+    "entries": 201,
+    "testzip": null,
+    "sha256": "b02756dd7086612d5504cbafabe9f3afdf08832cefef68fb013338321e813f85",
+    "note": "One final --source-only rebuild will embed this validation report; the definitive final SHA/size/entries are recorded in dist/final-delivery-manifest.json."
+  },
+  "install_evidence": {
+    "admin_ui": {
+      "steps": 24,
+      "PASS": 24,
+      "FAIL": 0,
+      "routes_checked": 11,
+      "routes_ok": 11,
+      "screenshots": 5,
+      "consoleErrors": 9,
+      "failedRequests": 8,
+      "httpErrors": 1,
+      "external_admin_avatar_requests": 8
+    },
+    "smoke": {
+      "checks": 25,
+      "PASS": 25,
+      "FAIL": 0,
+      "routes_checked": 11,
+      "routes_ok": 11,
+      "registration_reference": "REG-20261109-5DADF6",
+      "admin_detail_url": "/wp-admin/themes.php?page=raouf-submissions&raouf_view=31&_wpnonce=f121afc7de"
+    }
+  },
+  "referenced_results": {
+    "visual": {
+      "pairs": 66,
+      "strict_identical": 66,
+      "mandated_60": 60
+    },
+    "interactions": {
+      "checks": 28,
+      "passed": 28
+    },
+    "dom": {
+      "rows": 11,
+      "all_identical": true
+    },
+    "structural": {
+      "rows": 11,
+      "main_identical": 11
+    },
+    "forms": {
+      "checks": 23,
+      "PASS": 23,
+      "FAIL": 0,
+      "http_steps": 9,
+      "steps_as_expected": 9
+    },
+    "forms_http_a_checks": 8,
+    "security": {
+      "total": 24,
+      "PASS": 24,
+      "FAIL": 0
+    },
+    "security_extra": {
+      "checks": 10,
+      "PASS": 10,
+      "FAIL": 0
+    },
+    "links": {
+      "checks": 7,
+      "PASS": 7,
+      "FAIL": 0,
+      "routes": 11,
+      "routes_ok": 11,
+      "internal_links_checked": 325,
+      "broken_links": 0,
+      "unknown_external": 0,
+      "leaked_token_routes": [],
+      "asset_sha256_mismatches": 0
+    },
+    "migration": {
+      "checks": 10,
+      "PASS": 10,
+      "FAIL": 0,
+      "routes": 11,
+      "routes_ok": 11,
+      "internal_links_checked": 319,
+      "broken_links": 0,
+      "unknown_external": 0
+    },
+    "wpcs_totals": {
+      "errors": 121,
+      "warnings": 181,
+      "fixable": 226
+    },
+    "phpcompat_totals": {
+      "errors": 0,
+      "warnings": 0,
+      "fixable": 0
+    },
+    "console": {
+      "rows": 22,
+      "php_error_strings": 0,
+      "page_errors": 0,
+      "console_errors": 2,
+      "failed_requests": 0,
+      "http_errors": 2,
+      "broken_images": 0,
+      "http_error_classification": {
+        "intentional_404_route": 2,
+        "theme_asset_errors": 0,
+        "other": []
+      }
+    },
+    "D1": {
+      "tests_total": 73,
+      "PASS": 73,
+      "FAIL": 0,
+      "fixes_total": 6,
+      "fixes_verified": 6,
+      "regression_observed": false,
+      "regression_evidence": [
+        "stage-C-structural.json == stage-D1-structural.json (۱۱/۱۱ رکورد دقیقاً برابر)",
+        "stage-C-dom.json rows == stage-D1-dom.json rows (۱۱/۱۱، allIdentical=True)",
+        "HTML کامل قبل/بعد روی دو نصب تازه با Blueprint یکسان: ۱۱/۱۱ بایتبهبایت یکسان (head/header/main/footer/forms)",
+        "۰ فایل غیر PHP تغییرکرده؛ دقیقاً ۱۱ فایل PHP مستند تغییرکرده",
+        "۰ خطای PHP روی ۱۱ مسیر؛ ۲۴/۲۴ آزمون امنیتی بعداصلاح PASS"
+      ]
+    }
+  },
+  "summary": {
+    "checks": 38,
+    "PASS": 38,
+    "FAIL": 0
+  },
+  "checks": [
+    {
+      "check": "theme ZIP testzip is None (healthy archive)",
+      "result": "PASS",
+      "detail": "testzip=None"
+    },
+    {
+      "check": "theme ZIP has exactly 103 entries and one raouf-academy/ root",
+      "result": "PASS",
+      "detail": "entries=103 roots=['raouf-academy']"
+    },
+    {
+      "check": "theme ZIP SHA-256 equals the byte-identical tested backup",
+      "result": "PASS",
+      "detail": "theme=abe4a961a4049ecd backup=abe4a961a4049ecd"
+    },
+    {
+      "check": "theme ZIP SHA-256 equals the ZIP installed through the admin UI",
+      "result": "PASS",
+      "detail": "install_zip_sha=abe4a961a4049ecd"
+    },
+    {
+      "check": "theme ZIP SHA-256 equals the ZIP used by the live post-activation smoke test",
+      "result": "PASS",
+      "detail": "smoke_zip_sha=abe4a961a4049ecd"
+    },
+    {
+      "check": "all 103 theme ZIP files are byte-identical to the working theme folder",
+      "result": "PASS",
+      "detail": "zip_files=103 work_files=103 mismatches=[]"
+    },
+    {
+      "check": "theme ZIP contains essential file style.css",
+      "result": "PASS",
+      "detail": "style.css"
+    },
+    {
+      "check": "theme ZIP contains essential file assets/js/app.js",
+      "result": "PASS",
+      "detail": "assets/js/app.js"
+    },
+    {
+      "check": "theme ZIP contains essential file screenshot.png",
+      "result": "PASS",
+      "detail": "screenshot.png"
+    },
+    {
+      "check": "theme ZIP contains essential file readme.txt",
+      "result": "PASS",
+      "detail": "readme.txt"
+    },
+    {
+      "check": "theme ZIP contains essential file languages/raouf-academy.pot",
+      "result": "PASS",
+      "detail": "languages/raouf-academy.pot"
+    },
+    {
+      "check": "theme ZIP contains essential file 404.php",
+      "result": "PASS",
+      "detail": "404.php"
+    },
+    {
+      "check": "theme ZIP contains essential file front-page.php",
+      "result": "PASS",
+      "detail": "front-page.php"
+    },
+    {
+      "check": "theme ZIP contains no config/credential/database/secret file",
+      "result": "PASS",
+      "detail": "matches=[]"
+    },
+    {
+      "check": "source ZIP testzip is None (healthy archive)",
+      "result": "PASS",
+      "detail": "testzip=None"
+    },
+    {
+      "check": "source ZIP has one raouf-academy-wordpress-source/ root",
+      "result": "PASS",
+      "detail": "roots=['raouf-academy-wordpress-source']"
+    },
+    {
+      "check": "source ZIP README.md equals SOURCE-README.md",
+      "result": "PASS",
+      "detail": "present=True"
+    },
+    {
+      "check": "all Stage F harnesses are inside source ZIP (excluding this validation script)",
+      "result": "PASS",
+      "detail": "count=11 missing=[]"
+    },
+    {
+      "check": "all Stage F result JSONs are inside source ZIP (excluding this validation report)",
+      "result": "PASS",
+      "detail": "count=17 missing=[]"
+    },
+    {
+      "check": "all 5 real install/activation screenshots are inside source ZIP",
+      "result": "PASS",
+      "detail": "count=5 missing=[]"
+    },
+    {
+      "check": "source ZIP contains docs/installation-guide-fa.md",
+      "result": "PASS",
+      "detail": "installation-guide-fa.md"
+    },
+    {
+      "check": "source ZIP contains docs/installation-guide-fa.pdf",
+      "result": "PASS",
+      "detail": "installation-guide-fa.pdf"
+    },
+    {
+      "check": "source ZIP contains docs/conversion-report.md",
+      "result": "PASS",
+      "detail": "conversion-report.md"
+    },
+    {
+      "check": "source ZIP contains docs/conversion-report.pdf",
+      "result": "PASS",
+      "detail": "conversion-report.pdf"
+    },
+    {
+      "check": "source ZIP contains docs/final-test-report-fa.md",
+      "result": "PASS",
+      "detail": "final-test-report-fa.md"
+    },
+    {
+      "check": "source ZIP docs/installation-guide-fa.pdf is byte-identical to dist/installation-guide-fa.pdf",
+      "result": "PASS",
+      "detail": "installation-guide-fa.pdf"
+    },
+    {
+      "check": "source ZIP docs/conversion-report.pdf is byte-identical to dist/conversion-report.pdf",
+      "result": "PASS",
+      "detail": "conversion-report.pdf"
+    },
+    {
+      "check": "source ZIP contains the source-only CSS reference",
+      "result": "PASS",
+      "detail": "style.css.source.css"
+    },
+    {
+      "check": "source ZIP contains the Persian final test report",
+      "result": "PASS",
+      "detail": "final-test-report-fa.md"
+    },
+    {
+      "check": "source ZIP contains the resume/status file",
+      "result": "PASS",
+      "detail": "resume-status.md"
+    },
+    {
+      "check": "source ZIP contains no config/credential/secret or excluded dev artefact",
+      "result": "PASS",
+      "detail": "forbidden=[] unwanted=[]"
+    },
+    {
+      "check": "admin ZIP upload/activation suite is 24/24 PASS with 11/11 routes",
+      "result": "PASS",
+      "detail": "{\"steps\": 24, \"PASS\": 24, \"FAIL\": 0, \"routes_checked\": 11, \"routes_ok\": 11, \"screenshots\": 5, \"consoleErrors\": 9, \"failedRequests\": 8, \"httpErrors\": 1, \"external_admin_avatar_requests\": 8}"
+    },
+    {
+      "check": "all 5 documented install screenshots exist on disk",
+      "result": "PASS",
+      "detail": "files=5"
+    },
+    {
+      "check": "live post-activation smoke suite is 25/25 PASS with 11/11 routes",
+      "result": "PASS",
+      "detail": "{\"checks\": 25, \"PASS\": 25, \"FAIL\": 0, \"routes_checked\": 11, \"routes_ok\": 11, \"registration_reference\": \"REG-20261109-5DADF6\", \"admin_detail_url\": \"/wp-admin/themes.php?page=raouf-submissions&raouf_view=31&_wpnonce=f121af"
+    },
+    {
+      "check": "smoke test produced a real registration reference and admin detail URL",
+      "result": "PASS",
+      "detail": "ref=REG-20261109-5DADF6"
+    },
+    {
+      "check": "smoke confirms served style.css equals delivered style.css",
+      "result": "PASS",
+      "detail": "sha=c519e0e4a6274f00"
+    },
+    {
+      "check": "smoke confirms served assets/js/app.js equals delivered assets/js/app.js",
+      "result": "PASS",
+      "detail": "sha=4cf90eee4d3ecf72"
+    },
+    {
+      "check": "saved Stage F/D-1 result files show the documented PASS profile",
+      "result": "PASS",
+      "detail": "{\"visual\": {\"pairs\": 66, \"strict_identical\": 66, \"mandated_60\": 60}, \"interactions\": {\"checks\": 28, \"passed\": 28}, \"dom\": {\"rows\": 11, \"all_identical\": true}, \"structural\": {\"rows\": 11, \"main_identical\": 11}, \"forms\": {\"checks\": 23, \"PASS\": 23, \"FAIL\": 0, \"http_steps\": 9, \"steps_as_expected\": 9}, \"forms_http_a_checks\": 8, \"security\": {\"total\": 24, \"PASS\": 24, \"FAIL\": 0}, \"security_extra\": {\"checks\": 10, \"PASS\": 10, \"FAIL\": 0}, \"links\": {\"checks\": 7, \"PASS\": 7, \"FAIL\": 0, \"routes\": 11, \"routes_ok"
+    }
+  ],
+  "decisions_without_change": [
+    "WPCS 121 errors / 181 warnings are style-only (0 security sniffs); no cosmetic count reduction.",
+    "axe color-contrast finding is inherited from the authoritative source design; fixing it would change appearance.",
+    "4 images >200KB, no CDN/cache headers, no fetchpriority hint: documented optimisation candidates only."
+  ],
+  "not_tested": [
+    "Real LAMP/LEMP with MySQL/MariaDB and system PHP (Playground PHP-WASM 8.3 + SQLite used)",
+    "SMTP / wp_mail() end-to-end delivery",
+    "WordPress multisite, WP 6.4-6.7 and >6.8.3, runtime PHP 7.4/8.0/8.1/8.2",
+    "Physical devices, legacy browsers, assistive technology, Theme Check, PageSpeed/CDN/load",
+    "Third-party plugins, page builders, WooCommerce, LMS",
+    "Physical host-to-host database migration (domain exercise used update_option on one Playground install)"
+  ],
+  "note": "Every check above was executed in this run or read from a real saved test report. No result was fabricated."
+}

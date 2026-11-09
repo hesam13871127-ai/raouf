@@ -1,0 +1,422 @@
+{
+  "stage": "D-1",
+  "generated_utc": "2026-11-08T15:27:48Z",
+  "comparisons": {
+    "stage_C_structural": "qa/results/stage-C-structural.json",
+    "stage_D1_structural": "qa/results/stage-D1-structural.json",
+    "stage_C_dom": "qa/results/stage-C-dom.json",
+    "stage_D1_dom": "qa/results/stage-D1-dom.json",
+    "pre_D_theme": "http://127.0.0.1:9409 (extracted from immutable Stage B/C theme ZIP)",
+    "post_D_theme": "http://127.0.0.1:9410 (current theme with SD-01..SD-06)",
+    "canonical_wp": "http://127.0.0.1:9400",
+    "original_static": "http://127.0.0.1:3000"
+  },
+  "checks": [
+    {
+      "check": "Stage C structural report reproduced byte-for-byte (11 routes)",
+      "result": "PASS",
+      "detail": "records=11 equal=True main_identical=11/11 class_sequence_identical=11/11"
+    },
+    {
+      "check": "Stage C whole-DOM (header/main/footer) reproduced byte-for-byte (11 routes)",
+      "result": "PASS",
+      "detail": "rows=11 allIdentical=True header/main/footer=11/11"
+    },
+    {
+      "check": "Pre-D vs post-D full HTML + head/header/main/footer/forms identical (11 routes)",
+      "result": "PASS",
+      "detail": "routes_identical=11/11; differing=[]"
+    },
+    {
+      "check": "All non-PHP assets (style.css, app.js, 67 images, 3 fonts, readme, POT, screenshot) unchanged",
+      "result": "PASS",
+      "detail": "baseline_files=103 current_files=104 differences=[]"
+    },
+    {
+      "check": "Reference CSS still byte-identical to the original source CSS",
+      "result": "PASS",
+      "detail": "reference_css_sha256=a91716ad971b37dc8ca4913aff504913fdddb64ed8c7a777da5a5fc9135362d7"
+    },
+    {
+      "check": "Exactly the 11 documented SD-fix PHP files changed (no other PHP touched)",
+      "result": "PASS",
+      "detail": "changed=11 expected=11 files=['footer.php', 'functions.php', 'header.php', 'inc/404-markup.php', 'inc/forms.php', 'inc/icons.php', 'inc/lightbox-markup.php', 'inc/menus.php', 'inc/nav-fallback.php', 'inc/options.php', 'inc/setup.php']"
+    },
+    {
+      "check": "Canonical Stage C WP instance (:9400) still renders all 11 routes without PHP errors",
+      "result": "PASS",
+      "detail": "routes_with_php_errors=[]"
+    }
+  ],
+  "per_route": [
+    {
+      "route": "/",
+      "full_html_identical": true,
+      "regions_identical": true,
+      "head_sha256": [
+        "8a488c654c6f3aba2425597ac573a6c6563666f6128df3bc8d4d9ab3a6e4f226",
+        "8a488c654c6f3aba2425597ac573a6c6563666f6128df3bc8d4d9ab3a6e4f226"
+      ],
+      "header_sha256": [
+        "be51ccb677b7b41587712a4594b75c1bbb23f2c43a2e23d0474a533d9d2b4181",
+        "be51ccb677b7b41587712a4594b75c1bbb23f2c43a2e23d0474a533d9d2b4181"
+      ],
+      "main_sha256": [
+        "cc39c1136fc5e8542c7fca6ed787bfa1ebd7b7c70f864b3fc70354cf00fa7f7e",
+        "cc39c1136fc5e8542c7fca6ed787bfa1ebd7b7c70f864b3fc70354cf00fa7f7e"
+      ],
+      "footer_sha256": [
+        "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8",
+        "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8"
+      ],
+      "form_count": [
+        0,
+        0
+      ],
+      "form_sha256": [
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      ],
+      "html_lengths": [
+        61642,
+        61642
+      ]
+    },
+    {
+      "route": "/courses/",
+      "full_html_identical": true,
+      "regions_identical": true,
+      "head_sha256": [
+        "600ff64e5cd15108081f689257a1112cffe0775bf3018207901cd8f1934358b5",
+        "600ff64e5cd15108081f689257a1112cffe0775bf3018207901cd8f1934358b5"
+      ],
+      "header_sha256": [
+        "5392c341b5028e7a93db106a9f5155e24017bb2a8d3ab140b32934e653b110ce",
+        "5392c341b5028e7a93db106a9f5155e24017bb2a8d3ab140b32934e653b110ce"
+      ],
+      "main_sha256": [
+        "473a2980ed213a3319838d5e62bb7cc1e2fa4ae6fc9791c3086b30643a6b9edf",
+        "473a2980ed213a3319838d5e62bb7cc1e2fa4ae6fc9791c3086b30643a6b9edf"
+      ],
+      "footer_sha256": [
+        "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066",
+        "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066"
+      ],
+      "form_count": [
+        0,
+        0
+      ],
+      "form_sha256": [
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      ],
+      "html_lengths": [
+        35206,
+        35206
+      ]
+    },
+    {
+      "route": "/courses/skin-facial/",
+      "full_html_identical": true,
+      "regions_identical": true,
+      "head_sha256": [
+        "16ae725c6aba403be5e0131975a0cfdb1c51a00cd832c60ce7ff047c8f04f013",
+        "16ae725c6aba403be5e0131975a0cfdb1c51a00cd832c60ce7ff047c8f04f013"
+      ],
+      "header_sha256": [
+        "716db44a2de9e7b4d14194324f044129b9a687b1d598228c47b0b444009bea26",
+        "716db44a2de9e7b4d14194324f044129b9a687b1d598228c47b0b444009bea26"
+      ],
+      "main_sha256": [
+        "e2f87a38903dc240eeaa7bfc0120548b3b05205dccab0661b4632a5beb7dc16d",
+        "e2f87a38903dc240eeaa7bfc0120548b3b05205dccab0661b4632a5beb7dc16d"
+      ],
+      "footer_sha256": [
+        "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8",
+        "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8"
+      ],
+      "form_count": [
+        0,
+        0
+      ],
+      "form_sha256": [
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      ],
+      "html_lengths": [
+        56335,
+        56335
+      ]
+    },
+    {
+      "route": "/courses/medical-emergency/",
+      "full_html_identical": true,
+      "regions_identical": true,
+      "head_sha256": [
+        "d1f87913ebe22a69cc99dfb9ee3d4e99fa4459f0ef5b5f9e6e92678a21f1cbe6",
+        "d1f87913ebe22a69cc99dfb9ee3d4e99fa4459f0ef5b5f9e6e92678a21f1cbe6"
+      ],
+      "header_sha256": [
+        "716db44a2de9e7b4d14194324f044129b9a687b1d598228c47b0b444009bea26",
+        "716db44a2de9e7b4d14194324f044129b9a687b1d598228c47b0b444009bea26"
+      ],
+      "main_sha256": [
+        "3b90e62db387f49d04a74ce5bdcd8d551b99136f613c25246b73a080ef79fe27",
+        "3b90e62db387f49d04a74ce5bdcd8d551b99136f613c25246b73a080ef79fe27"
+      ],
+      "footer_sha256": [
+        "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8",
+        "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8"
+      ],
+      "form_count": [
+        0,
+        0
+      ],
+      "form_sha256": [
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      ],
+      "html_lengths": [
+        56510,
+        56510
+      ]
+    },
+    {
+      "route": "/courses/pharmacy-technician/",
+      "full_html_identical": true,
+      "regions_identical": true,
+      "head_sha256": [
+        "5f1000c3f6b2f25ed2e402b00a2aadaee6cca9d876bece3a52d835f89184b354",
+        "5f1000c3f6b2f25ed2e402b00a2aadaee6cca9d876bece3a52d835f89184b354"
+      ],
+      "header_sha256": [
+        "716db44a2de9e7b4d14194324f044129b9a687b1d598228c47b0b444009bea26",
+        "716db44a2de9e7b4d14194324f044129b9a687b1d598228c47b0b444009bea26"
+      ],
+      "main_sha256": [
+        "1b6d77d9451c5dfa071914f9ddf816414a12def845d5164a483f75e141733355",
+        "1b6d77d9451c5dfa071914f9ddf816414a12def845d5164a483f75e141733355"
+      ],
+      "footer_sha256": [
+        "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8",
+        "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8"
+      ],
+      "form_count": [
+        0,
+        0
+      ],
+      "form_sha256": [
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      ],
+      "html_lengths": [
+        54183,
+        54183
+      ]
+    },
+    {
+      "route": "/courses/massage-relaxation/",
+      "full_html_identical": true,
+      "regions_identical": true,
+      "head_sha256": [
+        "af82ba1eed1e86fc3fa5f0bbd1724bd0da511925f705b7bc2fbd6806c3ba4d8e",
+        "af82ba1eed1e86fc3fa5f0bbd1724bd0da511925f705b7bc2fbd6806c3ba4d8e"
+      ],
+      "header_sha256": [
+        "716db44a2de9e7b4d14194324f044129b9a687b1d598228c47b0b444009bea26",
+        "716db44a2de9e7b4d14194324f044129b9a687b1d598228c47b0b444009bea26"
+      ],
+      "main_sha256": [
+        "c1d9305471bce863f4e20f3b68c5f1cfc0353e28e43577385b4acae266bc3418",
+        "c1d9305471bce863f4e20f3b68c5f1cfc0353e28e43577385b4acae266bc3418"
+      ],
+      "footer_sha256": [
+        "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8",
+        "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8"
+      ],
+      "form_count": [
+        0,
+        0
+      ],
+      "form_sha256": [
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      ],
+      "html_lengths": [
+        56241,
+        56241
+      ]
+    },
+    {
+      "route": "/about/",
+      "full_html_identical": true,
+      "regions_identical": true,
+      "head_sha256": [
+        "94d5f34aaf28d6843702d79c480531cd049e20c93e425e55d109f311c20f5eba",
+        "94d5f34aaf28d6843702d79c480531cd049e20c93e425e55d109f311c20f5eba"
+      ],
+      "header_sha256": [
+        "747584873ecd028b08bf096ed0287b5536c4196cd2e63373668c53c8e8eae3bb",
+        "747584873ecd028b08bf096ed0287b5536c4196cd2e63373668c53c8e8eae3bb"
+      ],
+      "main_sha256": [
+        "202c52c314681cba76c02928d9d89da2a2ea04d41b88354783fa3b1579620e70",
+        "202c52c314681cba76c02928d9d89da2a2ea04d41b88354783fa3b1579620e70"
+      ],
+      "footer_sha256": [
+        "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066",
+        "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066"
+      ],
+      "form_count": [
+        0,
+        0
+      ],
+      "form_sha256": [
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      ],
+      "html_lengths": [
+        35640,
+        35640
+      ]
+    },
+    {
+      "route": "/gallery/",
+      "full_html_identical": true,
+      "regions_identical": true,
+      "head_sha256": [
+        "0e1856816c20e436403034f9fdfee780daa748bfdbf94da74c78997b3b2b09a4",
+        "0e1856816c20e436403034f9fdfee780daa748bfdbf94da74c78997b3b2b09a4"
+      ],
+      "header_sha256": [
+        "44d51c88c98184fc10290d87b70986fca64dad15833af2bc3756a6d7157f492d",
+        "44d51c88c98184fc10290d87b70986fca64dad15833af2bc3756a6d7157f492d"
+      ],
+      "main_sha256": [
+        "ad0fbeed4f4bf6ed7e79686390f0bfdd04dd3542832ae880edb07cf57c94c7b9",
+        "ad0fbeed4f4bf6ed7e79686390f0bfdd04dd3542832ae880edb07cf57c94c7b9"
+      ],
+      "footer_sha256": [
+        "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8",
+        "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8"
+      ],
+      "form_count": [
+        0,
+        0
+      ],
+      "form_sha256": [
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      ],
+      "html_lengths": [
+        51876,
+        51876
+      ]
+    },
+    {
+      "route": "/contact/",
+      "full_html_identical": true,
+      "regions_identical": true,
+      "head_sha256": [
+        "2f3476ab6c45bddbaf17aedebb8c6ec76c22878807b36dd6b9f363b688077e74",
+        "2f3476ab6c45bddbaf17aedebb8c6ec76c22878807b36dd6b9f363b688077e74"
+      ],
+      "header_sha256": [
+        "fb274ac0442a2488a952b7be7da14858aa6820771daf4f10f75294d5ebe9bff8",
+        "fb274ac0442a2488a952b7be7da14858aa6820771daf4f10f75294d5ebe9bff8"
+      ],
+      "main_sha256": [
+        "c19f60bd195f0746cbac55b135b56a43635324712ed3f54564a80dda65843056",
+        "c19f60bd195f0746cbac55b135b56a43635324712ed3f54564a80dda65843056"
+      ],
+      "footer_sha256": [
+        "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066",
+        "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066"
+      ],
+      "form_count": [
+        1,
+        1
+      ],
+      "form_sha256": [
+        "5ad43a0578f0230caad99eedb1ac16f1a837bf045c6b074e15f48e5fdfb2aacf",
+        "5ad43a0578f0230caad99eedb1ac16f1a837bf045c6b074e15f48e5fdfb2aacf"
+      ],
+      "html_lengths": [
+        29447,
+        29447
+      ]
+    },
+    {
+      "route": "/register/",
+      "full_html_identical": true,
+      "regions_identical": true,
+      "head_sha256": [
+        "0b53eeccab81a98eaad96a1317a4c5ed43fd6ce70dd80c33e050cb55acbe179e",
+        "0b53eeccab81a98eaad96a1317a4c5ed43fd6ce70dd80c33e050cb55acbe179e"
+      ],
+      "header_sha256": [
+        "d478a4216f664c3f6723510a698210dd853949c192ed346dd478d7064e9d029a",
+        "d478a4216f664c3f6723510a698210dd853949c192ed346dd478d7064e9d029a"
+      ],
+      "main_sha256": [
+        "3cee36be0ca4770d4756d94fb056ee5f8abe0b738f2fe7e76e8f0f79400002bd",
+        "3cee36be0ca4770d4756d94fb056ee5f8abe0b738f2fe7e76e8f0f79400002bd"
+      ],
+      "footer_sha256": [
+        "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066",
+        "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066"
+      ],
+      "form_count": [
+        1,
+        1
+      ],
+      "form_sha256": [
+        "163008d605f3c38ebbe497a880c8fb5f54c9c6afdd15c0079aef4d43b5d61f41",
+        "163008d605f3c38ebbe497a880c8fb5f54c9c6afdd15c0079aef4d43b5d61f41"
+      ],
+      "html_lengths": [
+        31197,
+        31197
+      ]
+    },
+    {
+      "route": "/404/",
+      "full_html_identical": true,
+      "regions_identical": true,
+      "head_sha256": [
+        "a58edf075416210a540e1b74893b8289335945acbe344536e510d38c0add74bb",
+        "a58edf075416210a540e1b74893b8289335945acbe344536e510d38c0add74bb"
+      ],
+      "header_sha256": [
+        "d478a4216f664c3f6723510a698210dd853949c192ed346dd478d7064e9d029a",
+        "d478a4216f664c3f6723510a698210dd853949c192ed346dd478d7064e9d029a"
+      ],
+      "main_sha256": [
+        "30db07e271351b2e6d1f586c221ab112f3c96db60a917f8e929534adc59f9202",
+        "30db07e271351b2e6d1f586c221ab112f3c96db60a917f8e929534adc59f9202"
+      ],
+      "footer_sha256": [
+        "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066",
+        "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066"
+      ],
+      "form_count": [
+        0,
+        0
+      ],
+      "form_sha256": [
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      ],
+      "html_lengths": [
+        18455,
+        18455
+      ]
+    }
+  ],
+  "summary": {
+    "total": 7,
+    "PASS": 7,
+    "FAIL": 0,
+    "routes_checked": 11
+  }
+}

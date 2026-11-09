@@ -1,0 +1,40 @@
+{
+  "stage": "B",
+  "type": "visual-regression-sample",
+  "performed_at": "2026-11-08",
+  "original": "http://127.0.0.1:3000",
+  "wordpress": "http://127.0.0.1:9400",
+  "method": "Puppeteer/@sparticuz/chromium full-page screenshots, ImageMagick compare -metric AE/RMSE",
+  "pairs": [
+    {
+      "page": "home",
+      "viewport": "1366x768",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "identical": true
+    },
+    {
+      "page": "gallery",
+      "viewport": "1366x768",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "identical": true
+    },
+    {
+      "page": "home",
+      "viewport": "390x844",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "identical": true
+    },
+    {
+      "page": "gallery",
+      "viewport": "390x844",
+      "AE": "0",
+      "RMSE": "0 (0)",
+      "identical": true
+    }
+  ],
+  "all_identical": true,
+  "note": "Representative sample only; the full 60-pair visual suite is scheduled for Stage F and was NOT run in Stage B."
+}

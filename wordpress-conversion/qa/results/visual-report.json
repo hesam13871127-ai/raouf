@@ -1,0 +1,435 @@
+{
+  "viewports": [
+    "1920x1080",
+    "1366x768",
+    "1024x768",
+    "768x1024",
+    "390x844",
+    "360x800"
+  ],
+  "pages": 10,
+  "pairs": 60,
+  "allPixelIdentical": true,
+  "results": [
+    {
+      "pair": "orig-1024x768-about.jpg",
+      "sameDimensions": true,
+      "dimensions": "1024x5622",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1024x768-contact.jpg",
+      "sameDimensions": true,
+      "dimensions": "1024x2530",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1024x768-course-massage-relaxation.jpg",
+      "sameDimensions": true,
+      "dimensions": "1024x7784",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1024x768-course-medical-emergency.jpg",
+      "sameDimensions": true,
+      "dimensions": "1024x7928",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1024x768-course-pharmacy-technician.jpg",
+      "sameDimensions": true,
+      "dimensions": "1024x7544",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1024x768-course-skin-facial.jpg",
+      "sameDimensions": true,
+      "dimensions": "1024x7567",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1024x768-courses.jpg",
+      "sameDimensions": true,
+      "dimensions": "1024x3826",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1024x768-gallery.jpg",
+      "sameDimensions": true,
+      "dimensions": "1024x4522",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1024x768-home.jpg",
+      "sameDimensions": true,
+      "dimensions": "1024x8221",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1024x768-register.jpg",
+      "sameDimensions": true,
+      "dimensions": "1024x3095",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1366x768-about.jpg",
+      "sameDimensions": true,
+      "dimensions": "1366x5411",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1366x768-contact.jpg",
+      "sameDimensions": true,
+      "dimensions": "1366x2400",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1366x768-course-massage-relaxation.jpg",
+      "sameDimensions": true,
+      "dimensions": "1366x7943",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1366x768-course-medical-emergency.jpg",
+      "sameDimensions": true,
+      "dimensions": "1366x8061",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1366x768-course-pharmacy-technician.jpg",
+      "sameDimensions": true,
+      "dimensions": "1366x7613",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1366x768-course-skin-facial.jpg",
+      "sameDimensions": true,
+      "dimensions": "1366x7600",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1366x768-courses.jpg",
+      "sameDimensions": true,
+      "dimensions": "1366x3676",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1366x768-gallery.jpg",
+      "sameDimensions": true,
+      "dimensions": "1366x5022",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1366x768-home.jpg",
+      "sameDimensions": true,
+      "dimensions": "1366x7261",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1366x768-register.jpg",
+      "sameDimensions": true,
+      "dimensions": "1366x2940",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1920x1080-about.jpg",
+      "sameDimensions": true,
+      "dimensions": "1920x5411",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1920x1080-contact.jpg",
+      "sameDimensions": true,
+      "dimensions": "1920x2400",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1920x1080-course-massage-relaxation.jpg",
+      "sameDimensions": true,
+      "dimensions": "1920x7943",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1920x1080-course-medical-emergency.jpg",
+      "sameDimensions": true,
+      "dimensions": "1920x8061",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1920x1080-course-pharmacy-technician.jpg",
+      "sameDimensions": true,
+      "dimensions": "1920x7613",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1920x1080-course-skin-facial.jpg",
+      "sameDimensions": true,
+      "dimensions": "1920x7600",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1920x1080-courses.jpg",
+      "sameDimensions": true,
+      "dimensions": "1920x3676",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1920x1080-gallery.jpg",
+      "sameDimensions": true,
+      "dimensions": "1920x5022",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1920x1080-home.jpg",
+      "sameDimensions": true,
+      "dimensions": "1920x7261",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-1920x1080-register.jpg",
+      "sameDimensions": true,
+      "dimensions": "1920x2940",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-360x800-about.jpg",
+      "sameDimensions": true,
+      "dimensions": "360x9358",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-360x800-contact.jpg",
+      "sameDimensions": true,
+      "dimensions": "360x4560",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-360x800-course-massage-relaxation.jpg",
+      "sameDimensions": true,
+      "dimensions": "360x12471",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-360x800-course-medical-emergency.jpg",
+      "sameDimensions": true,
+      "dimensions": "360x12635",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-360x800-course-pharmacy-technician.jpg",
+      "sameDimensions": true,
+      "dimensions": "360x11988",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-360x800-course-skin-facial.jpg",
+      "sameDimensions": true,
+      "dimensions": "360x12682",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-360x800-courses.jpg",
+      "sameDimensions": true,
+      "dimensions": "360x6142",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-360x800-gallery.jpg",
+      "sameDimensions": true,
+      "dimensions": "360x11352",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-360x800-home.jpg",
+      "sameDimensions": true,
+      "dimensions": "360x12476",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-360x800-register.jpg",
+      "sameDimensions": true,
+      "dimensions": "360x4798",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-390x844-about.jpg",
+      "sameDimensions": true,
+      "dimensions": "390x9296",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-390x844-contact.jpg",
+      "sameDimensions": true,
+      "dimensions": "390x4560",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-390x844-course-massage-relaxation.jpg",
+      "sameDimensions": true,
+      "dimensions": "390x12423",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-390x844-course-medical-emergency.jpg",
+      "sameDimensions": true,
+      "dimensions": "390x12679",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-390x844-course-pharmacy-technician.jpg",
+      "sameDimensions": true,
+      "dimensions": "390x11956",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-390x844-course-skin-facial.jpg",
+      "sameDimensions": true,
+      "dimensions": "390x12731",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-390x844-courses.jpg",
+      "sameDimensions": true,
+      "dimensions": "390x6219",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-390x844-gallery.jpg",
+      "sameDimensions": true,
+      "dimensions": "390x12055",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-390x844-home.jpg",
+      "sameDimensions": true,
+      "dimensions": "390x12580",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-390x844-register.jpg",
+      "sameDimensions": true,
+      "dimensions": "390x4660",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-768x1024-about.jpg",
+      "sameDimensions": true,
+      "dimensions": "768x7124",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-768x1024-contact.jpg",
+      "sameDimensions": true,
+      "dimensions": "768x3432",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-768x1024-course-massage-relaxation.jpg",
+      "sameDimensions": true,
+      "dimensions": "768x10000",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-768x1024-course-medical-emergency.jpg",
+      "sameDimensions": true,
+      "dimensions": "768x10014",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-768x1024-course-pharmacy-technician.jpg",
+      "sameDimensions": true,
+      "dimensions": "768x9268",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-768x1024-course-skin-facial.jpg",
+      "sameDimensions": true,
+      "dimensions": "768x9778",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-768x1024-courses.jpg",
+      "sameDimensions": true,
+      "dimensions": "768x3742",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-768x1024-gallery.jpg",
+      "sameDimensions": true,
+      "dimensions": "768x6543",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-768x1024-home.jpg",
+      "sameDimensions": true,
+      "dimensions": "768x10369",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    },
+    {
+      "pair": "orig-768x1024-register.jpg",
+      "sameDimensions": true,
+      "dimensions": "768x3736",
+      "absoluteErrorPixels": "0",
+      "rmse": "0"
+    }
+  ]
+}

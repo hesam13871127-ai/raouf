@@ -1,0 +1,1888 @@
+{
+  "stage": "D-1",
+  "task": "تأیید اصلاحات انجامشدهٔ مرحلهٔ D",
+  "generated_utc": "2026-11-08T15:33:53Z",
+  "branch": "arena/dfee8ce0-raouf",
+  "head": "abc23ef6ddbd4a74111f6c0347504a35eb746002",
+  "git_status": "?? wordpress-conversion/",
+  "scope": "فقط تأیید؛ بدون تکرار ممیزی، بدون اصلاح قالب، بدون بازسازی ZIP، بدون E/F",
+  "summary": {
+    "tests_total": 73,
+    "PASS": 73,
+    "FAIL": 0,
+    "fixes_total": 6,
+    "fixes_verified": 6,
+    "regression_observed": false,
+    "regression_evidence": [
+      "stage-C-structural.json == stage-D1-structural.json (۱۱/۱۱ رکورد دقیقاً برابر)",
+      "stage-C-dom.json rows == stage-D1-dom.json rows (۱۱/۱۱، allIdentical=True)",
+      "HTML کامل قبل/بعد روی دو نصب تازه با Blueprint یکسان: ۱۱/۱۱ بایتبهبایت یکسان (head/header/main/footer/forms)",
+      "۰ فایل غیر PHP تغییرکرده؛ دقیقاً ۱۱ فایل PHP مستند تغییرکرده",
+      "۰ خطای PHP روی ۱۱ مسیر؛ ۲۴/۲۴ آزمون امنیتی بعداصلاح PASS"
+    ]
+  },
+  "security_suite": {
+    "after_file": "qa/results/stage-D-security-after.json",
+    "after_summary": {
+      "total": 24,
+      "PASS": 24,
+      "FAIL": 0
+    },
+    "before_initial_file": "qa/results/stage-D-security-before.json",
+    "before_initial_summary": {
+      "total": 24,
+      "PASS": 18,
+      "FAIL": 6
+    },
+    "before_corrected_file": "qa/results/stage-D-security-before-corrected.json",
+    "before_corrected_summary": {
+      "total": 24,
+      "PASS": 23,
+      "FAIL": 1
+    },
+    "before_corrected_only_failure": [
+      "resync success notice is capability-gated (only administrators)"
+    ],
+    "harness_corrections": [
+      "شمارهٔ تلفن تست ۱۰ رقمی بود؛ الگوی فرم ^09\\d{9}$ یعنی ۱۱ رقم → به ۱۱ رقم اصلاح شد (cause of 3 false FAILs).",
+      "آزمون تکرار (dedupe) از شمارهٔ متفاوتی استفاده میکرد؛ اکنون همان payload دوباره ارسال میشود تا transient تکرار فعال شود.",
+      "regex میزبان، URLهای درست همان نصب (home_url / theme URI) را «وابستگی مطلق» میگرفت؛ اکنون میزبان نصب و دامنههای خارجی شناختهشده مجازند و فقط میزبان بیگانه/توکن localhost قدیمی خطا محسوب میشود.",
+      "wp_die() در Playground متن «نشست نامعتبر» را با HTTP ۲۰۰ برمیگرداند (مستند مرحلهٔ B)؛ معیار «denial» اصلاح شد: متن خطا + عدم افشای PII (یا ۴۰۳).",
+      "لاگین ادمین در گرمآپ اولیهٔ Playground گاهی ۵۰۲ میدهد؛ تلاش مجدد اضافه شد."
+    ],
+    "groups": {
+      "sessions": 1,
+      "security": 19,
+      "SD-03": 1,
+      "SD-04": 1,
+      "runtime": 1,
+      "migration": 1
+    },
+    "checks": [
+      {
+        "group": "sessions",
+        "check": "admin/subscriber/editor logins",
+        "result": "PASS",
+        "detail": "subscriber=True editor=True"
+      },
+      {
+        "group": "security",
+        "check": "all 28 PHP files are ABSPATH-guarded (no source/PII on direct access)",
+        "result": "PASS",
+        "detail": "violations=[]"
+      },
+      {
+        "group": "security",
+        "check": "submission CPT is not exposed through REST",
+        "result": "PASS",
+        "detail": "types_status=200 cpt_status=404"
+      },
+      {
+        "group": "security",
+        "check": "REST search returns no private submission",
+        "result": "PASS",
+        "detail": "status=200"
+      },
+      {
+        "group": "security",
+        "check": "GET /api/registrations is rejected (405 JSON)",
+        "result": "PASS",
+        "detail": "status=405"
+      },
+      {
+        "group": "security",
+        "check": "POST without double-submit CSRF token is denied (403)",
+        "result": "PASS",
+        "detail": "status=403"
+      },
+      {
+        "group": "security",
+        "check": "valid CSRF POST creates a real private submission (201 + ref)",
+        "result": "PASS",
+        "detail": "status=201 body={\"ok\":true,\"id\":\"REG-20261108-50D64C\",\"message\":\"\\u0627\\u0637\\u0644\\u0627\\u0639\\u0627\\u062a \\u0628\\u0627 \\u0645\\u0648\\u0641\\u0642\\u06cc\\u062"
+      },
+      {
+        "group": "security",
+        "check": "HTML/JS/SQL payload accepted only after sanitisation (201)",
+        "result": "PASS",
+        "detail": "status=201 body={\"ok\":true,\"id\":\"MSG-20261108-FCACD3\",\"message\":\"\\u0627\\u0637\\u0644\\u0627\\u0639\\u0627\\u062a \\u0628\\u0627 \\u0645\\u0648\\u0641\\u0642\\u06cc\\u062"
+      },
+      {
+        "group": "security",
+        "check": "duplicate payload is rejected (409)",
+        "result": "PASS",
+        "detail": "status=409"
+      },
+      {
+        "group": "security",
+        "check": "honeypot field rejects bots (400)",
+        "result": "PASS",
+        "detail": "status=400"
+      },
+      {
+        "group": "security",
+        "check": "invalid/scripted name rejected by validation (400)",
+        "result": "PASS",
+        "detail": "status=400"
+      },
+      {
+        "group": "security",
+        "check": "no submitted phone/e-mail appears on any public route",
+        "result": "PASS",
+        "detail": "leaks=[]"
+      },
+      {
+        "group": "security",
+        "check": "admin-only screen \"submissions list\" denies anonymous/subscriber/editor",
+        "result": "PASS",
+        "detail": "anon=200 sub=403 editor=403 admin=200"
+      },
+      {
+        "group": "security",
+        "check": "admin-only screen \"options page\" denies anonymous/subscriber/editor",
+        "result": "PASS",
+        "detail": "anon=200 sub=403 editor=403 admin=200"
+      },
+      {
+        "group": "security",
+        "check": "submission detail requires a valid per-record nonce + manage_options",
+        "result": "PASS",
+        "detail": "valid=200 forged=200 (error_text=True, pii=False) editor=403 (pii=False)"
+      },
+      {
+        "group": "security",
+        "check": "stored XSS payload is escaped in the admin detail view",
+        "result": "PASS",
+        "detail": "raw_script_tags_in_detail=False"
+      },
+      {
+        "group": "security",
+        "check": "private CPT has no public REST route or UI",
+        "result": "PASS",
+        "detail": "types_exposed=False"
+      },
+      {
+        "group": "SD-03",
+        "check": "resync success notice is capability-gated (only administrators)",
+        "result": "PASS",
+        "detail": "{\"anonymous\": {\"status\": 200, \"notice_visible\": false}, \"subscriber\": {\"status\": 200, \"notice_visible\": false}, \"editor\": {\"status\": 200, \"notice_visible\": false}, \"administrator\": {\"status\": 200, \"notice_visible\": true}}"
+      },
+      {
+        "group": "security",
+        "check": "resync endpoint denies a subscriber POST",
+        "result": "PASS",
+        "detail": "status=403"
+      },
+      {
+        "group": "security",
+        "check": "resync endpoint denies a nonce-less admin POST",
+        "result": "PASS",
+        "detail": "status=403"
+      },
+      {
+        "group": "SD-04",
+        "check": "options.php still saves both array settings for an administrator",
+        "result": "PASS",
+        "detail": "status=200 url=http://127.0.0.1:9405/wp-admin/themes.php?page=raouf-options&settings-updated=true"
+      },
+      {
+        "group": "security",
+        "check": "options.php denies a subscriber",
+        "result": "PASS",
+        "detail": "status=403"
+      },
+      {
+        "group": "runtime",
+        "check": "no PHP warning/notice/fatal text on any of the 11 routes",
+        "result": "PASS",
+        "detail": "routes_with_php_errors=[]"
+      },
+      {
+        "group": "migration",
+        "check": "no localhost/foreign-host dependency in rendered HTML",
+        "result": "PASS",
+        "detail": "foreign_hits=[]"
+      }
+    ],
+    "notice_probe_before": {
+      "anonymous": {
+        "status": 200,
+        "notice_visible": false
+      },
+      "subscriber": {
+        "status": 200,
+        "notice_visible": true
+      },
+      "editor": {
+        "status": 200,
+        "notice_visible": true
+      },
+      "administrator": {
+        "status": 200,
+        "notice_visible": true
+      }
+    },
+    "notice_probe_after": {
+      "anonymous": {
+        "status": 200,
+        "notice_visible": false
+      },
+      "subscriber": {
+        "status": 200,
+        "notice_visible": false
+      },
+      "editor": {
+        "status": 200,
+        "notice_visible": false
+      },
+      "administrator": {
+        "status": 200,
+        "notice_visible": true
+      }
+    },
+    "submission_ref_after": "REG-20261108-50D64C"
+  },
+  "capability_comparison": {
+    "legacy_probe": "qa/results/stage-D-capability.json",
+    "state_probe": "qa/results/stage-D1-state.json",
+    "before_theme": "pre-D theme extracted from immutable Stage B/C theme ZIP (:9409)",
+    "after_theme": "current theme with SD-01..SD-06 applied (:9410)",
+    "before": {
+      "wp_version": "6.8.3",
+      "php_version": "8.3.36",
+      "submission_id": 27,
+      "capability_type": "post",
+      "map_meta_cap": true,
+      "cap_read_post": "read_post",
+      "cap_edit_post": "edit_post",
+      "cap_read_private_posts": "read_private_posts",
+      "cap_edit_posts": "edit_posts",
+      "cap_create_posts": "edit_posts",
+      "manage_options_is_meta_cap": false,
+      "editor": {
+        "read_post": true,
+        "edit_post": true,
+        "delete_post": true,
+        "read_private_cap": true,
+        "private_posts_visible": 1
+      },
+      "administrator": {
+        "read_post": true,
+        "edit_post": true,
+        "delete_post": true,
+        "read_private_cap": true
+      },
+      "registered_settings": {
+        "raouf_options": {
+          "type": "string",
+          "group": "raouf_options_group",
+          "show_in_rest": false,
+          "has_default": false,
+          "default": null,
+          "sanitize_callback": "raouf_sanitize_options"
+        },
+        "raouf_media": {
+          "type": "string",
+          "group": "raouf_options_group",
+          "show_in_rest": false,
+          "has_default": false,
+          "default": null,
+          "sanitize_callback": "raouf_sanitize_media"
+        }
+      }
+    },
+    "after": {
+      "wp_version": "6.8.3",
+      "php_version": "8.3.36",
+      "submission_id": 27,
+      "capability_type": "raouf_submission",
+      "map_meta_cap": true,
+      "cap_read_post": "read_raouf_submission",
+      "cap_edit_post": "edit_raouf_submission",
+      "cap_read_private_posts": "manage_options",
+      "cap_edit_posts": "manage_options",
+      "cap_create_posts": "manage_options",
+      "manage_options_is_meta_cap": false,
+      "editor": {
+        "read_post": false,
+        "edit_post": false,
+        "delete_post": false,
+        "read_private_cap": false,
+        "private_posts_visible": 0
+      },
+      "administrator": {
+        "read_post": true,
+        "edit_post": true,
+        "delete_post": true,
+        "read_private_cap": true
+      },
+      "registered_settings": {
+        "raouf_options": {
+          "type": "array",
+          "group": "raouf_options_group",
+          "show_in_rest": false,
+          "has_default": true,
+          "default": [],
+          "sanitize_callback": "raouf_sanitize_options"
+        },
+        "raouf_media": {
+          "type": "array",
+          "group": "raouf_options_group",
+          "show_in_rest": false,
+          "has_default": true,
+          "default": [],
+          "sanitize_callback": "raouf_sanitize_media"
+        }
+      }
+    }
+  },
+  "parity": {
+    "file": "qa/results/stage-D1-parity.json",
+    "summary": {
+      "total": 7,
+      "PASS": 7,
+      "FAIL": 0,
+      "routes_checked": 11
+    },
+    "checks": [
+      {
+        "check": "Stage C structural report reproduced byte-for-byte (11 routes)",
+        "result": "PASS",
+        "detail": "records=11 equal=True main_identical=11/11 class_sequence_identical=11/11"
+      },
+      {
+        "check": "Stage C whole-DOM (header/main/footer) reproduced byte-for-byte (11 routes)",
+        "result": "PASS",
+        "detail": "rows=11 allIdentical=True header/main/footer=11/11"
+      },
+      {
+        "check": "Pre-D vs post-D full HTML + head/header/main/footer/forms identical (11 routes)",
+        "result": "PASS",
+        "detail": "routes_identical=11/11; differing=[]"
+      },
+      {
+        "check": "All non-PHP assets (style.css, app.js, 67 images, 3 fonts, readme, POT, screenshot) unchanged",
+        "result": "PASS",
+        "detail": "baseline_files=103 current_files=104 differences=[]"
+      },
+      {
+        "check": "Reference CSS still byte-identical to the original source CSS",
+        "result": "PASS",
+        "detail": "reference_css_sha256=a91716ad971b37dc8ca4913aff504913fdddb64ed8c7a777da5a5fc9135362d7"
+      },
+      {
+        "check": "Exactly the 11 documented SD-fix PHP files changed (no other PHP touched)",
+        "result": "PASS",
+        "detail": "changed=11 expected=11 files=['footer.php', 'functions.php', 'header.php', 'inc/404-markup.php', 'inc/forms.php', 'inc/icons.php', 'inc/lightbox-markup.php', 'inc/menus.php', 'inc/nav-fallback.php', 'inc/options.php', 'inc/setup.php']"
+      },
+      {
+        "check": "Canonical Stage C WP instance (:9400) still renders all 11 routes without PHP errors",
+        "result": "PASS",
+        "detail": "routes_with_php_errors=[]"
+      }
+    ],
+    "per_route": [
+      {
+        "route": "/",
+        "full_html_identical": true,
+        "regions_identical": true,
+        "head_sha256": [
+          "8a488c654c6f3aba2425597ac573a6c6563666f6128df3bc8d4d9ab3a6e4f226",
+          "8a488c654c6f3aba2425597ac573a6c6563666f6128df3bc8d4d9ab3a6e4f226"
+        ],
+        "header_sha256": [
+          "be51ccb677b7b41587712a4594b75c1bbb23f2c43a2e23d0474a533d9d2b4181",
+          "be51ccb677b7b41587712a4594b75c1bbb23f2c43a2e23d0474a533d9d2b4181"
+        ],
+        "main_sha256": [
+          "cc39c1136fc5e8542c7fca6ed787bfa1ebd7b7c70f864b3fc70354cf00fa7f7e",
+          "cc39c1136fc5e8542c7fca6ed787bfa1ebd7b7c70f864b3fc70354cf00fa7f7e"
+        ],
+        "footer_sha256": [
+          "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8",
+          "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8"
+        ],
+        "form_count": [
+          0,
+          0
+        ],
+        "form_sha256": [
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ],
+        "html_lengths": [
+          61642,
+          61642
+        ]
+      },
+      {
+        "route": "/courses/",
+        "full_html_identical": true,
+        "regions_identical": true,
+        "head_sha256": [
+          "600ff64e5cd15108081f689257a1112cffe0775bf3018207901cd8f1934358b5",
+          "600ff64e5cd15108081f689257a1112cffe0775bf3018207901cd8f1934358b5"
+        ],
+        "header_sha256": [
+          "5392c341b5028e7a93db106a9f5155e24017bb2a8d3ab140b32934e653b110ce",
+          "5392c341b5028e7a93db106a9f5155e24017bb2a8d3ab140b32934e653b110ce"
+        ],
+        "main_sha256": [
+          "473a2980ed213a3319838d5e62bb7cc1e2fa4ae6fc9791c3086b30643a6b9edf",
+          "473a2980ed213a3319838d5e62bb7cc1e2fa4ae6fc9791c3086b30643a6b9edf"
+        ],
+        "footer_sha256": [
+          "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066",
+          "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066"
+        ],
+        "form_count": [
+          0,
+          0
+        ],
+        "form_sha256": [
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ],
+        "html_lengths": [
+          35206,
+          35206
+        ]
+      },
+      {
+        "route": "/courses/skin-facial/",
+        "full_html_identical": true,
+        "regions_identical": true,
+        "head_sha256": [
+          "16ae725c6aba403be5e0131975a0cfdb1c51a00cd832c60ce7ff047c8f04f013",
+          "16ae725c6aba403be5e0131975a0cfdb1c51a00cd832c60ce7ff047c8f04f013"
+        ],
+        "header_sha256": [
+          "716db44a2de9e7b4d14194324f044129b9a687b1d598228c47b0b444009bea26",
+          "716db44a2de9e7b4d14194324f044129b9a687b1d598228c47b0b444009bea26"
+        ],
+        "main_sha256": [
+          "e2f87a38903dc240eeaa7bfc0120548b3b05205dccab0661b4632a5beb7dc16d",
+          "e2f87a38903dc240eeaa7bfc0120548b3b05205dccab0661b4632a5beb7dc16d"
+        ],
+        "footer_sha256": [
+          "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8",
+          "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8"
+        ],
+        "form_count": [
+          0,
+          0
+        ],
+        "form_sha256": [
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ],
+        "html_lengths": [
+          56335,
+          56335
+        ]
+      },
+      {
+        "route": "/courses/medical-emergency/",
+        "full_html_identical": true,
+        "regions_identical": true,
+        "head_sha256": [
+          "d1f87913ebe22a69cc99dfb9ee3d4e99fa4459f0ef5b5f9e6e92678a21f1cbe6",
+          "d1f87913ebe22a69cc99dfb9ee3d4e99fa4459f0ef5b5f9e6e92678a21f1cbe6"
+        ],
+        "header_sha256": [
+          "716db44a2de9e7b4d14194324f044129b9a687b1d598228c47b0b444009bea26",
+          "716db44a2de9e7b4d14194324f044129b9a687b1d598228c47b0b444009bea26"
+        ],
+        "main_sha256": [
+          "3b90e62db387f49d04a74ce5bdcd8d551b99136f613c25246b73a080ef79fe27",
+          "3b90e62db387f49d04a74ce5bdcd8d551b99136f613c25246b73a080ef79fe27"
+        ],
+        "footer_sha256": [
+          "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8",
+          "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8"
+        ],
+        "form_count": [
+          0,
+          0
+        ],
+        "form_sha256": [
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ],
+        "html_lengths": [
+          56510,
+          56510
+        ]
+      },
+      {
+        "route": "/courses/pharmacy-technician/",
+        "full_html_identical": true,
+        "regions_identical": true,
+        "head_sha256": [
+          "5f1000c3f6b2f25ed2e402b00a2aadaee6cca9d876bece3a52d835f89184b354",
+          "5f1000c3f6b2f25ed2e402b00a2aadaee6cca9d876bece3a52d835f89184b354"
+        ],
+        "header_sha256": [
+          "716db44a2de9e7b4d14194324f044129b9a687b1d598228c47b0b444009bea26",
+          "716db44a2de9e7b4d14194324f044129b9a687b1d598228c47b0b444009bea26"
+        ],
+        "main_sha256": [
+          "1b6d77d9451c5dfa071914f9ddf816414a12def845d5164a483f75e141733355",
+          "1b6d77d9451c5dfa071914f9ddf816414a12def845d5164a483f75e141733355"
+        ],
+        "footer_sha256": [
+          "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8",
+          "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8"
+        ],
+        "form_count": [
+          0,
+          0
+        ],
+        "form_sha256": [
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ],
+        "html_lengths": [
+          54183,
+          54183
+        ]
+      },
+      {
+        "route": "/courses/massage-relaxation/",
+        "full_html_identical": true,
+        "regions_identical": true,
+        "head_sha256": [
+          "af82ba1eed1e86fc3fa5f0bbd1724bd0da511925f705b7bc2fbd6806c3ba4d8e",
+          "af82ba1eed1e86fc3fa5f0bbd1724bd0da511925f705b7bc2fbd6806c3ba4d8e"
+        ],
+        "header_sha256": [
+          "716db44a2de9e7b4d14194324f044129b9a687b1d598228c47b0b444009bea26",
+          "716db44a2de9e7b4d14194324f044129b9a687b1d598228c47b0b444009bea26"
+        ],
+        "main_sha256": [
+          "c1d9305471bce863f4e20f3b68c5f1cfc0353e28e43577385b4acae266bc3418",
+          "c1d9305471bce863f4e20f3b68c5f1cfc0353e28e43577385b4acae266bc3418"
+        ],
+        "footer_sha256": [
+          "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8",
+          "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8"
+        ],
+        "form_count": [
+          0,
+          0
+        ],
+        "form_sha256": [
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ],
+        "html_lengths": [
+          56241,
+          56241
+        ]
+      },
+      {
+        "route": "/about/",
+        "full_html_identical": true,
+        "regions_identical": true,
+        "head_sha256": [
+          "94d5f34aaf28d6843702d79c480531cd049e20c93e425e55d109f311c20f5eba",
+          "94d5f34aaf28d6843702d79c480531cd049e20c93e425e55d109f311c20f5eba"
+        ],
+        "header_sha256": [
+          "747584873ecd028b08bf096ed0287b5536c4196cd2e63373668c53c8e8eae3bb",
+          "747584873ecd028b08bf096ed0287b5536c4196cd2e63373668c53c8e8eae3bb"
+        ],
+        "main_sha256": [
+          "202c52c314681cba76c02928d9d89da2a2ea04d41b88354783fa3b1579620e70",
+          "202c52c314681cba76c02928d9d89da2a2ea04d41b88354783fa3b1579620e70"
+        ],
+        "footer_sha256": [
+          "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066",
+          "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066"
+        ],
+        "form_count": [
+          0,
+          0
+        ],
+        "form_sha256": [
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ],
+        "html_lengths": [
+          35640,
+          35640
+        ]
+      },
+      {
+        "route": "/gallery/",
+        "full_html_identical": true,
+        "regions_identical": true,
+        "head_sha256": [
+          "0e1856816c20e436403034f9fdfee780daa748bfdbf94da74c78997b3b2b09a4",
+          "0e1856816c20e436403034f9fdfee780daa748bfdbf94da74c78997b3b2b09a4"
+        ],
+        "header_sha256": [
+          "44d51c88c98184fc10290d87b70986fca64dad15833af2bc3756a6d7157f492d",
+          "44d51c88c98184fc10290d87b70986fca64dad15833af2bc3756a6d7157f492d"
+        ],
+        "main_sha256": [
+          "ad0fbeed4f4bf6ed7e79686390f0bfdd04dd3542832ae880edb07cf57c94c7b9",
+          "ad0fbeed4f4bf6ed7e79686390f0bfdd04dd3542832ae880edb07cf57c94c7b9"
+        ],
+        "footer_sha256": [
+          "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8",
+          "712e19707efd1c94efd4660834198bff7fe82e73316bc527a7fbb77042d935b8"
+        ],
+        "form_count": [
+          0,
+          0
+        ],
+        "form_sha256": [
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ],
+        "html_lengths": [
+          51876,
+          51876
+        ]
+      },
+      {
+        "route": "/contact/",
+        "full_html_identical": true,
+        "regions_identical": true,
+        "head_sha256": [
+          "2f3476ab6c45bddbaf17aedebb8c6ec76c22878807b36dd6b9f363b688077e74",
+          "2f3476ab6c45bddbaf17aedebb8c6ec76c22878807b36dd6b9f363b688077e74"
+        ],
+        "header_sha256": [
+          "fb274ac0442a2488a952b7be7da14858aa6820771daf4f10f75294d5ebe9bff8",
+          "fb274ac0442a2488a952b7be7da14858aa6820771daf4f10f75294d5ebe9bff8"
+        ],
+        "main_sha256": [
+          "c19f60bd195f0746cbac55b135b56a43635324712ed3f54564a80dda65843056",
+          "c19f60bd195f0746cbac55b135b56a43635324712ed3f54564a80dda65843056"
+        ],
+        "footer_sha256": [
+          "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066",
+          "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066"
+        ],
+        "form_count": [
+          1,
+          1
+        ],
+        "form_sha256": [
+          "5ad43a0578f0230caad99eedb1ac16f1a837bf045c6b074e15f48e5fdfb2aacf",
+          "5ad43a0578f0230caad99eedb1ac16f1a837bf045c6b074e15f48e5fdfb2aacf"
+        ],
+        "html_lengths": [
+          29447,
+          29447
+        ]
+      },
+      {
+        "route": "/register/",
+        "full_html_identical": true,
+        "regions_identical": true,
+        "head_sha256": [
+          "0b53eeccab81a98eaad96a1317a4c5ed43fd6ce70dd80c33e050cb55acbe179e",
+          "0b53eeccab81a98eaad96a1317a4c5ed43fd6ce70dd80c33e050cb55acbe179e"
+        ],
+        "header_sha256": [
+          "d478a4216f664c3f6723510a698210dd853949c192ed346dd478d7064e9d029a",
+          "d478a4216f664c3f6723510a698210dd853949c192ed346dd478d7064e9d029a"
+        ],
+        "main_sha256": [
+          "3cee36be0ca4770d4756d94fb056ee5f8abe0b738f2fe7e76e8f0f79400002bd",
+          "3cee36be0ca4770d4756d94fb056ee5f8abe0b738f2fe7e76e8f0f79400002bd"
+        ],
+        "footer_sha256": [
+          "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066",
+          "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066"
+        ],
+        "form_count": [
+          1,
+          1
+        ],
+        "form_sha256": [
+          "163008d605f3c38ebbe497a880c8fb5f54c9c6afdd15c0079aef4d43b5d61f41",
+          "163008d605f3c38ebbe497a880c8fb5f54c9c6afdd15c0079aef4d43b5d61f41"
+        ],
+        "html_lengths": [
+          31197,
+          31197
+        ]
+      },
+      {
+        "route": "/404/",
+        "full_html_identical": true,
+        "regions_identical": true,
+        "head_sha256": [
+          "a58edf075416210a540e1b74893b8289335945acbe344536e510d38c0add74bb",
+          "a58edf075416210a540e1b74893b8289335945acbe344536e510d38c0add74bb"
+        ],
+        "header_sha256": [
+          "d478a4216f664c3f6723510a698210dd853949c192ed346dd478d7064e9d029a",
+          "d478a4216f664c3f6723510a698210dd853949c192ed346dd478d7064e9d029a"
+        ],
+        "main_sha256": [
+          "30db07e271351b2e6d1f586c221ab112f3c96db60a917f8e929534adc59f9202",
+          "30db07e271351b2e6d1f586c221ab112f3c96db60a917f8e929534adc59f9202"
+        ],
+        "footer_sha256": [
+          "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066",
+          "7feb36c4ef6745d28bb34fee6c66c09d2c0bcdd2ccc5c3933ecdea88d2f69066"
+        ],
+        "form_count": [
+          0,
+          0
+        ],
+        "form_sha256": [
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ],
+        "html_lengths": [
+          18455,
+          18455
+        ]
+      }
+    ],
+    "comparisons": {
+      "stage_C_structural": "qa/results/stage-C-structural.json",
+      "stage_D1_structural": "qa/results/stage-D1-structural.json",
+      "stage_C_dom": "qa/results/stage-C-dom.json",
+      "stage_D1_dom": "qa/results/stage-D1-dom.json",
+      "pre_D_theme": "http://127.0.0.1:9409 (extracted from immutable Stage B/C theme ZIP)",
+      "post_D_theme": "http://127.0.0.1:9410 (current theme with SD-01..SD-06)",
+      "canonical_wp": "http://127.0.0.1:9400",
+      "original_static": "http://127.0.0.1:3000"
+    }
+  },
+  "wpcs": {
+    "summary_file": "qa/results/stage-D1-wpcs.json",
+    "toolchain": {
+      "PHPCS": "3.13.6",
+      "WPCS": "3.2.0",
+      "PHPCSUtils": "1.2.3",
+      "PHPCSExtra": "current main",
+      "PHPCompatibilityWP": "2.1.5",
+      "PHPCompatibility": "9.3.5",
+      "PHPCompatibilityParagonie": "1.3.3",
+      "standard": "WordPress",
+      "extensions": "php",
+      "runtime": "PHP-WASM CLI (PHP 8.5.12) executing phpcs"
+    },
+    "profiles": {
+      "before": {
+        "errors": 147,
+        "warnings": 184,
+        "files_checked": 28,
+        "sniffs": [
+          {
+            "source": "WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned",
+            "type": "WARNING",
+            "count": 168
+          },
+          {
+            "source": "Squiz.Commenting.FunctionComment.Missing",
+            "type": "ERROR",
+            "count": 29
+          },
+          {
+            "source": "Squiz.Commenting.FileComment.SpacingAfterComment",
+            "type": "ERROR",
+            "count": 21
+          },
+          {
+            "source": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+            "type": "ERROR",
+            "count": 21
+          },
+          {
+            "source": "Squiz.Commenting.FileComment.MissingPackageTag",
+            "type": "ERROR",
+            "count": 19
+          },
+          {
+            "source": "Generic.WhiteSpace.ScopeIndent.Incorrect",
+            "type": "ERROR",
+            "count": 12
+          },
+          {
+            "source": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
+            "type": "WARNING",
+            "count": 10
+          },
+          {
+            "source": "NormalizedArrays.Arrays.CommaAfterLast.MissingMultiLine",
+            "type": "ERROR",
+            "count": 10
+          },
+          {
+            "source": "WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound",
+            "type": "ERROR",
+            "count": 8
+          },
+          {
+            "source": "Squiz.Commenting.FunctionComment.MissingParamTag",
+            "type": "ERROR",
+            "count": 6
+          },
+          {
+            "source": "Generic.Commenting.DocComment.SpacingBeforeTags",
+            "type": "ERROR",
+            "count": 3
+          },
+          {
+            "source": "Squiz.Commenting.BlockComment.NoNewLine",
+            "type": "ERROR",
+            "count": 3
+          },
+          {
+            "source": "Squiz.Strings.DoubleQuoteUsage.NotRequired",
+            "type": "ERROR",
+            "count": 3
+          },
+          {
+            "source": "Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace",
+            "type": "ERROR",
+            "count": 2
+          },
+          {
+            "source": "Universal.NamingConventions.NoReservedKeywordParameterNames.classFound",
+            "type": "WARNING",
+            "count": 2
+          },
+          {
+            "source": "Universal.Operators.DisallowShortTernary.Found",
+            "type": "ERROR",
+            "count": 2
+          },
+          {
+            "source": "Universal.WhiteSpace.PrecisionAlignment.Found",
+            "type": "WARNING",
+            "count": 2
+          },
+          {
+            "source": "Generic.CodeAnalysis.UnusedFunctionParameter.Found",
+            "type": "WARNING",
+            "count": 1
+          },
+          {
+            "source": "Generic.Formatting.DisallowMultipleStatements.SameLine",
+            "type": "ERROR",
+            "count": 1
+          },
+          {
+            "source": "Generic.Formatting.MultipleStatementAlignment.IncorrectWarning",
+            "type": "WARNING",
+            "count": 1
+          },
+          {
+            "source": "PEAR.Functions.FunctionCallSignature.CloseBracketLine",
+            "type": "ERROR",
+            "count": 1
+          },
+          {
+            "source": "PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket",
+            "type": "ERROR",
+            "count": 1
+          },
+          {
+            "source": "Squiz.Commenting.BlockComment.NoEmptyLineBefore",
+            "type": "ERROR",
+            "count": 1
+          },
+          {
+            "source": "Squiz.Commenting.FunctionComment.WrongStyle",
+            "type": "ERROR",
+            "count": 1
+          },
+          {
+            "source": "Squiz.Functions.MultiLineFunctionDeclaration.ContentAfterBrace",
+            "type": "ERROR",
+            "count": 1
+          },
+          {
+            "source": "WordPress.PHP.YodaConditions.NotYoda",
+            "type": "ERROR",
+            "count": 1
+          },
+          {
+            "source": "WordPress.WP.GlobalVariablesOverride.Prohibited",
+            "type": "ERROR",
+            "count": 1
+          }
+        ]
+      },
+      "after": {
+        "errors": 121,
+        "warnings": 181,
+        "files_checked": 28,
+        "sniffs": [
+          {
+            "source": "WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned",
+            "type": "WARNING",
+            "count": 168
+          },
+          {
+            "source": "Squiz.Commenting.FunctionComment.Missing",
+            "type": "ERROR",
+            "count": 28
+          },
+          {
+            "source": "Squiz.Commenting.FileComment.SpacingAfterComment",
+            "type": "ERROR",
+            "count": 21
+          },
+          {
+            "source": "Squiz.Commenting.FileComment.MissingPackageTag",
+            "type": "ERROR",
+            "count": 19
+          },
+          {
+            "source": "Generic.WhiteSpace.ScopeIndent.Incorrect",
+            "type": "ERROR",
+            "count": 12
+          },
+          {
+            "source": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
+            "type": "WARNING",
+            "count": 10
+          },
+          {
+            "source": "NormalizedArrays.Arrays.CommaAfterLast.MissingMultiLine",
+            "type": "ERROR",
+            "count": 10
+          },
+          {
+            "source": "WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound",
+            "type": "ERROR",
+            "count": 8
+          },
+          {
+            "source": "Squiz.Commenting.FunctionComment.MissingParamTag",
+            "type": "ERROR",
+            "count": 6
+          },
+          {
+            "source": "Generic.Commenting.DocComment.SpacingBeforeTags",
+            "type": "ERROR",
+            "count": 3
+          },
+          {
+            "source": "Squiz.Commenting.BlockComment.NoNewLine",
+            "type": "ERROR",
+            "count": 3
+          },
+          {
+            "source": "Squiz.Strings.DoubleQuoteUsage.NotRequired",
+            "type": "ERROR",
+            "count": 3
+          },
+          {
+            "source": "Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace",
+            "type": "ERROR",
+            "count": 2
+          },
+          {
+            "source": "Universal.WhiteSpace.PrecisionAlignment.Found",
+            "type": "WARNING",
+            "count": 2
+          },
+          {
+            "source": "Generic.Formatting.DisallowMultipleStatements.SameLine",
+            "type": "ERROR",
+            "count": 1
+          },
+          {
+            "source": "Generic.Formatting.MultipleStatementAlignment.IncorrectWarning",
+            "type": "WARNING",
+            "count": 1
+          },
+          {
+            "source": "PEAR.Functions.FunctionCallSignature.CloseBracketLine",
+            "type": "ERROR",
+            "count": 1
+          },
+          {
+            "source": "PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket",
+            "type": "ERROR",
+            "count": 1
+          },
+          {
+            "source": "Squiz.Commenting.BlockComment.NoEmptyLineBefore",
+            "type": "ERROR",
+            "count": 1
+          },
+          {
+            "source": "Squiz.Commenting.FunctionComment.WrongStyle",
+            "type": "ERROR",
+            "count": 1
+          },
+          {
+            "source": "Squiz.Functions.MultiLineFunctionDeclaration.ContentAfterBrace",
+            "type": "ERROR",
+            "count": 1
+          }
+        ]
+      },
+      "current": {
+        "errors": 121,
+        "warnings": 181,
+        "files_checked": 28,
+        "sniffs": [
+          {
+            "source": "WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned",
+            "type": "WARNING",
+            "count": 168
+          },
+          {
+            "source": "Squiz.Commenting.FunctionComment.Missing",
+            "type": "ERROR",
+            "count": 28
+          },
+          {
+            "source": "Squiz.Commenting.FileComment.SpacingAfterComment",
+            "type": "ERROR",
+            "count": 21
+          },
+          {
+            "source": "Squiz.Commenting.FileComment.MissingPackageTag",
+            "type": "ERROR",
+            "count": 19
+          },
+          {
+            "source": "Generic.WhiteSpace.ScopeIndent.Incorrect",
+            "type": "ERROR",
+            "count": 12
+          },
+          {
+            "source": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
+            "type": "WARNING",
+            "count": 10
+          },
+          {
+            "source": "NormalizedArrays.Arrays.CommaAfterLast.MissingMultiLine",
+            "type": "ERROR",
+            "count": 10
+          },
+          {
+            "source": "WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound",
+            "type": "ERROR",
+            "count": 8
+          },
+          {
+            "source": "Squiz.Commenting.FunctionComment.MissingParamTag",
+            "type": "ERROR",
+            "count": 6
+          },
+          {
+            "source": "Generic.Commenting.DocComment.SpacingBeforeTags",
+            "type": "ERROR",
+            "count": 3
+          },
+          {
+            "source": "Squiz.Commenting.BlockComment.NoNewLine",
+            "type": "ERROR",
+            "count": 3
+          },
+          {
+            "source": "Squiz.Strings.DoubleQuoteUsage.NotRequired",
+            "type": "ERROR",
+            "count": 3
+          },
+          {
+            "source": "Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace",
+            "type": "ERROR",
+            "count": 2
+          },
+          {
+            "source": "Universal.WhiteSpace.PrecisionAlignment.Found",
+            "type": "WARNING",
+            "count": 2
+          },
+          {
+            "source": "Generic.Formatting.DisallowMultipleStatements.SameLine",
+            "type": "ERROR",
+            "count": 1
+          },
+          {
+            "source": "Generic.Formatting.MultipleStatementAlignment.IncorrectWarning",
+            "type": "WARNING",
+            "count": 1
+          },
+          {
+            "source": "PEAR.Functions.FunctionCallSignature.CloseBracketLine",
+            "type": "ERROR",
+            "count": 1
+          },
+          {
+            "source": "PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket",
+            "type": "ERROR",
+            "count": 1
+          },
+          {
+            "source": "Squiz.Commenting.BlockComment.NoEmptyLineBefore",
+            "type": "ERROR",
+            "count": 1
+          },
+          {
+            "source": "Squiz.Commenting.FunctionComment.WrongStyle",
+            "type": "ERROR",
+            "count": 1
+          },
+          {
+            "source": "Squiz.Functions.MultiLineFunctionDeclaration.ContentAfterBrace",
+            "type": "ERROR",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "security_priority": {
+      "before_security_messages": 22,
+      "after_security_messages": 0,
+      "current_security_messages": 0,
+      "verdict": "PASS — 0 security/DB/dangerous/global-override sniffs remain; the 21 pre-D EscapeOutput errors were all verified static HTML/SVG echoes and were annotated (SD-05), not hidden.",
+      "all_21_verified_static": true
+    },
+    "security_before_item_count": 22,
+    "remaining_classification": [
+      {
+        "category": "array_alignment_whitespace_formatting",
+        "type": "ERROR",
+        "count": 39
+      },
+      {
+        "category": "array_alignment_whitespace_formatting",
+        "type": "WARNING",
+        "count": 181
+      },
+      {
+        "category": "documentation_docblocks",
+        "type": "ERROR",
+        "count": 82
+      }
+    ],
+    "remaining_by_file_top": [
+      [
+        "inc/pages-data.php",
+        113
+      ],
+      [
+        "inc/icons.php",
+        49
+      ],
+      [
+        "inc/forms.php",
+        25
+      ],
+      [
+        "inc/setup.php",
+        22
+      ],
+      [
+        "inc/helpers.php",
+        16
+      ],
+      [
+        "inc/nav-fallback.php",
+        11
+      ],
+      [
+        "inc/options.php",
+        9
+      ],
+      [
+        "inc/menus.php",
+        8
+      ],
+      [
+        "inc/404-markup.php",
+        5
+      ],
+      [
+        "inc/lightbox-markup.php",
+        5
+      ]
+    ],
+    "new_sniff_codes": [],
+    "php_compatibility": {
+      "standard": "PHPCompatibilityWP",
+      "testVersion": "8.0-",
+      "totals": {
+        "errors": 0,
+        "warnings": 0,
+        "fixable": 0
+      },
+      "files_with_messages": 0
+    },
+    "php_lint": {
+      "files": 28,
+      "ok": 28,
+      "fail": 0
+    },
+    "no_fix_applied_in_D1": true,
+    "deferred_decision": "The 121 errors + 181 warnings are documentation/formatting/alignment sniffs, overwhelmingly in generated exact-HTML files (inc/pages-data.php 113, inc/icons.php 49). Mass auto-formatting (phpcbf) would rewrite generated source blocks and is deferred to an explicit user decision; no error was suppressed merely to lower the count."
+  },
+  "fixes": [
+    {
+      "id": "SD-01",
+      "severity": "بالا / محرمانگی",
+      "verified": true,
+      "files": [
+        "inc/setup.php:26-56 (قبل: inc/setup.php:26)"
+      ],
+      "before": "capability_type='post' → ویراستار/مدیر شبکه read_private_posts و edit_others_posts داشتند و میتوانستند رکوردهای خصوصی فرمها را بخوانند/ویرایش کنند.",
+      "after": "capability_type اختصاصی + map_meta_cap=true + نگاشت تمام primitive caps به manage_options؛ meta caps اختصاصی ماندند تا manage_options به meta-cap alias تبدیل نشود.",
+      "proof": [
+        "stage-D1-state.json: editor.read_post true→false، edit_post true→false، delete_post true→false، private_posts_visible 1→0",
+        "stage-D1-state.json: administrator چهار قابلیت خود را حفظ کرد (read/edit/delete/read_private)",
+        "stage-D-capability.json: همان نتیجه قبل/بعد",
+        "stage-D-security-after.json: REST types بدون raouf_submission، /wp-json/wp/v2/raouf_submission = 404، صفحات ادمین ۴۰۳، جزئیات با nonce جعلی بدون PII"
+      ]
+    },
+    {
+      "id": "SD-02",
+      "severity": "پایین / تداخل نام",
+      "verified": true,
+      "files": [
+        "header.php:7 (قبل: header.php:7)"
+      ],
+      "before": "$m = raouf_meta_all() — نام متغیـر وردپرس/کوئری m را بازنویسی میکرد؛ WPCS GlobalVariablesOverride خطا میداد.",
+      "after": "$raouf_view_meta = raouf_meta_all() (۱۳ جایگزینی، فقط نام متغیـر).",
+      "proof": [
+        "WPCS: WordPress.WP.GlobalVariablesOverride.Prohibited 1→0",
+        "stage-D1-parity.json: head/header/main/footer ۱۱/۱۱ بایتبهبایت یکسان قبل/بعد",
+        "stage-D1-structural.json == stage-C-structural.json"
+      ]
+    },
+    {
+      "id": "SD-03",
+      "severity": "پایین / جعل اعلان ادمین",
+      "verified": true,
+      "files": [
+        "functions.php:109-126 (قبل: functions.php:113)"
+      ],
+      "before": "خواندن خام $_GET['raouf-resynced'] بدون capability؛ مشترک/ویراستار هم اعلان موفقیت بازسازی صفحات را میدیدند.",
+      "after": "current_user_can('manage_options') + sanitize_key(wp_unslash())؛ فقط مدیر اعلان را میبیند.",
+      "proof": [
+        "قبل (stage-D-security-before-corrected.json): subscriber=true، editor=true، administrator=true",
+        "بعد (stage-D-security-after.json): subscriber=false، editor=false، anonymous=false، administrator=true",
+        "راهاندازی مجدد resync: مشترک ۴۰۳، درخواست بدون nonce مدیر ۴۰۳"
+      ]
+    },
+    {
+      "id": "SD-04",
+      "severity": "پایین / متادیتای WP",
+      "verified": true,
+      "files": [
+        "inc/options.php:76-84 (قبل: inc/options.php:72-73)"
+      ],
+      "before": "register_setting بدون type (پیشفرض string) برای دو گزینهٔ آرایهای؛ بدون default و show_in_rest صریح.",
+      "after": "type=array، default=[]، show_in_rest=false، همان sanitize_callbackها.",
+      "proof": [
+        "stage-D1-state.json: type string→array، has_default false→true، default=[]، show_in_rest=false",
+        "stage-D-security-after.json: options.php با nonce مدیر → 200 + settings-updated=true؛ مشترک → 403"
+      ]
+    },
+    {
+      "id": "SD-05",
+      "severity": "پایین / WPCS",
+      "verified": true,
+      "files": [
+        "footer.php",
+        "header.php",
+        "inc/404-markup.php",
+        "inc/icons.php",
+        "inc/lightbox-markup.php",
+        "inc/menus.php",
+        "inc/nav-fallback.php"
+      ],
+      "before": "۲۱ خطای WordPress.Security.EscapeOutput.OutputNotEscaped روی echoـهای HTML/SVG ایستا.",
+      "after": "حاشیهنویسی phpcs:ignore پس از بررسی تکتک ۲۱ خط (همه raouf_expand_tokens()/raouf_icon() با مقادیر پویای esc_html/esc_attr/esc_url). خروجی صفر تغییر کرد.",
+      "proof": [
+        "WPCS: EscapeOutput 21→0؛ مجموع خطاها ۱۴۷→۱۲۱؛ ۰ کُد sniff جدید",
+        "stage-D1-wpcs.json: all_21_verified_static=true",
+        "stage-D1-parity.json: HTML کامل ۱۱/۱۱ قبل/بعد یکسان"
+      ]
+    },
+    {
+      "id": "SD-06",
+      "severity": "پایین / سبک کد",
+      "verified": true,
+      "files": [
+        "inc/icons.php:11,62,68",
+        "inc/options.php:315-316",
+        "inc/forms.php:132"
+      ],
+      "before": "Yoda condition نادرست، $class نام رزروشده، ۲ short ternary، هشدار پارامتر استفاده نشدهٔ parse_request.",
+      "after": "null !== $paths، $css_class، ternary کامل، حاشیهنویسی پارامتر الزامی هوک.",
+      "proof": [
+        "WPCS: YodaConditions 1→0، DisallowShortTernary 2→0، NoReservedKeywordParameterNames 2→0، UnusedFunctionParameter 1→0",
+        "لینت ۲۸/۲۸؛ stage-D1-parity.json بدون تغییر خروجی"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "id": "D1-001",
+      "group": "security-after",
+      "name": "admin/subscriber/editor logins",
+      "result": "PASS",
+      "evidence": "subscriber=True editor=True"
+    },
+    {
+      "id": "D1-002",
+      "group": "security-after",
+      "name": "all 28 PHP files are ABSPATH-guarded (no source/PII on direct access)",
+      "result": "PASS",
+      "evidence": "violations=[]"
+    },
+    {
+      "id": "D1-003",
+      "group": "security-after",
+      "name": "submission CPT is not exposed through REST",
+      "result": "PASS",
+      "evidence": "types_status=200 cpt_status=404"
+    },
+    {
+      "id": "D1-004",
+      "group": "security-after",
+      "name": "REST search returns no private submission",
+      "result": "PASS",
+      "evidence": "status=200"
+    },
+    {
+      "id": "D1-005",
+      "group": "security-after",
+      "name": "GET /api/registrations is rejected (405 JSON)",
+      "result": "PASS",
+      "evidence": "status=405"
+    },
+    {
+      "id": "D1-006",
+      "group": "security-after",
+      "name": "POST without double-submit CSRF token is denied (403)",
+      "result": "PASS",
+      "evidence": "status=403"
+    },
+    {
+      "id": "D1-007",
+      "group": "security-after",
+      "name": "valid CSRF POST creates a real private submission (201 + ref)",
+      "result": "PASS",
+      "evidence": "status=201 body={\"ok\":true,\"id\":\"REG-20261108-50D64C\",\"message\":\"\\u0627\\u0637\\u0644\\u0627\\u0639\\u0627\\u062a \\u0628\\u0627 \\u0645\\u0648\\u0641\\u0642\\u06cc\\u062"
+    },
+    {
+      "id": "D1-008",
+      "group": "security-after",
+      "name": "HTML/JS/SQL payload accepted only after sanitisation (201)",
+      "result": "PASS",
+      "evidence": "status=201 body={\"ok\":true,\"id\":\"MSG-20261108-FCACD3\",\"message\":\"\\u0627\\u0637\\u0644\\u0627\\u0639\\u0627\\u062a \\u0628\\u0627 \\u0645\\u0648\\u0641\\u0642\\u06cc\\u062"
+    },
+    {
+      "id": "D1-009",
+      "group": "security-after",
+      "name": "duplicate payload is rejected (409)",
+      "result": "PASS",
+      "evidence": "status=409"
+    },
+    {
+      "id": "D1-010",
+      "group": "security-after",
+      "name": "honeypot field rejects bots (400)",
+      "result": "PASS",
+      "evidence": "status=400"
+    },
+    {
+      "id": "D1-011",
+      "group": "security-after",
+      "name": "invalid/scripted name rejected by validation (400)",
+      "result": "PASS",
+      "evidence": "status=400"
+    },
+    {
+      "id": "D1-012",
+      "group": "security-after",
+      "name": "no submitted phone/e-mail appears on any public route",
+      "result": "PASS",
+      "evidence": "leaks=[]"
+    },
+    {
+      "id": "D1-013",
+      "group": "security-after",
+      "name": "admin-only screen \"submissions list\" denies anonymous/subscriber/editor",
+      "result": "PASS",
+      "evidence": "anon=200 sub=403 editor=403 admin=200"
+    },
+    {
+      "id": "D1-014",
+      "group": "security-after",
+      "name": "admin-only screen \"options page\" denies anonymous/subscriber/editor",
+      "result": "PASS",
+      "evidence": "anon=200 sub=403 editor=403 admin=200"
+    },
+    {
+      "id": "D1-015",
+      "group": "security-after",
+      "name": "submission detail requires a valid per-record nonce + manage_options",
+      "result": "PASS",
+      "evidence": "valid=200 forged=200 (error_text=True, pii=False) editor=403 (pii=False)"
+    },
+    {
+      "id": "D1-016",
+      "group": "security-after",
+      "name": "stored XSS payload is escaped in the admin detail view",
+      "result": "PASS",
+      "evidence": "raw_script_tags_in_detail=False"
+    },
+    {
+      "id": "D1-017",
+      "group": "security-after",
+      "name": "private CPT has no public REST route or UI",
+      "result": "PASS",
+      "evidence": "types_exposed=False"
+    },
+    {
+      "id": "D1-018",
+      "group": "security-after",
+      "name": "resync success notice is capability-gated (only administrators)",
+      "result": "PASS",
+      "evidence": "{\"anonymous\": {\"status\": 200, \"notice_visible\": false}, \"subscriber\": {\"status\": 200, \"notice_visible\": false}, \"editor\": {\"status\": 200, \"notice_visible\": false}, \"administrator\": {\"status\": 200, \"notice_visible\": true}}"
+    },
+    {
+      "id": "D1-019",
+      "group": "security-after",
+      "name": "resync endpoint denies a subscriber POST",
+      "result": "PASS",
+      "evidence": "status=403"
+    },
+    {
+      "id": "D1-020",
+      "group": "security-after",
+      "name": "resync endpoint denies a nonce-less admin POST",
+      "result": "PASS",
+      "evidence": "status=403"
+    },
+    {
+      "id": "D1-021",
+      "group": "security-after",
+      "name": "options.php still saves both array settings for an administrator",
+      "result": "PASS",
+      "evidence": "status=200 url=http://127.0.0.1:9405/wp-admin/themes.php?page=raouf-options&settings-updated=true"
+    },
+    {
+      "id": "D1-022",
+      "group": "security-after",
+      "name": "options.php denies a subscriber",
+      "result": "PASS",
+      "evidence": "status=403"
+    },
+    {
+      "id": "D1-023",
+      "group": "security-after",
+      "name": "no PHP warning/notice/fatal text on any of the 11 routes",
+      "result": "PASS",
+      "evidence": "routes_with_php_errors=[]"
+    },
+    {
+      "id": "D1-024",
+      "group": "security-after",
+      "name": "no localhost/foreign-host dependency in rendered HTML",
+      "result": "PASS",
+      "evidence": "foreign_hits=[]"
+    },
+    {
+      "id": "D1-025",
+      "group": "parity",
+      "name": "Stage C structural report reproduced byte-for-byte (11 routes)",
+      "result": "PASS",
+      "evidence": "records=11 equal=True main_identical=11/11 class_sequence_identical=11/11"
+    },
+    {
+      "id": "D1-026",
+      "group": "parity",
+      "name": "Stage C whole-DOM (header/main/footer) reproduced byte-for-byte (11 routes)",
+      "result": "PASS",
+      "evidence": "rows=11 allIdentical=True header/main/footer=11/11"
+    },
+    {
+      "id": "D1-027",
+      "group": "parity",
+      "name": "Pre-D vs post-D full HTML + head/header/main/footer/forms identical (11 routes)",
+      "result": "PASS",
+      "evidence": "routes_identical=11/11; differing=[]"
+    },
+    {
+      "id": "D1-028",
+      "group": "parity",
+      "name": "All non-PHP assets (style.css, app.js, 67 images, 3 fonts, readme, POT, screenshot) unchanged",
+      "result": "PASS",
+      "evidence": "baseline_files=103 current_files=104 differences=[]"
+    },
+    {
+      "id": "D1-029",
+      "group": "parity",
+      "name": "Reference CSS still byte-identical to the original source CSS",
+      "result": "PASS",
+      "evidence": "reference_css_sha256=a91716ad971b37dc8ca4913aff504913fdddb64ed8c7a777da5a5fc9135362d7"
+    },
+    {
+      "id": "D1-030",
+      "group": "parity",
+      "name": "Exactly the 11 documented SD-fix PHP files changed (no other PHP touched)",
+      "result": "PASS",
+      "evidence": "changed=11 expected=11 files=['footer.php', 'functions.php', 'header.php', 'inc/404-markup.php', 'inc/forms.php', 'inc/icons.php', 'inc/lightbox-markup.php', 'inc/menus.php', 'inc/nav-fallback.php', 'inc/options.php', 'inc/setup.php']"
+    },
+    {
+      "id": "D1-031",
+      "group": "parity",
+      "name": "Canonical Stage C WP instance (:9400) still renders all 11 routes without PHP errors",
+      "result": "PASS",
+      "evidence": "routes_with_php_errors=[]"
+    },
+    {
+      "id": "D1-032",
+      "group": "state",
+      "name": "CPT read_private_posts mapped to manage_options",
+      "result": "PASS",
+      "evidence": "manage_options"
+    },
+    {
+      "id": "D1-033",
+      "group": "state",
+      "name": "CPT edit_posts mapped to manage_options",
+      "result": "PASS",
+      "evidence": "manage_options"
+    },
+    {
+      "id": "D1-034",
+      "group": "state",
+      "name": "CPT create_posts mapped to manage_options",
+      "result": "PASS",
+      "evidence": "manage_options"
+    },
+    {
+      "id": "D1-035",
+      "group": "state",
+      "name": "CPT meta caps use custom names (not core read_post)",
+      "result": "PASS",
+      "evidence": "read_raouf_submission / raouf_submission"
+    },
+    {
+      "id": "D1-036",
+      "group": "state",
+      "name": "manage_options was NOT registered as a meta-cap alias",
+      "result": "PASS",
+      "evidence": "False"
+    },
+    {
+      "id": "D1-037",
+      "group": "state",
+      "name": "Editor denied for read_post",
+      "result": "PASS",
+      "evidence": "False"
+    },
+    {
+      "id": "D1-038",
+      "group": "state",
+      "name": "Editor denied for edit_post",
+      "result": "PASS",
+      "evidence": "False"
+    },
+    {
+      "id": "D1-039",
+      "group": "state",
+      "name": "Editor denied for delete_post",
+      "result": "PASS",
+      "evidence": "False"
+    },
+    {
+      "id": "D1-040",
+      "group": "state",
+      "name": "Editor denied for read_private_cap",
+      "result": "PASS",
+      "evidence": "False"
+    },
+    {
+      "id": "D1-041",
+      "group": "state",
+      "name": "Editor sees 0 private submissions via WP_Query(perm=readable)",
+      "result": "PASS",
+      "evidence": "0"
+    },
+    {
+      "id": "D1-042",
+      "group": "state",
+      "name": "Administrator retains read_post",
+      "result": "PASS",
+      "evidence": "True"
+    },
+    {
+      "id": "D1-043",
+      "group": "state",
+      "name": "Administrator retains edit_post",
+      "result": "PASS",
+      "evidence": "True"
+    },
+    {
+      "id": "D1-044",
+      "group": "state",
+      "name": "Administrator retains delete_post",
+      "result": "PASS",
+      "evidence": "True"
+    },
+    {
+      "id": "D1-045",
+      "group": "state",
+      "name": "Administrator retains read_private_cap",
+      "result": "PASS",
+      "evidence": "True"
+    },
+    {
+      "id": "D1-046",
+      "group": "state",
+      "name": "Pre-D theme reproduced the defect: Editor could read a private submission",
+      "result": "PASS",
+      "evidence": "True"
+    },
+    {
+      "id": "D1-047",
+      "group": "state",
+      "name": "Pre-D theme reproduced the defect: Editor saw 1 private submission",
+      "result": "PASS",
+      "evidence": "1"
+    },
+    {
+      "id": "D1-048",
+      "group": "state",
+      "name": "Pre-D theme had read_private_posts = read_private_posts",
+      "result": "PASS",
+      "evidence": "read_private_posts"
+    },
+    {
+      "id": "D1-049",
+      "group": "state",
+      "name": "raouf_options registered as type=array",
+      "result": "PASS",
+      "evidence": "array"
+    },
+    {
+      "id": "D1-050",
+      "group": "state",
+      "name": "raouf_options has default=[]",
+      "result": "PASS",
+      "evidence": "[]"
+    },
+    {
+      "id": "D1-051",
+      "group": "state",
+      "name": "raouf_options keeps show_in_rest=false",
+      "result": "PASS",
+      "evidence": "False"
+    },
+    {
+      "id": "D1-052",
+      "group": "state",
+      "name": "raouf_options keeps sanitize_callback=raouf_sanitize_options",
+      "result": "PASS",
+      "evidence": "raouf_sanitize_options"
+    },
+    {
+      "id": "D1-053",
+      "group": "state",
+      "name": "raouf_media registered as type=array",
+      "result": "PASS",
+      "evidence": "array"
+    },
+    {
+      "id": "D1-054",
+      "group": "state",
+      "name": "raouf_media has default=[]",
+      "result": "PASS",
+      "evidence": "[]"
+    },
+    {
+      "id": "D1-055",
+      "group": "state",
+      "name": "raouf_media keeps show_in_rest=false",
+      "result": "PASS",
+      "evidence": "False"
+    },
+    {
+      "id": "D1-056",
+      "group": "state",
+      "name": "raouf_media keeps sanitize_callback=raouf_sanitize_media",
+      "result": "PASS",
+      "evidence": "raouf_sanitize_media"
+    },
+    {
+      "id": "D1-057",
+      "group": "state",
+      "name": "Pre-D theme registered both settings as type=string (defect SD-04)",
+      "result": "PASS",
+      "evidence": "['string', 'string']"
+    },
+    {
+      "id": "D1-058",
+      "group": "state",
+      "name": "D-0 capability probe agrees with D-1 state probe",
+      "result": "PASS",
+      "evidence": "before=True after=False"
+    },
+    {
+      "id": "D1-059",
+      "group": "wpcs",
+      "name": "0 security/DB/dangerous/global-override sniffs remain",
+      "result": "PASS",
+      "evidence": "0"
+    },
+    {
+      "id": "D1-060",
+      "group": "wpcs",
+      "name": "Pre-D security-relevant sniffs reproduced (21 EscapeOutput + 1 global override)",
+      "result": "PASS",
+      "evidence": "22"
+    },
+    {
+      "id": "D1-061",
+      "group": "wpcs",
+      "name": "All 21 EscapeOutput findings individually verified as static HTML/SVG echoes",
+      "result": "PASS",
+      "evidence": "True"
+    },
+    {
+      "id": "D1-062",
+      "group": "wpcs",
+      "name": "No new sniff code introduced by SD-01..SD-06",
+      "result": "PASS",
+      "evidence": "[]"
+    },
+    {
+      "id": "D1-063",
+      "group": "wpcs",
+      "name": "Current WPCS profile equals the post-fix profile (no drift during D-1)",
+      "result": "PASS",
+      "evidence": "True"
+    },
+    {
+      "id": "D1-064",
+      "group": "wpcs",
+      "name": "PHPCompatibilityWP 8.0- reports 0 errors / 0 warnings",
+      "result": "PASS",
+      "evidence": "{'errors': 0, 'warnings': 0, 'fixable': 0}"
+    },
+    {
+      "id": "D1-065",
+      "group": "wpcs",
+      "name": "PHP lint passes on all 28 theme PHP files",
+      "result": "PASS",
+      "evidence": "{'files': 28, 'ok': 28, 'fail': 0}"
+    },
+    {
+      "id": "D1-066",
+      "group": "wpcs",
+      "name": "No WPCS error was fixed during D-1 (results preserved)",
+      "result": "PASS",
+      "evidence": "True"
+    },
+    {
+      "id": "D1-067",
+      "group": "wpcs",
+      "name": "Remaining 121 errors / 181 warnings preserved and classified",
+      "result": "PASS",
+      "evidence": "(121, 181)"
+    },
+    {
+      "id": "D1-068",
+      "group": "fix-verification",
+      "name": "SD-01 — بالا / محرمانگی",
+      "result": "PASS",
+      "evidence": "stage-D1-state.json: editor.read_post true→false، edit_post true→false، delete_post true→false، private_posts_visible 1→0; stage-D1-state.json: administrator چهار قابلیت خود را حفظ کرد (read/edit/delete/read_private)"
+    },
+    {
+      "id": "D1-069",
+      "group": "fix-verification",
+      "name": "SD-02 — پایین / تداخل نام",
+      "result": "PASS",
+      "evidence": "WPCS: WordPress.WP.GlobalVariablesOverride.Prohibited 1→0; stage-D1-parity.json: head/header/main/footer ۱۱/۱۱ بایتبهبایت یکسان قبل/بعد"
+    },
+    {
+      "id": "D1-070",
+      "group": "fix-verification",
+      "name": "SD-03 — پایین / جعل اعلان ادمین",
+      "result": "PASS",
+      "evidence": "قبل (stage-D-security-before-corrected.json): subscriber=true، editor=true، administrator=true; بعد (stage-D-security-after.json): subscriber=false، editor=false، anonymous=false، administrator=true"
+    },
+    {
+      "id": "D1-071",
+      "group": "fix-verification",
+      "name": "SD-04 — پایین / متادیتای WP",
+      "result": "PASS",
+      "evidence": "stage-D1-state.json: type string→array، has_default false→true، default=[]، show_in_rest=false; stage-D-security-after.json: options.php با nonce مدیر → 200 + settings-updated=true؛ مشترک → 403"
+    },
+    {
+      "id": "D1-072",
+      "group": "fix-verification",
+      "name": "SD-05 — پایین / WPCS",
+      "result": "PASS",
+      "evidence": "WPCS: EscapeOutput 21→0؛ مجموع خطاها ۱۴۷→۱۲۱؛ ۰ کُد sniff جدید; stage-D1-wpcs.json: all_21_verified_static=true"
+    },
+    {
+      "id": "D1-073",
+      "group": "fix-verification",
+      "name": "SD-06 — پایین / سبک کد",
+      "result": "PASS",
+      "evidence": "WPCS: YodaConditions 1→0، DisallowShortTernary 2→0، NoReservedKeywordParameterNames 2→0، UnusedFunctionParameter 1→0; لینت ۲۸/۲۸؛ stage-D1-parity.json بدون تغییر خروجی"
+    }
+  ],
+  "immutable_baseline": {
+    "commit_untouched": true,
+    "main_branch_untouched": true,
+    "A_B_C_reports_unchanged": true,
+    "tracked_zips_unchanged": true,
+    "dist_theme_zip": {
+      "size": 5382591,
+      "entries": 103,
+      "sha256": "35112eef3f46f4a1c4973ae0e6e80fc94bb35e16e2fc829eb9a5003ccefcc4f8"
+    },
+    "dist_source_zip": {
+      "size": 6269368,
+      "entries": 144,
+      "sha256": "5c7429aa0e505604b5ce5e5bc37bc107ef0fdb78a0bec90b62abacb76f0bfcbe"
+    },
+    "zips_rebuilt_in_D1": false,
+    "theme_php_modified_in_D1": false,
+    "qa_files_added_in_D1": [
+      "qa/stage-D1-state-blueprint.json",
+      "qa/stage-D1-parity.py",
+      "qa/stage-D1-wpcs-summary.py",
+      "qa/stage-D1-report.py",
+      "qa/results/stage-D-security-after.json",
+      "qa/results/stage-D-security-before-corrected.json",
+      "qa/results/stage-D1-state.json",
+      "qa/results/stage-D1-structural.json",
+      "qa/results/stage-D1-dom.json",
+      "qa/results/stage-D1-parity.json",
+      "qa/results/stage-D1-wpcs-before-raw.json",
+      "qa/results/stage-D1-wpcs-after-raw.json",
+      "qa/results/stage-D1-wpcs-current-raw.json",
+      "qa/results/stage-D1-phpcompat-raw.json",
+      "qa/results/stage-D1-wpcs.json",
+      "qa/results/stage-D1-verification.md",
+      "qa/results/stage-D1-verification.json"
+    ]
+  },
+  "remaining_stage_D_work": [
+    "اجرای پیمایش کارایی مرورگر: ۱۱ مسیر × ۲ viewport، ثبت درخواستها/حجم/خطاهای کنسول و شبکه، و تصمیم دربارهٔ ۴ تصویر >۲۰۰KB (بهینهسازی بیدرنگ سودی ندارد: ۲۹۷KB→۱٫۶MB).",
+    "ممیزی دسترسی با axe-core و تعیین تکلیف موارد ارثی نیازمند تصمیم: پرش h1→h3 در /courses/، کنتراست ۲٫۹۶:۱ دکمهٔ آبی و ۴٫۲۲/۳٫۹۰:۱ متن muted، فهرست ۱۰۰ رکوردی ادمین، محدودیت نرخ فرم مبتنی بر IP.",
+    "مهاجرت: نمونهٔ دامنهٔ دیگر (۰ نشانی خارجی)، نصب تازه، مسیرهای مطلق؛ اعلام NOT TESTED برای LAMP/MySQL واقعی، WP ۶٫۴–۶٫۷، PHP ۷٫۴، SMTP، multisite، Theme Check، دستگاههای واقعی/مرورگرهای قدیمی، PageSpeed/CDN.",
+    "تصمیم کاربر دربارهٔ ۱۲۱ خطا و ۱۸۱ هشدار استایل/داکیومنت WPCS (عمدتاً inc/pages-data.php: ۱۱۳ و inc/icons.php: ۴۹)؛ اجرای phpcbf روی فایلهای generated ممنوع است مگر با تأیید صریح.",
+    "تکمیل جدول نهایی نقصهای پنج دستهٔ مرحلهٔ D با برچسب PASS / FAIL / FIXED / NOT TESTED / تصمیم کاربر و before/after/proof برای تکـتک آیتمها.",
+    "تولید نهایی qa/results/stage-D-report.md و stage-D-report.json.",
+    "بازسازی و اعتبارسنجی dist/raouf-academy-wordpress-theme.zip و dist/source-code.zip (در D-1 طبق دستور انجام نشد)، سپس مقایسهٔ هش فایلهای اصلی، ثبت git status و تأیید عدم تغییر A/B/C.",
+    "توقف کامل؛ عدم ورود به مرحلهٔ E و F بدون تأیید صریح."
+  ],
+  "next_stage_started": false
+}

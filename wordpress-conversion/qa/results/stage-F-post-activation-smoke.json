@@ -1,0 +1,284 @@
+{
+  "stage": "F",
+  "test": "post-activation smoke on the exact installed ZIP",
+  "wp": "http://127.0.0.1:9411",
+  "generatedAt": "2026-11-09T13:12:31Z",
+  "zip_sha256": "abe4a961a4049ecdc86b1866a0d9e2eb0949eee1590bd730745e41dc7b3a4907",
+  "summary": {
+    "checks": 25,
+    "PASS": 25,
+    "FAIL": 0,
+    "routes_checked": 11,
+    "routes_ok": 11,
+    "registration_reference": "REG-20261109-5DADF6",
+    "admin_detail_url": "/wp-admin/themes.php?page=raouf-submissions&raouf_view=31&_wpnonce=f121afc7de"
+  },
+  "checks": [
+    {
+      "check": "route / returns expected HTTP 200 with HTML and no PHP error string",
+      "result": "PASS",
+      "detail": "status=200 bytes=64940 php_errors=[]"
+    },
+    {
+      "check": "route /courses/ returns expected HTTP 200 with HTML and no PHP error string",
+      "result": "PASS",
+      "detail": "status=200 bytes=36901 php_errors=[]"
+    },
+    {
+      "check": "route /courses/skin-facial/ returns expected HTTP 200 with HTML and no PHP error string",
+      "result": "PASS",
+      "detail": "status=200 bytes=59042 php_errors=[]"
+    },
+    {
+      "check": "route /courses/medical-emergency/ returns expected HTTP 200 with HTML and no PHP error string",
+      "result": "PASS",
+      "detail": "status=200 bytes=59217 php_errors=[]"
+    },
+    {
+      "check": "route /courses/pharmacy-technician/ returns expected HTTP 200 with HTML and no PHP error string",
+      "result": "PASS",
+      "detail": "status=200 bytes=56706 php_errors=[]"
+    },
+    {
+      "check": "route /courses/massage-relaxation/ returns expected HTTP 200 with HTML and no PHP error string",
+      "result": "PASS",
+      "detail": "status=200 bytes=58948 php_errors=[]"
+    },
+    {
+      "check": "route /about/ returns expected HTTP 200 with HTML and no PHP error string",
+      "result": "PASS",
+      "detail": "status=200 bytes=37389 php_errors=[]"
+    },
+    {
+      "check": "route /gallery/ returns expected HTTP 200 with HTML and no PHP error string",
+      "result": "PASS",
+      "detail": "status=200 bytes=57792 php_errors=[]"
+    },
+    {
+      "check": "route /contact/ returns expected HTTP 200 with HTML and no PHP error string",
+      "result": "PASS",
+      "detail": "status=200 bytes=30271 php_errors=[]"
+    },
+    {
+      "check": "route /register/ returns expected HTTP 200 with HTML and no PHP error string",
+      "result": "PASS",
+      "detail": "status=200 bytes=32021 php_errors=[]"
+    },
+    {
+      "check": "route /404/ returns expected HTTP 404 with HTML and no PHP error string",
+      "result": "PASS",
+      "detail": "status=404 bytes=19252 php_errors=[]"
+    },
+    {
+      "check": "served style.css is byte-identical to delivered theme file",
+      "result": "PASS",
+      "detail": "status=200 served=c519e0e4a6274f00 local=c519e0e4a6274f00"
+    },
+    {
+      "check": "served assets/js/app.js is byte-identical to delivered theme file",
+      "result": "PASS",
+      "detail": "status=200 served=4cf90eee4d3ecf72 local=4cf90eee4d3ecf72"
+    },
+    {
+      "check": "GET /api/registrations returns 405 JSON",
+      "result": "PASS",
+      "detail": "status=405 body={\"ok\":false,\"message\":\"method not allowed\"}"
+    },
+    {
+      "check": "fresh registration POST stores data and returns 201 with a real tracking reference",
+      "result": "PASS",
+      "detail": "status=201 body={\"ok\":true,\"id\":\"REG-20261109-5DADF6\",\"message\":\"\\u0627\\u0637\\u0644\\u0627\\u0639\\u0627\\u062a \\u0628\\u0627 \\u0645\\u0648\\u0641\\u0642\\u06cc\\u062a \\u062b\\u0628\\u062a \\u0634\\u062f.\",\"adminDelivery\":\"not-configured\"}"
+    },
+    {
+      "check": "CSRF cookie was obtained from the real /register/ page",
+      "result": "PASS",
+      "detail": "token_len=10"
+    },
+    {
+      "check": "administrator login succeeds through the real wp-login.php form",
+      "result": "PASS",
+      "detail": "url=http://127.0.0.1:9411/wp-admin/ status=200"
+    },
+    {
+      "check": "admin submissions list is reachable and contains the new reference",
+      "result": "PASS",
+      "detail": "status=200 ref_in_list=True"
+    },
+    {
+      "check": "admin list provides real per-record nonce links",
+      "result": "PASS",
+      "detail": "links=3"
+    },
+    {
+      "check": "admin detail view shows the stored phone/reference for an administrator",
+      "result": "PASS",
+      "detail": "ok=True url=/wp-admin/themes.php?page=raouf-submissions&raouf_view=31&_wpnonce=f121afc7de"
+    },
+    {
+      "check": "forged per-record nonce discloses no stored PII",
+      "result": "PASS",
+      "detail": "ok=True"
+    },
+    {
+      "check": "anonymous visitor cannot read the submissions admin screen",
+      "result": "PASS",
+      "detail": "status=200 ref_in_anon_body=False"
+    },
+    {
+      "check": "no submitted phone or tracking reference appears on any of the 11 public routes",
+      "result": "PASS",
+      "detail": "leaked_routes=[]"
+    },
+    {
+      "check": "direct access to inc/forms.php leaks no PHP source",
+      "result": "PASS",
+      "detail": "status=200 len=0"
+    },
+    {
+      "check": "private submission CPT is not exposed through REST types",
+      "result": "PASS",
+      "detail": "status=200"
+    }
+  ],
+  "routes": [
+    {
+      "route": "/",
+      "http": 200,
+      "expected": 200,
+      "bytes": 64940,
+      "php_error_strings": [],
+      "has_html": true,
+      "url": "http://127.0.0.1:9411/"
+    },
+    {
+      "route": "/courses/",
+      "http": 200,
+      "expected": 200,
+      "bytes": 36901,
+      "php_error_strings": [],
+      "has_html": true,
+      "url": "http://127.0.0.1:9411/courses/"
+    },
+    {
+      "route": "/courses/skin-facial/",
+      "http": 200,
+      "expected": 200,
+      "bytes": 59042,
+      "php_error_strings": [],
+      "has_html": true,
+      "url": "http://127.0.0.1:9411/courses/skin-facial/"
+    },
+    {
+      "route": "/courses/medical-emergency/",
+      "http": 200,
+      "expected": 200,
+      "bytes": 59217,
+      "php_error_strings": [],
+      "has_html": true,
+      "url": "http://127.0.0.1:9411/courses/medical-emergency/"
+    },
+    {
+      "route": "/courses/pharmacy-technician/",
+      "http": 200,
+      "expected": 200,
+      "bytes": 56706,
+      "php_error_strings": [],
+      "has_html": true,
+      "url": "http://127.0.0.1:9411/courses/pharmacy-technician/"
+    },
+    {
+      "route": "/courses/massage-relaxation/",
+      "http": 200,
+      "expected": 200,
+      "bytes": 58948,
+      "php_error_strings": [],
+      "has_html": true,
+      "url": "http://127.0.0.1:9411/courses/massage-relaxation/"
+    },
+    {
+      "route": "/about/",
+      "http": 200,
+      "expected": 200,
+      "bytes": 37389,
+      "php_error_strings": [],
+      "has_html": true,
+      "url": "http://127.0.0.1:9411/about/"
+    },
+    {
+      "route": "/gallery/",
+      "http": 200,
+      "expected": 200,
+      "bytes": 57792,
+      "php_error_strings": [],
+      "has_html": true,
+      "url": "http://127.0.0.1:9411/gallery/"
+    },
+    {
+      "route": "/contact/",
+      "http": 200,
+      "expected": 200,
+      "bytes": 30271,
+      "php_error_strings": [],
+      "has_html": true,
+      "url": "http://127.0.0.1:9411/contact/"
+    },
+    {
+      "route": "/register/",
+      "http": 200,
+      "expected": 200,
+      "bytes": 32021,
+      "php_error_strings": [],
+      "has_html": true,
+      "url": "http://127.0.0.1:9411/register/"
+    },
+    {
+      "route": "/404/",
+      "http": 404,
+      "expected": 404,
+      "bytes": 19252,
+      "php_error_strings": [],
+      "has_html": true,
+      "url": "http://127.0.0.1:9411/404/"
+    }
+  ],
+  "details": {
+    "style.css": {
+      "served_sha256": "c519e0e4a6274f00867f4f09a73d4236de3698506d77edcf391b1c3ca43fae8b",
+      "local_sha256": "c519e0e4a6274f00867f4f09a73d4236de3698506d77edcf391b1c3ca43fae8b",
+      "http": 200
+    },
+    "assets/js/app.js": {
+      "served_sha256": "4cf90eee4d3ecf729bddc452ded767ff76a2ef503de9e862242c738d870a5616",
+      "local_sha256": "4cf90eee4d3ecf729bddc452ded767ff76a2ef503de9e862242c738d870a5616",
+      "http": 200
+    },
+    "submission": {
+      "http": 201,
+      "response": {
+        "ok": true,
+        "id": "REG-20261109-5DADF6",
+        "message": "اطلاعات با موفقیت ثبت شد.",
+        "adminDelivery": "not-configured"
+      },
+      "ref": "REG-20261109-5DADF6",
+      "phone_persian": "۰۹۷۹۴۲۲۹۹۳۵",
+      "phone_ascii": "09794229935",
+      "csrf_cookie_present": true
+    },
+    "admin_detail": {
+      "http": 200,
+      "url": "/wp-admin/themes.php?page=raouf-submissions&raouf_view=31&_wpnonce=f121afc7de",
+      "forged_nonce_http": 200,
+      "stored_phone_visible": true,
+      "forged_nonce_leaks_ref": false
+    }
+  },
+  "not_tested_here": [
+    "SMTP / wp_mail() end-to-end delivery (no mail server)",
+    "Browser JavaScript console during this smoke run (covered by stage-F-console.json)",
+    "Real MySQL/MariaDB or LAMP/LEMP (Playground PHP-WASM + SQLite)",
+    "Other WordPress/PHP versions, multisite, physical devices, third-party plugins",
+    "A second admin ZIP upload (the already-tested ZIP was intentionally left unchanged)"
+  ],
+  "note": "All checks above were executed live against :9411 in this run. No result was copied or inferred."
+}

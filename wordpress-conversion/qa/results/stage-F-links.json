@@ -1,0 +1,226 @@
+{
+  "stage": "F",
+  "wp": "http://127.0.0.1:9411",
+  "orig": "http://127.0.0.1:3000",
+  "checks": [
+    {
+      "check": "no hardcoded localhost / QA host / probe data in runtime theme sources",
+      "result": "PASS",
+      "detail": "hits=[]"
+    },
+    {
+      "check": "all 103 runtime theme files served by WordPress (HTTP 200)",
+      "result": "PASS",
+      "detail": "bad=[]"
+    },
+    {
+      "check": "all 75 non-PHP theme assets (CSS/JS/images/fonts/docs/POT/screenshot) are byte-identical to the delivered ZIP",
+      "result": "PASS",
+      "detail": "files=75 mismatches=[]"
+    },
+    {
+      "check": "direct access to all 28 theme PHP files returns an empty body (no source disclosure)",
+      "result": "PASS",
+      "detail": "php_files=28 leaks=[]"
+    },
+    {
+      "check": "all 11 routes: 0 broken internal links, 0 unknown external hosts, 1 canonical, 1 robots, 0 leaked tokens, 0 PHP errors",
+      "result": "PASS",
+      "detail": "internal_links_checked=325 broken=0 foreign=0 leaked=[]"
+    },
+    {
+      "check": "both real form endpoints reject GET with 405 JSON",
+      "result": "PASS",
+      "detail": "[{\"endpoint\": \"/api/registrations\", \"GET_status\": 405, \"body\": \"{\\\"ok\\\":false,\\\"message\\\":\\\"method not allowed\\\"}\"}, {\"endpoint\": \"/api/contact\", \"GET_status\": 405, \"body\": \"{\\\"ok\\\":false,\\\"message\\\":\\\"method not allowed\\\"}\"}]"
+    },
+    {
+      "check": "authoritative original static site is still serving unchanged",
+      "result": "PASS",
+      "detail": "http=200"
+    }
+  ],
+  "routes": [
+    {
+      "route": "/",
+      "http": 200,
+      "internal_links": 35,
+      "internal_checked": 35,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/courses/",
+      "http": 200,
+      "internal_links": 26,
+      "internal_checked": 26,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/courses/skin-facial/",
+      "http": 200,
+      "internal_links": 30,
+      "internal_checked": 30,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/courses/medical-emergency/",
+      "http": 200,
+      "internal_links": 30,
+      "internal_checked": 30,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/courses/pharmacy-technician/",
+      "http": 200,
+      "internal_links": 28,
+      "internal_checked": 28,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/courses/massage-relaxation/",
+      "http": 200,
+      "internal_links": 30,
+      "internal_checked": 30,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/about/",
+      "http": 200,
+      "internal_links": 28,
+      "internal_checked": 28,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/gallery/",
+      "http": 200,
+      "internal_links": 70,
+      "internal_checked": 70,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/contact/",
+      "http": 200,
+      "internal_links": 16,
+      "internal_checked": 16,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/register/",
+      "http": 200,
+      "internal_links": 16,
+      "internal_checked": 16,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    },
+    {
+      "route": "/404/",
+      "http": 404,
+      "internal_links": 16,
+      "internal_checked": 16,
+      "external_links": 2,
+      "broken": [],
+      "unknown_external": [],
+      "canonical": 1,
+      "robots": 1,
+      "leaked_tokens": 0,
+      "php_errors": [],
+      "ok": true
+    }
+  ],
+  "form_endpoints": [
+    {
+      "endpoint": "/api/registrations",
+      "GET_status": 405,
+      "body": "{\"ok\":false,\"message\":\"method not allowed\"}"
+    },
+    {
+      "endpoint": "/api/contact",
+      "GET_status": 405,
+      "body": "{\"ok\":false,\"message\":\"method not allowed\"}"
+    }
+  ],
+  "theme_files_checked": 103,
+  "asset_mismatches": [],
+  "asset_http_errors": [],
+  "hardcoded_host_hits": [],
+  "summary": {
+    "checks": 7,
+    "PASS": 7,
+    "FAIL": 0,
+    "routes": 11,
+    "routes_ok": 11,
+    "internal_links_checked": 325,
+    "broken_links": 0,
+    "unknown_external": 0,
+    "leaked_token_routes": [],
+    "asset_sha256_mismatches": 0
+  }
+}

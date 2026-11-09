@@ -1,0 +1,276 @@
+{
+  "project": "Raouf Academy → WordPress theme",
+  "stage": "F / FINAL DELIVERY",
+  "generatedAt": "2026-11-09T13:17:46Z",
+  "branch": "arena/dfee8ce0-raouf",
+  "head": "abc23ef6ddbd4a74111f6c0347504a35eb746002",
+  "deliverables": {
+    "theme_zip": {
+      "path": "/home/user/raouf/wordpress-conversion/dist/raouf-academy-wordpress-theme.zip",
+      "bytes": 5384052,
+      "entries": 103,
+      "testzip": null,
+      "sha256": "abe4a961a4049ecdc86b1866a0d9e2eb0949eee1590bd730745e41dc7b3a4907",
+      "root": [
+        "raouf-academy"
+      ],
+      "mtime_ns": 1794152653499466997,
+      "rebuilt": false,
+      "exact_installed_and_tested_version": true,
+      "evidence": [
+        "stage-F-install.json",
+        "stage-F-post-activation-smoke.json",
+        "stage-F-final-validation.json",
+        ".work/wp-qa/stage-F-tested-theme.zip"
+      ]
+    },
+    "source_zip": {
+      "path": "/home/user/raouf/wordpress-conversion/dist/source-code.zip",
+      "bytes": 7752825,
+      "entries": 203,
+      "testzip": null,
+      "sha256": "47eead0362272b3d30c39950ae1bec24173246bc4ee6e5d3785809650b7c5226",
+      "root": [
+        "raouf-academy-wordpress-source"
+      ],
+      "mtime_ns": 1794230266148415303,
+      "built_with": "python3 tools/build_zip.py --source-only"
+    },
+    "pdfs": {
+      "installation-guide-fa.pdf": {
+        "path": "/home/user/raouf/wordpress-conversion/dist/installation-guide-fa.pdf",
+        "bytes": 505609,
+        "sha256": "27a2df3f174f0b70d3ad3ec9cb04325cc1b27b90fe967430cf7d718370cfafc5",
+        "pages_approx": 4,
+        "inside_source_zip": true
+      },
+      "conversion-report.pdf": {
+        "path": "/home/user/raouf/wordpress-conversion/dist/conversion-report.pdf",
+        "bytes": 647338,
+        "sha256": "92054a76caba634244542777e11327e9a52038ed08de66bb3ebf6ef4c543c3d1",
+        "pages_approx": 7,
+        "inside_source_zip": true
+      }
+    },
+    "final_test_report_md": {
+      "path": "/home/user/raouf/wordpress-conversion/docs/final-test-report-fa.md",
+      "bytes": 18859,
+      "sha256": "3555768785a782105bfd90c292dc8e0c4a0506e87163f2dfc376264109b68afa",
+      "inside_source_zip": true
+    },
+    "manifest": {
+      "path": "/home/user/raouf/wordpress-conversion/dist/final-delivery-manifest.json"
+    }
+  },
+  "validation": {
+    "summary": {
+      "checks": 27,
+      "PASS": 27,
+      "FAIL": 0
+    },
+    "checks": [
+      {
+        "check": "theme ZIP testzip is None",
+        "result": "PASS",
+        "detail": "testzip=None"
+      },
+      {
+        "check": "theme ZIP entries=103 and single raouf-academy/ root",
+        "result": "PASS",
+        "detail": "entries=103 roots=['raouf-academy']"
+      },
+      {
+        "check": "theme ZIP SHA-256 unchanged and equals tested backup",
+        "result": "PASS",
+        "detail": "theme=abe4a961a4049ecd backup=abe4a961a4049ecd"
+      },
+      {
+        "check": "theme ZIP SHA-256 equals installed/smoked/validated ZIP",
+        "result": "PASS",
+        "detail": "abe4a961a4049ecd"
+      },
+      {
+        "check": "theme ZIP mtime unchanged across both source-only builds",
+        "result": "PASS",
+        "detail": "mtime_ns=1794152653499466997"
+      },
+      {
+        "check": "source ZIP testzip is None",
+        "result": "PASS",
+        "detail": "testzip=None"
+      },
+      {
+        "check": "source ZIP has single source root",
+        "result": "PASS",
+        "detail": "roots=['raouf-academy-wordpress-source']"
+      },
+      {
+        "check": "source ZIP contains the final validation report byte-identical to disk",
+        "result": "PASS",
+        "detail": "embedded"
+      },
+      {
+        "check": "source ZIP contains the final validation script byte-identical to disk",
+        "result": "PASS",
+        "detail": "embedded"
+      },
+      {
+        "check": "source ZIP contains the smoke script and result byte-identical to disk",
+        "result": "PASS",
+        "detail": "embedded"
+      },
+      {
+        "check": "every Stage F harness on disk is byte-identical inside source ZIP",
+        "result": "PASS",
+        "detail": "count=12 missing=[]"
+      },
+      {
+        "check": "every Stage F result JSON on disk is byte-identical inside source ZIP",
+        "result": "PASS",
+        "detail": "count=18 missing=[]"
+      },
+      {
+        "check": "all 5 install/activation screenshots are byte-identical inside source ZIP",
+        "result": "PASS",
+        "detail": "count=5"
+      },
+      {
+        "check": "PDF installation-guide-fa.pdf is byte-identical inside source ZIP",
+        "result": "PASS",
+        "detail": "bytes=505609 pages~4"
+      },
+      {
+        "check": "PDF conversion-report.pdf is byte-identical inside source ZIP",
+        "result": "PASS",
+        "detail": "bytes=647338 pages~7"
+      },
+      {
+        "check": "source ZIP contains docs/installation-guide-fa.md",
+        "result": "PASS",
+        "detail": "installation-guide-fa.md"
+      },
+      {
+        "check": "source ZIP contains docs/conversion-report.md",
+        "result": "PASS",
+        "detail": "conversion-report.md"
+      },
+      {
+        "check": "source ZIP contains docs/final-test-report-fa.md",
+        "result": "PASS",
+        "detail": "final-test-report-fa.md"
+      },
+      {
+        "check": "source ZIP contains docs/DECISIONS.md",
+        "result": "PASS",
+        "detail": "DECISIONS.md"
+      },
+      {
+        "check": "source ZIP contains qa/results/resume-status.md",
+        "result": "PASS",
+        "detail": "resume-status.md"
+      },
+      {
+        "check": "source ZIP README.md equals SOURCE-README.md",
+        "result": "PASS",
+        "detail": "README.md"
+      },
+      {
+        "check": "source ZIP contains source-only CSS reference",
+        "result": "PASS",
+        "detail": "style.css.source.css"
+      },
+      {
+        "check": "neither ZIP contains config/credential/secret or excluded dev artefacts",
+        "result": "PASS",
+        "detail": "source_forbidden=[] unwanted=[]"
+      },
+      {
+        "check": "admin install/activation = 24/24 PASS, 11/11 routes, 5 screenshots",
+        "result": "PASS",
+        "detail": "{\"steps\": 24, \"PASS\": 24, \"FAIL\": 0, \"routes_checked\": 11, \"routes_ok\": 11, \"screenshots\": 5, \"consoleErrors\": 9, \"failedRequests\": 8, \"httpErrors\": 1, \"external_admin_avatar_requests\": 8}"
+      },
+      {
+        "check": "live post-activation smoke = 25/25 PASS, 11/11 routes",
+        "result": "PASS",
+        "detail": "{\"checks\": 25, \"PASS\": 25, \"FAIL\": 0, \"routes_checked\": 11, \"routes_ok\": 11, \"registration_reference\": \"REG-20261109-5DADF6\", \"admin_detail_url\": \"/wp-admin/themes.php?page=raouf-submissions&raouf_vie"
+      },
+      {
+        "check": "final delivery validation = 38/38 PASS",
+        "result": "PASS",
+        "detail": "{\"checks\": 38, \"PASS\": 38, \"FAIL\": 0}"
+      },
+      {
+        "check": "D-1 preserved = 73/73 PASS, regression=false",
+        "result": "PASS",
+        "detail": "{\"tests_total\": 73, \"PASS\": 73, \"FAIL\": 0, \"fixes_total\": 6, \"fixes_verified\": 6, \"regression_observed\": false, \"regression_evidence\": [\"stage-C-structural.json == stage-D1-structu"
+      }
+    ],
+    "theme_zip_unchanged": true,
+    "note": "All ZIP/SHA/completeness checks above were executed in this final step. Earlier suites are referenced from their own real reports, not re-run here."
+  },
+  "install_activation": {
+    "admin_ui": {
+      "steps": 24,
+      "PASS": 24,
+      "FAIL": 0,
+      "routes_checked": 11,
+      "routes_ok": 11,
+      "screenshots": 5,
+      "consoleErrors": 9,
+      "failedRequests": 8,
+      "httpErrors": 1,
+      "external_admin_avatar_requests": 8
+    },
+    "post_activation_smoke": {
+      "checks": 25,
+      "PASS": 25,
+      "FAIL": 0,
+      "routes_checked": 11,
+      "routes_ok": 11,
+      "registration_reference": "REG-20261109-5DADF6",
+      "admin_detail_url": "/wp-admin/themes.php?page=raouf-submissions&raouf_view=31&_wpnonce=f121afc7de"
+    },
+    "registration_reference": "REG-20261109-5DADF6"
+  },
+  "final_validation": {
+    "checks": 38,
+    "PASS": 38,
+    "FAIL": 0
+  },
+  "D1_preserved": {
+    "tests_total": 73,
+    "PASS": 73,
+    "FAIL": 0,
+    "fixes_total": 6,
+    "fixes_verified": 6,
+    "regression_observed": false,
+    "regression_evidence": [
+      "stage-C-structural.json == stage-D1-structural.json (۱۱/۱۱ رکورد دقیقاً برابر)",
+      "stage-C-dom.json rows == stage-D1-dom.json rows (۱۱/۱۱، allIdentical=True)",
+      "HTML کامل قبل/بعد روی دو نصب تازه با Blueprint یکسان: ۱۱/۱۱ بایتبهبایت یکسان (head/header/main/footer/forms)",
+      "۰ فایل غیر PHP تغییرکرده؛ دقیقاً ۱۱ فایل PHP مستند تغییرکرده",
+      "۰ خطای PHP روی ۱۱ مسیر؛ ۲۴/۲۴ آزمون امنیتی بعداصلاح PASS"
+    ]
+  },
+  "tests_not_re_run_in_this_final_step": [
+    "66 visual pairs / 28 interactions / DOM 11 / structural 11",
+    "links 7/7, migration 10/10, forms 23/23 + 9/9 + 8/8, security 24/24 + 10/10",
+    "WPCS 121E/181W, PHPCompatibilityWP 0/0, PHP lint 28/28",
+    "browser performance / axe accessibility / console audit (22 views)",
+    "admin ZIP upload itself (the exact ZIP was intentionally left unchanged)"
+  ],
+  "decisions_without_change": [
+    "WPCS 121 errors / 181 warnings are style-only (0 security sniffs); no cosmetic count reduction.",
+    "axe color-contrast finding is inherited from the authoritative source design; fixing it would change appearance.",
+    "4 images >200KB, no CDN/cache headers, no fetchpriority hint: documented optimisation candidates only."
+  ],
+  "not_tested": [
+    "Real LAMP/LEMP with MySQL/MariaDB and system PHP (Playground PHP-WASM 8.3 + SQLite used)",
+    "SMTP / wp_mail() end-to-end delivery",
+    "WordPress multisite, WP 6.4-6.7 and >6.8.3, runtime PHP 7.4/8.0/8.1/8.2",
+    "Physical devices, legacy browsers, assistive technology, Theme Check, PageSpeed/CDN/load",
+    "Third-party plugins, page builders, WooCommerce, LMS",
+    "Physical host-to-host database migration (domain exercise used update_option on one Playground install)"
+  ],
+  "environment": "WordPress Playground 6.8.3 / PHP 8.3 WASM / SQLite; NOT real LAMP/MySQL."
+}

@@ -1,0 +1,1778 @@
+{
+  "stage": "F",
+  "wp": "http://127.0.0.1:9411",
+  "orig": "http://127.0.0.1:3000",
+  "rows": [
+    {
+      "route": "/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "http": 200,
+      "domContentLoadedMs": 766,
+      "loadEventMs": 775,
+      "responseEndMs": 703,
+      "resourceCount": 13,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 9,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "hero-academy-sm.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 18,
+      "imgLazy": 14,
+      "imgWithSrcset": 14,
+      "imgWithDimensions": 17,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 1,
+      "imgWithDecoding": 17,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 93,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "hero-academy-sm.webp",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2",
+        "lounge-01-sm.webp",
+        "reception-02-sm.webp",
+        "course-facial-sm.webp",
+        "first-aid-01-sm.webp",
+        "course-pharmacy-sm.webp",
+        "course-massage-sm.webp",
+        "classroom-03.webp"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 5,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 596028,
+      "contentLengthBytes": 678214,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/courses/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "http": 200,
+      "domContentLoadedMs": 801,
+      "loadEventMs": 821,
+      "responseEndMs": 759,
+      "resourceCount": 10,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 6,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "classroom-01-sm.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 7,
+      "imgLazy": 5,
+      "imgWithSrcset": 5,
+      "imgWithDimensions": 7,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 0,
+      "imgWithDecoding": 7,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 56,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "classroom-01-sm.webp",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2",
+        "course-facial-sm.webp",
+        "first-aid-01-sm.webp",
+        "course-pharmacy-sm.webp",
+        "course-massage-sm.webp"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 5,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 257748,
+      "contentLengthBytes": 339934,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/courses/skin-facial/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "http": 200,
+      "domContentLoadedMs": 789,
+      "loadEventMs": 842,
+      "responseEndMs": 732,
+      "resourceCount": 8,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 4,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "course-facial-sm.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 14,
+      "imgLazy": 11,
+      "imgWithSrcset": 11,
+      "imgWithDimensions": 13,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 1,
+      "imgWithDecoding": 13,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 90,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "course-facial-sm.webp",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2",
+        "treatment-room-01.webp",
+        "products-02-sm.webp"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 5,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 328512,
+      "contentLengthBytes": 410698,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/courses/medical-emergency/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "http": 200,
+      "domContentLoadedMs": 862,
+      "loadEventMs": 862,
+      "responseEndMs": 779,
+      "resourceCount": 8,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 4,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "first-aid-01-sm.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 14,
+      "imgLazy": 11,
+      "imgWithSrcset": 11,
+      "imgWithDimensions": 13,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 1,
+      "imgWithDecoding": 13,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 92,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "first-aid-01-sm.webp",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2",
+        "first-aid-02-sm.webp",
+        "anatomy-01-sm.webp"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 5,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 193026,
+      "contentLengthBytes": 275212,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/courses/pharmacy-technician/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "http": 200,
+      "domContentLoadedMs": 806,
+      "loadEventMs": 811,
+      "responseEndMs": 730,
+      "resourceCount": 8,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 4,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "course-pharmacy-sm.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 13,
+      "imgLazy": 10,
+      "imgWithSrcset": 10,
+      "imgWithDimensions": 12,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 1,
+      "imgWithDecoding": 12,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 88,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "course-pharmacy-sm.webp",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2",
+        "course-pharmacy-2-sm.webp",
+        "classroom-02-sm.webp"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 5,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 194280,
+      "contentLengthBytes": 276466,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/courses/massage-relaxation/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "http": 200,
+      "domContentLoadedMs": 746,
+      "loadEventMs": 754,
+      "responseEndMs": 710,
+      "resourceCount": 8,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 4,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "course-massage-sm.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 14,
+      "imgLazy": 11,
+      "imgWithSrcset": 11,
+      "imgWithDimensions": 13,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 1,
+      "imgWithDecoding": 13,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 93,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "course-massage-sm.webp",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2",
+        "course-massage-2-sm.webp",
+        "treatment-room-02-sm.webp"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 5,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 190166,
+      "contentLengthBytes": 272352,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/about/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "http": 200,
+      "domContentLoadedMs": 750,
+      "loadEventMs": 796,
+      "responseEndMs": 715,
+      "resourceCount": 11,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 7,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "reception-02-sm.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 9,
+      "imgLazy": 7,
+      "imgWithSrcset": 6,
+      "imgWithDimensions": 9,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 0,
+      "imgWithDecoding": 9,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 53,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "reception-02-sm.webp",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2",
+        "lounge-01-sm.webp",
+        "reception-01-sm.webp",
+        "first-aid-02-sm.webp",
+        "poster-courses-sm.webp",
+        "sign-board-sm.webp"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 5,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 280402,
+      "contentLengthBytes": 362588,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/gallery/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "http": 200,
+      "domContentLoadedMs": 767,
+      "loadEventMs": 781,
+      "responseEndMs": 712,
+      "resourceCount": 32,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 28,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "classroom-03-sm.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 31,
+      "imgLazy": 28,
+      "imgWithSrcset": 28,
+      "imgWithDimensions": 30,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 1,
+      "imgWithDecoding": 30,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 63,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "classroom-03-sm.webp",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2",
+        "reception-02-sm.webp",
+        "lounge-01-sm.webp",
+        "classroom-02-sm.webp",
+        "first-aid-01-sm.webp",
+        "anatomy-01-sm.webp",
+        "treatment-room-01-sm.webp",
+        "products-02-sm.webp",
+        "decor-01-sm.webp",
+        "reception-08-sm.webp",
+        "first-aid-02-sm.webp",
+        "anatomy-03-sm.webp",
+        "treatment-room-02-sm.webp",
+        "products-01-sm.webp",
+        "classroom-01-sm.webp",
+        "reception-01-sm.webp",
+        "sign-board-sm.webp",
+        "poster-courses-sm.webp",
+        "reception-03-sm.webp",
+        "reception-04-sm.webp",
+        "reception-05-sm.webp",
+        "reception-06-sm.webp",
+        "anatomy-02-sm.webp",
+        "decor-02-sm.webp",
+        "products-03-sm.webp",
+        "reception-07-sm.webp",
+        "poster-courses-alt-sm.webp"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 5,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 891658,
+      "contentLengthBytes": 973844,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/contact/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "http": 200,
+      "domContentLoadedMs": 979,
+      "loadEventMs": 980,
+      "responseEndMs": 937,
+      "resourceCount": 5,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 1,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 2,
+      "imgLazy": 1,
+      "imgWithSrcset": 0,
+      "imgWithDimensions": 2,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 0,
+      "imgWithDecoding": 2,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 43,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 8,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 98782,
+      "contentLengthBytes": 180968,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/register/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "http": 200,
+      "domContentLoadedMs": 804,
+      "loadEventMs": 804,
+      "responseEndMs": 759,
+      "resourceCount": 5,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 1,
+        "css": 1,
+        "script": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        }
+      ],
+      "imgTotal": 2,
+      "imgLazy": 1,
+      "imgWithSrcset": 0,
+      "imgWithDimensions": 2,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 0,
+      "imgWithDecoding": 2,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 47,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "vazirmatn-latin-wght-normal.woff2",
+        "app.js?ver=1.0.0"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 6,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 98782,
+      "contentLengthBytes": 180968,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/404/",
+      "viewport": "1366x768",
+      "viewport_kind": "desktop",
+      "http": 404,
+      "domContentLoadedMs": 738,
+      "loadEventMs": 750,
+      "responseEndMs": 722,
+      "resourceCount": 5,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 1,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 2,
+      "imgLazy": 1,
+      "imgWithSrcset": 0,
+      "imgWithDimensions": 2,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 0,
+      "imgWithDecoding": 2,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 31,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 5,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 98782,
+      "contentLengthBytes": 180968,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "http": 200,
+      "domContentLoadedMs": 850,
+      "loadEventMs": 873,
+      "responseEndMs": 767,
+      "resourceCount": 8,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 4,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "hero-academy-sm.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 18,
+      "imgLazy": 14,
+      "imgWithSrcset": 14,
+      "imgWithDimensions": 17,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 1,
+      "imgWithDecoding": 17,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 93,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "hero-academy-sm.webp",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2",
+        "lounge-01-sm.webp",
+        "reception-02-sm.webp"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 5,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 200602,
+      "contentLengthBytes": 282788,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/courses/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "http": 200,
+      "domContentLoadedMs": 952,
+      "loadEventMs": 977,
+      "responseEndMs": 870,
+      "resourceCount": 10,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 6,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "classroom-01-sm.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 7,
+      "imgLazy": 5,
+      "imgWithSrcset": 5,
+      "imgWithDimensions": 7,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 0,
+      "imgWithDecoding": 7,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 56,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "classroom-01-sm.webp",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2",
+        "course-facial-sm.webp",
+        "first-aid-01-sm.webp",
+        "course-pharmacy-sm.webp",
+        "course-massage-sm.webp"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 5,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 257748,
+      "contentLengthBytes": 339934,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/courses/skin-facial/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "http": 200,
+      "domContentLoadedMs": 772,
+      "loadEventMs": 816,
+      "responseEndMs": 723,
+      "resourceCount": 8,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 4,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "course-facial-sm.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 14,
+      "imgLazy": 11,
+      "imgWithSrcset": 11,
+      "imgWithDimensions": 13,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 1,
+      "imgWithDecoding": 13,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 90,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "course-facial-sm.webp",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2",
+        "treatment-room-01-sm.webp",
+        "products-02-sm.webp"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 5,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 178252,
+      "contentLengthBytes": 260438,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/courses/medical-emergency/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "http": 200,
+      "domContentLoadedMs": 784,
+      "loadEventMs": 801,
+      "responseEndMs": 705,
+      "resourceCount": 8,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 4,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "first-aid-01-sm.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 14,
+      "imgLazy": 11,
+      "imgWithSrcset": 11,
+      "imgWithDimensions": 13,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 1,
+      "imgWithDecoding": 13,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 92,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "first-aid-01-sm.webp",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2",
+        "first-aid-02-sm.webp",
+        "anatomy-01-sm.webp"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 5,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 193026,
+      "contentLengthBytes": 275212,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/courses/pharmacy-technician/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "http": 200,
+      "domContentLoadedMs": 746,
+      "loadEventMs": 785,
+      "responseEndMs": 688,
+      "resourceCount": 8,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 4,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "course-pharmacy-sm.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 13,
+      "imgLazy": 10,
+      "imgWithSrcset": 10,
+      "imgWithDimensions": 12,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 1,
+      "imgWithDecoding": 12,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 88,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "course-pharmacy-sm.webp",
+        "raouf-logo.jpg",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2",
+        "course-pharmacy-2-sm.webp",
+        "classroom-02-sm.webp"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 5,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 194280,
+      "contentLengthBytes": 276466,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/courses/massage-relaxation/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "http": 200,
+      "domContentLoadedMs": 855,
+      "loadEventMs": 877,
+      "responseEndMs": 775,
+      "resourceCount": 8,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 4,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "course-massage-sm.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 14,
+      "imgLazy": 11,
+      "imgWithSrcset": 11,
+      "imgWithDimensions": 13,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 1,
+      "imgWithDecoding": 13,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 93,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "course-massage-sm.webp",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2",
+        "course-massage-2-sm.webp",
+        "treatment-room-02-sm.webp"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 5,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 190166,
+      "contentLengthBytes": 272352,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/about/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "http": 200,
+      "domContentLoadedMs": 750,
+      "loadEventMs": 750,
+      "responseEndMs": 693,
+      "resourceCount": 9,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 5,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "reception-02-sm.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 9,
+      "imgLazy": 7,
+      "imgWithSrcset": 6,
+      "imgWithDimensions": 9,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 0,
+      "imgWithDecoding": 9,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 53,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "reception-02-sm.webp",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2",
+        "lounge-01-sm.webp",
+        "reception-01-sm.webp",
+        "first-aid-02-sm.webp"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 5,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 226282,
+      "contentLengthBytes": 308468,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/gallery/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "http": 200,
+      "domContentLoadedMs": 1031,
+      "loadEventMs": 1112,
+      "responseEndMs": 921,
+      "resourceCount": 14,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 10,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "classroom-03-sm.webp",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 31,
+      "imgLazy": 28,
+      "imgWithSrcset": 28,
+      "imgWithDimensions": 30,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 1,
+      "imgWithDecoding": 30,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 63,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "classroom-03-sm.webp",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2",
+        "reception-02-sm.webp",
+        "lounge-01-sm.webp",
+        "classroom-02-sm.webp",
+        "first-aid-01-sm.webp",
+        "anatomy-01-sm.webp",
+        "treatment-room-01-sm.webp",
+        "products-02-sm.webp",
+        "decor-01-sm.webp"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 5,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 410718,
+      "contentLengthBytes": 492904,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/contact/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "http": 200,
+      "domContentLoadedMs": 770,
+      "loadEventMs": 777,
+      "responseEndMs": 719,
+      "resourceCount": 5,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 1,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 2,
+      "imgLazy": 1,
+      "imgWithSrcset": 0,
+      "imgWithDimensions": 2,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 0,
+      "imgWithDecoding": 2,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 43,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 8,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 98782,
+      "contentLengthBytes": 180968,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/register/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "http": 200,
+      "domContentLoadedMs": 1026,
+      "loadEventMs": 1033,
+      "responseEndMs": 991,
+      "resourceCount": 5,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 1,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 2,
+      "imgLazy": 1,
+      "imgWithSrcset": 0,
+      "imgWithDimensions": 2,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 0,
+      "imgWithDecoding": 2,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 47,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 6,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 98782,
+      "contentLengthBytes": 180968,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    },
+    {
+      "route": "/404/",
+      "viewport": "390x844",
+      "viewport_kind": "mobile",
+      "http": 404,
+      "domContentLoadedMs": 868,
+      "loadEventMs": 878,
+      "responseEndMs": 817,
+      "resourceCount": 5,
+      "resourceCountByType": {
+        "link": 2,
+        "img": 1,
+        "script": 1,
+        "css": 1
+      },
+      "encodedBytes": 0,
+      "decodedBytes": 0,
+      "largestResources": [
+        {
+          "name": "vazirmatn-arabic-wght-normal.woff2",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "style.css?ver=1.0.0",
+          "bytes": 0,
+          "type": "link"
+        },
+        {
+          "name": "raouf-logo.jpg",
+          "bytes": 0,
+          "type": "img"
+        },
+        {
+          "name": "app.js?ver=1.0.0",
+          "bytes": 0,
+          "type": "script"
+        },
+        {
+          "name": "vazirmatn-latin-wght-normal.woff2",
+          "bytes": 0,
+          "type": "css"
+        }
+      ],
+      "imgTotal": 2,
+      "imgLazy": 1,
+      "imgWithSrcset": 0,
+      "imgWithDimensions": 2,
+      "imgMissingAlt": 0,
+      "imgDecorativeEmptyAlt": 0,
+      "imgWithDecoding": 2,
+      "brokenImages": 0,
+      "stylesheets": 1,
+      "scripts": 1,
+      "inlineSvg": 31,
+      "fontFacesLoaded": true,
+      "resourceNames": [
+        "vazirmatn-arabic-wght-normal.woff2",
+        "style.css?ver=1.0.0",
+        "raouf-logo.jpg",
+        "app.js?ver=1.0.0",
+        "vazirmatn-latin-wght-normal.woff2"
+      ],
+      "externalResourceRequests": 0,
+      "externalAnchorLinks": 5,
+      "lang": "fa",
+      "dir": "rtl",
+      "assetBytesFromFilesystem": 98782,
+      "contentLengthBytes": 180968,
+      "resourceTimingEncodedBytes": 0,
+      "note": "WASM-based Playground reports Resource Timing encodedBodySize=0; assetBytesFromFilesystem is the authoritative delivered byte size."
+    }
+  ],
+  "generatedAt": "2026-11-09T12:52:29.040Z",
+  "summary": {
+    "rows": 22,
+    "routes": 11,
+    "min_asset_bytes": 98782,
+    "max_asset_bytes": 891658,
+    "mean_asset_bytes": 244345,
+    "total_broken_images": 0,
+    "total_missing_alt_attribute": 0,
+    "total_decorative_empty_alt": 12,
+    "total_lazy_images": 200,
+    "image_heavy_routes_use_lazy_loading": true,
+    "no_external_resource_requests": true,
+    "intentional_external_anchor_links": 118,
+    "decision": "NO CHANGE — no critical runtime defect found. Deferred optimisation candidates (require an appearance/asset decision): 4 images >200KB, no CDN/caching headers, no fetchpriority hint. axe color-contrast findings are inherited from the authoritative source design and would require CSS colour edits."
+  }
+}

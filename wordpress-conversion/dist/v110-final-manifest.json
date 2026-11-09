@@ -1,0 +1,105 @@
+{
+  "stage": "v1.1.0-final-delivery",
+  "branch": "arena/dfee8ce0-raouf",
+  "delivery_date": "2026-11-07 UTC",
+  "reference_theme_zip_unchanged": {
+    "filename": "raouf-academy-wordpress-theme.zip",
+    "size": 5384052,
+    "sha256": "abe4a961a4049ecdc86b1866a0d9e2eb0949eee1590bd730745e41dc7b3a4907"
+  },
+  "files": [
+    {
+      "label": "قالب اصلاحشده",
+      "filename": "raouf-academy-wordpress-theme-v1.1.0.zip",
+      "version": "1.1.0",
+      "size": 5385482,
+      "sha256": "0c0f48cd4f76cc7985e1ea097ebf555f291bb074d27d6699e8dedbd326853167"
+    },
+    {
+      "label": "افزونه مستقل",
+      "filename": "raouf-academy-requests-plugin-v1.0.0.zip",
+      "version": "1.0.0",
+      "size": 10766,
+      "sha256": "807508d8ad9b3757c8098f9d5e70bcb648b99a770be75a70b4424e4e375eea77"
+    },
+    {
+      "label": "گزارش تست فارسی",
+      "filename": "raouf-academy-correction-test-report-fa.pdf",
+      "version": "—",
+      "size": 452588,
+      "sha256": "04ffbcb2638f668a1967556c6a23ec07523c71cab65f2de3252e98b65ef6843f"
+    },
+    {
+      "label": "راهنمای نصب و فعالسازی",
+      "filename": "raouf-academy-install-activation-fa.pdf",
+      "version": "—",
+      "size": 327309,
+      "sha256": "7db96c5b251cc3e205170b98b69b83a0fbace68aafb8c928ee9ee22e23f52acd"
+    }
+  ],
+  "tests": {
+    "tests": 13,
+    "PASS": 13,
+    "FAIL": 0,
+    "checks": 71,
+    "checks_PASS": 71,
+    "checks_FAIL": 0
+  },
+  "evidence": {
+    "visual": {
+      "checks": 14,
+      "PASS": 14,
+      "FAIL": 0,
+      "pairs": 66,
+      "pixel_identical": 66,
+      "expected_404_console_entries": 6,
+      "expected_404_http_entries": 6,
+      "failedRequests": 0
+    },
+    "asset_parity": {
+      "checks": 9,
+      "PASS": 9,
+      "FAIL": 0,
+      "runtime_files": 104,
+      "changed_files": [
+        "assets/js/app.js",
+        "footer.php",
+        "functions.php",
+        "inc/forms.php",
+        "inc/helpers.php",
+        "inc/options.php",
+        "inc/pages-data.php",
+        "readme.txt",
+        "style.css"
+      ],
+      "unchanged_assets": 71
+    },
+    "browser": {
+      "checks": 6,
+      "PASS": 6,
+      "FAIL": 0,
+      "consoleErrors": 0
+    },
+    "interactions": {
+      "checks": 28,
+      "PASS": 28,
+      "FAIL": 0,
+      "consoleErrors": 0
+    },
+    "csv_verification": "PASS"
+  },
+  "environment": "WordPress Playground 6.8.3 / PHP 8.3.36 WASM + SQLite; NOT real MySQL/LAMP",
+  "not_tested": [
+    "real MySQL/MariaDB/LAMP",
+    "SMTP",
+    "multisite",
+    "WP 6.4-6.7/>6.8.3",
+    "PHP 7.4/8.0/8.1/8.2 runtime",
+    "physical devices/old browsers/assistive tech",
+    "third-party plugins/builders/WooCommerce/LMS",
+    "Theme Check",
+    "PageSpeed/CDN/load",
+    "real host-to-host DB migration"
+  ],
+  "raw_base": "https://raw.githubusercontent.com/hesam13871127-ai/raouf/arena/dfee8ce0-raouf/wordpress-conversion/dist/"
+}

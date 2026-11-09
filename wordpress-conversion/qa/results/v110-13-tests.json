@@ -1,0 +1,686 @@
+{
+  "stage": "v1.1.0-correction",
+  "generatedAt": "2026-11-09T14:54:17.067984+00:00",
+  "environment": {
+    "wp": "http://127.0.0.1:9421",
+    "original": "http://127.0.0.1:3000",
+    "browser": "http://127.0.0.1:9422",
+    "failure": "http://127.0.0.1:9423",
+    "engine": "WordPress Playground 6.8.3 / PHP 8.3 WASM + SQLite (NOT real MySQL/LAMP)",
+    "timezone": "Asia/Tehran"
+  },
+  "references": {
+    "registration": "REG-20261109-0B2077",
+    "contact": "MSG-20261109-D04D2A",
+    "delete": "MSG-20261109-99B0F7"
+  },
+  "tests": {
+    "T01": {
+      "title": "ثبت کامل پیشثبتنام دوره و جلوگیری از ارسال مجدد",
+      "checks": 3,
+      "PASS": 3,
+      "FAIL": 0,
+      "result": "PASS"
+    },
+    "T02": {
+      "title": "جلوگیری از ثبتنام ناقص و اعتبارسنجی سمت سرور/مرورگر",
+      "checks": 2,
+      "PASS": 2,
+      "FAIL": 0,
+      "result": "PASS"
+    },
+    "T03": {
+      "title": "ثبت کامل فرم تماس، بدون بارگذاری مجدد صفحه",
+      "checks": 2,
+      "PASS": 2,
+      "FAIL": 0,
+      "result": "PASS"
+    },
+    "T04": {
+      "title": "جلوگیری از تماس نامعتبر و بررسی همه فیلدها",
+      "checks": 2,
+      "PASS": 2,
+      "FAIL": 0,
+      "result": "PASS"
+    },
+    "T05": {
+      "title": "ذخیره دائمی هر دو درخواست در پایگاه داده وردپرس",
+      "checks": 13,
+      "PASS": 13,
+      "FAIL": 0,
+      "result": "PASS"
+    },
+    "T06": {
+      "title": "نمایش در پیشخوان با منوها و دستههای جداگانه، newest→oldest",
+      "checks": 8,
+      "PASS": 8,
+      "FAIL": 0,
+      "result": "PASS"
+    },
+    "T07": {
+      "title": "تاریخ و زمان دقیق محلی وردپرس",
+      "checks": 3,
+      "PASS": 3,
+      "FAIL": 0,
+      "result": "PASS"
+    },
+    "T08": {
+      "title": "نمایش کامل جزئیات هر رکورد",
+      "checks": 2,
+      "PASS": 2,
+      "FAIL": 0,
+      "result": "PASS"
+    },
+    "T09": {
+      "title": "جستجو، فیلتر نوع/تاریخ، خروجی CSV و حذف با تأیید",
+      "checks": 9,
+      "PASS": 9,
+      "FAIL": 0,
+      "result": "PASS"
+    },
+    "T10": {
+      "title": "دسترسی فقط manage_options، CSRF/XSS/SQLi و محافظت ربات",
+      "checks": 9,
+      "PASS": 9,
+      "FAIL": 0,
+      "result": "PASS"
+    },
+    "T11": {
+      "title": "لینک رسمی بلد در تمام صفحات نقشه و باز شدن در برگه جدید",
+      "checks": 13,
+      "PASS": 13,
+      "FAIL": 0,
+      "result": "PASS"
+    },
+    "T12": {
+      "title": "عدم وجود خطای PHP و JavaScript",
+      "checks": 3,
+      "PASS": 3,
+      "FAIL": 0,
+      "result": "PASS"
+    },
+    "T13": {
+      "title": "عدم تغییر طراحی دسکتاپ و موبایل و سایر تعاملات",
+      "checks": 2,
+      "PASS": 2,
+      "FAIL": 0,
+      "result": "PASS"
+    }
+  },
+  "checks": [
+    {
+      "test": "T07",
+      "name": "منطقه زمانی محلی وردپرس Asia/Tehran پیکربندی شده است",
+      "result": "PASS",
+      "detail": "{'timezone_string': 'Asia/Tehran', 'wp_timezone': 'Asia/Tehran', 'offset': '3:30:00'}"
+    },
+    {
+      "test": "T05",
+      "name": "جدول اختصاصی افزونه ساخته شد و افزونه فعال است",
+      "result": "PASS",
+      "detail": "{'theme_version': '1.1.0', 'active_theme': 'raouf-academy', 'plugin_active': True, 'table_exists': True, 'table_count_on_activation': 2, 'second_migration_inserted': 0, 'table_count_after_second_migration': 2, 'legacy_refs_in_plugin_table': 2, 'legacy_cpt_posts_preserved': 2, 'stored_map_url': 'https://balad.ir/p/29UbcoR7CtjsIN', 'effective_map_url': 'https://balad.ir/p/29UbcoR7CtjsIN', 'timezone_string': 'Asia/Tehran', 'wp_timezone': 'Asia/Tehran', 'wp_local_now': '2026-11-09 17:47:19', 'utc_now': '2026-11-09 14:17:19', 'subscriber_id': 2}"
+    },
+    {
+      "test": "T05",
+      "name": "رکوردهای قدیمی CPT حفظ و بدون تکرار به جدول منتقل شدند",
+      "result": "PASS",
+      "detail": "{'theme_version': '1.1.0', 'active_theme': 'raouf-academy', 'plugin_active': True, 'table_exists': True, 'table_count_on_activation': 2, 'second_migration_inserted': 0, 'table_count_after_second_migration': 2, 'legacy_refs_in_plugin_table': 2, 'legacy_cpt_posts_preserved': 2, 'stored_map_url': 'https://balad.ir/p/29UbcoR7CtjsIN', 'effective_map_url': 'https://balad.ir/p/29UbcoR7CtjsIN', 'timezone_string': 'Asia/Tehran', 'wp_timezone': 'Asia/Tehran', 'wp_local_now': '2026-11-09 17:47:19', 'utc_now': '2026-11-09 14:17:19', 'subscriber_id': 2}"
+    },
+    {
+      "test": "T11",
+      "name": "نشانی ذخیرهشده قدیمی OpenStreetMap به بلد ارتقا یافت",
+      "result": "PASS",
+      "detail": "{'theme_version': '1.1.0', 'active_theme': 'raouf-academy', 'plugin_active': True, 'table_exists': True, 'table_count_on_activation': 2, 'second_migration_inserted': 0, 'table_count_after_second_migration': 2, 'legacy_refs_in_plugin_table': 2, 'legacy_cpt_posts_preserved': 2, 'stored_map_url': 'https://balad.ir/p/29UbcoR7CtjsIN', 'effective_map_url': 'https://balad.ir/p/29UbcoR7CtjsIN', 'timezone_string': 'Asia/Tehran', 'wp_timezone': 'Asia/Tehran', 'wp_local_now': '2026-11-09 17:47:19', 'utc_now': '2026-11-09 14:17:19', 'subscriber_id': 2}"
+    },
+    {
+      "test": "T01",
+      "name": "پیشثبتنام کامل با ارقام فارسی → 201 و شماره پیگیری واقعی",
+      "result": "PASS",
+      "detail": "{'status': 201, 'body': {'ok': True, 'id': 'REG-20261109-0B2077', 'message': 'اطلاعات با موفقیت ثبت شد.', 'adminDelivery': 'not-configured', 'storage': 'plugin'}}"
+    },
+    {
+      "test": "T02",
+      "name": "پیشثبتنام ناقص → 400 با خطاهای فیلد واضح، بدون موفقیت",
+      "result": "PASS",
+      "detail": "{'status': 400, 'body': {'ok': False, 'message': 'اطلاعات واردشده معتبر نیست.', 'errors': {'name': 'نام و نام خانوادگی معتبر نیست.', 'phone': 'شماره تماس معتبر نیست.', 'course': 'دوره انتخاب شده معتبر نیست.'}}}"
+    },
+    {
+      "test": "T03",
+      "name": "فرم تماس کامل با ارقام لاتین → 201 و شماره پیگیری واقعی",
+      "result": "PASS",
+      "detail": "{'status': 201, 'body': {'ok': True, 'id': 'MSG-20261109-D04D2A', 'message': 'اطلاعات با موفقیت ثبت شد.', 'adminDelivery': 'not-configured', 'storage': 'plugin'}}"
+    },
+    {
+      "test": "T04",
+      "name": "تماس نامعتبر → 400 و بررسی نام، تلفن، رایانامه، موضوع و متن",
+      "result": "PASS",
+      "detail": "{'status': 400, 'body': {'ok': False, 'message': 'اطلاعات واردشده معتبر نیست.', 'errors': {'name': 'نام و نام خانوادگی معتبر نیست.', 'phone': 'شماره تماس معتبر نیست.', 'email': 'رایانامه معتبر نیست.', 'subject': 'موضوع پیام معتبر نیست.', 'message': 'متن پیام باید حداقل ۱۰ نویسه باشد.'}}}"
+    },
+    {
+      "test": "T05",
+      "name": "ارسال تکراری → 409 و بدون رکورد اضافی",
+      "result": "PASS",
+      "detail": "{'status': 409, 'body': {'ok': False, 'message': 'این درخواست همین حالا ثبت شده است. لطفاً از ارسال مجدد خودداری کنید.'}}"
+    },
+    {
+      "test": "T09",
+      "name": "رکورد اضافی برای تست حذف با موفقیت در جدول ذخیره شد",
+      "result": "PASS",
+      "detail": "{'status': 201, 'body': {'ok': True, 'id': 'MSG-20261109-99B0F7', 'message': 'اطلاعات با موفقیت ثبت شد.', 'adminDelivery': 'not-configured', 'storage': 'plugin'}}"
+    },
+    {
+      "test": "T10",
+      "name": "توکن CSRF جعلی → 403، بدون ذخیره",
+      "result": "PASS",
+      "detail": "{'status': 403, 'body': {'ok': False, 'message': 'نشست فرم معتبر نیست. لطفاً صفحه را بازنشانی کنید.'}}"
+    },
+    {
+      "test": "T10",
+      "name": "فیلد honeypot ربات → 400، بدون ذخیره",
+      "result": "PASS",
+      "detail": "{'status': 400, 'body': {'ok': False, 'message': 'درخواست نامعتبر است.'}}"
+    },
+    {
+      "test": "T10",
+      "name": "نهمین ارسال در ۱۵ دقیقه → 429 محدودیت نرخ",
+      "result": "PASS",
+      "detail": "{'status': 429, 'body': {'ok': False, 'message': 'تعداد درخواست\\u200cها بیش از حد مجاز است. لطفاً کمی بعد دوباره تلاش کنید.'}}"
+    },
+    {
+      "test": "T06",
+      "name": "ورود مدیر به پیشخوان وردپرس موفق است",
+      "result": "PASS",
+      "detail": "admin/password"
+    },
+    {
+      "test": "T06",
+      "name": "عنوان دقیق منو/زیرمنو: درخواست‌های آموزشگاه رئوف",
+      "result": "PASS",
+      "detail": "{'status': 200, 'len': 30877}"
+    },
+    {
+      "test": "T06",
+      "name": "عنوان دقیق منو/زیرمنو: همه درخواست‌ها",
+      "result": "PASS",
+      "detail": "{'status': 200, 'len': 30877}"
+    },
+    {
+      "test": "T06",
+      "name": "عنوان دقیق منو/زیرمنو: پیش‑ثبت‑نام دوره‌ها",
+      "result": "PASS",
+      "detail": "{'status': 200, 'len': 30877}"
+    },
+    {
+      "test": "T06",
+      "name": "عنوان دقیق منو/زیرمنو: پیام‌های تماس با ما",
+      "result": "PASS",
+      "detail": "{'status': 200, 'len': 30877}"
+    },
+    {
+      "test": "T05",
+      "name": "شماره پیگیری پیشثبتنام بلافاصله در فهرست پیشخوان دیده میشود",
+      "result": "PASS",
+      "detail": "{'status': 200, 'ref': 'REG-20261109-0B2077'}"
+    },
+    {
+      "test": "T05",
+      "name": "شماره پیگیری تماس بلافاصله در فهرست پیشخوان دیده میشود",
+      "result": "PASS",
+      "detail": "{'status': 200, 'ref': 'MSG-20261109-D04D2A'}"
+    },
+    {
+      "test": "T05",
+      "name": "شماره پیگیری حذف بلافاصله در فهرست پیشخوان دیده میشود",
+      "result": "PASS",
+      "detail": "{'status': 200, 'ref': 'MSG-20261109-99B0F7'}"
+    },
+    {
+      "test": "T05",
+      "name": "شماره پیگیری رکورد قدیمی ثبتنام بلافاصله در فهرست پیشخوان دیده میشود",
+      "result": "PASS",
+      "detail": "{'status': 200, 'ref': 'MIG-LEGACY-0001'}"
+    },
+    {
+      "test": "T05",
+      "name": "شماره پیگیری رکورد قدیمی تماس بلافاصله در فهرست پیشخوان دیده میشود",
+      "result": "PASS",
+      "detail": "{'status': 200, 'ref': 'MIG-LEGACY-0002'}"
+    },
+    {
+      "test": "T06",
+      "name": "ترتیب فهرست از جدیدترین به قدیمیترین است",
+      "result": "PASS",
+      "detail": "{'MSG-20261109-99B0F7': 23234, 'MSG-20261109-D04D2A': 23945, 'REG-20261109-0B2077': 24633, 'MIG-LEGACY-0001': 26026, 'MIG-LEGACY-0002': 25348}"
+    },
+    {
+      "test": "T06",
+      "name": "زیرمنوی پیشثبتنام فقط رکوردهای ثبتنام را نشان میدهد",
+      "result": "PASS",
+      "detail": "{'registration_page_len': 29033}"
+    },
+    {
+      "test": "T06",
+      "name": "زیرمنوی پیامها فقط رکوردهای تماس را نشان میدهد",
+      "result": "PASS",
+      "detail": "{'contact_page_len': 29685}"
+    },
+    {
+      "test": "T05",
+      "name": "پس از بستن مرورگر/نشست تازه، هر دو رکورد همچنان در پیشخوان هستند",
+      "result": "PASS",
+      "detail": "{'login': True, 'status': 200}"
+    },
+    {
+      "test": "T05",
+      "name": "تعویض قالب به نسخه مرجع از طریق لینک واقعی وردپرس انجام شد",
+      "result": "PASS",
+      "detail": "{'link_found': True, 'status': 200}"
+    },
+    {
+      "test": "T05",
+      "name": "رکوردها پس از تعویض قالب همچنان در جدول اختصاصی افزونه باقی میمانند",
+      "result": "PASS",
+      "detail": "{'status': 200}"
+    },
+    {
+      "test": "T05",
+      "name": "قالب اصلاحشده مجدداً فعال شد",
+      "result": "PASS",
+      "detail": "{'link_found': True}"
+    },
+    {
+      "test": "T07",
+      "name": "تاریخ و زمان محلی دقیق برای ثبتنام (Asia/Tehran, +03:30)",
+      "result": "PASS",
+      "detail": "{'expected': '2026-11-09 18:23:12.028775', 'displayed': '2026-11-09 18:23:12', 'detail_url': 'http://127.0.0.1:9421/wp-admin/admin.php?page=raouf-requests&action=view&request=3&_wpnonce=a05726f40c'}"
+    },
+    {
+      "test": "T07",
+      "name": "تاریخ و زمان محلی دقیق برای تماس (Asia/Tehran, +03:30)",
+      "result": "PASS",
+      "detail": "{'expected': '2026-11-09 18:23:14.855719', 'displayed': '2026-11-09 18:23:14', 'detail_url': 'http://127.0.0.1:9421/wp-admin/admin.php?page=raouf-requests&action=view&request=4&_wpnonce=6a16e0816d'}"
+    },
+    {
+      "test": "T08",
+      "name": "جزئیات کامل رکورد ثبتنام: شناسه، نوع، نام، تلفن، دوره/موضوع، پیام، سایر فیلدها، تاریخ و زمان",
+      "result": "PASS",
+      "detail": "{'ref': 'REG-20261109-0B2077', 'detail_url': 'http://127.0.0.1:9421/wp-admin/admin.php?page=raouf-requests&action=view&request=3&_wpnonce=a05726f40c', 'length': 27354}"
+    },
+    {
+      "test": "T08",
+      "name": "جزئیات کامل رکورد تماس: شناسه، نوع، نام، تلفن، دوره/موضوع، پیام، سایر فیلدها، تاریخ و زمان",
+      "result": "PASS",
+      "detail": "{'ref': 'MSG-20261109-D04D2A', 'detail_url': 'http://127.0.0.1:9421/wp-admin/admin.php?page=raouf-requests&action=view&request=4&_wpnonce=6a16e0816d', 'length': 27363}"
+    },
+    {
+      "test": "T10",
+      "name": "پayload XSS در جزئیات پیشخوان پاکسازی/escape شده و قابل اجرا نیست",
+      "result": "PASS",
+      "detail": "{'raw_script_present': False, 'raw_img_payload_present': False}"
+    },
+    {
+      "test": "T09",
+      "name": "جستجو بر اساس نام، فقط رکورد منطبق را برمیگرداند",
+      "result": "PASS",
+      "detail": "{'status': 200}"
+    },
+    {
+      "test": "T09",
+      "name": "جستجو بر اساس شماره تماس، فقط رکورد منطبق را برمیگرداند",
+      "result": "PASS",
+      "detail": "{'status': 200}"
+    },
+    {
+      "test": "T10",
+      "name": "ورودی SQLi در جستجو باعث افشای همه رکوردها یا خطای SQL نمیشود",
+      "result": "PASS",
+      "detail": "{'status': 200, 'len': 27308}"
+    },
+    {
+      "test": "T09",
+      "name": "فیلتر نوع درخواست فقط پیشثبتنامها را نشان میدهد",
+      "result": "PASS",
+      "detail": "{'status': 200}"
+    },
+    {
+      "test": "T09",
+      "name": "فیلتر تاریخ امروز تمام رکوردهای تازه را نشان میدهد",
+      "result": "PASS",
+      "detail": "{'date': '2026-11-09', 'status': 200}"
+    },
+    {
+      "test": "T09",
+      "name": "فیلتر تاریخ آینده هیچ رکوردی برنمیگرداند",
+      "result": "PASS",
+      "detail": "{'date': '2099-01-01', 'status': 200}"
+    },
+    {
+      "test": "T09",
+      "name": "خروجی CSV شامل سربرگ فارسی، BOM، تمام رکوردها و محافظت فرمول/escape است",
+      "result": "PASS",
+      "detail": "{\"initial_false_negative\": \"case-sensitive Content-Type lookup; Playground returned lowercase content-type\", \"post_run_verification\": \"qa/results/v110-csv-verify.json\", \"real_csv_result\": \"PASS\", \"content_type\": \"text/csv; charset=UTF-8\", \"rows\": 9, \"checks\": {\"status_200\": true, \"content_type_text_csv\": true, \"content_disposition_attachment\": true, \"utf8_bom\": true, \"persian_13_column_header\": true, \"all_rows_13_columns\": true, \"both_new_refs_exported\": true, \"raw_xss_script_absent\": true, \"csv_formula_guard_present\": true, \"raw_formula_cell_absent\": true, \"no_php_fatal_error\": true}}"
+    },
+    {
+      "test": "T09",
+      "name": "لینک حذف دارای تأیید جاوااسکریپت مدیر و نانس وردپرس است",
+      "result": "PASS",
+      "detail": "{'delete_id': '5', 'link_found': True}"
+    },
+    {
+      "test": "T10",
+      "name": "حذف با نانس جعلی انجام نمیشود و رکورد باقی میماند",
+      "result": "PASS",
+      "detail": "{'status': 403}"
+    },
+    {
+      "test": "T09",
+      "name": "حذف با نانس معتبر انجام شد و رکورد از فهرست حذف گردید",
+      "result": "PASS",
+      "detail": "{'status': 200, 'final_url': 'http://127.0.0.1:9421/wp-admin/admin.php?page=raouf-requests&deleted=1'}"
+    },
+    {
+      "test": "T10",
+      "name": "کاربر ناشناس به صفحه درخواستها دسترسی ندارد و PII نمیبیند",
+      "result": "PASS",
+      "detail": "{'status': 200}"
+    },
+    {
+      "test": "T10",
+      "name": "کاربر subscriber (بدون manage_options) به فهرست/CSV دسترسی ندارد",
+      "result": "PASS",
+      "detail": "{'login': True, 'list_status': 403, 'export_status': 403}"
+    },
+    {
+      "test": "T10",
+      "name": "نانس جعلی نمایش جزئیات، هیچ اطلاعات شخصی افشا نمیکند",
+      "result": "PASS",
+      "detail": "{'status': 200}"
+    },
+    {
+      "test": "T11",
+      "name": "لینک بلد در مسیر / و باز شدن در برگه جدید",
+      "result": "PASS",
+      "detail": "{'route': '/', 'status': 200, 'balad_links': 1, 'new_tab': True, 'legacy_map_hosts': 0, 'token_left': False}"
+    },
+    {
+      "test": "T11",
+      "name": "لینک بلد در مسیر /courses/ و باز شدن در برگه جدید",
+      "result": "PASS",
+      "detail": "{'route': '/courses/', 'status': 200, 'balad_links': 1, 'new_tab': True, 'legacy_map_hosts': 0, 'token_left': False}"
+    },
+    {
+      "test": "T11",
+      "name": "لینک بلد در مسیر /courses/skin-facial/ و باز شدن در برگه جدید",
+      "result": "PASS",
+      "detail": "{'route': '/courses/skin-facial/', 'status': 200, 'balad_links': 1, 'new_tab': True, 'legacy_map_hosts': 0, 'token_left': False}"
+    },
+    {
+      "test": "T11",
+      "name": "لینک بلد در مسیر /courses/medical-emergency/ و باز شدن در برگه جدید",
+      "result": "PASS",
+      "detail": "{'route': '/courses/medical-emergency/', 'status': 200, 'balad_links': 1, 'new_tab': True, 'legacy_map_hosts': 0, 'token_left': False}"
+    },
+    {
+      "test": "T11",
+      "name": "لینک بلد در مسیر /courses/pharmacy-technician/ و باز شدن در برگه جدید",
+      "result": "PASS",
+      "detail": "{'route': '/courses/pharmacy-technician/', 'status': 200, 'balad_links': 1, 'new_tab': True, 'legacy_map_hosts': 0, 'token_left': False}"
+    },
+    {
+      "test": "T11",
+      "name": "لینک بلد در مسیر /courses/massage-relaxation/ و باز شدن در برگه جدید",
+      "result": "PASS",
+      "detail": "{'route': '/courses/massage-relaxation/', 'status': 200, 'balad_links': 1, 'new_tab': True, 'legacy_map_hosts': 0, 'token_left': False}"
+    },
+    {
+      "test": "T11",
+      "name": "لینک بلد در مسیر /about/ و باز شدن در برگه جدید",
+      "result": "PASS",
+      "detail": "{'route': '/about/', 'status': 200, 'balad_links': 1, 'new_tab': True, 'legacy_map_hosts': 0, 'token_left': False}"
+    },
+    {
+      "test": "T11",
+      "name": "لینک بلد در مسیر /gallery/ و باز شدن در برگه جدید",
+      "result": "PASS",
+      "detail": "{'route': '/gallery/', 'status': 200, 'balad_links': 1, 'new_tab': True, 'legacy_map_hosts': 0, 'token_left': False}"
+    },
+    {
+      "test": "T11",
+      "name": "لینک بلد در مسیر /contact/ و باز شدن در برگه جدید",
+      "result": "PASS",
+      "detail": "{'route': '/contact/', 'status': 200, 'balad_links': 2, 'new_tab': True, 'legacy_map_hosts': 0, 'token_left': False}"
+    },
+    {
+      "test": "T11",
+      "name": "لینک بلد در مسیر /register/ و باز شدن در برگه جدید",
+      "result": "PASS",
+      "detail": "{'route': '/register/', 'status': 200, 'balad_links': 1, 'new_tab': True, 'legacy_map_hosts': 0, 'token_left': False}"
+    },
+    {
+      "test": "T11",
+      "name": "لینک بلد در مسیر /404/ و باز شدن در برگه جدید",
+      "result": "PASS",
+      "detail": "{'route': '/404/', 'status': 404, 'balad_links': 1, 'new_tab': True, 'legacy_map_hosts': 0, 'token_left': False}"
+    },
+    {
+      "test": "T11",
+      "name": "صفحه تماس دارای لینک بلد کارت نشانی و فوتی مشترک است",
+      "result": "PASS",
+      "detail": "{'route': '/contact/', 'status': 200, 'balad_links': 2, 'new_tab': True, 'legacy_map_hosts': 0, 'token_left': False}"
+    },
+    {
+      "test": "T12",
+      "name": "هیچ رشته خطای PHP در ۱۱ مسیر عمومی و سه صفحه پیشخوان دیده نشد",
+      "result": "PASS",
+      "detail": "{'hits': []}"
+    },
+    {
+      "test": "T12",
+      "name": "لاگ WP_DEBUG_LOG سه سرور تست فاقد خطای PHP است",
+      "result": "PASS",
+      "detail": "[]"
+    },
+    {
+      "test": "T12",
+      "name": "خطای JavaScript/صفحهای در تستهای مرورگر، تعاملات و ۶۶ نمای بصری وجود ندارد",
+      "result": "PASS",
+      "detail": "{'browser': 0, 'visual': 0, 'interactions': 0, 'samples': []}"
+    },
+    {
+      "test": "T02",
+      "name": "مرورگر: client validation blocks incomplete registration without network POST",
+      "result": "PASS",
+      "detail": "{'name': 'client validation blocks incomplete registration without network POST', 'ok': True, 'detail': '{\"posts\":0,\"alert\":\"لطفاً موارد مشخص\\u200cشده را اصلاح کنید و دوباره تلاش کنید.\",\"nameError\":\"لطفاً نام و نام خانوادگی معتبر (حداقل ۲ حرف) وارد کنید.\",\"phoneError\":\"شماره موبایل معتبر نیست. مثال: ۰۹۱۴۱۰۳۲۸۷۰\",\"courseError\":\"لطفاً یکی از دوره\\u200cها را انتخاب کنید.\"}'}"
+    },
+    {
+      "test": "T01",
+      "name": "مرورگر: double-click produces exactly one registration POST",
+      "result": "PASS",
+      "detail": "{'name': 'double-click produces exactly one registration POST', 'ok': True, 'detail': '{\"posts\":1,\"disabledSeen\":true,\"responses\":[{\"status\":201,\"body\":\"{\\\\\"ok\\\\\":true,\\\\\"id\\\\\":\\\\\"REG-20261109-0C71F2\\\\\",\\\\\"message\\\\\":\\\\\"\\\\\\\\u0627\\\\\\\\u0637\\\\\\\\u0644\\\\\\\\u0627\\\\\\\\u0639\\\\\\\\u0627\\\\\\\\u062a \\\\\\\\u0628\\\\\\\\u0627 \\\\\\\\u0645\\\\\\\\u0648\\\\\\\\u0641\\\\\\\\u0642\\\\\\\\u06cc\\\\\\\\u062a \\\\\\\\u062b\\\\\\\\u0628\\\\\\\\u062a \\\\\\\\u0634\\\\\\\\u062f.\\\\\",\\\\\"adminDelivery\\\\\":\\\\\"not-configured\\\\\",\\\\\"storage\\\\\":\\\\\"plugin\\\\\"}\"}]}'}"
+    },
+    {
+      "test": "T01",
+      "name": "مرورگر: registration success without page reload",
+      "result": "PASS",
+      "detail": "{'name': 'registration success without page reload', 'ok': True, 'detail': '{\"ref\":\"REG-20261109-0C71F2\",\"urlBefore\":\"http://127.0.0.1:9422/register/\",\"urlAfter\":\"http://127.0.0.1:9422/register/\",\"navigations\":0,\"formHidden\":true,\"successHidden\":false}'}"
+    },
+    {
+      "test": "T04",
+      "name": "مرورگر: client validation blocks invalid contact without network POST",
+      "result": "PASS",
+      "detail": "{'name': 'client validation blocks invalid contact without network POST', 'ok': True, 'detail': '{\"posts\":0,\"alert\":\"لطفاً موارد مشخص\\u200cشده را اصلاح کنید و دوباره تلاش کنید.\",\"emailError\":\"نشانی رایانامه معتبر نیست.\",\"subjectError\":\"لطفاً موضوع پیام را وارد کنید.\",\"messageError\":\"متن پیام باید حداقل ۱۰ نویسه باشد.\"}'}"
+    },
+    {
+      "test": "T03",
+      "name": "مرورگر: contact success without page reload",
+      "result": "PASS",
+      "detail": "{'name': 'contact success without page reload', 'ok': True, 'detail': '{\"posts\":1,\"ref\":\"MSG-20261109-2F2F2D\",\"responses\":[{\"status\":201,\"body\":\"{\\\\\"ok\\\\\":true,\\\\\"id\\\\\":\\\\\"MSG-20261109-2F2F2D\\\\\",\\\\\"message\\\\\":\\\\\"\\\\\\\\u0627\\\\\\\\u0637\\\\\\\\u0644\\\\\\\\u0627\\\\\\\\u0639\\\\\\\\u0627\\\\\\\\u062a \\\\\\\\u0628\\\\\\\\u0627 \\\\\\\\u0645\\\\\\\\u0648\\\\\\\\u0641\\\\\\\\u0642\\\\\\\\u06cc\\\\\\\\u062a \\\\\\\\u062b\\\\\\\\u0628\\\\\\\\u062a \\\\\\\\u0634\\\\\\\\u062f.\\\\\",\\\\\"adminDelivery\\\\\":\\\\\"not-configured\\\\\",\\\\\"storage\\\\\":\\\\\"plugin\\\\\"}\"}],\"urlBefore\":\"http://127.0.0.1:9422/contact/\",\"urlAfter\":\"http://127.0.0.1:9422/contact/\",\"navigations\":0}'}"
+    },
+    {
+      "test": "T05",
+      "name": "مرورگر: storage failure returns real error and keeps entered values",
+      "result": "PASS",
+      "detail": "{'name': 'storage failure returns real error and keeps entered values', 'ok': True, 'detail': '{\"posts\":1,\"responses\":[{\"status\":500,\"body\":\"{\\\\\"ok\\\\\":false,\\\\\"message\\\\\":\\\\\"\\\\\\\\u0630\\\\\\\\u062e\\\\\\\\u06cc\\\\\\\\u0631\\\\\\\\u0647 \\\\\\\\u0633\\\\\\\\u0627\\\\\\\\u0632\\\\\\\\u06cc \\\\\\\\u0627\\\\\\\\u0637\\\\\\\\u0644\\\\\\\\u0627\\\\\\\\u0639\\\\\\\\u0627\\\\\\\\u062a \\\\\\\\u0627\\\\\\\\u0646\\\\\\\\u062c\\\\\\\\u0627\\\\\\\\u0645 \\\\\\\\u0646\\\\\\\\u0634\\\\\\\\u062f. \\\\\\\\u0644\\\\\\\\u0637\\\\\\\\u0641\\\\\\\\u0627\\\\\\\\u064b \\\\\\\\u062f\\\\\\\\u0648\\\\\\\\u0628\\\\\\\\u0627\\\\\\\\u0631\\\\\\\\u0647 \\\\\\\\u062a\\\\\\\\u0644\\\\\\\\u0627\\\\\\\\u0634 \\\\\\\\u06a9\\\\\\\\u0646\\\\\\\\u06cc\\\\\\\\u062f \\\\\\\\u06cc\\\\\\\\u0627 \\\\\\\\u0628\\\\\\\\u0627 \\\\\\\\u0622\\\\\\\\u0645\\\\\\\\u0648\\\\\\\\u0632\\\\\\\\u0634\\\\\\\\u06af\\\\\\\\u0627\\\\\\\\u0647 \\\\\\\\u062a\\\\\\\\u0645"
+    },
+    {
+      "test": "T13",
+      "name": "۶۶ جفت دسکتاپ/موبایل (۱۱ مسیر × ۶ viewport) از نظر پیکسل یکسان هستند",
+      "result": "PASS",
+      "detail": "{'checks': 14, 'PASS': 14, 'FAIL': 0, 'pairs': 66, 'pixel_identical': 66, 'expected_404_console_entries': 6, 'expected_404_http_entries': 6, 'failedRequests': 0}"
+    },
+    {
+      "test": "T13",
+      "name": "منوها، گالری، FAQ، موبایل و سایر تعاملات بدون شکست باقی ماندند",
+      "result": "PASS",
+      "detail": "{\"checks\": 28, \"PASS\": 28, \"FAIL\": 0, \"consoleErrors\": 0}"
+    }
+  ],
+  "artifacts": {
+    "init_state": {
+      "theme_version": "1.1.0",
+      "active_theme": "raouf-academy",
+      "plugin_active": true,
+      "table_exists": true,
+      "table_count_on_activation": 2,
+      "second_migration_inserted": 0,
+      "table_count_after_second_migration": 2,
+      "legacy_refs_in_plugin_table": 2,
+      "legacy_cpt_posts_preserved": 2,
+      "stored_map_url": "https://balad.ir/p/29UbcoR7CtjsIN",
+      "effective_map_url": "https://balad.ir/p/29UbcoR7CtjsIN",
+      "timezone_string": "Asia/Tehran",
+      "wp_timezone": "Asia/Tehran",
+      "wp_local_now": "2026-11-09 17:47:19",
+      "utc_now": "2026-11-09 14:17:19",
+      "subscriber_id": 2
+    },
+    "map_report": [
+      {
+        "route": "/",
+        "status": 200,
+        "balad_links": 1,
+        "new_tab": true,
+        "legacy_map_hosts": 0,
+        "token_left": false
+      },
+      {
+        "route": "/courses/",
+        "status": 200,
+        "balad_links": 1,
+        "new_tab": true,
+        "legacy_map_hosts": 0,
+        "token_left": false
+      },
+      {
+        "route": "/courses/skin-facial/",
+        "status": 200,
+        "balad_links": 1,
+        "new_tab": true,
+        "legacy_map_hosts": 0,
+        "token_left": false
+      },
+      {
+        "route": "/courses/medical-emergency/",
+        "status": 200,
+        "balad_links": 1,
+        "new_tab": true,
+        "legacy_map_hosts": 0,
+        "token_left": false
+      },
+      {
+        "route": "/courses/pharmacy-technician/",
+        "status": 200,
+        "balad_links": 1,
+        "new_tab": true,
+        "legacy_map_hosts": 0,
+        "token_left": false
+      },
+      {
+        "route": "/courses/massage-relaxation/",
+        "status": 200,
+        "balad_links": 1,
+        "new_tab": true,
+        "legacy_map_hosts": 0,
+        "token_left": false
+      },
+      {
+        "route": "/about/",
+        "status": 200,
+        "balad_links": 1,
+        "new_tab": true,
+        "legacy_map_hosts": 0,
+        "token_left": false
+      },
+      {
+        "route": "/gallery/",
+        "status": 200,
+        "balad_links": 1,
+        "new_tab": true,
+        "legacy_map_hosts": 0,
+        "token_left": false
+      },
+      {
+        "route": "/contact/",
+        "status": 200,
+        "balad_links": 2,
+        "new_tab": true,
+        "legacy_map_hosts": 0,
+        "token_left": false
+      },
+      {
+        "route": "/register/",
+        "status": 200,
+        "balad_links": 1,
+        "new_tab": true,
+        "legacy_map_hosts": 0,
+        "token_left": false
+      },
+      {
+        "route": "/404/",
+        "status": 404,
+        "balad_links": 1,
+        "new_tab": true,
+        "legacy_map_hosts": 0,
+        "token_left": false
+      }
+    ],
+    "browser": {
+      "checks": 6,
+      "PASS": 6,
+      "FAIL": 0,
+      "consoleErrors": 0
+    },
+    "visual": {
+      "checks": 14,
+      "PASS": 14,
+      "FAIL": 0,
+      "pairs": 66,
+      "pixel_identical": 66,
+      "expected_404_console_entries": 6,
+      "expected_404_http_entries": 6,
+      "failedRequests": 0
+    },
+    "interactions": {
+      "checks": 28,
+      "PASS": 28,
+      "FAIL": 0,
+      "consoleErrors": 0
+    },
+    "csv_verification": {
+      "path": "/home/user/raouf/wordpress-conversion/qa/results/v110-csv-verify.json",
+      "result": "PASS"
+    }
+  },
+  "overall": {
+    "tests": 13,
+    "PASS": 13,
+    "FAIL": 0,
+    "checks": 71,
+    "checks_PASS": 71,
+    "checks_FAIL": 0
+  },
+  "post_run_corrections": [
+    "CSV export was actually executed in the main run; only the header-key lookup was case-sensitive. Re-verified with a fresh real export containing XSS and CSV-formula payloads, then corrected T09.",
+    "Interaction artifact had no nested summary object; the harness now derives PASS/FAIL from its 28 checks and T13 detail was corrected."
+  ]
+}

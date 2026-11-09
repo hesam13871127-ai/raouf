@@ -1,0 +1,519 @@
+[
+  {
+    "route": "/",
+    "http": 200,
+    "main_identical": true,
+    "class_sequence_identical": true,
+    "main_lengths": [
+      41465,
+      41465
+    ],
+    "signature_diffs": {},
+    "original_signatures": {
+      "sections": 9,
+      "class-attrs": 281,
+      "ids": 7,
+      "imgs": 15,
+      "svgs": 61,
+      "details": 5,
+      "buttons": 6,
+      "links": 21,
+      "forms": 0,
+      "lightbox": false,
+      "h1": "مسیر حرفه‌ای شدن از آموزش اصولی آغاز می‌شود"
+    },
+    "wordpress_signatures": {
+      "sections": 9,
+      "class-attrs": 281,
+      "ids": 7,
+      "imgs": 15,
+      "svgs": 61,
+      "details": 5,
+      "buttons": 6,
+      "links": 21,
+      "forms": 0,
+      "lightbox": false,
+      "h1": "مسیر حرفه‌ای شدن از آموزش اصولی آغاز می‌شود"
+    },
+    "header_identical": false,
+    "footer_identical": false,
+    "header_lengths": [
+      10129,
+      10034
+    ],
+    "footer_lengths": [
+      7291,
+      7341
+    ]
+  },
+  {
+    "route": "/courses/",
+    "http": 200,
+    "main_identical": true,
+    "class_sequence_identical": true,
+    "main_lengths": [
+      17147,
+      17147
+    ],
+    "signature_diffs": {},
+    "original_signatures": {
+      "sections": 4,
+      "class-attrs": 115,
+      "ids": 5,
+      "imgs": 5,
+      "svgs": 27,
+      "details": 0,
+      "buttons": 0,
+      "links": 23,
+      "forms": 0,
+      "lightbox": false,
+      "h1": "دوره‌های تخصصی آموزشگاه رئوف"
+    },
+    "wordpress_signatures": {
+      "sections": 4,
+      "class-attrs": 115,
+      "ids": 5,
+      "imgs": 5,
+      "svgs": 27,
+      "details": 0,
+      "buttons": 0,
+      "links": 23,
+      "forms": 0,
+      "lightbox": false,
+      "h1": "دوره‌های تخصصی آموزشگاه رئوف"
+    },
+    "header_identical": false,
+    "footer_identical": false,
+    "header_lengths": [
+      10139,
+      10055
+    ],
+    "footer_lengths": [
+      5975,
+      6025
+    ]
+  },
+  {
+    "route": "/courses/skin-facial/",
+    "http": 200,
+    "main_identical": true,
+    "class_sequence_identical": true,
+    "main_lengths": [
+      35724,
+      35724
+    ],
+    "signature_diffs": {},
+    "original_signatures": {
+      "sections": 11,
+      "class-attrs": 244,
+      "ids": 5,
+      "imgs": 11,
+      "svgs": 58,
+      "details": 3,
+      "buttons": 4,
+      "links": 18,
+      "forms": 0,
+      "lightbox": false,
+      "h1": "دوره تخصصی آموزش پاکسازی و فیشیال پوست"
+    },
+    "wordpress_signatures": {
+      "sections": 11,
+      "class-attrs": 244,
+      "ids": 5,
+      "imgs": 11,
+      "svgs": 58,
+      "details": 3,
+      "buttons": 4,
+      "links": 18,
+      "forms": 0,
+      "lightbox": false,
+      "h1": "دوره تخصصی آموزش پاکسازی و فیشیال پوست"
+    },
+    "header_identical": false,
+    "footer_identical": false,
+    "header_lengths": [
+      10148,
+      10088
+    ],
+    "footer_lengths": [
+      7291,
+      7341
+    ]
+  },
+  {
+    "route": "/courses/medical-emergency/",
+    "http": 200,
+    "main_identical": true,
+    "class_sequence_identical": true,
+    "main_lengths": [
+      36105,
+      36105
+    ],
+    "signature_diffs": {},
+    "original_signatures": {
+      "sections": 11,
+      "class-attrs": 249,
+      "ids": 5,
+      "imgs": 11,
+      "svgs": 60,
+      "details": 3,
+      "buttons": 4,
+      "links": 18,
+      "forms": 0,
+      "lightbox": false,
+      "h1": "دوره جامع فوریت‌های پزشکی، کمک‌های اولیه، تزریقات و بخیه"
+    },
+    "wordpress_signatures": {
+      "sections": 11,
+      "class-attrs": 249,
+      "ids": 5,
+      "imgs": 11,
+      "svgs": 60,
+      "details": 3,
+      "buttons": 4,
+      "links": 18,
+      "forms": 0,
+      "lightbox": false,
+      "h1": "دوره جامع فوریت‌های پزشکی، کمک‌های اولیه، تزریقات و بخیه"
+    },
+    "header_identical": false,
+    "footer_identical": false,
+    "header_lengths": [
+      10153,
+      10105
+    ],
+    "footer_lengths": [
+      7291,
+      7341
+    ]
+  },
+  {
+    "route": "/courses/pharmacy-technician/",
+    "http": 200,
+    "main_identical": true,
+    "class_sequence_identical": true,
+    "main_lengths": [
+      33915,
+      33915
+    ],
+    "signature_diffs": {},
+    "original_signatures": {
+      "sections": 11,
+      "class-attrs": 236,
+      "ids": 5,
+      "imgs": 10,
+      "svgs": 56,
+      "details": 3,
+      "buttons": 3,
+      "links": 18,
+      "forms": 0,
+      "lightbox": false,
+      "h1": "دوره آموزشی تکنسین داروخانه (نسخه‌خوانی)"
+    },
+    "wordpress_signatures": {
+      "sections": 11,
+      "class-attrs": 236,
+      "ids": 5,
+      "imgs": 10,
+      "svgs": 56,
+      "details": 3,
+      "buttons": 3,
+      "links": 18,
+      "forms": 0,
+      "lightbox": false,
+      "h1": "دوره آموزشی تکنسین داروخانه (نسخه‌خوانی)"
+    },
+    "header_identical": false,
+    "footer_identical": false,
+    "header_lengths": [
+      10155,
+      10111
+    ],
+    "footer_lengths": [
+      7291,
+      7341
+    ]
+  },
+  {
+    "route": "/courses/massage-relaxation/",
+    "http": 200,
+    "main_identical": true,
+    "class_sequence_identical": true,
+    "main_lengths": [
+      35980,
+      35980
+    ],
+    "signature_diffs": {},
+    "original_signatures": {
+      "sections": 11,
+      "class-attrs": 253,
+      "ids": 5,
+      "imgs": 11,
+      "svgs": 61,
+      "details": 3,
+      "buttons": 4,
+      "links": 18,
+      "forms": 0,
+      "lightbox": false,
+      "h1": "دوره جامع تخصصی ماساژ و ریلکسیشن"
+    },
+    "wordpress_signatures": {
+      "sections": 11,
+      "class-attrs": 253,
+      "ids": 5,
+      "imgs": 11,
+      "svgs": 61,
+      "details": 3,
+      "buttons": 4,
+      "links": 18,
+      "forms": 0,
+      "lightbox": false,
+      "h1": "دوره جامع تخصصی ماساژ و ریلکسیشن"
+    },
+    "header_identical": false,
+    "footer_identical": false,
+    "header_lengths": [
+      10156,
+      10110
+    ],
+    "footer_lengths": [
+      7291,
+      7341
+    ]
+  },
+  {
+    "route": "/about/",
+    "http": 200,
+    "main_identical": true,
+    "class_sequence_identical": true,
+    "main_lengths": [
+      17743,
+      17743
+    ],
+    "signature_diffs": {},
+    "original_signatures": {
+      "sections": 8,
+      "class-attrs": 129,
+      "ids": 1,
+      "imgs": 7,
+      "svgs": 24,
+      "details": 0,
+      "buttons": 0,
+      "links": 8,
+      "forms": 0,
+      "lightbox": false,
+      "h1": "آموزشگاه فنی و حرفه‌ای رئوف"
+    },
+    "wordpress_signatures": {
+      "sections": 8,
+      "class-attrs": 129,
+      "ids": 1,
+      "imgs": 7,
+      "svgs": 24,
+      "details": 0,
+      "buttons": 0,
+      "links": 8,
+      "forms": 0,
+      "lightbox": false,
+      "h1": "آموزشگاه فنی و حرفه‌ای رئوف"
+    },
+    "header_identical": false,
+    "footer_identical": false,
+    "header_lengths": [
+      10131,
+      10031
+    ],
+    "footer_lengths": [
+      5975,
+      6025
+    ]
+  },
+  {
+    "route": "/gallery/",
+    "http": 200,
+    "main_identical": true,
+    "class_sequence_identical": true,
+    "main_lengths": [
+      32017,
+      32017
+    ],
+    "signature_diffs": {},
+    "original_signatures": {
+      "sections": 3,
+      "class-attrs": 147,
+      "ids": 4,
+      "imgs": 28,
+      "svgs": 31,
+      "details": 0,
+      "buttons": 33,
+      "links": 3,
+      "forms": 0,
+      "lightbox": false,
+      "h1": "نگاهی به فضای آموزشگاه رئوف"
+    },
+    "wordpress_signatures": {
+      "sections": 3,
+      "class-attrs": 147,
+      "ids": 4,
+      "imgs": 28,
+      "svgs": 31,
+      "details": 0,
+      "buttons": 33,
+      "links": 3,
+      "forms": 0,
+      "lightbox": false,
+      "h1": "نگاهی به فضای آموزشگاه رئوف"
+    },
+    "header_identical": false,
+    "footer_identical": false,
+    "header_lengths": [
+      10135,
+      10039
+    ],
+    "footer_lengths": [
+      7291,
+      7341
+    ]
+  },
+  {
+    "route": "/contact/",
+    "http": 200,
+    "main_identical": true,
+    "class_sequence_identical": true,
+    "main_lengths": [
+      11577,
+      11577
+    ],
+    "signature_diffs": {},
+    "original_signatures": {
+      "sections": 4,
+      "class-attrs": 78,
+      "ids": 8,
+      "imgs": 0,
+      "svgs": 14,
+      "details": 0,
+      "buttons": 1,
+      "links": 10,
+      "forms": 1,
+      "lightbox": false,
+      "h1": "با آموزشگاه رئوف در ارتباط باشید"
+    },
+    "wordpress_signatures": {
+      "sections": 4,
+      "class-attrs": 78,
+      "ids": 8,
+      "imgs": 0,
+      "svgs": 14,
+      "details": 0,
+      "buttons": 1,
+      "links": 10,
+      "forms": 1,
+      "lightbox": false,
+      "h1": "با آموزشگاه رئوف در ارتباط باشید"
+    },
+    "header_identical": false,
+    "footer_identical": false,
+    "header_lengths": [
+      10135,
+      10039
+    ],
+    "footer_lengths": [
+      5975,
+      6025
+    ]
+  },
+  {
+    "route": "/register/",
+    "http": 200,
+    "main_identical": true,
+    "class_sequence_identical": true,
+    "main_lengths": [
+      13432,
+      13432
+    ],
+    "signature_diffs": {},
+    "original_signatures": {
+      "sections": 4,
+      "class-attrs": 97,
+      "ids": 7,
+      "imgs": 0,
+      "svgs": 18,
+      "details": 4,
+      "buttons": 1,
+      "links": 7,
+      "forms": 1,
+      "lightbox": false,
+      "h1": "اولین قدم را برای یادگیری بردارید"
+    },
+    "wordpress_signatures": {
+      "sections": 4,
+      "class-attrs": 97,
+      "ids": 7,
+      "imgs": 0,
+      "svgs": 18,
+      "details": 4,
+      "buttons": 1,
+      "links": 7,
+      "forms": 1,
+      "lightbox": false,
+      "h1": "اولین قدم را برای یادگیری بردارید"
+    },
+    "header_identical": false,
+    "footer_identical": false,
+    "header_lengths": [
+      10117,
+      10023
+    ],
+    "footer_lengths": [
+      5975,
+      6025
+    ]
+  },
+  {
+    "route": "/404/",
+    "http": 200,
+    "main_identical": true,
+    "class_sequence_identical": true,
+    "main_lengths": [
+      1000,
+      1000
+    ],
+    "signature_diffs": {},
+    "original_signatures": {
+      "sections": 1,
+      "class-attrs": 8,
+      "ids": 0,
+      "imgs": 0,
+      "svgs": 2,
+      "details": 0,
+      "buttons": 0,
+      "links": 2,
+      "forms": 0,
+      "lightbox": false,
+      "h1": "صفحه مورد نظر پیدا نشد"
+    },
+    "wordpress_signatures": {
+      "sections": 1,
+      "class-attrs": 8,
+      "ids": 0,
+      "imgs": 0,
+      "svgs": 2,
+      "details": 0,
+      "buttons": 0,
+      "links": 2,
+      "forms": 0,
+      "lightbox": false,
+      "h1": "صفحه مورد نظر پیدا نشد"
+    },
+    "header_identical": false,
+    "footer_identical": false,
+    "header_lengths": [
+      10112,
+      9926
+    ],
+    "footer_lengths": [
+      5975,
+      6025
+    ]
+  }
+]

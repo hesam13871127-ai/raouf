@@ -1,0 +1,31 @@
+{
+  "stage": "v1.1.0-zip-build",
+  "reference_theme_zip": {
+    "path": "/home/user/raouf/wordpress-conversion/dist/raouf-academy-wordpress-theme.zip",
+    "size": 5384052,
+    "sha256": "abe4a961a4049ecdc86b1866a0d9e2eb0949eee1590bd730745e41dc7b3a4907",
+    "status": "UNCHANGED"
+  },
+  "reference_source_zip": {
+    "path": "/home/user/raouf/wordpress-conversion/dist/source-code.zip",
+    "size": 7752825,
+    "sha256": "47eead0362272b3d30c39950ae1bec24173246bc4ee6e5d3785809650b7c5226",
+    "status": "UNCHANGED"
+  },
+  "revised_theme_zip": {
+    "path": "/home/user/raouf/wordpress-conversion/dist/raouf-academy-wordpress-theme-v1.1.0.zip",
+    "size": 5385482,
+    "sha256": "0c0f48cd4f76cc7985e1ea097ebf555f291bb074d27d6699e8dedbd326853167",
+    "entries": 103,
+    "version": "1.1.0",
+    "top_level": "raouf-academy/"
+  },
+  "plugin_zip": {
+    "path": "/home/user/raouf/wordpress-conversion/dist/raouf-academy-requests-plugin-v1.0.0.zip",
+    "size": 10766,
+    "sha256": "807508d8ad9b3757c8098f9d5e70bcb648b99a770be75a70b4424e4e375eea77",
+    "entries": 5,
+    "version": "1.0.0",
+    "top_level": "raouf-academy-requests/"
+  }
+}
