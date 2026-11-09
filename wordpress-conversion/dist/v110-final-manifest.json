@@ -26,15 +26,15 @@
       "label": "گزارش تست فارسی",
       "filename": "raouf-academy-correction-test-report-fa.pdf",
       "version": "—",
-      "size": 452588,
-      "sha256": "04ffbcb2638f668a1967556c6a23ec07523c71cab65f2de3252e98b65ef6843f"
+      "size": 452554,
+      "sha256": "6f8b06dad352838714ea40fdc1bccd971501c0def00d1204200c3a8cf5e020f4"
     },
     {
       "label": "راهنمای نصب و فعالسازی",
       "filename": "raouf-academy-install-activation-fa.pdf",
       "version": "—",
       "size": 327309,
-      "sha256": "7db96c5b251cc3e205170b98b69b83a0fbace68aafb8c928ee9ee22e23f52acd"
+      "sha256": "b36386e6a709c97193247383e547e9a49e521b33c90763c960a8aec90c171236"
     }
   ],
   "tests": {
